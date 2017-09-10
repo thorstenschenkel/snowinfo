@@ -1,0 +1,205 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; .dat file for the ATI Catalyst Control Center component dll
+;
+; Abstract:
+; The Key value will overwrite the dll code and will be returned by the component dll.
+; Therefore, the key value should not be defined if the value is expected from the dll code.
+; The dat file (if used) should have the same prefix name of the dll file.
+; 
+; Updated: 
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Component]
+;Default
+Name=Catalyst Control Center
+;Arabic
+Name_ara=Catalyst Control Center
+;Traditional Chinese
+Name_cht=Catalyst Control Center
+;Simplified Chinese
+Name_chs=Catalyst Control Center
+;Czech
+Name_csy=Catalyst Control Center
+;Danish
+Name_dan=Catalyst Control Center
+;Dutch
+Name_nld=Catalyst Control Center
+;English
+Name_enu=Catalyst Control Center
+;Finnish
+Name_fin=Catalyst Control Center
+;French
+Name_fra=Catalyst Control Center
+;German
+Name_deu=Catalyst Control Center
+;Greek
+Name_ell=Catalyst Control Center
+;Hebrew
+Name_heb=Catalyst Control Center
+;Hungarian
+Name_hun=Catalyst Control Center
+;Italian
+Name_ita=Catalyst Control Center
+;Japanese
+Name_jpn=Catalyst Control Center
+;Korean
+Name_kor=Catalyst Control Center
+;Norwegian
+Name_nor=Catalyst Control Center
+;Polish
+Name_plk=Catalyst Control Center
+;Portuguese
+Name_ptg=Catalyst Control Center
+;Russian
+Name_rus=Catalyst Control Center
+;Spanish
+Name_esp=Catalyst Control Center
+;Swedish
+Name_sve=Catalyst Control Center
+;Thai
+Name_tha=Catalyst Control Center
+;Turkish
+Name_trk=Catalyst Control Center
+
+;Default
+Description=Install Catalyst Control Center
+;Arabic
+Description_ara=Install Catalyst Control Center
+;Traditional Chinese
+Description_cht=¶w∏ÀCatalyst Control Center
+;Simplified Chinese
+Description_chs=∞≤◊∞Catalyst Control Center
+;Czech
+Description_csy=Instalovat Catalyst Control Center
+;Danish
+Description_dan=InstallÈr Catalyst Control Center
+;Dutch
+Description_nld=Catalyst Control Center installeren
+;English
+Description_enu=Install Catalyst Control Center
+;Finnish
+Description_fin=Install Catalyst Control Center
+;French
+Description_fra=Installer les Catalyst Control Center
+;German
+Description_deu=Catalyst Control Center installieren
+;Greek
+Description_ell=≈„Í·Ù‹ÛÙ·ÛÁ Catalyst Control Center
+;Hebrew
+Description_heb=‰˙˜Ô ‡˙ Catalyst Control Center
+;Hungarian
+Description_hun=Catalyst Control Center telepÌtÈse
+;Italian
+  Description_ita=Installa Catalyst Control Center
+;Japanese
+Description_jpn=Catalyst Control CenterÇÉCÉìÉXÉgÅ[ÉãÇµÇ‹Ç∑
+;Korean
+Description_kor=Catalyst Control Center º≥ƒ°
+;Norwegian
+Description_nor=Installer Catalyst Control Center
+;Polish
+Description_plk=Zainstaluj Catalyst Control Center
+;Portuguese
+Description_ptg=Instalar Catalyst Control Center
+;Russian
+Description_rus=»ÌÒÚ‡ÎÎËÓ‚‡Ú¸ Catalyst Control Center
+;Spanish
+Description_esp=Instalar Catalyst Control Center
+;Swedish
+Description_sve=Installera Catalyst Control Center
+;Thai
+Description_tha=µ‘¥µ—ÈßCatalyst Control Center
+;Turkish
+Description_trk=Catalyst Control Center Y¸kle
+
+; cds defines the path of the Component Detection Service
+CDS=..\bin
+
+;
+; Req_ASIC=<Device id 1>,<Device id 2>, ...
+; Gives the PCI device ID to check for requirement. 
+; If the ATI ASIC is found, then MeetsRequirement from the dll will return 1.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, R128 family - 5200; Rage PRO family - 4700
+;              Rage PRO (GB) - 4742
+;Req_ASIC=4136,4174,5B64,5B74,3E54,3E74,5552,5572,4E47,4E67,4E4B,4E6B,4A4D,4A6D,4147,4167,4E54,3154,4E52,4E50,4A4E,5460,3150,4153,4173,4150,4152,4151,4171,4172,4170,5D48,4144,4E45,4E65,4164,4E46,4E66,4E44,4E64,4E49,4E48,4E68,4148,4168,4E69,4E4A,4E6A,5B60,5B70,3E50,3E70,4A4B,4A49,5549,4A69,5569,4A4A,554B,4A6A,556B,4A6B,5D57,554A,4A50,556A,4A70,5D77
+
+
+;
+; !Req_ASIC=<Device id 1>,<Device id 2>, ...
+; Gives the PCI device ID to check for requirement. 
+; If the ATI ASIC is found, then MeetsRequirement from the dll will return 0.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, R128 family - 5200; Rage PRO family - 4700
+;              Rage PRO (GB) - 4742
+;!Req_ASIC=4C50,4C49,4C42,4749,4750,4742,4744,4756,4759,4757,475A,474E
+;!Req_ASIC=4136,4137,4237,4242,4336,4337,4437,4966,4967,496E,496F,4C57,4C58,4C59,4C64,4C66,4C67,4C6F,5144,5148,514C,514D,5157,5159,515A,5834,5835,5940,5941,5942,5960,5961,5962,5964,5C61,5C63,5D44,7834,7835
+
+
+Mutual=2
+Default=1
+
+;
+; Req_Capture=<Vendor id Device id 1>,<Vendor id Device id 2>, ...
+; Gives the PCI vendor and device ID to check for requirement. 
+; If the Capture ASIC is found, then MeetsRequirement from the dll will return 1.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, BT878 - 109e0878 (where 109e is the vendor id, 878 is the device id)
+;Req_Capture=109e0878
+
+;
+; !Req_Capture=<Vendor id Device id 1>,<Vendor id Device id 2>, ...
+; Gives the PCI vendor and device ID to check for requirement. 
+; If the Capture ASIC is found, then MeetsRequirement from the dll will return 0.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, BT878 - 109e0878 (where 109e is the vendor id, 878 is the device id)
+;!Req_Capture=109e0878
+
+;
+; Req_Tuner=1,NTSC,PAL,SECAM,SCART,0
+; Check if the Tuner attached has the standard required, the MeetsRequirement will return 1
+;
+;Req_Tuner=PAL,SECAM
+
+; 0=no, 1=yes
+;MeetsRequirement=0
+
+; in KB         
+Size=64000
+
+; 0, 1, 2 ... where 0 is the highest order
+Order=111
+
+
+; 0=no, 1=yes
+Reboot=1
+
+; OS can be 1, WIN_95, WIN_95_OSR2_USB, WIN_98, WIN_NT351, WIN_NT4, WIN_NT5
+OS=WIN_2K, WIN_XP, WIN_XP_MCE, WIN_NT5, WIN_64A 
+
+; 0=no, 1=yes
+Visible=1                  
+
+; 0=no, 1=yes
+;WaitMessage=0               
+
+; <Comp#1>,<Comp#2>
+;ReqComp=DXMedia,DirectX (old)
+ReqComp=DOTNET,PRW,DRIVER
+
+CheckATICard=1
+
+;InstallCommandLine=IS7CIMl.exe,/A
+;***Use this command line to make CIM think its dealing with IS6
+;InstallCommandLine=CIM2MSI.exe,/A
+InstallCommandLine=setup.exe, /k /w /V"/qr REBOOT=ReallySuppress ADVBASSHR="1" WIZARDSHR="0" ADDLOCAL=ALL"
+
+;Component Version
+Ver=1.2.2494.38837
+;Requires Uninstall before installing this component
+;UninstallComp=ATI Display Driver,ATI Video Player
+
+BuildID=1511041557,1207560
+

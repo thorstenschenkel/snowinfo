@@ -1,0 +1,1 @@
+start %SYSTEMDRIVE%\AMD\WU-CCC2\ccc2_install\WULaunchApp.exe "-ReInstall"
