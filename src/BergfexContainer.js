@@ -135,7 +135,7 @@ class BergfexContainer extends WebDataContainer {
         });
 
     }
-    
+
 }
 
 module.exports = BergfexContainer;
