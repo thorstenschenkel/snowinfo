@@ -1,0 +1,40 @@
+SchneeInfoIntent nach den Schneehöhen auf dem {city}
+SchneeInfoIntent nach den Schneehöhen auf der {city}
+SchneeInfoIntent nach den Schneehöhen im {city}
+SchneeInfoIntent nach den Schneehöhen in {city}
+SchneeInfoIntent nach den Schneemengen auf dem {city}
+SchneeInfoIntent nach den Schneemengen auf der {city}
+SchneeInfoIntent nach den Schneemengen im {city}
+SchneeInfoIntent nach den Schneemengen in {city}
+SchneeInfoIntent nach der Schneehöhe auf dem {city}
+SchneeInfoIntent nach der Schneehöhe auf der {city}
+SchneeInfoIntent nach der Schneehöhe im {city}
+SchneeInfoIntent nach der Schneehöhe in {city}
+SchneeInfoIntent nach der Schneemenge auf dem {city}
+SchneeInfoIntent nach der Schneemenge auf der {city}
+SchneeInfoIntent nach der Schneemenge im {city}
+SchneeInfoIntent nach der Schneemenge in {city}
+SchneeInfoIntent was ist die Schneehöhe auf dem {city}
+SchneeInfoIntent was ist die Schneehöhe auf der {city}
+SchneeInfoIntent was ist die Schneehöhe im {city}
+SchneeInfoIntent was ist die Schneehöhe in {city}
+SchneeInfoIntent wie hoch ist der Schnee auf dem {city}
+SchneeInfoIntent wie hoch ist der Schnee auf der {city}
+SchneeInfoIntent wie hoch ist der Schnee im {city}
+SchneeInfoIntent wie hoch ist der Schnee in {city}
+SchneeInfoIntent wie ist die Schneelage auf dem {city}
+SchneeInfoIntent wie ist die Schneelage auf der {city}
+SchneeInfoIntent wie ist die Schneelage im {city}
+SchneeInfoIntent wie ist die Schneelage in {city}
+SchneeInfoIntent wie sind die Schneehöhen auf dem {city}
+SchneeInfoIntent wie sind die Schneehöhen auf der {city}
+SchneeInfoIntent wie sind die Schneehöhen im {city}
+SchneeInfoIntent wie sind die Schneehöhen in {city}
+SchneeInfoIntent wie viel Schnee auf dem {city} liegt
+SchneeInfoIntent wie viel Schnee auf der {city} liegt
+SchneeInfoIntent wie viel Schnee im {city} liegt
+SchneeInfoIntent wie viel Schnee in {city} liegt
+SchneeInfoIntent wie viel Schnee liegt auf dem {city}
+SchneeInfoIntent wie viel Schnee liegt auf der {city}
+SchneeInfoIntent wie viel Schnee liegt im {city}
+SchneeInfoIntent wie viel Schnee liegt in {city}

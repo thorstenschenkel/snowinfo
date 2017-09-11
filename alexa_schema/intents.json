@@ -1,0 +1,13 @@
+{
+    "intents": [
+        {
+            "slots": [
+                {
+                    "name": "city",
+                    "type": "SKIGEBIETE"
+                }
+            ],
+            "intent": "SchneeInfoIntent"
+        }
+    ]
+}
