@@ -1,12 +1,20 @@
 SKIGEBIETE
 
+Alpbach
+Alpbachtal
+Alpendorf
 Bergeralm
 Fendels
 Fieberbrunn
+Flachau
+Fliess
 Galtür
 Hintertux
 Hintertuxer Gletscher
+Hochkrimml
 Ischgl
+Jungholz
+Kals
 Kappl
 Kaprun Kitzsteinhorn
 Kaprun
@@ -15,12 +23,23 @@ Kaunertaler Gletscher
 Kitzbühl
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
+Krimml
+Landeck
+Leogang
 Mölltaler Gletscher
 Nassfeld
+Pitztal
 Pitztaler Gletscher
+Sankt Johann
+Sankt Johann in Tirol
+Schmitten
 Sölden
 Steinach
 Steinach am Brenner
 Stubaier Gletscher
 Stubaital
 Turracher Höhe
+Vent
+Wagrain
+Zams
+Zell am See

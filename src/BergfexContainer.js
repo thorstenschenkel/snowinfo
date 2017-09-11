@@ -6,22 +6,58 @@ class BergfexContainer extends WebDataContainer {
 
         super('bergfex');
 
+
+        // Alpbach - Ski Juwel Alpbachtal Wildschönau
+        this.pushObject({
+            city: 'Alpbach',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Alpbach', 'Ski', 'Juwel', 'Alpbachtal', 'Wildschönau'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Alpbachtal',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Alpbach', 'Ski', 'Juwel', 'Alpbachtal', 'Wildschönau'],
+            speechstart: 'Im'
+        });
+        // Snow Space Salzburg - Flachau - Wagrain - Alpendorf - Ski amade
+        this.pushObject({
+            city: 'Alpendorf',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Snow','Space','Salzburg','Flachau','Wagrain','Alpendorf','Ski amade'],
+            speechstart: 'In'
+        });
+        // Bergeralm
         this.pushObject({
             city: 'Bergeralm',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Bergeralm', 'Steinach', 'Brenner'],
             speechstart: 'Auf der'
         });
+        // Fendels
         this.pushObject({
             city: 'Fendels',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Fendels', 'Ried', 'Prutz'],
             speechstart: 'In'
         });
+        // Fieberbrunn
         this.pushObject({
             city: 'Fieberbrunn',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Fieberbrunn', 'Saalbach', 'Hinterglemm', 'Leogang'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Flachau',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Snow','Space','Salzburg','Flachau','Wagrain','Alpendorf','Ski amade'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Fliess',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Landeck', 'Zams', 'Fliess', 'Venetregion'],
             speechstart: 'In'
         });
         this.pushObject({
@@ -42,10 +78,29 @@ class BergfexContainer extends WebDataContainer {
             search: ['Hintertuxer', 'Gletscher', 'Hintertux'],
             speechstart: 'Auf dem'
         });
+        // Hochkrimml
+        this.pushObject({
+            city: 'Hochkrimml',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Krimml', 'Hochkrimml', 'Zillertal', 'Arena'],
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Ischgl',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Ischgl'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Jungholz',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Jungholz'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Kals - GG Resorts Kals-Matrei',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Kals', 'Resorts', 'Kals-Matrei'],
             speechstart: 'In'
         });
         this.pushObject({
@@ -72,6 +127,26 @@ class BergfexContainer extends WebDataContainer {
             search: ['Kitzbühel', 'Kirchberg'],
             speechstart: 'In'
         });
+        // Krimml
+        this.pushObject({
+            city: 'Krimml',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Krimml', 'Hochkrimml', 'Zillertal', 'Arena'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Landeck',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Landeck', 'Zams', 'Fliess', 'Venetregion'],
+            speechstart: 'Auf dem'
+        });
+        // Leogang
+        this.pushObject({
+            city: 'Leogang',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Fieberbrunn', 'Saalbach', 'Hinterglemm', 'Leogang'],
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Mölltaler Gletscher',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
@@ -85,17 +160,41 @@ class BergfexContainer extends WebDataContainer {
             speechstart: 'In'
         });
         this.pushObject({
+            city: 'Pitztal',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Pitztaler', 'Gletscher', 'Rifflsee', 'Pitztal'],
+            speechstart: 'Auf dem',
+            speechskirresort: 'Pitztaler Gletscher'
+        });
+        this.pushObject({
             city: 'Pitztaler Gletscher',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Pitztaler', 'Gletscher', 'Rifflsee', 'Pitztal'],
             speechstart: 'Auf dem'
         });
         this.pushObject({
-            city: 'Pitztal',
+            city: 'Sankt Johann',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
-            search: ['Pitztaler', 'Gletscher', 'Rifflsee', 'Pitztal'],
-            speechstart: 'Auf dem',
-            speechskirresort: 'Pitztaler Gletscher'
+            search: ['Sankt', 'Johann', 'Tirol'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Sankt Johann in Tirol',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Sankt', 'Johann', 'Tirol'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Schmitten',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Zell', 'am', 'See', 'Schmitten'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Sölden',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Sölden'],
+            speechstart: 'In'
         });
         this.pushObject({
             city: 'Steinach',
@@ -122,16 +221,34 @@ class BergfexContainer extends WebDataContainer {
             speechstart: 'Auf dem'
         });
         this.pushObject({
-            city: 'Sölden',
-            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
-            search: ['Sölden'],
-            speechstart: 'In'
-        });
-        this.pushObject({
             city: 'Turracher Höhe',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
             search: ['Turracher', 'Höhe'],
             speechstart: 'Auf der'
+        });
+        this.pushObject({
+            city: 'Vent',
+            host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
+            search: ['Vent'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Wagrain',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Snow','Space','Salzburg','Flachau','Wagrain','Alpendorf','Ski amade'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Zams',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            search: ['Landeck', 'Zams', 'Fliess', 'Venetregion'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Zell am See',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            search: ['Zell', 'am', 'See', 'Schmitten'],
+            speechstart: 'In'
         });
 
     }
