@@ -1,3 +1,5 @@
+const http = require('http');
+
 class StrgParser {
 
     constructor(webDataContainer) {

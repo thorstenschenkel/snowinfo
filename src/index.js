@@ -2,7 +2,6 @@
 
 const Alexa = require('alexa-sdk');
 const AWS = require('aws-sdk');
-const http = require('http');
 const BergfexContainer = require('./BergfexContainer');
 const SkiinfoContainer = require('./SkiinfoContainer');
 const BergfexStrgParser = require('./BergfexStrgParser');
