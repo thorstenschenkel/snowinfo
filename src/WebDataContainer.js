@@ -40,7 +40,7 @@ class WebDataContainer {
             }
         }
         return;
-    };
+    }
 
     getHost(city) {
         if (!city) return;
@@ -49,7 +49,7 @@ class WebDataContainer {
             return resort.host;
         }
         return;
-    };
+    }
 
     getPath(city) {
         if (!city) return;
@@ -58,7 +58,7 @@ class WebDataContainer {
             return resort.path;
         }
         return;
-    };
+    }
 
     getSearch(city) {
         if (!city) return;
@@ -67,7 +67,7 @@ class WebDataContainer {
             return resort.search;
         }
         return;
-    };
+    }
 
     getSpeechstart(city) {
         if (!city) return;
@@ -76,7 +76,7 @@ class WebDataContainer {
             return resort.speechstart;
         }
         return;
-    };
+    }
 
     getSpeechskirresort(city) {
         if (!city) return;
@@ -85,7 +85,7 @@ class WebDataContainer {
             return resort.speechskirresort;
         }
         return;
-    };
+    }
 
 }
 

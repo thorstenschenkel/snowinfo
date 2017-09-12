@@ -5,7 +5,8 @@ const AWS = require('aws-sdk');
 const http = require('http');
 const BergfexContainer = require('./BergfexContainer');
 const SkiinfoContainer = require('./SkiinfoContainer');
-
+const BergfexStrgParser = require('./BergfexStrgParser');
+const SkiinfoStrgParser = require('./SkiinfoStrgParser');
 
 const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f';
 
@@ -282,19 +283,22 @@ function getSpeechDate(date) {
 
 function getSnowDataAndTell(intentHandler, city) {
 
-    getBergfexHtml(city, (html) => {
+    const bergfexParser = new BergfexStrgParser(bergfexContainer);
+    bergfexParser.getHtmlPage(city, (html) => {
+
         let snowdataBergfex;
         if (html) {
-            snowdataBergfex = parseBergfexHtml(html, city);
+            snowdataBergfex = bergfexParser.parseHtml(html, city);
         }
         if (snowdataBergfex && !isOutdated(snowdataBergfex)) {
             console.log(' -- t7 -- snowdata and tell: ', snowdataBergfex);
             hanldeSchneeInfo(intentHandler, city, snowdataBergfex);
         } else {
-            getSkiinfoHtml(city, (html) => {
+            const skiinfoParser = new SkiinfoStrgParser(skiinfoContainer);
+            skiinfoParser.getHtmlPage(city, (html) => {
                 let snowdataSkiinfo;
                 if (html) {
-                    snowdataSkiinfo = parseSkiinfoHtml(html, city);
+                    snowdataSkiinfo = skiinfoParser.parseHtml(html, city);
                 }
                 console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
                 let snowdata = snowdataSkiinfo;
@@ -305,58 +309,7 @@ function getSnowDataAndTell(intentHandler, city) {
     });
 }
 
-function getHtmlPage(host, path, callback) {
-
-    var i = 0;
-
-    return http.get({
-        host: host,
-        path: path
-    }, function (response) {
-        var body = '';
-        response.on('data', function (d) {
-            body += d;
-        });
-        response.on('end', function () {
-            callback(body);
-        });
-    }).on('error', function (e) {
-        console.warn(' -- t7 -- Can not get HTML page: ' + e.message);
-        callback();
-    });
-
-}
-
-function getBergfexHtml(city, callback) {
-
-    if (!bergfexContainer.getResort(city)) {
-        callback();
-        return;
-    }
-
-    let host = bergfexContainer.getHost(city);
-    console.log(' -- t7 -- bergfex host: ', host);
-    let path = bergfexContainer.getPath(city);
-    console.log(' -- t7 -- bergfex path: ', path);
-    getHtmlPage(host, path, callback);
-
-}
-
-function getSkiinfoHtml(city, callback) {
-
-    if (!skiinfoContainer.getResort(city)) {
-        callback();
-        return;
-    }
-
-    let host = skiinfoContainer.getHost(city);
-    console.log(' -- t7 -- skiinfo host: ', host);
-    let path = skiinfoContainer.getPath(city);
-    console.log(' -- t7 -- skiinfo path: ', path);
-    getHtmlPage(host, path, callback);
-
-}
-
+/** 
 function parseBergfexHtml(htmlString, city) {
     if (!htmlString) {
         return;
@@ -386,7 +339,8 @@ function parseBergfexHtml(htmlString, city) {
     }
     return retData;
 }
-
+*/
+/**
 function parseSkiinfoHtml(htmlString, city) {
     if (!htmlString) {
         return;
@@ -415,7 +369,8 @@ function parseSkiinfoHtml(htmlString, city) {
     }
     return retData;
 }
-
+ */
+/**
 function searchCompare(searchArray, snowdata) {
     console.log(' -- t7 -- searchCompare: ', searchArray);
     console.log(' -- t7 -- searchCompare: ', snowdata);
@@ -432,7 +387,8 @@ function searchCompare(searchArray, snowdata) {
     }
     return true;
 }
-
+ */
+/**
 function getOnlyInt(strg) {
     let num = strg.replace(/[^0-9]/g, '');
     // console.log(' -- t7 -- num: ' + num);
@@ -444,7 +400,8 @@ function getOnlyInt(strg) {
     }
     return parseInt(num);
 }
-
+ */
+/**
 function getBergfexSnowData(htmlString) {
     let snowdata = {};
     snowdata.resource = bergfexContainer.resource;
@@ -486,7 +443,8 @@ function getBergfexSnowData(htmlString) {
     }
     return snowdata;
 }
-
+ */
+/**
 function getSkiinfoSnowData(htmlString) {
     let snowdata = {};
     snowdata.resource = skiinfoContainer.resource;
@@ -543,7 +501,8 @@ function getSkiinfoSnowData(htmlString) {
     }
     return snowdata;
 }
-
+ */
+/**
 function getPureText(htmlString) {
     let tag = getFirstTag(htmlString);
     if (tag) {
@@ -553,7 +512,8 @@ function getPureText(htmlString) {
         return htmlString;
     }
 }
-
+ */
+/**
 function removeTag(htmlString, tag) {
     let strg = htmlString;
     strg = strg.replace(tag, '');
@@ -563,7 +523,8 @@ function removeTag(htmlString, tag) {
     }
     return strg.trim();
 }
-
+ */
+/**
 function getFirstTag(htmlString) {
     let start = htmlString.indexOf('<');
     let end = htmlString.indexOf('>');
@@ -573,15 +534,18 @@ function getFirstTag(htmlString) {
     }
     return;
 }
-
+ */
+/**
 function getTablesHtmlContent(htmlString) {
     return getPartContent(htmlString, '<table', '</table>');
 }
-
+ */
+/**
 function getRowHtmlContent(htmlString) {
     return getPartContent(htmlString, '<tr', '</tr>');
 }
-
+ */
+/**
 function getPartContent(htmlString, startTag, endTag) {
 
     let splitStrings = htmlString.split(startTag);
@@ -602,7 +566,8 @@ function getPartContent(htmlString, startTag, endTag) {
     return;
 
 }
-
+ */
+/**
 function getSkiinfoDate(htmlString) {
 
     if (!htmlString) {
@@ -632,7 +597,8 @@ function getSkiinfoDate(htmlString) {
     console.log(' -- t7 -- unexpected date string: ' + htmlString);
 
 }
-
+ */
+/**
 function getDate(htmlString) {
 
     if (!htmlString) {
@@ -667,3 +633,4 @@ function getDate(htmlString) {
     console.log(' -- t7 -- unexpected date string: ' + htmlString);
 
 }
+ */
