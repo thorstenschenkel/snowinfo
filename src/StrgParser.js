@@ -162,7 +162,7 @@ class StrgParser {
             return;
         }
         let retData;
-        let searchArray = container.getSearch(city);
+        let searchArray = this.webDataContainer.getSearch(city);
         var tabStrings = this.getTablesHtmlContent(htmlString);
         for (let tabStrg of tabStrings) {
             if (!tabStrg) continue;
