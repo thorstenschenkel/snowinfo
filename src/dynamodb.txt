@@ -1,0 +1,58 @@
+const DB_FLAG = false;
+
+//=========================================================================================================================================
+// DynamoDB
+//=========================================================================================================================================
+
+/*
+const DB_TABLE = 'snowdataTable';
+
+var storage = {};
+storage.docClient = new AWS.DynamoDB.DocumentClient({ region: 'us-west-2' });
+
+storage.getResortKey = function (snowdata) {
+    if (snowdata && snowdata.resource === bergfexData.resource) {
+        let search = bergfexData.getSearch(snowdata.city);
+        if (search) {
+            return search.toString();
+        }
+    }
+};
+
+storage.save = function (snowdata) {
+    let skiresortKey = storage.getResortKey(snowdata);
+    if (!skiresortKey) {
+        console.log(' -- t7 -- save no search for: ', snowdata);
+        return;
+    }
+    console.log(' -- t7 -- save skiresortKey: ' + skiresortKey);
+    var params = {
+        TableName: DB_TABLE,
+        Item: {
+            id: '1', // TODO
+            skiresort: skiresortKey,
+            resource: snowdata.resource,
+            lowerSnowDepth: snowdata.lowerSnowDepth,
+            upperSnowDepth: snowdata.upperSnowDepth
+        }
+    };
+    console.log(' -- t7 -- save params: ', params);
+    try {
+        console.log(' -- t7 -- save try1');
+        var response = storage.docClient.put(params, function (err, data) {
+            if (err) {
+                console.log(' -- t7 -- can not save: ', snowdata);
+                console.log(' -- t7 -- err: ', err);
+            } else {
+                console.log(' -- t7 -- saved: ', snowdata);
+                console.log(' -- t7 -- data: ', data);
+            }
+        });
+        console.log(' -- t7 -- save response: ', response);
+    } catch (error) {
+        console.log(' -- t7 -- can not save: ', snowdata);
+        console.log(' -- t7 -- error: ', error);
+    }
+    console.log(' -- t7 -- save END');
+};
+*/

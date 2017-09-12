@@ -19,65 +19,6 @@ const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine akutellen Information
 
 const DAYS = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 
-const DB_FLAG = false;
-
-//=========================================================================================================================================
-// DynamoDB
-//=========================================================================================================================================
-
-/*
-const DB_TABLE = 'snowdataTable';
-
-var storage = {};
-storage.docClient = new AWS.DynamoDB.DocumentClient({ region: 'us-west-2' });
-
-storage.getResortKey = function (snowdata) {
-    if (snowdata && snowdata.resource === bergfexData.resource) {
-        let search = bergfexData.getSearch(snowdata.city);
-        if (search) {
-            return search.toString();
-        }
-    }
-};
-
-storage.save = function (snowdata) {
-    let skiresortKey = storage.getResortKey(snowdata);
-    if (!skiresortKey) {
-        console.log(' -- t7 -- save no search for: ', snowdata);
-        return;
-    }
-    console.log(' -- t7 -- save skiresortKey: ' + skiresortKey);
-    var params = {
-        TableName: DB_TABLE,
-        Item: {
-            id: '1', // TODO
-            skiresort: skiresortKey,
-            resource: snowdata.resource,
-            lowerSnowDepth: snowdata.lowerSnowDepth,
-            upperSnowDepth: snowdata.upperSnowDepth
-        }
-    };
-    console.log(' -- t7 -- save params: ', params);
-    try {
-        console.log(' -- t7 -- save try1');
-        var response = storage.docClient.put(params, function (err, data) {
-            if (err) {
-                console.log(' -- t7 -- can not save: ', snowdata);
-                console.log(' -- t7 -- err: ', err);
-            } else {
-                console.log(' -- t7 -- saved: ', snowdata);
-                console.log(' -- t7 -- data: ', data);
-            }
-        });
-        console.log(' -- t7 -- save response: ', response);
-    } catch (error) {
-        console.log(' -- t7 -- can not save: ', snowdata);
-        console.log(' -- t7 -- error: ', error);
-    }
-    console.log(' -- t7 -- save END');
-};
-*/
-
 //=========================================================================================================================================
 // BERGFEX
 //=========================================================================================================================================
@@ -112,27 +53,17 @@ const handlers = {
         }
         console.log('city : ' + city);
         if (!city) {
-            this.emit(':tell', this.t('ERROR_NO_CITY'));
+            this.emit(':tell', this.t(ERROR_NO_CITY));
         } else {
-            getSnowDataAndTell(this, city);
+            if ( !(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city)) ) {
+                this.emit(':tell', this.t(ERROR_UNKNOW_CITY));                
+            } else {
+                getSnowDataAndTell(this, city);
+            }
         }
     },
-    // ?
-    'AMAZON.HelpIntent': function () {
-        const speechOutput = this.t('HELP_MESSAGE');
-        const reprompt = this.t('HELP_MESSAGE');
-        this.emit(':ask', speechOutput, reprompt);
-    },
-    // ?
-    'AMAZON.CancelIntent': function () {
-        this.emit(':tell', this.t('STOP_MESSAGE'));
-    },
-    // ?
-    'AMAZON.StopIntent': function () {
-        this.emit(':tell', this.t('STOP_MESSAGE'));
-    },
     'Unhandled': function () {
-        this.emit(':ask', this.t('HELP_MESSAGE'), this.t('HELP_MESSAGE'));
+        this.emit(':ask', this.t(HELP_MESSAGE), this.t(HELP_MESSAGE));
     }
 };
 
@@ -140,9 +71,6 @@ exports.handler = function (event, context) {
     const alexa = Alexa.handler(event, context);
     alexa.APP_ID = APP_ID;
     alexa.registerHandlers(handlers);
-    // if ( DB_FLAG ) {
-    // alexa.dynamoDBTableName = DB_TABLE;
-    // }
     console.log(' -- t7 -- execute DEV');
     alexa.execute();
 };
@@ -213,7 +141,6 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
     }
     intentHandler.response.speak(speechOutput);
     intentHandler.emit(':responseReady');
-    // intentHandler.emit(':tell', speechOutput);
 
 }
 
@@ -257,7 +184,6 @@ function getCardContent(snowdata, city) {
     return content;
 }
 
-
 function getSpeechDate(date) {
     if (!date || !(date instanceof Date)) {
         return;
@@ -300,336 +226,9 @@ function getSnowDataAndTell(intentHandler, city) {
                     snowdataSkiinfo = skiinfoParser.parseHtml(html, city);
                 }
                 console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
-                let snowdata = snowdataSkiinfo;
                 // TODO isOutdated      snowdataSkiinfo oder snowdataBergfex
-                hanldeSchneeInfo(intentHandler, city, snowdata);
+                hanldeSchneeInfo(intentHandler, city, snowdataSkiinfo);
             });
         }
     });
 }
-
-/** 
-function parseBergfexHtml(htmlString, city) {
-    if (!htmlString) {
-        return;
-    }
-    let retData;
-    let searchArray = bergfexContainer.getSearch(city);
-    var tabStrings = getTablesHtmlContent(htmlString);
-    for (let tabStrg of tabStrings) {
-        if (!tabStrg) continue;
-        if (tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('berg') != -1) {
-            // console.log(' -- t7 -- tabStrg: ' + tabStrg);
-            var trStrings = getRowHtmlContent(tabStrg);
-            for (let trString of trStrings) {
-                if (!trString) continue;
-                // console.log(' -- t7 -- trString: ' + trString);
-                let snowdata = getBergfexSnowData(trString);
-                snowdata.city = city; // TODO
-                // console.log(' -- t7 -- snowdata: ', snowdata);
-                // store in DB
-                if (DB_FLAG) storage.save(snowdata);
-                if (searchCompare(searchArray, snowdata)) {
-                    retData = snowdata;
-                    console.log(' -- t7 -- retData: ', retData);
-                }
-            }
-        }
-    }
-    return retData;
-}
-*/
-/**
-function parseSkiinfoHtml(htmlString, city) {
-    if (!htmlString) {
-        return;
-    }
-    let retData;
-    let searchArray = skiinfoContainer.getSearch(city);
-    var tabStrings = getTablesHtmlContent(htmlString);
-    for (let tabStrg of tabStrings) {
-        if (!tabStrg) continue;
-        if (tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('schneehöhe') != -1) {
-            // console.log(' -- t7 -- tabStrg: ' + tabStrg);
-            var trStrings = getRowHtmlContent(tabStrg);
-            for (let trString of trStrings) {
-                if (!trString) continue;
-                // console.log(' -- t7 -- trString: ' + trString);
-                let snowdata = getSkiinfoSnowData(trString);
-                // console.log(' -- t7 -- snowdata: ', snowdata);
-                // store in DB
-                // if ( DB_FLAG ) myHandler.attributes[city] = snowdata;
-                if (searchCompare(searchArray, snowdata)) {
-                    retData = snowdata;
-                    console.log(' -- t7 -- retData: ', retData);
-                }
-            }
-        }
-    }
-    return retData;
-}
- */
-/**
-function searchCompare(searchArray, snowdata) {
-    console.log(' -- t7 -- searchCompare: ', searchArray);
-    console.log(' -- t7 -- searchCompare: ', snowdata);
-    if (!searchArray || !snowdata || !snowdata.skiresort) {
-        return false;
-    }
-    let resort = snowdata.skiresort.toLowerCase();
-    for (let key in searchArray) {
-        let search = searchArray[key].toLowerCase();
-        if (resort.indexOf(search) === -1) {
-            console.log(' -- t7 -- search: ' + search);
-            return false;
-        }
-    }
-    return true;
-}
- */
-/**
-function getOnlyInt(strg) {
-    let num = strg.replace(/[^0-9]/g, '');
-    // console.log(' -- t7 -- num: ' + num);
-    if (num && num.indexOf('0') === 0) {
-        num = num.substring(1);
-    }
-    if (isNaN(num) || num.length === 0) {
-        return 0;
-    }
-    return parseInt(num);
-}
- */
-/**
-function getBergfexSnowData(htmlString) {
-    let snowdata = {};
-    snowdata.resource = bergfexContainer.resource;
-    snowdata.lastUpdate = Date.now();
-    snowdata.lowerSnowDepth = 0;
-    snowdata.upperSnowDepth = 0;
-    let tdStrings = getPartContent(htmlString, '<td', '</td>');
-    let i = 0;
-    for (let tdStrg of tdStrings) {
-        let strg = tdStrg.trim();
-        // console.log(' -- t7 -- strg: ' + strg);
-        strg = getPureText(strg);
-        // console.log(' -- t7 -- pure strg: ' + strg);
-        switch (i) {
-            case 0: // skigebiet
-                if (strg) {
-                    snowdata.skiresort = strg.trim();
-                } else {
-                    snowdata.skiresort = '';
-                }
-                break;
-            case 1: // tal
-                snowdata.lowerSnowDepth = getOnlyInt(strg);
-                break;
-            case 2: // berg
-                snowdata.upperSnowDepth = getOnlyInt(strg);
-                break;
-            case 3: // neu
-                break;
-            case 4: // lifte
-                break;
-            case 5: // status
-                break;
-            case 6: // datum
-                snowdata.reportDate = getDate(strg);
-                break;
-        }
-        i++;
-    }
-    return snowdata;
-}
- */
-/**
-function getSkiinfoSnowData(htmlString) {
-    let snowdata = {};
-    snowdata.resource = skiinfoContainer.resource;
-    snowdata.lastUpdate = Date.now();
-    snowdata.lowerSnowDepth = 0;
-    snowdata.upperSnowDepth = 0;
-    let tdStrings = getPartContent(htmlString, '<td', '</td>');
-    let i = 0;
-    for (let tdStrg of tdStrings) {
-        let strg = tdStrg.trim();
-        // console.log(' -- t7 -- strg: ' + strg);
-        switch (i) {
-            case 0: // skigebiet + datum 
-                let substrings0 = strg.split('/div>');
-                // console.log(' -- t7 -- substrings0: ', substrings0);
-                if (substrings0 && substrings0.length >= 3) {
-                    // skigebiet
-                    let skiresort = substrings0[0];
-                    skiresort = skiresort.replace('<div class="name">', '');
-                    skiresort = getPureText(skiresort);
-                    if (skiresort) {
-                        snowdata.skiresort = skiresort.trim();
-                    } else {
-                        snowdata.skiresort = '';
-                    }
-                    // region
-                    // let regionStrg = substrings0[1];
-                    // datum
-                    let dateStrg = substrings0[2];
-                    snowdata.reportDate = getSkiinfoDate(dateStrg);
-                }
-                break;
-            case 1: // status
-                break;
-            case 2: // neuschnee
-                break;
-            case 3: // tal + berg
-                strg = getPureText(strg);
-                strg = strg.replace(/cm/gi, '');
-                let substrings3 = strg.split('-');
-                if (substrings3 && substrings3.length === 2) {
-                    snowdata.lowerSnowDepth = getOnlyInt(substrings3[0]);
-                    snowdata.upperSnowDepth = getOnlyInt(substrings3[1]);
-                }
-                break;
-            case 4: // lifte
-                break;
-            case 5: // pisten
-                break;
-            case 6: // wetter
-                break;
-        }
-        i++;
-    }
-    return snowdata;
-}
- */
-/**
-function getPureText(htmlString) {
-    let tag = getFirstTag(htmlString);
-    if (tag) {
-        // console.log(' -- t7 -- first tag: ' + tag);
-        return removeTag(htmlString, tag);
-    } else {
-        return htmlString;
-    }
-}
- */
-/**
-function removeTag(htmlString, tag) {
-    let strg = htmlString;
-    strg = strg.replace(tag, '');
-    let end = strg.indexOf('<');
-    if (end != -1) {
-        strg = strg.substring(0, end);
-    }
-    return strg.trim();
-}
- */
-/**
-function getFirstTag(htmlString) {
-    let start = htmlString.indexOf('<');
-    let end = htmlString.indexOf('>');
-    if (start === 0 && end > 0) {
-        end++;
-        return htmlString.substring(start, end);
-    }
-    return;
-}
- */
-/**
-function getTablesHtmlContent(htmlString) {
-    return getPartContent(htmlString, '<table', '</table>');
-}
- */
-/**
-function getRowHtmlContent(htmlString) {
-    return getPartContent(htmlString, '<tr', '</tr>');
-}
- */
-/**
-function getPartContent(htmlString, startTag, endTag) {
-
-    let splitStrings = htmlString.split(startTag);
-    if (splitStrings && splitStrings.length > 0) {
-        let retStrings = [];
-        for (let strg of splitStrings) {
-            strg = strg.toLowerCase();
-            let start = strg.indexOf('>');
-            let end = strg.indexOf(endTag);
-            if (start !== -1 || end > start) {
-                start++;
-                strg = strg.substring(start, end);
-                retStrings.push(strg);
-            }
-        }
-        return retStrings;
-    }
-    return;
-
-}
- */
-/**
-function getSkiinfoDate(htmlString) {
-
-    if (!htmlString) {
-        return;
-    }
-
-    let dateStrg = getPureText(htmlString);
-    let datestrings = dateStrg.split('/');
-    if (datestrings && datestrings.length >= 2) {
-        let dd = getOnlyInt(datestrings[0]);
-        let mm = getOnlyInt(datestrings[1]);
-        if (dd && dd > 0 && mm && mm > 0) {
-            dateStrg = '';
-            if (dd < 10) dateStrg += '0';
-            dateStrg += dd.toString();
-            if (mm < 10) dateStrg += '0';
-            dateStrg += mm.toString();
-            let date = new Date();
-            dateStrg += date.getFullYear();
-            if (dateStrg.length === 8) {
-                dateStrg = dateStrg.slice(4, 8) + '-' + dateStrg.slice(2, 4) + '-' + dateStrg.slice(0, 2);
-                return new Date(dateStrg);
-            }
-        }
-    }
-
-    console.log(' -- t7 -- unexpected date string: ' + htmlString);
-
-}
- */
-/**
-function getDate(htmlString) {
-
-    if (!htmlString) {
-        return;
-    }
-    if (htmlString.indexOf('heute') != -1) {
-        let date = new Date();
-        return date;
-    }
-    if (htmlString.indexOf('gestern') != -1) {
-        let date = new Date();
-        date.setDate(date.getDate() - 1);
-        return date;
-    }
-
-    let num = getOnlyInt(htmlString);
-    if (num && num > 0) {
-        let dateStrg = num.toString();
-        if (dateStrg.length === 3) {
-            dateStrg = '0' + dateStrg;
-        }
-        if (dateStrg.length === 4) {
-            let date = new Date();
-            dateStrg += date.getFullYear();
-        }
-        if (dateStrg.length === 8) {
-            dateStrg = dateStrg.slice(4, 8) + '-' + dateStrg.slice(2, 4) + '-' + dateStrg.slice(0, 2);
-            return new Date(dateStrg);
-        }
-    }
-
-    console.log(' -- t7 -- unexpected date string: ' + htmlString);
-
-}
- */

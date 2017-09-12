@@ -192,6 +192,10 @@ class StrgParser {
     getSnowDataFromHtml(trString) { // abstract
         return;
     }
+
+    getResource() {
+        return this.webDataContainer.resource;
+    }
     
 }
 

@@ -12,7 +12,7 @@ class BergfexStrgParser extends StrgParser {
 
     getSnowDataFromHtml(htmlString) {
         let snowdata = {};
-        snowdata.resource = this.container.resource;
+        snowdata.resource = this.getResource();
         snowdata.lastUpdate = Date.now();
         snowdata.lowerSnowDepth = 0;
         snowdata.upperSnowDepth = 0;
