@@ -12,7 +12,7 @@ class SkiinfoStrgParser extends StrgParser {
 
     getSnowDataFromHtml(htmlString) {
         let snowdata = {};
-        snowdata.resource = skiinfoContainer.resource;
+        snowdata.resource = this.container.resource;
         snowdata.lastUpdate = Date.now();
         snowdata.lowerSnowDepth = 0;
         snowdata.upperSnowDepth = 0;
