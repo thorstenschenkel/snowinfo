@@ -28,11 +28,11 @@ class StrgParser {
     }
 
     getTablesHtmlContent(htmlString) {
-        return getPartContent(htmlString, '<table', '</table>');
+        return this.getPartContent(htmlString, '<table', '</table>');
     }
 
     getRowHtmlContent(htmlString) {
-        return getPartContent(htmlString, '<tr', '</tr>');
+        return this.getPartContent(htmlString, '<tr', '</tr>');
     }
 
     getFirstTag(htmlString) {
