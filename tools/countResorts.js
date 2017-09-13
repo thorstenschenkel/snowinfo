@@ -9,7 +9,6 @@ function count() {
     let container = new BergfexContainer();
     for ( let data of container.webDatas ) {
         if ( !countMap.has(data.search.toString()) ) {
-            console.log( 'set: ' + data.search.toString());
             countMap.set(data.search.toString(), data);
         }
     }
@@ -19,7 +18,6 @@ function count() {
     container = new SkiinfoContainer();
     for ( let data of container.webDatas ) {
         if ( !countMap.has(data.search.toString()) ) {
-            console.log( 'set: ' + data.search.toString());
             countMap.set(data.search.toString(), data);
         }
     }
@@ -29,6 +27,4 @@ function count() {
     
 }
 
-console.log( 'Start counting...');
 count();
-console.log( 'Finished counting!');
