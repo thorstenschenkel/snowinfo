@@ -34,6 +34,13 @@ class BergfexContainer extends WebDataContainer {
             search: ['Bergeralm', 'Steinach', 'Brenner'],
             speechstart: 'Auf der'
         });
+        // Dachstein Gletscher
+        this.pushObject({
+            city: 'Dachstein Gletscher',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            search: ['Dachstein', 'Gletscher'],
+            speechstart: 'Auf dem'
+        });
         // Fendels
         this.pushObject({
             city: 'Fendels',
@@ -122,7 +129,7 @@ class BergfexContainer extends WebDataContainer {
             speechstart: 'Auf dem'
         });
         this.pushObject({
-            city: 'Kitzbühl',
+            city: 'Kitzbühel',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Kitzbühel', 'Kirchberg'],
             speechstart: 'In'

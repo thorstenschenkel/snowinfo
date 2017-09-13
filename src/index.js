@@ -6,6 +6,7 @@ const BergfexContainer = require('./BergfexContainer');
 const SkiinfoContainer = require('./SkiinfoContainer');
 const BergfexStrgParser = require('./BergfexStrgParser');
 const SkiinfoStrgParser = require('./SkiinfoStrgParser');
+const CardUtils = require('./CardUtils');
 
 const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f';
 
@@ -16,8 +17,6 @@ const ERROR_NO_CITY = 'Es wurde keine Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
 const ERROR_NO_INFO = 'Für den Ort {city} kann ich keine Informationen liefern!';
 const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine akutellen Informationen liefern!';
-
-const DAYS = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 
 //=========================================================================================================================================
 // BERGFEX
@@ -75,21 +74,13 @@ exports.handler = function (event, context) {
     alexa.execute();
 };
 
-function isOutdated(snowdata) {
-    let outdated = new Date();
-    outdated.setDate(outdated.getDate() - 8);
-    console.warn(' -- t7 -- outdated ', outdated);
-    console.warn(' -- t7 -- snowdata.reportDate: ', snowdata.reportDate);
-    return (!snowdata.reportDate || (outdated.getTime() > snowdata.reportDate.getTime()));
-}
-
 function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
     let speechOutput;
     if (!snowdata) {
         speechOutput = ERROR_NO_INFO.replace('{city}', city);
     } else {
-        if (isOutdated(snowdata)) {
+        if (snowdata.isOutdated()) {
             speechOutput = ERROR_OUTDATED.replace('{city}', city);
         } else {
             let speechstart;
@@ -104,14 +95,14 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
                 console.warn(' -- t7 -- no speechstart for city: ' + city);
                 speechOutput = 'In ';
             }
-            let speechskiresortt;
+            let speechskiresort;
             if (snowdata.resource === bergfexContainer.resource) {
-                speechskiresortt = bergfexContainer.getSpeechskirresort(city);
+                speechskiresort = bergfexContainer.getSpeechskirresort(city);
             } else if (snowdata.resource === skiinfoContainer.resource) {
-                speechskiresortt = skiinfoContainer.getSpeechskirresort(city);
+                speechskiresort = skiinfoContainer.getSpeechskirresort(city);
             }
-            if (speechskiresortt) {
-                speechOutput += speechskiresortt;
+            if (speechskiresort) {
+                speechOutput += speechskiresort;
             } else {
                 speechOutput += city;
             }
@@ -134,54 +125,11 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
         }
     }
     console.log(' -- t7 -- speechOutput: ' + speechOutput);
-    let cardTitle = getCardTitle(city);
-    let cardContent = getCardContent(snowdata, city);
-    if (cardTitle && cardContent) {
-        intentHandler.response.cardRenderer(cardTitle, cardContent);
-    }
+    let cardUtils = new CardUtils(city,snowdata);
+    cardUtils.addCardRenderer(intentHandler);
     intentHandler.response.speak(speechOutput);
     intentHandler.emit(':responseReady');
 
-}
-
-function getCardTitle(city) {
-    // TODO Groß-/Kleinschreibung für snowdata.skiresort
-    return 'Schneehöhen ' + city;
-}
-
-function getCardContent(snowdata, city) {
-
-    let content;
-    if (!snowdata) {
-        // TODO Groß-/Kleinschreibung für city
-        content = 'Für den Ort {city} können keine Informationen geliefert werden!';
-        content = content.replace('{city}', city);
-    } else {
-        if (isOutdated(snowdata)) {
-            // TODO Groß-/Kleinschreibung für snowdata.skiresort
-            content = 'Für den Ort {city} können keine akutellen Informationen geliefert werden!';
-            content = content.replace('{city}', city);
-        } else {
-            content = 'Schneehöhe Tal: ' + snowdata.lowerSnowDepth + ' cm';
-            content += '\n';
-            content += 'Schneehöhe Berg: ' + snowdata.upperSnowDepth + ' cm';
-            // Status Skigebiet: GEÖFFNET / GESCHLOSSEN
-            // Lifte/Bahnen: 11 von 20 offen
-            content += '\n';
-            content += '\n';
-            let date = snowdata.reportDate;
-            if (date && (date instanceof Date)) {
-                let wd = date.getDay();
-                wd = DAYS[wd];
-                let dd = date.getDate();
-                let mm = date.getMonth() + 1;
-                let yyyy = date.getFullYear();
-                let dateStrg = wd + ', ' + dd + '.' + mm + '.' + yyyy;
-                content += 'Letztes Update: ' + dateStrg;
-            }
-        }
-    }
-    return content;
 }
 
 function getSpeechDate(date) {
@@ -215,7 +163,7 @@ function getSnowDataAndTell(intentHandler, city) {
         if (html) {
             snowdataBergfex = bergfexParser.parseHtml(html, city);
         }
-        if (snowdataBergfex && !isOutdated(snowdataBergfex)) {
+        if (snowdataBergfex && !snowdataBergfex.isOutdated()) {
             console.log(' -- t7 -- snowdata and tell: ', snowdataBergfex);
             hanldeSchneeInfo(intentHandler, city, snowdataBergfex);
         } else {

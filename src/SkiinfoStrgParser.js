@@ -1,4 +1,5 @@
 const StrgParser = require('./StrgParser');
+const Snowdata = require('./Snowdata');
 
 class SkiinfoStrgParser extends StrgParser {
 
@@ -11,7 +12,7 @@ class SkiinfoStrgParser extends StrgParser {
     }
 
     getSnowDataFromHtml(htmlString) {
-        let snowdata = {};
+        let snowdata = new Snowdata();
         snowdata.resource = this.getResource();
         snowdata.lastUpdate = Date.now();
         snowdata.lowerSnowDepth = 0;

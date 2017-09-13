@@ -6,6 +6,27 @@ class SkiinfoContainer extends WebDataContainer {
 
         super('skiinfo');
 
+        // Bad Kleinkirchheim
+        this.pushObject({
+            city: 'Bad Kleinkirchheim',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Bad', 'Kleinkirchheim'],
+            speechstart: 'In'
+        });
+        // Dachstein Gletscher
+        this.pushObject({
+            city: 'Dachstein Gletscher',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Dachstein', 'Gletscher'],
+            speechstart: 'Auf dem'
+        });
+        // Hochkönig
+        this.pushObject({
+            city: 'Hochkönig',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Hochkönig'],
+            speechstart: 'In'
+        });
         // Hintertuxer Gletscher
         this.pushObject({
             city: 'Hintertux',
@@ -18,6 +39,13 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Hintertuxer', 'Gletscher'],
             speechstart: 'Auf dem'
+        });
+        // Hochwurzen
+        this.pushObject({
+            city: 'Schladming',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Schladming','Planai','Hochwurzen'],
+            speechstart: 'In'
         });
         // Kaunertaler Gletscher
         this.pushObject({
@@ -48,6 +76,12 @@ class SkiinfoContainer extends WebDataContainer {
             speechskirresort: 'Kitzsteinhorn - Kaprun'
         });
         this.pushObject({
+            city: 'Kitzbühel',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Kitzbühel'],
+            speechstart: 'In'
+        });        
+        this.pushObject({
             city: 'Kitzsteinhorn',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Kitzsteinhorn', 'Kaprun'],
@@ -61,19 +95,18 @@ class SkiinfoContainer extends WebDataContainer {
             speechstart: 'Im Skigebiet',
             speechskirresort: 'Kitzsteinhorn - Kaprun'
         });
-        // Pitztaler Gletscher
+        // Lech Zürs am Arlberg
         this.pushObject({
-            city: 'Pitztaler Gletscher',
+            city: 'Lech',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            search: ['Pitztaler', 'Gletscher'],
-            speechstart: 'Auf dem',
-            speechskirresort: 'Pitztaler Gletscher'
+            search: ['Lech', 'Zürs','Arlberg'],
+            speechstart: 'In'
         });
         this.pushObject({
-            city: 'Pitztal',
+            city: 'Lech am Arlberg',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            search: ['Pitztaler', 'Gletscher'],
-            speechstart: 'Auf dem'
+            search: ['Lech', 'Zürs','Arlberg'],
+            speechstart: 'In'
         });
         // Mölltaler Gletscher
         this.pushObject({
@@ -81,6 +114,60 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Mölltaler', 'Gletscher'],
             speechstart: 'Auf dem'
+        });
+        // Pitztaler Gletscher
+        this.pushObject({
+            city: 'Pitztaler Gletscher',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Pitztaler', 'Gletscher'],
+            speechstart: 'Auf dem'
+        });
+        this.pushObject({
+            city: 'Pitztal',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Pitztaler', 'Gletscher'],
+            speechstart: 'Auf dem',
+            speechskirresort: 'Pitztaler Gletscher'
+        });
+        // St. Anton am Arlberg
+        this.pushObject({
+            city: 'Sankt Anton',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Anton','am','Arlberg'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Sankt Anton am Arlberg',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Anton','am','Arlberg'],
+            speechstart: 'In'
+        });
+        // Schladming - Planai - Hochwurzen
+        this.pushObject({
+            city: 'Planai',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Schladming','Planai','Hochwurzen'],
+            speechstart: 'Auf der'
+        });
+        // Schladming - Planai - Hochwurzen
+        this.pushObject({
+            city: 'Schladming',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Schladming','Planai','Hochwurzen'],
+            speechstart: 'In'
+        });
+        // Zell am See - Schmittenhöhe
+        this.pushObject({
+            city: 'Schmittenhöhe',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Zell', 'am','See','Schmittenhöhe'],
+            speechstart: 'Auf der'
+        });
+        this.pushObject({
+            city: 'Schmitten',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Zell', 'am','See','Schmittenhöhe'],
+            speechstart: 'In'
         });
         // Sölden
         this.pushObject({
@@ -101,6 +188,19 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Stubaier', 'Gletscher'],
             speechstart: 'Auf dem'
+        });
+        // Zell am See - Schmittenhöhe
+        this.pushObject({
+            city: 'Zell am See',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Zell', 'am','See','Schmittenhöhe'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Zürs',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Lech', 'Zürs','Arlberg'],
+            speechstart: 'In'
         });
 
     }
@@ -125,7 +225,6 @@ Axamer - Lizum
 Bad Gastein - Graukogel
 Bad Gastein - Sportgastein
 Bad Hofgastein - Bad Gastein - Skischaukel Schlossalm-Angertal-Stubnerkogel
-Bad Kleinkirchheim
 Bergeralm - Steinach am Brenner
 Biberwier - Marienberg
 Bichlbach - Berwang
@@ -133,7 +232,6 @@ Bodental
 Brandnertal
 Brixen im Thale - SkiWelt
 Buchensteinwand
-Dachstein Gletscher
 Dachstein West
 Damüls - Mellau
 Diedamskopf
@@ -186,7 +284,6 @@ Hinterstoder
 Hochficht Böhmerwald
 Hochfügen
 Hochkar
-Hochkönig
 Hochkössen
 Hochlecken Skilifte
 Hochlitten Riefensberg
@@ -209,7 +306,6 @@ Karkogel - Abtenau
 Kasberg - Grünau
 Kelchsau - SkiWelt
 Kellerjochbahn - Schwaz - Pill
-Kitzbühel
 Klippitztörl
 Königsberg - Hollenstein/Ybbs
 Koralpe
@@ -221,7 +317,6 @@ Lachtal
 Lackenhof - Ötscher
 Landeck - Zams - Fliess - Venet
 Laterns - Gapfohl
-Lech Zürs am Arlberg
 Lermoos Grubigstein
 Lienzer Bergbahnen - Zettersfeld - Hochstein
 Loser Bergbahnen Altaussee
@@ -256,7 +351,6 @@ Schattwald - Zöblen
 Scheffau - SkiWelt
 Schilifte Kirchschlag
 Schladming Dachstein - Stoderzinken
-Schladming - Planai - Hochwurzen
 Schlepplifte Neuleutasch
 Schwarzenberg - Bödele
 Seefeld - Gschwandtkopf
@@ -311,7 +405,6 @@ Wurzeralm
 Zahmer Kaiser - Walchsee
 Zau[:ber:]g Semmering
 Zauchensee
-Zell am See - Schmittenhöhe
 Zell am Ziller - Zillertal Arena
 Zillertal Arena
 Zillertal Gletscherwelt 3000 - Tux - Finkenberg

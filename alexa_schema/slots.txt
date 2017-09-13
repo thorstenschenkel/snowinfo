@@ -3,7 +3,9 @@ SKIGEBIETE
 Alpbach
 Alpbachtal
 Alpendorf
+Bad Kleinkirchheim
 Bergeralm
+Dachstein Gletscher
 Fendels
 Fieberbrunn
 Flachau
@@ -11,7 +13,9 @@ Fliess
 Galtür
 Hintertux
 Hintertuxer Gletscher
+Hochkönig
 Hochkrimml
+Hochwurzen
 Ischgl
 Jungholz
 Kals
@@ -20,19 +24,26 @@ Kaprun Kitzsteinhorn
 Kaprun
 Kaunertal
 Kaunertaler Gletscher
-Kitzbühl
+Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
 Krimml
 Landeck
+Lech
+Lech am Arlberg
 Leogang
 Mölltaler Gletscher
 Nassfeld
 Pitztal
 Pitztaler Gletscher
+Planai
+Sankt Anton
+Sankt Anton am Arlberg
 Sankt Johann
 Sankt Johann in Tirol
+Schladming
 Schmitten
+Schmittenhöhe
 Sölden
 Steinach
 Steinach am Brenner
@@ -43,3 +54,4 @@ Vent
 Wagrain
 Zams
 Zell am See
+Zürs 
