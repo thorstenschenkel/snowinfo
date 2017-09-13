@@ -97,9 +97,9 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
             }
             let speechskiresort;
             if (snowdata.resource === bergfexContainer.resource) {
-                speechskiresort = bergfexContainer.getSpeechskirresort(city);
+                speechskiresort = bergfexContainer.getSpeechskiresort(city);
             } else if (snowdata.resource === skiinfoContainer.resource) {
-                speechskiresort = skiinfoContainer.getSpeechskirresort(city);
+                speechskiresort = skiinfoContainer.getSpeechskiresort(city);
             }
             if (speechskiresort) {
                 speechOutput += speechskiresort;

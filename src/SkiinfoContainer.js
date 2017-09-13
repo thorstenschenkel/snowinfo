@@ -66,14 +66,14 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Kitzsteinhorn', 'Kaprun'],
             speechstart: 'Im Skigebiet',
-            speechskirresort: 'Kitzsteinhorn - Kaprun'
+            speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
         this.pushObject({
             city: 'Kaprun Kitzsteinhorn',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Kitzsteinhorn', 'Kaprun'],
             speechstart: 'Im Skigebiet',
-            speechskirresort: 'Kitzsteinhorn - Kaprun'
+            speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
         this.pushObject({
             city: 'Kitzbühel',
@@ -86,14 +86,14 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Kitzsteinhorn', 'Kaprun'],
             speechstart: 'Im Skigebiet',
-            speechskirresort: 'Kitzsteinhorn - Kaprun'
+            speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
         this.pushObject({
             city: 'Kitzsteinhorn Kaprun',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Kitzsteinhorn', 'Kaprun'],
             speechstart: 'Im Skigebiet',
-            speechskirresort: 'Kitzsteinhorn - Kaprun'
+            speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
         // Lech Zürs am Arlberg
         this.pushObject({
@@ -127,7 +127,7 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Pitztaler', 'Gletscher'],
             speechstart: 'Auf dem',
-            speechskirresort: 'Pitztaler Gletscher'
+            speechskiresort: 'Pitztaler Gletscher'
         });
         // St. Anton am Arlberg
         this.pushObject({

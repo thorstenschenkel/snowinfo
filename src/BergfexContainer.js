@@ -171,7 +171,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             search: ['Pitztaler', 'Gletscher', 'Rifflsee', 'Pitztal'],
             speechstart: 'Auf dem',
-            speechskirresort: 'Pitztaler Gletscher'
+            speechskiresort: 'Pitztaler Gletscher'
         });
         this.pushObject({
             city: 'Pitztaler Gletscher',
