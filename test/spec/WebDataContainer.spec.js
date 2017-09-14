@@ -14,7 +14,7 @@ describe('test of WebDataContainer', function () {
         expect(schneeContainer.getPath).toBeDefined();
         expect(schneeContainer.getSearch).toBeDefined();
         expect(schneeContainer.getSpeechstart).toBeDefined();
-        expect(schneeContainer.getSpeechskirresort).toBeDefined();
+        expect(schneeContainer.getSpeechskiresort).toBeDefined();
 
     });
 
@@ -36,7 +36,7 @@ describe('test of WebDataContainer', function () {
         expect(schneeContainer.getPath('Fendels')).toBe('/tirol/schneewerte/');
         expect(schneeContainer.getSearch('Fendels').toString()).toBe('Fendels,Ried,Prutz');
         expect(schneeContainer.getSpeechstart('Fendels')).toBe('In');
-        expect(schneeContainer.getSpeechskirresort('Fendels')).not.toBeDefined();
+        expect(schneeContainer.getSpeechskiresort('Fendels')).not.toBeDefined();
 
     });
 

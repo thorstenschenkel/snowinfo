@@ -11,7 +11,7 @@ describe('test of BergfexContainer', function () {
         expect(bergfexContainer.getPath('Ischgl')).toBe('/tirol/schneewerte/');
         expect(bergfexContainer.getSearch('Ischgl').toString()).toBe('Ischgl');
         expect(bergfexContainer.getSpeechstart('Ischgl')).toBe('In');
-        expect(bergfexContainer.getSpeechskirresort('Ischgl')).not.toBeDefined();
+        expect(bergfexContainer.getSpeechskiresort('Ischgl')).not.toBeDefined();
 
     });
 

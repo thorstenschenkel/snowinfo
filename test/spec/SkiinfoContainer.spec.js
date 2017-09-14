@@ -11,7 +11,7 @@ describe('test of SkiinfoContainer', function () {
         expect(skiinfoContainer.getPath('Sölden')).toBe('/oesterreich/schneehoehen-schneebericht.html');
         expect(skiinfoContainer.getSearch('Sölden').toString()).toBe('Sölden');
         expect(skiinfoContainer.getSpeechstart('Sölden')).toBe('In');
-        expect(skiinfoContainer.getSpeechskirresort('Sölden')).not.toBeDefined();
+        expect(skiinfoContainer.getSpeechskiresort('Sölden')).not.toBeDefined();
 
     });
 
