@@ -1,5 +1,5 @@
 const ERROR_NO_INFO = 'Für den Ort {city} kann ich keine Informationen liefern!';
-const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine akutellen Informationen liefern!';
+const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine aktuellen Informationen liefern!';
 
 class SpeechOut {
 
@@ -19,14 +19,14 @@ class SpeechOut {
     _getSpeechOut() {
 
         let speechOutput;
-        if (!snowdata) {
+        if (!this.snowdata) {
 
-            speechOutput = ERROR_NO_INFO.replace('{city}', city);
+            speechOutput = ERROR_NO_INFO.replace('{city}', this.city);
 
         } else {
 
-            if (snowdata.isOutdated()) {
-                speechOutput = ERROR_OUTDATED.replace('{city}', city);
+            if (this.snowdata.isOutdated()) {
+                speechOutput = ERROR_OUTDATED.replace('{city}', this.city);
             } else {
                 speechOutput = this._addStartAndCity(speechOutput);
                 speechOutput = this._addDepth(speechOutput);

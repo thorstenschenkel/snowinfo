@@ -97,7 +97,7 @@ describe('test of SpeechOut', function () {
     it('test the method _addStartAndCity', function () {
 
         const snowdata = {};
-        const container = new WebDataContainer('testRes');
+        let container = new WebDataContainer('testRes');
         let speechOut = new SpeechOut('Ischgl', snowdata, container);
 
         let strg = '';
@@ -109,11 +109,42 @@ describe('test of SpeechOut', function () {
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In dem Skigebiet von Ischgl');
 
-        // TODO no push
-        // container.push('Ischgl', '', '', new Array(), 'In dem Skigebiet von', 'Silvretta');
-        // strg = '';
-        // strg = speechOut._addStartAndCity(strg);
-        // expect(strg).toBe('In dem Skigebiet von Ischgl');
+        container = new WebDataContainer('testRes');
+        speechOut = new SpeechOut('Ischgl', snowdata, container);
+        container.push('Ischgl', '', '', new Array(), 'In dem Skigebiet', 'Silvretta');
+        strg = '';
+        strg = speechOut._addStartAndCity(strg);
+        expect(strg).toBe('In dem Skigebiet Silvretta');
+
+    });
+
+    it('test the method _getSpeechOut', function () {
+
+        let speechOut = new SpeechOut('Ischgl');
+
+        let strg = speechOut._getSpeechOut();
+        expect(strg).toBe('Für den Ort Ischgl kann ich keine Informationen liefern!');
+
+        let snowdata = {};
+        snowdata.isOutdated = function () {
+            return true
+        };
+        speechOut = new SpeechOut('Ischgl', snowdata);
+        strg = speechOut._getSpeechOut();
+        expect(strg).toBe('Für den Ort Ischgl kann ich keine aktuellen Informationen liefern!');
+
+        snowdata.lowerSnowDepth = 10;
+        snowdata.upperSnowDepth = 55;
+        snowdata.reportDate = new Date();
+        snowdata.isOutdated = function () {
+            return false
+        };
+        let container = new WebDataContainer('testRes');
+        container.push('Ischgl', '', '', new Array(), 'In');
+        speechOut = new SpeechOut('Ischgl', snowdata, container);
+        strg = speechOut._getSpeechOut();
+        expect(strg).toBe('In Ischgl liegen 10 Zentimeter Schnee im Tal und 55 Zentimeter auf dem Berg. Die Informationen stammen von heute.');
+
 
     });
 
