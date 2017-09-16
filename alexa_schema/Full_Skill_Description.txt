@@ -1,8 +1,10 @@
+Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
+
 Im Moment werden vorwiegend Schneehöhen von einigen österreichischen Skigebieten geliefert.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
 Derzeit können die Schneehöhen von ca. 35 Orten geliefet werden.
 
-Hier eine Liste der Orte:
+Hier die Liste der Orte:
 
 Alpbach
 Alpendorf

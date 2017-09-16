@@ -15,7 +15,7 @@ class WebDataContainer {
 
     constructor( resource ) {
         this.resource = resource;
-        this.webDatas = new Array();
+        this.webDatas = [];
     }
 
 

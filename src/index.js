@@ -13,6 +13,7 @@ const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f';
 
 const ERROR_NO_CITY = 'Es wurde keine Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
+const HELP_MESSAGE = 'Du kannst mir ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 
 //=========================================================================================================================================
 // BERGFEX
@@ -50,8 +51,8 @@ const handlers = {
         if (!city) {
             this.emit(':tell', this.t(ERROR_NO_CITY));
         } else {
-            if ( !(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city)) ) {
-                this.emit(':tell', this.t(ERROR_UNKNOW_CITY));                
+            if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
+                this.emit(':tell', this.t(ERROR_UNKNOW_CITY));
             } else {
                 getSnowDataAndTell(this, city);
             }
@@ -64,7 +65,7 @@ const handlers = {
 
 exports.handler = function (event, context) {
     const alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
+    alexa.appId = APP_ID;
     alexa.registerHandlers(handlers);
     console.log(' -- t7 -- execute DEV');
     alexa.execute();
@@ -73,9 +74,9 @@ exports.handler = function (event, context) {
 function getMatchingContainer(snowdata) {
 
     if (snowdata.resource === bergfexContainer.resource) {
-        return bergfexContainer;;
+        return bergfexContainer;
     } else if (snowdata.resource === skiinfoContainer.resource) {
-        return skiinfoContainer;;
+        return skiinfoContainer;
     }
 
 }
@@ -84,10 +85,10 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
     let container = getMatchingContainer(snowdata);
 
-    let speechOut = new SpeechOut(city,snowdata,container);
-    speechOut.addSpeak(intentHandler);   
+    let speechOut = new SpeechOut(city, snowdata, container);
+    speechOut.addSpeak(intentHandler);
 
-    let cardUtils = new CardUtils(city,snowdata);
+    let cardUtils = new CardUtils(city, snowdata);
     cardUtils.addCardRenderer(intentHandler);
 
     intentHandler.emit(':responseReady');

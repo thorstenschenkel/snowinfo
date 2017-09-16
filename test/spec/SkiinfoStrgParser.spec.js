@@ -35,4 +35,4 @@ describe('test of SkiinfoStrgParser', function () {
     });
 
 
-})
+});

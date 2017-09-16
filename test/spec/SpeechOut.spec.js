@@ -104,14 +104,14 @@ describe('test of SpeechOut', function () {
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In Ischgl');
 
-        container.push('Ischgl', '', '', new Array(), 'In dem Skigebiet von', '');
+        container.push('Ischgl', '', '', [], 'In dem Skigebiet von', '');
         strg = '';
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In dem Skigebiet von Ischgl');
 
         container = new WebDataContainer('testRes');
         speechOut = new SpeechOut('Ischgl', snowdata, container);
-        container.push('Ischgl', '', '', new Array(), 'In dem Skigebiet', 'Silvretta');
+        container.push('Ischgl', '', '', [], 'In dem Skigebiet', 'Silvretta');
         strg = '';
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In dem Skigebiet Silvretta');
@@ -127,7 +127,7 @@ describe('test of SpeechOut', function () {
 
         let snowdata = {};
         snowdata.isOutdated = function () {
-            return true
+            return true;
         };
         speechOut = new SpeechOut('Ischgl', snowdata);
         strg = speechOut._getSpeechOut();
@@ -137,10 +137,10 @@ describe('test of SpeechOut', function () {
         snowdata.upperSnowDepth = 55;
         snowdata.reportDate = new Date();
         snowdata.isOutdated = function () {
-            return false
+            return false;
         };
         let container = new WebDataContainer('testRes');
-        container.push('Ischgl', '', '', new Array(), 'In');
+        container.push('Ischgl', '', '', [], 'In');
         speechOut = new SpeechOut('Ischgl', snowdata, container);
         strg = speechOut._getSpeechOut();
         expect(strg).toBe('In Ischgl liegen 10 Zentimeter Schnee im Tal und 55 Zentimeter auf dem Berg. Die Informationen stammen von heute.');

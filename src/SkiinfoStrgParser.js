@@ -8,7 +8,7 @@ class SkiinfoStrgParser extends StrgParser {
     };
 
     isSnowDepthTable(tabStrg) {
-        return tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('schneehöhe') != -1
+        return tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('schneehöhe') != -1;
     }
 
     getSnowDataFromHtml(htmlString) {
