@@ -66,15 +66,20 @@ class StrgParser {
 
     getHtmlPage(city, callback) {
 
+        if (!this.webDataContainer.getResort(city) ) {
+            console.log(' -- t7 - DBG -- no resort for >' + city + '< in >' + this.webDataContainer.resource + '<');
+            return callback();            
+        }
+
         const host = this.webDataContainer.getHost(city);
         if (!host) {
-            console.error(' -- t7 -- Can not get HTML page, no host');
-            return;
+            console.error(' -- t7 - ERR -- Can not get HTML page, no host');
+            return callback();
         }
         const path = this.webDataContainer.getPath(city);
         if (!path) {
-            console.error(' -- t7 -- Can not get HTML page, no path');
-            return;
+            console.error(' -- t7 - ERR -- Can not get HTML page, no path');
+            return callback();
         }
 
         return http.get({
@@ -150,7 +155,7 @@ class StrgParser {
         for (let key in searchArray) {
             let search = searchArray[key].toLowerCase();
             if (resort.indexOf(search) === -1) {
-                console.log(' -- t7 -- search: ' + search);
+                // console.log(' -- t7 -- search: ' + search);
                 return false;
             }
         }
@@ -173,9 +178,10 @@ class StrgParser {
                     if (!trString) continue;
                     // console.log(' -- t7 -- trString: ' + trString);
                     let snowdata = this.getSnowDataFromHtml(trString);
-                    snowdata.city = city; // TODO ?
+                    if ( !snowdata ) continue;
                     // console.log(' -- t7 -- snowdata: ', snowdata);
                     if (this.searchCompare(searchArray, snowdata)) {
+                        snowdata.city = city;
                         retData = snowdata;
                         console.log(' -- t7 -- retData: ', retData);
                     }

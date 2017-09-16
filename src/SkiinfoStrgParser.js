@@ -5,23 +5,28 @@ class SkiinfoStrgParser extends StrgParser {
 
     constructor(container) {
         super(container);
-    };
+    }
 
     isSnowDepthTable(tabStrg) {
         return tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('schneehöhe') != -1;
     }
 
     getSnowDataFromHtml(htmlString) {
+        if ( htmlString.indexOf('<div class="lsos">') != -1 ) {
+            // table legend
+            return;
+        }
         let snowdata = new Snowdata();
         snowdata.resource = this.getResource();
         snowdata.lastUpdate = Date.now();
         snowdata.lowerSnowDepth = 0;
         snowdata.upperSnowDepth = 0;
         let tdStrings = this.getPartContent(htmlString, '<td', '</td>');
+        // console.log(' -- t7 - DBG -- tdStrings: ' + tdStrings);
         let i = 0;
         for (let tdStrg of tdStrings) {
             let strg = tdStrg.trim();
-            // console.log(' -- t7 -- strg: ' + strg);
+            // console.log(' -- t7 - DBG -- strg: ' + strg);
             switch (i) {
                 case 0: // skigebiet + datum 
                     let substrings0 = strg.split('/div>');
@@ -94,7 +99,7 @@ class SkiinfoStrgParser extends StrgParser {
             }
         }
 
-        console.log(' -- t7 -- unexpected date string: ' + htmlString);
+        console.log(' -- t7 - DBG -- unexpected date string: ' + htmlString);
 
     }
 
