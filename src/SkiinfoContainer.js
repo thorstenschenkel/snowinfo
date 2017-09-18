@@ -20,12 +20,40 @@ class SkiinfoContainer extends WebDataContainer {
             search: ['Dachstein', 'Gletscher'],
             speechstart: 'Auf dem'
         });
-        // Hochkönig
+        // Damüls - Mellau
         this.pushObject({
-            city: 'Hochkönig',
+            city: 'Damüls',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            search: ['Hochkönig'],
+            search: ['Damüls', 'Mellau'],
             speechstart: 'In'
+        });
+        // Damüls - Mellau
+        this.pushObject({
+            city: 'Damüls - Mellau',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Damüls', 'Mellau'],
+            speechstart: 'Im Skigebiet'
+        });
+        // Serfaus Fiss Ladis
+        this.pushObject({
+            city: 'Fiss',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Serfaus', 'Fiss', 'Ladis'],
+            speechstart: 'In'
+        });
+        // Fügen - Spieljoch
+        this.pushObject({
+            city: 'Fügen',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Fügen', 'Spieljoch'],
+            speechstart: 'In'
+        });
+        // Gerlitzen
+        this.pushObject({
+            city: 'Gerlitzen',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Gerlitzen'],
+            speechstart: 'Im Skigebiet'
         });
         // Hintertuxer Gletscher
         this.pushObject({
@@ -40,11 +68,53 @@ class SkiinfoContainer extends WebDataContainer {
             search: ['Hintertuxer', 'Gletscher'],
             speechstart: 'Auf dem'
         });
+        // Obergurgl - Hochgurgl
+        this.pushObject({
+            city: 'Hochgurgl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Obergurgl', 'Hochgurgl'],
+            speechstart: 'In'
+        });
+        // Hochkönig
+        this.pushObject({
+            city: 'Hochkönig',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Hochkönig'],
+            speechstart: 'In'
+        });
+        // Hochoetz
+        this.pushObject({
+            city: 'Hochoetz',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Hochoetz'],
+            speechstart: 'In'
+        });
         // Hochwurzen
         this.pushObject({
-            city: 'Schladming',
+            city: 'Hochwurzen',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Schladming','Planai','Hochwurzen'],
+            speechstart: 'In'
+        });
+        // Hochzeiger
+        this.pushObject({
+            city: 'Hochzeiger',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Hochzeiger'],
+            speechstart: 'Im Skigebiet'
+        });
+        // Ischgl
+        this.pushObject({
+            city: 'Ischgl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Ischgl'],
+            speechstart: 'In'
+        });
+        // Hochzeiger
+        this.pushObject({
+            city: 'Jerzens',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Hochzeiger'],
             speechstart: 'In'
         });
         // Kaunertaler Gletscher
@@ -95,6 +165,27 @@ class SkiinfoContainer extends WebDataContainer {
             speechstart: 'Im Skigebiet',
             speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
+        // Kreischberg
+        this.pushObject({
+            city: 'Kreischberg',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Kreischberg'],
+            speechstart: 'Im Skigebiet'
+        });        
+        // Kühtai
+        this.pushObject({
+            city: 'Kühtai',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Kühtai'],
+            speechstart: 'In'
+        });        
+        // Serfaus Fiss Ladis
+        this.pushObject({
+            city: 'Ladis',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Serfaus', 'Fiss', 'Ladis'],
+            speechstart: 'In'
+        });
         // Lech Zürs am Arlberg
         this.pushObject({
             city: 'Lech',
@@ -108,12 +199,47 @@ class SkiinfoContainer extends WebDataContainer {
             search: ['Lech', 'Zürs','Arlberg'],
             speechstart: 'In'
         });
+        // Mayrhofen
+        this.pushObject({
+            city: 'Mayrhofen',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Mayrhofen'],
+            speechstart: 'In'
+        });
+        // Damüls - Mellau
+        this.pushObject({
+            city: 'Mellau',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Damüls', 'Mellau'],
+            speechstart: 'In'
+        });
         // Mölltaler Gletscher
         this.pushObject({
             city: 'Mölltaler Gletscher',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Mölltaler', 'Gletscher'],
             speechstart: 'Auf dem'
+        });
+        // Nauders
+        this.pushObject({
+            city: 'Nauders',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Nauders'],
+            speechstart: 'In'
+        });
+        // Obergurgl - Hochgurgl
+        this.pushObject({
+            city: 'Obergurgl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Obergurgl', 'Hochgurgl'],
+            speechstart: 'In'
+        });
+        // Obertauern
+        this.pushObject({
+            city: 'Obertauern',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Obertauern'],
+            speechstart: 'In'
         });
         // Pitztaler Gletscher
         this.pushObject({
@@ -142,6 +268,13 @@ class SkiinfoContainer extends WebDataContainer {
             search: ['Anton','am','Arlberg'],
             speechstart: 'In'
         });
+        // Scheffau - SkiWelt
+        this.pushObject({
+            city: 'Scheffau',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Scheffau','SkiWelt'],
+            speechstart: 'In'
+        });
         // Schladming - Planai - Hochwurzen
         this.pushObject({
             city: 'Planai',
@@ -154,6 +287,26 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Schladming',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Schladming','Planai','Hochwurzen'],
+            speechstart: 'In'
+        });
+        // Serfaus Fiss Ladis
+        this.pushObject({
+            city: 'Serfaus',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Serfaus', 'Fiss', 'Ladis'],
+            speechstart: 'In'
+        });
+        // Stubaital - Schlick 2000
+        this.pushObject({
+            city: 'Schlick',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Stubaital','Schlick','2000'],
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Schlick 2000',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Stubaital','Schlick','2000'],
             speechstart: 'In'
         });
         // Zell am See - Schmittenhöhe
@@ -176,6 +329,13 @@ class SkiinfoContainer extends WebDataContainer {
             search: ['Sölden'],
             speechstart: 'In'
         });
+        // Söll - SkiWelt
+        this.pushObject({
+            city: 'Söll',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Söll', 'SkiWelt'],
+            speechstart: 'In'
+        });
         // Stubaier Gletscher
         this.pushObject({
             city: 'Stubaital',
@@ -188,6 +348,27 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Stubaier', 'Gletscher'],
             speechstart: 'Auf dem'
+        });
+        // Turracher Höhe
+        this.pushObject({
+            city: 'Turracher Höhe',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Turracher', 'Höhe'],
+            speechstart: 'Auf der'
+        });
+        // Wagrain
+        this.pushObject({
+            city: 'Wagrain',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Wagrain'],
+            speechstart: 'In'
+        });
+        // Zauchensee
+        this.pushObject({
+            city: 'Zauchensee',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Zauchensee'],
+            speechstart: 'In'
         });
         // Zell am See - Schmittenhöhe
         this.pushObject({
@@ -254,7 +435,6 @@ Flattnitz
 Forsteralm
 Frauenalpe
 Freesports Arena Dachstein Krippenstein
-Fügen - Spieljoch
 Füssener Jöchle - Grän
 Gaaler Lifte
 Gaberl - Stubalpe
@@ -263,7 +443,6 @@ Galsterbergalm
 Galtür - Silvretta
 Gargellen
 Gemeindealpe - Mitterbach
-Gerlitzen
 Gerlos - Zillertal Arena
 Glasenberg - Maria Neustift
 Gletscherwelt Weißsee
@@ -287,15 +466,12 @@ Hochkar
 Hochkössen
 Hochlecken Skilifte
 Hochlitten Riefensberg
-Hochoetz
-Hochzeiger
 Hochzillertal
 Hohentauern
 Hopfgarten im Brixental - SkiWelt
 Imst
 Innerkrems
 Innsbrucker Nordkettenbahnen
-Ischgl
 Itter - SkiWelt
 Jauerling
 Jöchelspitze - Lechtal
@@ -310,9 +486,7 @@ Klippitztörl
 Königsberg - Hollenstein/Ybbs
 Koralpe
 Kötschach - Mauthen
-Kreischberg
 Kristberg Silbertal
-Kühtai
 Lachtal
 Lackenhof - Ötscher
 Landeck - Zams - Fliess - Venet
@@ -322,16 +496,12 @@ Lienzer Bergbahnen - Zettersfeld - Hochstein
 Loser Bergbahnen Altaussee
 Maiskogel - Kaprun
 Mariazeller Bürgeralpe
-Mayrhofen
 Modriach-Winkel Hoislifte
 Mönichkirchen - Mariensee
 Muttereralm
 Nassfeld Hermagor
-Nauders
 Nesselwängle
 Niederalpl
-Obergurgl - Hochgurgl
-Obertauern
 Obertilliach
 Patscherkofel
 Petzen
@@ -348,14 +518,12 @@ Riesneralm
 Rifflsee - Pitztal
 Salzstiegl
 Schattwald - Zöblen
-Scheffau - SkiWelt
 Schilifte Kirchschlag
 Schladming Dachstein - Stoderzinken
 Schlepplifte Neuleutasch
 Schwarzenberg - Bödele
 Seefeld - Gschwandtkopf
 Seefeld - Rosshütte
-Serfaus Fiss Ladis
 Serlesbahnen - Mieders
 Shuttleberg Flachauwinkl - Kleinarl
 Silvretta-Bielerhöhe
@@ -369,11 +537,8 @@ Skigebiet See
 Ski Juwel Alpbachtal Wildschönau
 SkiWelt Wilder Kaiser - Brixental
 Skizentrum Sillian
-Sölden
-Söll - SkiWelt
 Sonnberglifte Wald am Schoberpass
 Sonnenkopf
-St. Anton am Arlberg
 Steinberg am Rofan
 Steinplatte Waidring
 Sternstein Lifte
@@ -381,18 +546,15 @@ St. Jakob im Defereggental
 St. Johann im Pongau - Alpendorf
 St. Johann i.T. - Kirchdorf
 St. Johann i.T. - Oberndorf
-Stubaital - Schlick 2000
 Stuben am Arlberg
 Stuhleck - Semmering
 Tannheim - Neunerköpfle
 Tauplitzalm
 Teichalmlifte
 Topskiregion Katschberg
-Turracher Höhe
 Unterberg - Pernitz
 Veitsch Brunnalm
 Vent
-Wagrain
 Walmendingerhorn - Ifen - Heuberg
 Warth - Schröcken
 Weinebene
@@ -404,7 +566,6 @@ Wildkogel-Arena
 Wurzeralm
 Zahmer Kaiser - Walchsee
 Zau[:ber:]g Semmering
-Zauchensee
 Zell am Ziller - Zillertal Arena
 Zillertal Arena
 Zillertal Gletscherwelt 3000 - Tux - Finkenberg

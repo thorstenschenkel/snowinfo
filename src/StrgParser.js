@@ -67,7 +67,7 @@ class StrgParser {
     getHtmlPage(city, callback) {
 
         if (!this.webDataContainer.getResort(city) ) {
-            console.log(' -- t7 - DBG -- no resort for >' + city + '< in >' + this.webDataContainer.resource + '<');
+            // console.log(' -- t7 - DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
             return callback();            
         }
 
@@ -183,7 +183,7 @@ class StrgParser {
                     if (this.searchCompare(searchArray, snowdata)) {
                         snowdata.city = city;
                         retData = snowdata;
-                        console.log(' -- t7 -- retData: ', retData);
+                        // console.log(' -- t7 -- retData: ', retData);
                     }
                 }
             }

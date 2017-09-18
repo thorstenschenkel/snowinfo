@@ -4,17 +4,24 @@ Alpendorf
 Bad Kleinkirchheim
 Bergeralm
 Dachstein Gletscher
+Damüls
 Fendels
 Fieberbrunn
+Fiss
 Flachau
 Fliess
+Fügen
 Galtür
+Gerlitzen
 Hintertux
 Hintertuxer Gletscher
+Hochgurgl
 Hochkönig
 Hochkrimml
+Hochoetz
 Hochwurzen
-Ischgl
+Hochzeiger
+Jerzens
 Jungholz
 Kals
 Kappl
@@ -25,13 +32,21 @@ Kaunertaler Gletscher
 Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
+Kreischberg
 Krimml
+Kühtai
+Ladis
 Landeck
 Lech
 Lech am Arlberg
 Leogang
+Mayrhofen
+Mellau
 Mölltaler Gletscher
 Nassfeld
+Nauders
+Obergurgl
+Obertauern
 Pitztal
 Pitztaler Gletscher
 Planai
@@ -39,10 +54,15 @@ Sankt Anton
 Sankt Anton am Arlberg
 Sankt Johann
 Sankt Johann in Tirol
+Scheffau
 Schladming
+Schlick
+Schlick 2000
 Schmitten
 Schmittenhöhe
+Serfaus
 Sölden
+Söll
 Steinach
 Steinach am Brenner
 Stubaier Gletscher
@@ -51,5 +71,6 @@ Turracher Höhe
 Vent
 Wagrain
 Zams
+Zauchensee
 Zell am See
 Zürs 
