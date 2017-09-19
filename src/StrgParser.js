@@ -66,9 +66,9 @@ class StrgParser {
 
     getHtmlPage(city, callback) {
 
-        if (!this.webDataContainer.getResort(city) ) {
+        if (!this.webDataContainer.getResort(city)) {
             // console.log(' -- t7 - DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
-            return callback();            
+            return callback();
         }
 
         const host = this.webDataContainer.getHost(city);
@@ -101,6 +101,9 @@ class StrgParser {
     }
 
     getOnlyInt(strg) {
+        if (!strg) {
+            return 0;
+        }
         let num = strg.replace(/[^0-9]/g, '');
         // console.log(' -- t7 -- num: ' + num);
         if (num && num.indexOf('0') === 0) {
@@ -161,7 +164,7 @@ class StrgParser {
         }
         return true;
     }
-        
+
     parseHtml(htmlString, city) {
         if (!htmlString) {
             return;
@@ -178,7 +181,7 @@ class StrgParser {
                     if (!trString) continue;
                     // console.log(' -- t7 -- trString: ' + trString);
                     let snowdata = this.getSnowDataFromHtml(trString);
-                    if ( !snowdata ) continue;
+                    if (!snowdata) continue;
                     // console.log(' -- t7 -- snowdata: ', snowdata);
                     if (this.searchCompare(searchArray, snowdata)) {
                         snowdata.city = city;
@@ -202,7 +205,7 @@ class StrgParser {
     getResource() {
         return this.webDataContainer.resource;
     }
-    
+
 }
 
 module.exports = StrgParser;

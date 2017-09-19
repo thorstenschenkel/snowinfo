@@ -41,8 +41,18 @@ class BergfexStrgParser extends StrgParser {
                 case 3: // neu
                     break;
                 case 4: // lifte
+                    var liftStrgs = strg.split('/');
+                    if (liftStrgs && liftStrgs.length > 0) {
+                        snowdata.skiliftOpen = this.getOnlyInt(liftStrgs[0]);
+                        snowdata.skiliftTotal = this.getOnlyInt(liftStrgs[1]);
+                    }
                     break;
                 case 5: // status
+                    if (strg.indexOf('/images/icons/lifte-pisten/status0.png') > 0) {
+                        snowdata.status = 'closed';
+                    } else if (strg.indexOf('/images/icons/lifte-pisten/status1.png') > 0) {
+                        snowdata.status = 'open';
+                    }
                     break;
                 case 6: // datum
                     snowdata.reportDate = this.getDate(strg);

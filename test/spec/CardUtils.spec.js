@@ -44,11 +44,52 @@ describe('test of CardUtils', function () {
         snowdata.upperSnowDepth = 125;
         cardutils = new CardUtils('', snowdata);
 
-        const content = cardutils.getCardContent();
+        let content = cardutils.getCardContent();
         let lowerIndex = content.indexOf('Schneehöhe Tal: 12 cm');
         expect(lowerIndex).toBe(0);
         let upperIndex = content.indexOf('Schneehöhe Berg: 125 cm');
         expect(lowerIndex < upperIndex).toBe(true);
+        expect(content.indexOf('Status Skigebiet') === -1).toBe(true);
+        expect(content.indexOf('Lifte/Bahnen') === -1).toBe(true);
+        
+        snowdata.reportDate = new Date();
+        snowdata.lowerSnowDepth = 12;
+        snowdata.upperSnowDepth = 125;
+        snowdata.status = 'open';
+        cardutils = new CardUtils('', snowdata);
+
+        content = cardutils.getCardContent();
+        expect(content.indexOf('Status Skigebiet: GEÖFFNET') > 0).toBe(true);
+
+        snowdata.reportDate = new Date();
+        snowdata.lowerSnowDepth = 12;
+        snowdata.upperSnowDepth = 125;
+        snowdata.status = 'closed';
+        cardutils = new CardUtils('', snowdata);
+
+        content = cardutils.getCardContent();
+        expect(content.indexOf('Status Skigebiet: GESCHLOSSEN') > 0).toBe(true);
+
+        snowdata.reportDate = new Date();
+        snowdata.lowerSnowDepth = 12;
+        snowdata.upperSnowDepth = 125;
+        snowdata.skiliftOpen = 3;
+        snowdata.skiliftTotal = 10;
+        cardutils = new CardUtils('', snowdata);
+
+        content = cardutils.getCardContent();
+        expect(content.indexOf('Lifte/Bahnen: 3 von 10 offen') > 0).toBe(true);
+
+
+        snowdata.reportDate = new Date();
+        snowdata.lowerSnowDepth = 12;
+        snowdata.upperSnowDepth = 125;
+        delete snowdata.skiliftOpen;
+        snowdata.skiliftTotal = 10;
+        cardutils = new CardUtils('', snowdata);
+
+        content = cardutils.getCardContent();
+        expect(content.indexOf('Lifte/Bahnen') === -1).toBe(true);
         
     });
 

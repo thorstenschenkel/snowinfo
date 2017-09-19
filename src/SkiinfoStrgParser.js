@@ -12,7 +12,7 @@ class SkiinfoStrgParser extends StrgParser {
     }
 
     getSnowDataFromHtml(htmlString) {
-        if ( htmlString.indexOf('<div class="lsos">') != -1 ) {
+        if (htmlString.indexOf('<div class="lsos">') != -1) {
             // table legend
             return;
         }
@@ -49,19 +49,29 @@ class SkiinfoStrgParser extends StrgParser {
                     }
                     break;
                 case 1: // status
+                    if (strg.indexOf('openstate stateD2') > 0) {
+                        snowdata.status = 'closed';
+                    } else if (strg.indexOf('openstate stateD1') > 0) {
+                        snowdata.status = 'open';
+                    }
                     break;
                 case 2: // neuschnee
                     break;
                 case 3: // tal + berg
                     strg = this.getPureText(strg);
                     strg = strg.replace(/cm/gi, '');
-                    let substrings3 = strg.split('-');
-                    if (substrings3 && substrings3.length === 2) {
-                        snowdata.lowerSnowDepth = this.getOnlyInt(substrings3[0]);
-                        snowdata.upperSnowDepth = this.getOnlyInt(substrings3[1]);
+                    let depthStrgs = strg.split('-');
+                    if (depthStrgs && depthStrgs.length === 2) {
+                        snowdata.lowerSnowDepth = this.getOnlyInt(depthStrgs[0]);
+                        snowdata.upperSnowDepth = this.getOnlyInt(depthStrgs[1]);
                     }
                     break;
                 case 4: // lifte
+                    var liftStrgs = strg.split('/');
+                    if (liftStrgs && liftStrgs.length > 0) {
+                        snowdata.skiliftOpen = this.getOnlyInt(liftStrgs[0]);
+                        snowdata.skiliftTotal = this.getOnlyInt(liftStrgs[1]);
+                    }
                     break;
                 case 5: // pisten
                     break;

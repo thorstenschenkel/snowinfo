@@ -79,6 +79,12 @@ describe('test of StrgParser', function () {
         let intValue = parser.getOnlyInt(hmtlStrg);
         expect(intValue).toBe(45);
 
+        intValue = parser.getOnlyInt('hello');
+        expect(intValue).toBe(0);
+
+        intValue = parser.getOnlyInt();
+        expect(intValue).toBe(0);
+
     });
 
     it('test method getDate', function () {
