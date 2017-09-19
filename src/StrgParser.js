@@ -94,7 +94,7 @@ class StrgParser {
                 callback(body);
             });
         }).on('error', function (e) {
-            console.warn(' -- t7 -- Can not get HTML page: ' + e.message);
+            console.warn(' -- t7 -- WRN -- Can not get HTML page: ' + e.message);
             callback();
         });
 
@@ -148,7 +148,15 @@ class StrgParser {
 
     }
 
+    isALetter(charVal) {
+        if( charVal.toUpperCase() != charVal.toLowerCase() )
+           return true;
+        else
+           return false;
+    }
+
     searchCompare(searchArray, snowdata) {
+
         // console.log(' -- t7 -- searchCompare: ', searchArray);
         // console.log(' -- t7 -- searchCompare: ', snowdata);
         if (!searchArray || !snowdata || !snowdata.skiresort) {
@@ -162,7 +170,23 @@ class StrgParser {
                 return false;
             }
         }
-        return true;
+
+        let resortLength = 0;
+        for (var i = 0; i <= resort.length; i++) {
+            if ( this.isALetter(resort.charAt(i)) ) {
+                resortLength++;
+            }
+        }
+        const searchString = searchArray.toString().toLowerCase();
+        let searchLength = 0;
+        for (var j = 0; j <= searchString.length; j++) {
+            if ( this.isALetter(searchString.charAt(j)) ) {
+                searchLength++;
+            }
+        }
+
+        return ( resortLength === searchLength );
+
     }
 
     parseHtml(htmlString, city) {
@@ -185,8 +209,11 @@ class StrgParser {
                     // console.log(' -- t7 -- snowdata: ', snowdata);
                     if (this.searchCompare(searchArray, snowdata)) {
                         snowdata.city = city;
+                        if ( retData ) {
+                            console.warn(' -- t7 - WRN -- multi retData!', retData);                           
+                        }
                         retData = snowdata;
-                        // console.log(' -- t7 -- retData: ', retData);
+                        console.log(' -- t7 -- DBG -- retData: ', retData);
                     }
                 }
             }

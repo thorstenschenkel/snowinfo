@@ -8,7 +8,7 @@ class BergfexStrgParser extends StrgParser {
     }
 
     isSnowDepthTable(tabStrg) {
-        return tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('berg') != -1
+        return tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('berg') != -1;
     }
 
     getSnowDataFromHtml(htmlString) {
@@ -48,9 +48,9 @@ class BergfexStrgParser extends StrgParser {
                     }
                     break;
                 case 5: // status
-                    if (strg.indexOf('/images/icons/lifte-pisten/status0.png') > 0) {
+                    if (tdStrg.indexOf('/images/icons/lifte-pisten/status0.png') > 0) {
                         snowdata.status = 'closed';
-                    } else if (strg.indexOf('/images/icons/lifte-pisten/status1.png') > 0) {
+                    } else if (tdStrg.indexOf('/images/icons/lifte-pisten/status1.png') > 0) {
                         snowdata.status = 'open';
                     }
                     break;
