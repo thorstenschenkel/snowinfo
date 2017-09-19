@@ -2,7 +2,7 @@ Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansag
 
 Im Moment werden vorwiegend Schneehöhen von einigen österreichischen Skigebieten geliefert.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
-Derzeit können die Schneehöhen von ca. 35 Orten geliefet werden.
+Derzeit können die Schneehöhen von ca. 45 Orten geliefet werden.
 
 Hier die Liste der Orte:
 
@@ -11,44 +11,71 @@ Alpendorf
 Bad Kleinkirchheim
 Bergeralm
 Dachstein Gletscher
+Damüls
 Fendels
 Fieberbrunn
+Fiss
 Flachau
 Fliess
+Fügen
 Galtür
+Gerlitzen
+Heuberg
 Hintertuxer Gletscher
+Hochficht
+Hochgurgl
 Hochkönig
 Hochkrimml
+Hochoetz
 Hochwurzen
-Ischgl
+Hochzeiger
+Ifen
+Jerzens
 Jungholz
+Kanzelwand
 Kals
 Kappl
 Kaunertaler Gletscher
 Kitzbühel
 Kitzsteinhorn
+Kleinwalsertal
+Koralpe
+Kreischberg
 Krimml
+Kühtai
+Ladis
 Landeck
 Lech am Arlberg
 Leogang
+Mayrhofen
+Mellau
 Mölltaler Gletscher
 Nassfeld
+Nauders
+Obergurgl
+Obertauern
 Pitztaler Gletscher
 Planai
 Sankt Anton am Arlberg
 Sankt Johann in Tirol
+Scheffau
 Schladming
+Schlick
 Schmitten
+Schmittenhöhe
+Serfaus
+Silvretta Montafon
 Sölden
-Steinach
+Söll
 Steinach am Brenner
 Stubaier Gletscher
 Turracher Höhe
 Vent
 Wagrain
+Walmendingerhorn
 Zams
+Zauchensee
 Zell am See
-Zürs
-
+Zürs 
 
 Alle Angaben ohne Gewähr.

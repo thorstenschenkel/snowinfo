@@ -114,9 +114,13 @@ function getSnowDataAndTell(intentHandler, city) {
                 if (html) {
                     snowdataSkiinfo = skiinfoParser.parseHtml(html, city);
                 }
-                console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
-                // TODO isOutdated      snowdataSkiinfo oder snowdataBergfex
-                hanldeSchneeInfo(intentHandler, city, snowdataSkiinfo);
+                if ( !snowdataSkiinfo && snowdataBergfex ) {
+                    console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
+                    hanldeSchneeInfo(intentHandler, city, snowdataBergfex);                    
+                } else {
+                    console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
+                    hanldeSchneeInfo(intentHandler, city, snowdataSkiinfo);                    
+                }
             });
         }
     });

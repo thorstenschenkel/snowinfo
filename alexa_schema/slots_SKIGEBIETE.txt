@@ -5,6 +5,7 @@ Bad Kleinkirchheim
 Bergeralm
 Dachstein Gletscher
 Damüls
+Fellhorn
 Fendels
 Fieberbrunn
 Fiss
@@ -13,16 +14,20 @@ Fliess
 Fügen
 Galtür
 Gerlitzen
+Heuberg
 Hintertux
 Hintertuxer Gletscher
+Hochficht
 Hochgurgl
 Hochkönig
 Hochkrimml
 Hochoetz
 Hochwurzen
 Hochzeiger
+Ifen
 Jerzens
 Jungholz
+Kanzelwand
 Kals
 Kappl
 Kaprun Kitzsteinhorn
@@ -32,6 +37,8 @@ Kaunertaler Gletscher
 Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
+Kleinwalsertal
+Koralpe
 Kreischberg
 Krimml
 Kühtai
@@ -42,6 +49,7 @@ Lech am Arlberg
 Leogang
 Mayrhofen
 Mellau
+Montafon
 Mölltaler Gletscher
 Nassfeld
 Nauders
@@ -61,6 +69,8 @@ Schlick 2000
 Schmitten
 Schmittenhöhe
 Serfaus
+Silvretta
+Silvretta Montafon
 Sölden
 Söll
 Steinach
@@ -70,6 +80,7 @@ Stubaital
 Turracher Höhe
 Vent
 Wagrain
+Walmendingerhorn
 Zams
 Zauchensee
 Zell am See
