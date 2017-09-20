@@ -145,6 +145,14 @@ describe('test of StrgParser', function () {
         snowdata.skiresort = ' Hintertuxer Gletscher / Hintertux ';
         expect(parser.searchCompareStrg(searchStrg, snowdata)).toBe(true);
 
+        searchStrg = 'Hintertuxer Gletscher';
+        snowdata.skiresort = ' Hintertuxer Gletscher / Hintertux ';
+        expect(parser.searchCompareStrg(searchStrg, snowdata)).toBe(false);
+
+        searchStrg = 'Hintertuxer Gletscher';
+        snowdata.skiresort = 'Hintertuxer';
+        expect(parser.searchCompareStrg(searchStrg, snowdata)).toBe(false);
+
     });
 
 });

@@ -31,6 +31,8 @@ const skiinfoContainer = new SkiinfoContainer();
 //
 //=========================================================================================================================================
 
+const parsers = [new BergfexStrgParser(bergfexContainer),new SkiinfoStrgParser(skiinfoContainer)];
+
 let myHandler;
 
 const handlers = {
@@ -73,6 +75,8 @@ exports.handler = function (event, context) {
 
 function getMatchingContainer(snowdata) {
 
+    if ( !snowdata ) return;
+
     if (snowdata.resource === bergfexContainer.resource) {
         return bergfexContainer;
     } else if (snowdata.resource === skiinfoContainer.resource) {
@@ -97,29 +101,29 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
 function getSnowDataAndTell(intentHandler, city) {
 
-    const bergfexParser = new BergfexStrgParser(bergfexContainer);
-    bergfexParser.getHtmlPage(city, (html) => {
+    const parser0 = parsers[0];
+    parser0.getHtmlPage(city, (html) => {
 
-        let snowdataBergfex;
+        let snowdata0;
         if (html) {
-            snowdataBergfex = bergfexParser.parseHtml(html, city);
+            snowdata0 = parser0.parseHtml(html, city);
         }
-        if (snowdataBergfex && !snowdataBergfex.isOutdated()) {
-            console.log(' -- t7 -- snowdata and tell: ', snowdataBergfex);
-            hanldeSchneeInfo(intentHandler, city, snowdataBergfex);
+        if (snowdata0 && !snowdata0.isOutdated()) {
+            console.log(' -- t7 -- snowdata and tell: ', snowdata0);
+            hanldeSchneeInfo(intentHandler, city, snowdata0);
         } else {
-            const skiinfoParser = new SkiinfoStrgParser(skiinfoContainer);
-            skiinfoParser.getHtmlPage(city, (html) => {
-                let snowdataSkiinfo;
+            const parser1 = parsers[1];
+            parser1.getHtmlPage(city, (html) => {
+                let snowdata1;
                 if (html) {
-                    snowdataSkiinfo = skiinfoParser.parseHtml(html, city);
+                    snowdata1 = parser1.parseHtml(html, city);
                 }
-                if ( !snowdataSkiinfo && snowdataBergfex ) {
-                    console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
-                    hanldeSchneeInfo(intentHandler, city, snowdataBergfex);                    
+                if ( !snowdata1 && snowdata0 ) {
+                    console.log(' -- t7 -- snowdata and tell: ', snowdata1);
+                    hanldeSchneeInfo(intentHandler, city, snowdata0);                    
                 } else {
-                    console.log(' -- t7 -- snowdata and tell: ', snowdataSkiinfo);
-                    hanldeSchneeInfo(intentHandler, city, snowdataSkiinfo);                    
+                    console.log(' -- t7 -- snowdata and tell: ', snowdata1);
+                    hanldeSchneeInfo(intentHandler, city, snowdata1);                    
                 }
             });
         }

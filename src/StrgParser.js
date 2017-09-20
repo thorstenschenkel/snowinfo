@@ -221,7 +221,8 @@ class StrgParser {
                     // console.log(' -- t7 -- trString: ' + trString);
                     let snowdata = this.getSnowDataFromHtml(trString);
                     if (!snowdata) continue;
-                    // console.log(' -- t7 -- snowdata: ', snowdata);
+                    console.log(' -- t7 -- DBG -- snowdata: ', snowdata);
+                    console.log(' -- t7 -- DBG -- searchStrg: ', searchStrg);
                     if (this.searchCompareStrg(searchStrg, snowdata)) {
                         snowdata.city = city;
                         if ( retData ) {

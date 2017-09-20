@@ -93,7 +93,6 @@ describe('test of SpeechOut', function () {
 
     });
 
-
     it('test the method _addStartAndCity', function () {
 
         const snowdata = {};
@@ -104,14 +103,14 @@ describe('test of SpeechOut', function () {
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In Ischgl');
 
-        container.push('Ischgl', '', '', [], 'In dem Skigebiet von', '');
+        container.push('Ischgl', '', '', [], 'Ischgl','In dem Skigebiet von', '');
         strg = '';
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In dem Skigebiet von Ischgl');
 
         container = new WebDataContainer('testRes');
         speechOut = new SpeechOut('Ischgl', snowdata, container);
-        container.push('Ischgl', '', '', [], 'In dem Skigebiet', 'Silvretta');
+        container.push('Ischgl', '', '', [], 'Ischgl', 'In dem Skigebiet', 'Silvretta');
         strg = '';
         strg = speechOut._addStartAndCity(strg);
         expect(strg).toBe('In dem Skigebiet Silvretta');
