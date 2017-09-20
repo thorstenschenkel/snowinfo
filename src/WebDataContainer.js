@@ -70,6 +70,15 @@ class WebDataContainer {
         return;
     }
 
+    getSearchStrg(city) {
+        if (!city) return;
+        let resort = this.getResort(city);
+        if (resort) {
+            return resort.searchStrg;
+        }
+        return;
+    }
+
     getSpeechstart(city) {
         if (!city) return;
         let resort = this.getResort(city);

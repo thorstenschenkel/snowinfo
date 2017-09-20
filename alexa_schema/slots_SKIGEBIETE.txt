@@ -3,6 +3,8 @@ Alpbachtal
 Alpendorf
 Bad Kleinkirchheim
 Bergeralm
+Berwang
+Bichlbach
 Dachstein Gletscher
 Damüls
 Fellhorn
@@ -14,6 +16,7 @@ Fliess
 Fügen
 Galtür
 Gerlitzen
+Gerlos
 Heuberg
 Hintertux
 Hintertuxer Gletscher
@@ -68,6 +71,7 @@ Schlick
 Schlick 2000
 Schmitten
 Schmittenhöhe
+Schröcken
 Serfaus
 Silvretta
 Silvretta Montafon
@@ -77,11 +81,20 @@ Steinach
 Steinach am Brenner
 Stubaier Gletscher
 Stubaital
+Stuben
+Stuben am Arlberg
+Tauplitz
+Tauplitzalm
 Turracher Höhe
 Vent
 Wagrain
+Walchsee
 Walmendingerhorn
+Warth
+Zahmer Kaiser
 Zams
 Zauchensee
 Zell am See
-Zürs 
+Zell am Ziller
+Zillertal Arena
+Zürs

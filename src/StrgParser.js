@@ -155,46 +155,61 @@ class StrgParser {
            return false;
     }
 
-    searchCompare(searchArray, snowdata) {
+    searchCompareStrg( searchString, snowdata) {
 
-        // console.log(' -- t7 -- searchCompare: ', searchArray);
-        // console.log(' -- t7 -- searchCompare: ', snowdata);
-        if (!searchArray || !snowdata || !snowdata.skiresort) {
+        if (!searchString || !snowdata || !snowdata.skiresort) {
             return false;
         }
         let resort = snowdata.skiresort.toLowerCase();
-        for (let key in searchArray) {
-            let search = searchArray[key].toLowerCase();
-            if (resort.indexOf(search) === -1) {
-                // console.log(' -- t7 -- search: ' + search);
-                return false;
-            }
-        }
+        resort = resort.replace(/[^0-9a-z]/gi, '');
+        let search = searchString.toLowerCase();
+        search = search.replace(/[^0-9a-z]/gi, '');
 
-        let resortLength = 0;
-        for (var i = 0; i <= resort.length; i++) {
-            if ( this.isALetter(resort.charAt(i)) ) {
-                resortLength++;
-            }
-        }
-        const searchString = searchArray.toString().toLowerCase();
-        let searchLength = 0;
-        for (var j = 0; j <= searchString.length; j++) {
-            if ( this.isALetter(searchString.charAt(j)) ) {
-                searchLength++;
-            }
-        }
-
-        return ( resortLength === searchLength );
-
+        return resort === search;
+        
     }
+
+    // searchCompareArray(searchArray, snowdata) {
+
+    //     // console.log(' -- t7 -- searchCompare: ', searchArray);
+    //     // console.log(' -- t7 -- searchCompare: ', snowdata);
+    //     if (!searchArray || !snowdata || !snowdata.skiresort) {
+    //         return false;
+    //     }
+    //     let resort = snowdata.skiresort.toLowerCase();
+    //     for (let key in searchArray) {
+    //         let search = searchArray[key].toLowerCase();
+    //         if (resort.indexOf(search) === -1) {
+    //             // console.log(' -- t7 -- search: ' + search);
+    //             return false;
+    //         }
+    //     }
+
+    //     let resortLength = 0;
+    //     for (var i = 0; i <= resort.length; i++) {
+    //         if ( this.isALetter(resort.charAt(i)) ) {
+    //             resortLength++;
+    //         }
+    //     }
+    //     const searchString = searchArray.toString().toLowerCase();
+    //     let searchLength = 0;
+    //     for (var j = 0; j <= searchString.length; j++) {
+    //         if ( this.isALetter(searchString.charAt(j)) ) {
+    //             searchLength++;
+    //         }
+    //     }
+
+    //     return ( resortLength === searchLength );
+
+    // }
 
     parseHtml(htmlString, city) {
         if (!htmlString) {
             return;
         }
         let retData;
-        let searchArray = this.webDataContainer.getSearch(city);
+        // let searchArray = this.webDataContainer.getSearch(city);
+        let searchStrg = this.webDataContainer.getSearchStrg(city);
         var tabStrings = this.getTablesHtmlContent(htmlString);
         for (let tabStrg of tabStrings) {
             if (!tabStrg) continue;
@@ -207,7 +222,7 @@ class StrgParser {
                     let snowdata = this.getSnowDataFromHtml(trString);
                     if (!snowdata) continue;
                     // console.log(' -- t7 -- snowdata: ', snowdata);
-                    if (this.searchCompare(searchArray, snowdata)) {
+                    if (this.searchCompareStrg(searchStrg, snowdata)) {
                         snowdata.city = city;
                         if ( retData ) {
                             console.warn(' -- t7 - WRN -- multi retData!', retData);                           

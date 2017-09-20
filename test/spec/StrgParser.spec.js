@@ -14,7 +14,8 @@ describe('test of StrgParser', function () {
         expect(parser.getHtmlPage).toBeDefined();
         expect(parser.getOnlyInt).toBeDefined();
         expect(parser.getDate).toBeDefined();
-        expect(parser.searchCompare).toBeDefined();
+        // expect(parser.searchCompare).toBeDefined();
+        expect(parser.searchCompareStrg).toBeDefined();
         expect(parser.parseHtml).toBeDefined();
         expect(parser.isSnowDepthTable).toBeDefined();
         expect(parser.getSnowDataFromHtml).toBeDefined();
@@ -118,18 +119,32 @@ describe('test of StrgParser', function () {
 
     });
 
-    it('test method searchCompare', function () {
+    // it('test method searchCompare', function () {
+
+    //     let parser = new StrgParser();
+
+    //     let searchArray = [];
+    //     let snowdata = {};
+    //     expect(parser.searchCompare(searchArray,snowdata)).toBe(false);
+
+    //     searchArray = ['Hintertuxer', 'Gletscher', 'Hintertux'];
+    //     snowdata.skiresort = 'Hintertuxer Gletscher / Hintertux';
+    //     expect(parser.searchCompare(searchArray,snowdata)).toBe(true);
+
+    // });
+
+    it('test method searchCompareStrg', function () {
 
         let parser = new StrgParser();
 
-        let searchArray = [];
+        let searchStrg = '';
         let snowdata = {};
-        expect(parser.searchCompare(searchArray,snowdata)).toBe(false);
+        expect(parser.searchCompareStrg(searchStrg, snowdata)).toBe(false);
 
-        searchArray = ['Hintertuxer', 'Gletscher', 'Hintertux'];
-        snowdata.skiresort = 'Hintertuxer Gletscher / Hintertux';
-        expect(parser.searchCompare(searchArray,snowdata)).toBe(true);
-        
+        searchStrg = 'Hintertuxer Gletscher / Hintertux';
+        snowdata.skiresort = ' Hintertuxer Gletscher / Hintertux ';
+        expect(parser.searchCompareStrg(searchStrg, snowdata)).toBe(true);
+
     });
 
 });
