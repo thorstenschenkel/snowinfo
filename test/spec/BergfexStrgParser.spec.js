@@ -1,5 +1,4 @@
 const BergfexStrgParser = require('../../src/BergfexStrgParser');
-const WebDataContainer = require('../../src/WebDataContainer');
 
 describe('test of BergfexStrgParser', function () {
 

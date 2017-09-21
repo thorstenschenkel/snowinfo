@@ -35,6 +35,10 @@ class WebDataContainer {
             dataObejct.speechskiresort);
     }
 
+    getProtocol() {
+        return;
+    }   
+
     getResort(city) {
         if (!city) return;
         for (let data of this.webDatas) {

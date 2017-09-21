@@ -1,4 +1,19 @@
 const http = require('http');
+const https = require('https');
+
+function _body(response,callback) {
+    let body = '';
+    response.on('data', function (d) {
+        body += d;
+    });
+    response.on('end', function () {
+        if ( body.length === 0 ) {
+            console.warn(' -- t7 - WRN -- body of HTML page if empty');
+        }
+        // console.log(' -- t7 -- DBG -- body: ' + body);
+        callback(body);
+    });
+}
 
 class StrgParser {
 
@@ -67,7 +82,7 @@ class StrgParser {
     getHtmlPage(city, callback) {
 
         if (!this.webDataContainer.getResort(city)) {
-            // console.log(' -- t7 - DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
+            // console.log(' -- t7 -- DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
             return callback();
         }
 
@@ -82,21 +97,32 @@ class StrgParser {
             return callback();
         }
 
-        return http.get({
-            host: host,
-            path: path
-        }, function (response) {
-            let body = '';
-            response.on('data', function (d) {
-                body += d;
+        const protocol = this.webDataContainer.getProtocol();
+        if ( protocol === 'https' ) {
+            console.log(' -- t7 -- DBG -- https');
+            return https.get({
+                host: host,
+                path: path
+            }, function (response) {
+                // console.log(' -- t7 -- DBG -- https-response: ', response);
+                _body(response,callback);
+            }).on('error', function (e) {
+                console.warn(' -- t7 -- WRN -- Can not get HTML page over https: ' + e.message);
+                callback();
             });
-            response.on('end', function () {
-                callback(body);
+        } else {
+            console.log(' -- t7 -- DBG -- http');
+            return http.get({
+                host: host,
+                path: path
+            }, function (response) {
+                // console.log(' -- t7 -- DBG -- http-response: ', response);
+                _body(response,callback);
+            }).on('error', function (e) {
+                console.warn(' -- t7 -- WRN -- Can not get HTML page over http: ' + e.message);
+                callback();
             });
-        }).on('error', function (e) {
-            console.warn(' -- t7 -- WRN -- Can not get HTML page: ' + e.message);
-            callback();
-        });
+        }
 
     }
 
@@ -105,7 +131,7 @@ class StrgParser {
             return 0;
         }
         let num = strg.replace(/[^0-9]/g, '');
-        // console.log(' -- t7 -- num: ' + num);
+        // console.log(' -- t7 -- DBG -- num: ' + num);
         if (num && num.indexOf('0') === 0) {
             num = num.substring(1);
         }
@@ -149,13 +175,13 @@ class StrgParser {
     }
 
     isALetter(charVal) {
-        if( charVal.toUpperCase() != charVal.toLowerCase() )
-           return true;
+        if (charVal.toUpperCase() != charVal.toLowerCase())
+            return true;
         else
-           return false;
+            return false;
     }
 
-    searchCompareStrg( searchString, snowdata) {
+    searchCompareStrg(searchString, snowdata) {
 
         if (!searchString || !snowdata || !snowdata.skiresort) {
             return false;
@@ -166,7 +192,7 @@ class StrgParser {
         search = search.replace(/[^0-9a-z]/gi, '');
 
         return resort === search;
-        
+
     }
 
     // searchCompareArray(searchArray, snowdata) {
@@ -214,19 +240,19 @@ class StrgParser {
         for (let tabStrg of tabStrings) {
             if (!tabStrg) continue;
             if (this.isSnowDepthTable(tabStrg)) {
-                // console.log(' -- t7 -- tabStrg: ' + tabStrg);
+                // console.log(' -- t7 -- DBG -- tabStrg: ' + tabStrg);
                 var trStrings = this.getRowHtmlContent(tabStrg);
                 for (let trString of trStrings) {
                     if (!trString) continue;
-                    // console.log(' -- t7 -- trString: ' + trString);
+                    // console.log(' -- t7 -- DBG -- trString: ' + trString);
                     let snowdata = this.getSnowDataFromHtml(trString);
                     if (!snowdata) continue;
-                    console.log(' -- t7 -- DBG -- snowdata: ', snowdata);
-                    console.log(' -- t7 -- DBG -- searchStrg: ', searchStrg);
+                    // console.log(' -- t7 -- DBG -- snowdata: ', snowdata);
+                    // console.log(' -- t7 -- DBG -- searchStrg: ', searchStrg);
                     if (this.searchCompareStrg(searchStrg, snowdata)) {
                         snowdata.city = city;
-                        if ( retData ) {
-                            console.warn(' -- t7 - WRN -- multi retData!', retData);                           
+                        if (retData) {
+                            console.warn(' -- t7 -- WRN -- multi retData!', retData);
                         }
                         retData = snowdata;
                         console.log(' -- t7 -- DBG -- retData: ', retData);
@@ -237,11 +263,13 @@ class StrgParser {
         return retData;
     }
 
-    isSnowDepthTable(tabStrg) { // abstract
+    // abstract
+    isSnowDepthTable(tabStrg) { // jshint ignore:line
         return;
     }
 
-    getSnowDataFromHtml(trString) { // abstract
+    // abstract
+    getSnowDataFromHtml(trString) { // jshint ignore:line
         return;
     }
 

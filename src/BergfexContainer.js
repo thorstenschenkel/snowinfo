@@ -2,11 +2,14 @@ const WebDataContainer = require('./WebDataContainer');
 
 class BergfexContainer extends WebDataContainer {
 
+    getProtocol() {
+        return 'https';
+    }   
+
     constructor() {
 
         super('bergfex');
-
-
+   
         // Alpbach - Ski Juwel Alpbachtal Wildschönau
         this.pushObject({
             city: 'Alpbach',

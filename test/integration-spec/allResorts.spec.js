@@ -19,21 +19,24 @@ describe('test of all ski resorts', function () {
             let city = cityArray[i];
             city = city.trim();
 
+            // console.log( ' -- t7 -- TST-DBG -- begin of BergfexStrgParser' );
             const bergfexParser = new BergfexStrgParser(bergfexContainer);
-            bergfexParser.getHtmlPage(city, (html) => {
-
+            bergfexParser.getHtmlPage(city, (bergfexHtml) => {
+                // console.log( ' -- t7 -- TST-DBG -- bergfex-html: ', bergfexHtml );
                 let snowdataBergfex;
-                if (html) {
-                    snowdataBergfex = bergfexParser.parseHtml(html, city);
+                if (bergfexHtml) {
+                    snowdataBergfex = bergfexParser.parseHtml(bergfexHtml, city);
                 }
                 if (snowdataBergfex && !snowdataBergfex.isOutdated()) {
                     // hanldeSchneeInfo(city, snowdataBergfex);
                 } else {
+                    // console.log( ' -- t7 -- TST-DBG -- begin of SkiinfoStrgParser' );
                     const skiinfoParser = new SkiinfoStrgParser(skiinfoContainer);
-                    skiinfoParser.getHtmlPage(city, (html) => {
+                    skiinfoParser.getHtmlPage(city, (skiinfoHtml) => {
+                        // console.log( ' -- t7 -- TST-DBG -- skiinfo-html: ', skiinfoHtml );
                         let snowdataSkiinfo;
-                        if (html) {
-                            snowdataSkiinfo = skiinfoParser.parseHtml(html, city);
+                        if (skiinfoHtml) {
+                            snowdataSkiinfo = skiinfoParser.parseHtml(skiinfoHtml, city);
                         }
                         let dataCity;
                         if ( !dataCity && snowdataBergfex ) {

@@ -1,5 +1,4 @@
 const SkiinfoStrgParser = require('../../src/SkiinfoStrgParser');
-const WebDataContainer = require('../../src/WebDataContainer');
 
 describe('test of SkiinfoStrgParser', function () {
 

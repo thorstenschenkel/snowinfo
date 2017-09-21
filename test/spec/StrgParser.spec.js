@@ -1,5 +1,4 @@
 const StrgParser = require('../../src/StrgParser');
-const WebDataContainer = require('../../src/WebDataContainer');
 
 describe('test of StrgParser', function () {
 
