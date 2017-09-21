@@ -52,10 +52,14 @@ const handlers = {
         }
         console.log(' -- t7 -- DBG -- city : ' + city);
         if (!city) {
-            this.emit(':tell', this.t(ERROR_NO_CITY));
+            // console.log(' -- t7 -- DBG -- no city : ' + city);
+            this.response.speak(ERROR_NO_CITY);
+            this.emit(':responseReady');
         } else {
             if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
-                this.emit(':tell', this.t(ERROR_UNKNOW_CITY));
+                // console.log(' -- t7 -- DBG -- unkown city : ' + city);
+                this.response.speak(ERROR_UNKNOW_CITY);
+                this.emit(':responseReady');
             } else {
                 getSnowDataAndTell(this, city);
             }
