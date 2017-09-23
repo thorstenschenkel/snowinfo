@@ -1,6 +1,8 @@
 'use strict';
 
 const Alexa = require('alexa-sdk');
+const MongoClient = require('mongodb').MongoClient;
+
 const BergfexContainer = require('./BergfexContainer');
 const SkiinfoContainer = require('./SkiinfoContainer');
 const BergfexStrgParser = require('./BergfexStrgParser');
@@ -8,8 +10,8 @@ const SkiinfoStrgParser = require('./SkiinfoStrgParser');
 const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
 
-const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
-// const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
+// const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
+const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
 
 const ERROR_NO_CITY = 'Es wurde keine Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
@@ -30,10 +32,49 @@ const skiinfoContainer = new SkiinfoContainer();
 const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
 
 //=========================================================================================================================================
-//
+// DB
 //=========================================================================================================================================
 
-const parsers = [bergfexStrgParser,skiinfoStrgParser];
+const DB_PWD = 'Byd0RYnRUq1S9Nkp';
+const DB_URI = 'mongodb://snowinfo:' + DB_PWD + '@cluster0-shard-00-00-bavvq.mongodb.net:27017,cluster0-shard-00-01-bavvq.mongodb.net:27017,cluster0-shard-00-02-bavvq.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
+
+let cachedDb;
+
+function _insertInDB(db, searchStrg, snowdata, callback) {
+    db.collection("snowdatas").insertOne({
+        searchStrg: searchStrg,
+        snowdata: snowdata
+    }, function (err, result) {
+        if (err != null) {
+            console.err(' -- t7 -- DBG -- Can not insert snowdata into DB : ', err);
+        } else {
+            console.log(' -- t7 -- DBG -- inserted snowdata into DB : ', result.insertedId);
+        }
+        callback();
+    });
+}
+
+function storeInDB(searchStrg, snowdata, callback) {
+    if (cachedDb && cachedDb.serverConfig.isConnected()) {
+        _insertInDB(cachedDb, searchStrg, snowdata);
+    } else {
+        MongoClient.connect(DB_URI, function (err, db) {
+            cachedDb = db;
+            if (err != null) {
+                console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
+                callback();
+            } else {
+                _insertInDB(db, searchStrg, snowdata, callback);
+            }
+        });
+    }
+}
+
+//=========================================================================================================================================
+// 
+//=========================================================================================================================================
+
+const parsers = [bergfexStrgParser, skiinfoStrgParser];
 
 let myHandler;
 
@@ -81,7 +122,7 @@ exports.handler = function (event, context) {
 
 function getMatchingContainer(snowdata) {
 
-    if ( !snowdata ) return;
+    if (!snowdata) return;
 
     if (snowdata.resource === bergfexContainer.resource) {
         return bergfexContainer;
@@ -95,13 +136,21 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
     let container = getMatchingContainer(snowdata);
 
-    let speechOut = new SpeechOut(city, snowdata, container);
-    speechOut.addSpeak(intentHandler);
+    storeInDB(container.getSearchStrg(city), snowdata, () => {
 
-    let cardUtils = new CardUtils(city, snowdata);
-    cardUtils.addCardRenderer(intentHandler);
+        if ( cachedDb ) {
+            cachedDb.close();
+        }
 
-    intentHandler.emit(':responseReady');
+        let speechOut = new SpeechOut(city, snowdata, container);
+        speechOut.addSpeak(intentHandler);
+
+        let cardUtils = new CardUtils(city, snowdata);
+        cardUtils.addCardRenderer(intentHandler);
+
+        intentHandler.emit(':responseReady');
+
+    });
 
 }
 
@@ -124,12 +173,12 @@ function getSnowDataAndTell(intentHandler, city) {
                 if (html1) {
                     snowdata1 = parser1.parseHtml(html1, city);
                 }
-                if ( !snowdata1 && snowdata0 ) {
+                if (!snowdata1 && snowdata0) {
                     console.log(' -- t7 -- DBG -- snowdata and tell: ', snowdata1);
-                    hanldeSchneeInfo(intentHandler, city, snowdata0);                    
+                    hanldeSchneeInfo(intentHandler, city, snowdata0);
                 } else {
                     console.log(' -- t7 -- DBG -- snowdata and tell: ', snowdata1);
-                    hanldeSchneeInfo(intentHandler, city, snowdata1);                    
+                    hanldeSchneeInfo(intentHandler, city, snowdata1);
                 }
             });
         }
