@@ -19,6 +19,7 @@ class StrgParser {
 
     constructor(webDataContainer) {
         this.webDataContainer = webDataContainer;
+        this.snowdataArray = [];
     }
 
     getPartContent(htmlString, startTag, endTag) {
@@ -181,60 +182,36 @@ class StrgParser {
             return false;
     }
 
+    reduceSearchStrg(searchString) {
+        if ( searchString ) {
+            let search = searchString.toLowerCase();
+            return search.replace(/[^0-9a-z]/gi, '');        
+        }
+    }
+
     searchCompareStrg(searchString, snowdata) {
 
         if (!searchString || !snowdata || !snowdata.skiresort) {
             return false;
         }
-        let resort = snowdata.skiresort.toLowerCase();
-        resort = resort.replace(/[^0-9a-z]/gi, '');
-        let search = searchString.toLowerCase();
-        search = search.replace(/[^0-9a-z]/gi, '');
+        let resort = this.reduceSearchStrg(snowdata.skiresort);
+        let search = this.reduceSearchStrg(searchString);
 
         return resort === search;
 
     }
 
-    // searchCompareArray(searchArray, snowdata) {
-
-    //     // console.log(' -- t7 -- searchCompare: ', searchArray);
-    //     // console.log(' -- t7 -- searchCompare: ', snowdata);
-    //     if (!searchArray || !snowdata || !snowdata.skiresort) {
-    //         return false;
-    //     }
-    //     let resort = snowdata.skiresort.toLowerCase();
-    //     for (let key in searchArray) {
-    //         let search = searchArray[key].toLowerCase();
-    //         if (resort.indexOf(search) === -1) {
-    //             // console.log(' -- t7 -- search: ' + search);
-    //             return false;
-    //         }
-    //     }
-
-    //     let resortLength = 0;
-    //     for (var i = 0; i <= resort.length; i++) {
-    //         if ( this.isALetter(resort.charAt(i)) ) {
-    //             resortLength++;
-    //         }
-    //     }
-    //     const searchString = searchArray.toString().toLowerCase();
-    //     let searchLength = 0;
-    //     for (var j = 0; j <= searchString.length; j++) {
-    //         if ( this.isALetter(searchString.charAt(j)) ) {
-    //             searchLength++;
-    //         }
-    //     }
-
-    //     return ( resortLength === searchLength );
-
-    // }
+    addDbFindAndRemoveStrgs( snowdata, city ) {
+        snowdata.findStrg = this.reduceSearchStrg(snowdata.skiresort);
+        snowdata.removeStrg = this.webDataContainer.getHost(city) + this.webDataContainer.getPath(city);
+    }
 
     parseHtml(htmlString, city) {
         if (!htmlString) {
             return;
         }
         let retData;
-        // let searchArray = this.webDataContainer.getSearch(city);
+        this.snowdataArray = [];
         let searchStrg = this.webDataContainer.getSearchStrg(city);
         var tabStrings = this.getTablesHtmlContent(htmlString);
         for (let tabStrg of tabStrings) {
@@ -256,6 +233,10 @@ class StrgParser {
                         }
                         retData = snowdata;
                         console.log(' -- t7 -- DBG -- retData: ', retData);
+                    }
+                    this.addDbFindAndRemoveStrgs(snowdata,city);
+                    if ( snowdata && snowdata.findStrg ) {
+                        this.snowdataArray.push(snowdata);
                     }
                 }
             }
