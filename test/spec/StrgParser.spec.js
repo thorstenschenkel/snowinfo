@@ -1,4 +1,5 @@
 const StrgParser = require('../../src/StrgParser');
+const WebDataContainer = require('../../src/WebDataContainer');
 
 describe('test of StrgParser', function () {
 
@@ -13,11 +14,12 @@ describe('test of StrgParser', function () {
         expect(parser.getHtmlPage).toBeDefined();
         expect(parser.getOnlyInt).toBeDefined();
         expect(parser.getDate).toBeDefined();
-        // expect(parser.searchCompare).toBeDefined();
         expect(parser.searchCompareStrg).toBeDefined();
         expect(parser.parseHtml).toBeDefined();
         expect(parser.isSnowDepthTable).toBeDefined();
         expect(parser.getSnowDataFromHtml).toBeDefined();
+        expect(parser.reduceSearchStrg).toBeDefined();
+        expect(parser.addDbFindAndRemoveStrgs).toBeDefined();
 
     });
 
@@ -118,19 +120,34 @@ describe('test of StrgParser', function () {
 
     });
 
-    // it('test method searchCompare', function () {
+    it('test method reduceSearchStrg', function () {
 
-    //     let parser = new StrgParser();
+        let parser = new StrgParser();
 
-    //     let searchArray = [];
-    //     let snowdata = {};
-    //     expect(parser.searchCompare(searchArray,snowdata)).toBe(false);
+        let strg = 'Hello world! 1 2';
+        expect(parser.reduceSearchStrg(strg)).toBe('helloworld12');
 
-    //     searchArray = ['Hintertuxer', 'Gletscher', 'Hintertux'];
-    //     snowdata.skiresort = 'Hintertuxer Gletscher / Hintertux';
-    //     expect(parser.searchCompare(searchArray,snowdata)).toBe(true);
+    });
 
-    // });
+
+    it('test method addDbFindAndRemoveStrgs', function () {
+
+        let schneeContainer = new WebDataContainer('schnee');
+        schneeContainer.pushObject({
+            city: 'Fendels',
+            host: 'www.schnnee.com',
+            path: '/tirol/schneewerte/',
+            search: ['Fendels', 'Ried', 'Prutz'],
+            speechstart: 'In'
+        });
+        let parser = new StrgParser(schneeContainer);
+        let snowdata = {};
+        snowdata.skiresort = 'Galtür / Paznaun-Ischgl';
+        parser.addDbFindAndRemoveStrgs(snowdata, 'Fendels');
+        expect(snowdata.findStrg).toBe('galtrpaznaunischgl');
+        expect(snowdata.removeStrg).toBe('www.schnnee.com/tirol/schneewerte/');
+
+    });
 
     it('test method searchCompareStrg', function () {
 
