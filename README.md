@@ -9,4 +9,4 @@ Alexa frage Frau Holle nach den Schneemengen auf dem Stubaier Gletscher
 ```
 
 ## Notes
-Derzeit werden etwas mehr als 20 Skigebiete unterstützt. 
+Derzeit werden etwas mehr als 70 Skigebiete unterstützt. 
