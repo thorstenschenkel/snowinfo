@@ -1,1 +1,1 @@
-Mit dem Skill Frau Holle kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
+Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.

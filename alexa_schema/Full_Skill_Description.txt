@@ -1,4 +1,4 @@
-Mit dem Skill Frau Holle kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
+Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
 
 Im Moment werden vorwiegend Schneehöhen von einigen österreichischen Skigebieten geliefert.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
