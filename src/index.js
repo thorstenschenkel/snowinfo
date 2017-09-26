@@ -10,6 +10,7 @@ const BergfexStrgParser = require('./BergfexStrgParser');
 const SkiinfoStrgParser = require('./SkiinfoStrgParser');
 const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
+const Snowdata = require('./Snowdata');
 
 // const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
 const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
@@ -41,25 +42,13 @@ const parsers = [bergfexStrgParser, skiinfoStrgParser];
 const DB_PWD = process.env.DB_PWD;
 const DB_URI = 'mongodb://snowinfo:' + DB_PWD + '@cluster0-shard-00-00-bavvq.mongodb.net:27017,cluster0-shard-00-01-bavvq.mongodb.net:27017,cluster0-shard-00-02-bavvq.mongodb.net:27017/snowinfo?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 const DB_COLLECTION = 'snowdatas';
+const ONE_HOUR = 60 * 60 * 1000; /* ms */
 
 let cachedDb;
 
-function _insertAllInDB(db, callback) {
+function _insertAllInDB(db, snowdataArray, callback) {
 
     const col = db.collection(DB_COLLECTION);
-
-    let snowdataArray = [];
-    for (let i = 0; i < parsers.length; i++) {
-        if (parsers[i].snowdataArray) {
-            snowdataArray = snowdataArray.concat(parsers[i].snowdataArray);
-        }
-    }
-
-    if (!snowdataArray || snowdataArray.length === 0) {
-        console.warn(' -- t7 -- WRN -- no snowdatas to insert into DB');
-        callback();
-        return;
-    }
 
     let query = {};
     query.$or = [];
@@ -96,8 +85,22 @@ function _insertAllInDB(db, callback) {
 }
 
 function storeAllInDB(callback) {
+
+    let snowdataArray = [];
+    for (let i = 0; i < parsers.length; i++) {
+        if (parsers[i].snowdataArray) {
+            snowdataArray = snowdataArray.concat(parsers[i].snowdataArray);
+        }
+    }
+
+    if (!snowdataArray || snowdataArray.length === 0) {
+        console.warn(' -- t7 -- WRN -- no snowdatas to insert into DB');
+        callback();
+        return;
+    }
+
     if (cachedDb && cachedDb.serverConfig.isConnected()) {
-        _insertAllInDB(cachedDb, callback);
+        _insertAllInDB(cachedDb, snowdataArray, callback);
     } else {
         MongoClient.connect(DB_URI, function (err, db) {
             cachedDb = db;
@@ -105,44 +108,55 @@ function storeAllInDB(callback) {
                 console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
                 callback();
             } else {
-                _insertAllInDB(cachedDb, callback);
+                _insertAllInDB(cachedDb, snowdataArray, callback);
             }
         });
     }
 }
 
-function _findInDb(db, callback, city) {
+function _findInDb(city, db, callback) {
 
     const col = db.collection(DB_COLLECTION);
-    
+
     let findStrg;
     for (let i = 0; i < parsers.length; i++) {
-        let searchStrg = parsers[i].getSearchStrg(city);
-        if ( searchStrg ) {
+        let searchStrg = parsers[i].webDataContainer.getSearchStrg(city);
+        if (searchStrg) {
             findStrg = parsers[i].reduceSearchStrg(searchStrg);
             break;
         }
     }
-    if ( !findStrg ) {
+    if (!findStrg) {
+        console.error(' -- t7 -- ERR -- Can not findStrg for: ' + city);
         callback();
         return;
     }
-    let query = { findStrg: findStrg };    
 
-    col.find(query).toArray(function(err, results){
+    let query = { findStrg: findStrg };
+    col.find(query).toArray(function (err, results) {
         if (err != null) {
-            console.error(' -- t7 -- DBG -- Can not find city "' + city+ '" from DB : ', err);
+            console.error(' -- t7 -- ERR -- Can not find city "' + city + '" from DB : ', err);
             callback();
         } else {
-
+            console.log(' -- t7 -- DBG -- find reuslts: ', results);
+            const now = new Date();
+            let retSnowdata;
+            for (let i = 0; i < results.length; i++) {
+                let lastUpdate = results[i].lastUpdate;
+                // if ((now - lastUpdate) < ONE_HOUR) {
+                    retSnowdata = results[i];
+                // }
+            }
+            const snowdata = new Snowdata(retSnowdata);
+            callback(snowdata);
         }
     });
 
 }
 
-function loadFromDB(callback, city) {
+function loadFromDB(city, callback) {
     if (cachedDb && cachedDb.serverConfig.isConnected()) {
-        _findInDb(cachedDb, callback, city);
+        _findInDb(city, cachedDb, callback);
     } else {
         MongoClient.connect(DB_URI, function (err, db) {
             cachedDb = db;
@@ -150,7 +164,7 @@ function loadFromDB(callback, city) {
                 console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
                 callback();
             } else {
-                _findInDb(cachedDb, callback, city);
+                _findInDb(city, cachedDb, callback);
             }
         });
     }
@@ -187,7 +201,14 @@ const handlers = {
                 this.response.speak(ERROR_UNKNOW_CITY);
                 this.emit(':responseReady');
             } else {
-                getSnowDataAndTell(this, city);
+                loadFromDB(city, (dbSnowData) => {
+                    console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
+                    if (dbSnowData) {
+                        hanldeSchneeInfo(this, city, dbSnowData);
+                    } else {
+                        getSnowDataAndTell(this, city);
+                    }
+                });
             }
         }
     },
