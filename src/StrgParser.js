@@ -22,6 +22,10 @@ class StrgParser {
         this.snowdataArray = [];
     }
 
+    clear() {
+        this.snowdataArray = [];
+    }
+
     getPartContent(htmlString, startTag, endTag) {
 
         let splitStrings = htmlString.split(startTag);

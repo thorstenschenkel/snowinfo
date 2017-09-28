@@ -90,6 +90,7 @@ function storeAllInDB(callback) {
     for (let i = 0; i < parsers.length; i++) {
         if (parsers[i].snowdataArray) {
             snowdataArray = snowdataArray.concat(parsers[i].snowdataArray);
+            parsers[i].clear();
         }
     }
 
@@ -138,17 +139,20 @@ function _findInDb(city, db, callback) {
             console.error(' -- t7 -- ERR -- Can not find city "' + city + '" from DB : ', err);
             callback();
         } else {
-            console.log(' -- t7 -- DBG -- find reuslts: ', results);
+            // console.log(' -- t7 -- DBG -- find reuslts: ', results);
             const now = new Date();
             let retSnowdata;
             for (let i = 0; i < results.length; i++) {
                 let lastUpdate = results[i].lastUpdate;
-                // if ((now - lastUpdate) < ONE_HOUR) {
-                    retSnowdata = results[i];
-                // }
+                if ((now - lastUpdate) < ONE_HOUR) {
+                    if ( retSnowdata ) {
+                        console.warn(' -- t7 -- WRN -- more then one item find in DB for city: ' + city );                        
+                    }
+                    retSnowdata = new Snowdata(results[i]);
+                    retSnowdata.dbResult = true;
+                }
             }
-            const snowdata = new Snowdata(retSnowdata);
-            callback(snowdata);
+            callback(retSnowdata);
         }
     });
 
@@ -237,31 +241,46 @@ function getMatchingContainer(snowdata) {
 
 }
 
-function hanldeSchneeInfo(intentHandler, city, snowdata) {
+function emit(intentHandler, city, snowdata) {
 
     let container = getMatchingContainer(snowdata);
 
-    storeAllInDB(() => {
+    let speechOut = new SpeechOut(city, snowdata, container);
+    speechOut.addSpeak(intentHandler);
 
-        if (cachedDb) {
-            cachedDb.close();
-        }
+    let cardUtils = new CardUtils(city, snowdata);
+    cardUtils.addCardRenderer(intentHandler);
 
-        let speechOut = new SpeechOut(city, snowdata, container);
-        speechOut.addSpeak(intentHandler);
+    intentHandler.emit(':responseReady');
 
-        let cardUtils = new CardUtils(city, snowdata);
-        cardUtils.addCardRenderer(intentHandler);
+}
 
-        intentHandler.emit(':responseReady');
+function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
-    });
+    if ( snowdata.dbResult === true ) {
+
+        emit(intentHandler, city, snowdata);        
+
+    } else {
+
+        storeAllInDB(() => {
+                    
+            if (cachedDb) {
+                cachedDb.close();
+            }
+
+            emit(intentHandler, city, snowdata);
+
+        });
+        
+    }
 
 }
 
 function getSnowDataAndTell(intentHandler, city) {
 
     const parser0 = parsers[0];
+    parser0.clear();
     parser0.getHtmlPage(city, (html0) => {
         // console.log(' -- t7 -- DBG -- html: ', html);
         let snowdata0;
@@ -273,6 +292,7 @@ function getSnowDataAndTell(intentHandler, city) {
             hanldeSchneeInfo(intentHandler, city, snowdata0);
         } else {
             const parser1 = parsers[1];
+            parser1.clear();
             parser1.getHtmlPage(city, (html1) => {
                 let snowdata1;
                 if (html1) {
