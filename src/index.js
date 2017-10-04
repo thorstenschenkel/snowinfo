@@ -1,8 +1,6 @@
 'use strict';
 
 const Alexa = require('alexa-sdk');
-const MongoClient = require('mongodb').MongoClient;
-const lodash = require('lodash');
 
 const BergfexContainer = require('./BergfexContainer');
 const SkiinfoContainer = require('./SkiinfoContainer');
@@ -10,7 +8,7 @@ const BergfexStrgParser = require('./BergfexStrgParser');
 const SkiinfoStrgParser = require('./SkiinfoStrgParser');
 const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
-const Snowdata = require('./Snowdata');
+const DbHelper = require('./DbHelper');
 
 // const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
 const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
@@ -41,138 +39,8 @@ const parsers = [bergfexStrgParser, skiinfoStrgParser];
 
 const DB_PWD = process.env.DB_PWD;
 const DB_URI = 'mongodb://snowinfo:' + DB_PWD + '@cluster0-shard-00-00-bavvq.mongodb.net:27017,cluster0-shard-00-01-bavvq.mongodb.net:27017,cluster0-shard-00-02-bavvq.mongodb.net:27017/snowinfo?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
-const DB_COLLECTION = 'snowdatas';
-const ONE_HOUR = 60 * 60 * 1000; /* ms */
 
-let cachedDb;
-
-function _insertAllInDB(db, snowdataArray, callback) {
-
-    const col = db.collection(DB_COLLECTION);
-
-    let query = {};
-    query.$or = [];
-    for (let i = 0; i < snowdataArray.length; i++) {
-        let removeStrg = snowdataArray[i].removeStrg;
-        let removeStrgObj = { 'removeStrg': removeStrg };
-        if (lodash.findIndex(query.$or, removeStrgObj) === -1) {
-            query.$or.push(removeStrgObj);
-        }
-    }
-    console.log(' -- t7 -- DBG -- removed snowdatas from DB query: ', query);
-
-    let insertBatch = col.initializeUnorderedBulkOp();
-    for (let j = 0; j < snowdataArray.length; j++) {
-        insertBatch.insert(snowdataArray[j]);
-    }
-
-    col.deleteMany(query, function (err01, result01) {
-        if (err01 != null) {
-            console.error(' -- t7 -- DBG -- Can not remove snowdatas from DB : ', err01);
-            callback();
-        } else {
-            console.log(' -- t7 -- DBG -- removed snowdatas from DB : ', result01);
-            insertBatch.execute(function (err02, result02) {
-                if (err02 != null) {
-                    console.error(' -- t7 -- DBG -- Can not insert all snowdatas into DB : ', err02);
-                } else {
-                    console.log(' -- t7 -- DBG -- inserted all snowdatas into DB : ', result02);
-                }
-                callback();
-            });
-        }
-    });
-}
-
-function storeAllInDB(callback) {
-
-    let snowdataArray = [];
-    for (let i = 0; i < parsers.length; i++) {
-        if (parsers[i].snowdataArray) {
-            snowdataArray = snowdataArray.concat(parsers[i].snowdataArray);
-            parsers[i].clear();
-        }
-    }
-
-    if (!snowdataArray || snowdataArray.length === 0) {
-        console.warn(' -- t7 -- WRN -- no snowdatas to insert into DB');
-        callback();
-        return;
-    }
-
-    if (cachedDb && cachedDb.serverConfig.isConnected()) {
-        _insertAllInDB(cachedDb, snowdataArray, callback);
-    } else {
-        MongoClient.connect(DB_URI, function (err, db) {
-            cachedDb = db;
-            if (err != null) {
-                console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
-                callback();
-            } else {
-                _insertAllInDB(cachedDb, snowdataArray, callback);
-            }
-        });
-    }
-}
-
-function _findInDb(city, db, callback) {
-
-    const col = db.collection(DB_COLLECTION);
-
-    let findStrg;
-    for (let i = 0; i < parsers.length; i++) {
-        let searchStrg = parsers[i].webDataContainer.getSearchStrg(city);
-        if (searchStrg) {
-            findStrg = parsers[i].reduceSearchStrg(searchStrg);
-            break;
-        }
-    }
-    if (!findStrg) {
-        console.error(' -- t7 -- ERR -- Can not findStrg for: ' + city);
-        callback();
-        return;
-    }
-
-    let query = { findStrg: findStrg };
-    col.find(query).toArray(function (err, results) {
-        if (err != null) {
-            console.error(' -- t7 -- ERR -- Can not find city "' + city + '" from DB : ', err);
-            callback();
-        } else {
-            // console.log(' -- t7 -- DBG -- find reuslts: ', results);
-            const now = new Date();
-            let retSnowdata;
-            for (let i = 0; i < results.length; i++) {
-                let lastUpdate = results[i].lastUpdate;
-                if ((now - lastUpdate) < ONE_HOUR) {
-                    if ( retSnowdata ) {
-                        console.warn(' -- t7 -- WRN -- more then one item find in DB for city: ' + city );                        
-                    }
-                    retSnowdata = new Snowdata(results[i]);
-                    retSnowdata.dbResult = true;
-                }
-            }
-            callback(retSnowdata);
-        }
-    });
-
-}
-
-function loadFromDB(city, callback) {
-    if (cachedDb && cachedDb.serverConfig.isConnected()) {
-        _findInDb(city, cachedDb, callback);
-    } else {
-        MongoClient.connect(DB_URI, function (err, db) {
-            cachedDb = db;
-            if (err != null) {
-                console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
-                callback();
-            } else {
-                _findInDb(city, cachedDb, callback);
-            }
-        });
-    }
-}
+const dbHelper = new DbHelper(parsers,DB_URI);
 
 //=========================================================================================================================================
 // 
@@ -205,7 +73,7 @@ const handlers = {
                 this.response.speak(ERROR_UNKNOW_CITY);
                 this.emit(':responseReady');
             } else {
-                loadFromDB(city, (dbSnowData) => {
+                dbHelper.loadFromDB(city, (dbSnowData) => {
                     console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
                     if (dbSnowData) {
                         hanldeSchneeInfo(this, city, dbSnowData);
@@ -258,21 +126,12 @@ function emit(intentHandler, city, snowdata) {
 function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
     if ( snowdata.dbResult === true ) {
-
         emit(intentHandler, city, snowdata);        
-
     } else {
-
-        storeAllInDB(() => {
-                    
-            if (cachedDb) {
-                cachedDb.close();
-            }
-
+        dbHelper.storeAllInDB(() => {
+            dbHelper.close();
             emit(intentHandler, city, snowdata);
-
         });
-        
     }
 
 }
