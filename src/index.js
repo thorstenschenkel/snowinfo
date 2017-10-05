@@ -13,7 +13,7 @@ const DbHelper = require('./DbHelper');
 // const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
 const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
 
-const ERROR_NO_CITY = 'Es wurde keine Ort oder ein unbekannter Ort angegeben!';
+const ERROR_NO_CITY = 'Es wurde kein Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
 const HELP_MESSAGE = 'Du kannst mir ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 
