@@ -331,6 +331,14 @@ class SkiinfoContainer extends WebDataContainer {
             speechstart: 'Auf dem',
             speechskiresort: 'Pitztaler Gletscher'
         });
+        // Reiteralm
+        this.pushObject({
+            city: 'Reiteralm',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            search: ['Reiteralm'],
+            searchStrg: 'Reiteralm',
+            speechstart: 'Auf der'
+        });
         // St. Anton am Arlberg
         this.pushObject({
             city: 'Sankt Anton',
@@ -684,7 +692,6 @@ Radstadt - Altenmarkt
 Ramsau am Dachstein
 Rangger Köpfl
 Rauris
-Reiteralm
 Reutte Hahnenkamm
 Riesneralm
 Rifflsee - Pitztal

@@ -31,7 +31,7 @@ const bergfexStrgParser = new BergfexStrgParser(bergfexContainer);
 const skiinfoContainer = new SkiinfoContainer();
 const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
 
-const parsers = [bergfexStrgParser, skiinfoStrgParser];
+const parsers = [skiinfoStrgParser, bergfexStrgParser];
 
 //=========================================================================================================================================
 // DB
