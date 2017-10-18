@@ -15,7 +15,10 @@ const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schnee
 
 const ERROR_NO_CITY = 'Es wurde kein Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
-const HELP_MESSAGE = 'Du kannst mir ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
+const HELP_MESSAGE = 'Du kannst mir einen Ort oder ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
+const LAUNCH_MESSAGE = 'Servus, für welchen Ort solle ich dir die Schneehöhen liefern?';
+const REPROMPT_MESSAGE = 'Hallo, du musst mir einen Ort oder ein Schigebiet nennen!';
+const STOP_MESSAGE = 'Auf Wiederschauen!';
 
 //=========================================================================================================================================
 // BERGFEX
@@ -52,7 +55,8 @@ const handlers = {
     // ?
     'LaunchRequest': function () {
         console.log(' -- t7 -- DBG -- LaunchRequest ');
-        this.emit('SchneeInfoIntent');
+        this.response.speak(LAUNCH_MESSAGE).listen(REPROMPT_MESSAGE);
+        this.emit(':responseReady');
     },
     'SchneeInfoIntent': function () {
         myHandler = this;
@@ -83,6 +87,18 @@ const handlers = {
                 });
             }
         }
+    },
+    'AMAZON.HelpIntent': function () {
+        this.response.speak(LAUNCH_MESSAGE).listen(REPROMPT_MESSAGE);
+        this.emit(':responseReady');
+    },
+    'AMAZON.CancelIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
+    },
+    'AMAZON.StopIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
     },
     'Unhandled': function () {
         this.emit(':ask', this.t(HELP_MESSAGE), this.t(HELP_MESSAGE));

@@ -166,8 +166,8 @@ class BergfexContainer extends WebDataContainer {
             speechstart: 'Im'
         });
         // Heiligenblut - Grossglockner
-        this.Heiligenblut({
-            city: 'Heuberg',
+        this.pushObject({
+            city: 'Heiligenblut',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
             search: ['Heiligenblut', 'Grossglockner'],
             searchStrg: 'Heiligenblut - Grossglockner',
