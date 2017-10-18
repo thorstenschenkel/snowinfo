@@ -1,6 +1,6 @@
-Mit dem Skill Frau Holle kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
+Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
 
-Im Moment werden vorwiegend Schneehöhen von einigen österreichischen Skigebieten geliefert.
+Im Moment werden vorwiegend Schneehöhen von einigen österreichischen und schweizer Skigebieten geliefert.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
 Derzeit können die Schneehöhen von ca. 70 Orten geliefet werden.
 
@@ -8,18 +8,26 @@ Hier die Liste der Orte:
 
 Alpbach
 Alpendorf
+Arosa
 Bad Kleinkirchheim
 Bergeralm
+Corviglia
 Dachstein Gletscher
 Damüls
+Falera
 Fendels
 Fieberbrunn
 Fiss
 Flachau
 Fliess
+Flims
 Fügen
 Galtür
 Gerlitzen
+Grimentz
+Grindelwald
+Grünau im Almtal
+Heiligenblut
 Heuberg
 Hintertuxer Gletscher
 Hochficht
@@ -30,11 +38,14 @@ Hochoetz
 Hochwurzen
 Hochzeiger
 Ifen
+Igls
+Ischgl
 Jerzens
 Jungholz
 Kanzelwand
 Kals
 Kappl
+Kasberg
 Kaunertaler Gletscher
 Kitzbühel
 Kitzsteinhorn
@@ -43,9 +54,11 @@ Koralpe
 Kreischberg
 Krimml
 Kühtai
+Laax
 Ladis
 Landeck
 Lech am Arlberg
+Lenzerheide
 Leogang
 Mayrhofen
 Mellau
@@ -56,8 +69,12 @@ Obergurgl
 Obertauern
 Pitztaler Gletscher
 Planai
+Postalm
+Saas-Fee
 Sankt Anton am Arlberg
 Sankt Johann in Tirol
+Sankt Moritz
+Samnaun
 Scheffau
 Schladming
 Schlick
@@ -73,9 +90,12 @@ Turracher Höhe
 Vent
 Wagrain
 Walmendingerhorn
+Wengen
 Zams
 Zauchensee
 Zell am See
+Zermatt
+Zinal
 Zürs 
 
 Alle Angaben ohne Gewähr.

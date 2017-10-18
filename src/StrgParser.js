@@ -22,6 +22,10 @@ class StrgParser {
         this.snowdataArray = [];
     }
 
+    clear() {
+        this.snowdataArray = [];
+    }
+
     getPartContent(htmlString, startTag, endTag) {
 
         let splitStrings = htmlString.split(startTag);
@@ -84,18 +88,21 @@ class StrgParser {
 
         if (!this.webDataContainer.getResort(city)) {
             // console.log(' -- t7 -- DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
-            return callback();
+            callback();
+            return;
         }
 
         const host = this.webDataContainer.getHost(city);
         if (!host) {
             console.error(' -- t7 - ERR -- Can not get HTML page, no host');
-            return callback();
+            callback();
+            return;
         }
         const path = this.webDataContainer.getPath(city);
         if (!path) {
             console.error(' -- t7 - ERR -- Can not get HTML page, no path');
-            return callback();
+            callback();
+            return;
         }
 
         const protocol = this.webDataContainer.getProtocol();

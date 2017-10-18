@@ -1,8 +1,6 @@
 'use strict';
 
 const Alexa = require('alexa-sdk');
-const MongoClient = require('mongodb').MongoClient;
-const lodash = require('lodash');
 
 const BergfexContainer = require('./BergfexContainer');
 const SkiinfoContainer = require('./SkiinfoContainer');
@@ -10,11 +8,12 @@ const BergfexStrgParser = require('./BergfexStrgParser');
 const SkiinfoStrgParser = require('./SkiinfoStrgParser');
 const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
+const DbHelper = require('./DbHelper');
 
 // const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
 const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
 
-const ERROR_NO_CITY = 'Es wurde keine Ort oder ein unbekannter Ort angegeben!';
+const ERROR_NO_CITY = 'Es wurde kein Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
 const HELP_MESSAGE = 'Du kannst mir ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 
@@ -32,6 +31,8 @@ const bergfexStrgParser = new BergfexStrgParser(bergfexContainer);
 const skiinfoContainer = new SkiinfoContainer();
 const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
 
+const parsers = [bergfexStrgParser, skiinfoStrgParser];
+
 //=========================================================================================================================================
 // DB
 //=========================================================================================================================================
@@ -39,110 +40,11 @@ const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
 const DB_PWD = process.env.DB_PWD;
 const DB_URI = 'mongodb://snowinfo:' + DB_PWD + '@cluster0-shard-00-00-bavvq.mongodb.net:27017,cluster0-shard-00-01-bavvq.mongodb.net:27017,cluster0-shard-00-02-bavvq.mongodb.net:27017/snowinfo?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 
-let cachedDb;
-
-function _insertInDB(db, searchStrg, snowdata, callback) {
-    db.collection('snowdatas').insertOne({
-        searchStrg: searchStrg,
-        snowdata: snowdata
-    }, function (err, result) {
-        if (err != null) {
-            console.error(' -- t7 -- DBG -- Can not insert snowdata into DB : ', err);
-        } else {
-            console.log(' -- t7 -- DBG -- inserted snowdata into DB : ', result.insertedId);
-        }
-        callback();
-    });
-}
-
-function storeInDB(searchStrg, snowdata, callback) {
-    if (cachedDb && cachedDb.serverConfig.isConnected()) {
-        _insertInDB(cachedDb, searchStrg, snowdata);
-    } else {
-        MongoClient.connect(DB_URI, function (err, db) {
-            cachedDb = db;
-            if (err != null) {
-                console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
-                callback();
-            } else {
-                _insertInDB(db, searchStrg, snowdata, callback);
-            }
-        });
-    }
-}
-
-function _insertAllInDB(db, callback) {
-
-    var col = db.collection('snowdatas');
-
-    let snowdataArray = [];
-    for (let i = 0; i < parsers.length; i++) {
-        if (parsers[i].snowdataArray) {
-            snowdataArray = snowdataArray.concat(parsers[i].snowdataArray);
-        }
-    }
-
-    if (!snowdataArray || snowdataArray.length === 0) {
-        console.warn(' -- t7 -- WRN -- no snowdatas to insert into DB');
-        callback();
-        return;
-    }
-
-    let query = {};
-    query.$or = [];
-    for (let i = 0; i < snowdataArray.length; i++) {
-        let removeStrg = snowdataArray[i].removeStrg;
-        let removeStrgObj = { 'removeStrg': removeStrg };
-        if (lodash.findIndex(query.$or, removeStrgObj) === -1) {
-            query.$or.push(removeStrgObj);
-        }
-    }
-    console.log(' -- t7 -- DBG -- removed snowdatas from DB query: ', query);
-
-    var insertBatch = col.initializeUnorderedBulkOp();
-    for (let j = 0; j < snowdataArray.length; j++) {
-        insertBatch.insert(snowdataArray[j]);
-    }
-
-    col.deleteMany(query, function (err01, result01) {
-        if (err01 != null) {
-            console.error(' -- t7 -- DBG -- Can not remove snowdatas from DB : ', err01);
-        } else {
-            console.log(' -- t7 -- DBG -- removed snowdatas from DB : ', result01);
-            insertBatch.execute(function (err02, result02) {
-                if (err02 != null) {
-                    console.error(' -- t7 -- DBG -- Can not insert all snowdatas into DB : ', err02);
-                } else {
-                    console.log(' -- t7 -- DBG -- inserted all snowdatas into DB : ', result02);
-                }
-                callback();
-            });
-        }
-    });
-}
-
-
-function storeAllInDB(callback) {
-    if (cachedDb && cachedDb.serverConfig.isConnected()) {
-        _insertAllInDB(cachedDb, callback);
-    } else {
-        MongoClient.connect(DB_URI, function (err, db) {
-            cachedDb = db;
-            if (err != null) {
-                console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
-                callback();
-            } else {
-                _insertAllInDB(db, callback);
-            }
-        });
-    }
-}
+const dbHelper = new DbHelper(parsers,DB_URI);
 
 //=========================================================================================================================================
 // 
 //=========================================================================================================================================
-
-const parsers = [bergfexStrgParser, skiinfoStrgParser];
 
 let myHandler;
 
@@ -171,7 +73,14 @@ const handlers = {
                 this.response.speak(ERROR_UNKNOW_CITY);
                 this.emit(':responseReady');
             } else {
-                getSnowDataAndTell(this, city);
+                dbHelper.loadFromDB(city, (dbSnowData) => {
+                    console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
+                    if (dbSnowData) {
+                        hanldeSchneeInfo(this, city, dbSnowData);
+                    } else {
+                        getSnowDataAndTell(this, city);
+                    }
+                });
             }
         }
     },
@@ -200,31 +109,37 @@ function getMatchingContainer(snowdata) {
 
 }
 
-function hanldeSchneeInfo(intentHandler, city, snowdata) {
+function emit(intentHandler, city, snowdata) {
 
     let container = getMatchingContainer(snowdata);
 
-    storeAllInDB(() => {
+    let speechOut = new SpeechOut(city, snowdata, container);
+    speechOut.addSpeak(intentHandler);
 
-        if (cachedDb) {
-            cachedDb.close();
-        }
+    let cardUtils = new CardUtils(city, snowdata);
+    cardUtils.addCardRenderer(intentHandler);
 
-        let speechOut = new SpeechOut(city, snowdata, container);
-        speechOut.addSpeak(intentHandler);
+    intentHandler.emit(':responseReady');
 
-        let cardUtils = new CardUtils(city, snowdata);
-        cardUtils.addCardRenderer(intentHandler);
+}
 
-        intentHandler.emit(':responseReady');
+function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
-    });
+    if ( snowdata.dbResult === true ) {
+        emit(intentHandler, city, snowdata);        
+    } else {
+        dbHelper.storeAllInDB(() => {
+            dbHelper.close();
+            emit(intentHandler, city, snowdata);
+        });
+    }
 
 }
 
 function getSnowDataAndTell(intentHandler, city) {
 
     const parser0 = parsers[0];
+    parser0.clear();
     parser0.getHtmlPage(city, (html0) => {
         // console.log(' -- t7 -- DBG -- html: ', html);
         let snowdata0;
@@ -236,6 +151,7 @@ function getSnowDataAndTell(intentHandler, city) {
             hanldeSchneeInfo(intentHandler, city, snowdata0);
         } else {
             const parser1 = parsers[1];
+            parser1.clear();
             parser1.getHtmlPage(city, (html1) => {
                 let snowdata1;
                 if (html1) {

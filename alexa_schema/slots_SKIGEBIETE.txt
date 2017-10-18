@@ -1,22 +1,30 @@
 Alpbach
 Alpbachtal
 Alpendorf
+Arosa
 Bad Kleinkirchheim
 Bergeralm
 Berwang
 Bichlbach
+Corviglia
 Dachstein Gletscher
 Damüls
+Falera
 Fellhorn
 Fendels
-Fieberbrunn
-Fiss
+FieberbrunnFiss
 Flachau
 Fliess
+Flims
 Fügen
 Galtür
 Gerlitzen
 Gerlos
+Grimentz
+Grindelwald
+Grünau
+Grünau im Almtal
+Heiligenblut
 Heuberg
 Hintertux
 Hintertuxer Gletscher
@@ -28,6 +36,8 @@ Hochoetz
 Hochwurzen
 Hochzeiger
 Ifen
+Igls
+Ischgl
 Jerzens
 Jungholz
 Kanzelwand
@@ -35,6 +45,7 @@ Kals
 Kappl
 Kaprun Kitzsteinhorn
 Kaprun
+Kasberg
 Kaunertal
 Kaunertaler Gletscher
 Kitzbühel
@@ -45,10 +56,12 @@ Koralpe
 Kreischberg
 Krimml
 Kühtai
+Laax
 Ladis
 Landeck
 Lech
 Lech am Arlberg
+Lenzerheide
 Leogang
 Mayrhofen
 Mellau
@@ -61,10 +74,14 @@ Obertauern
 Pitztal
 Pitztaler Gletscher
 Planai
+Postalm
+Saas-Fee
+Samnaun
 Sankt Anton
 Sankt Anton am Arlberg
 Sankt Johann
 Sankt Johann in Tirol
+Sankt Moritz
 Scheffau
 Schladming
 Schlick
@@ -91,10 +108,13 @@ Wagrain
 Walchsee
 Walmendingerhorn
 Warth
+Wengen
 Zahmer Kaiser
 Zams
 Zauchensee
 Zell am See
 Zell am Ziller
+Zermatt
 Zillertal Arena
+Zinal
 Zürs

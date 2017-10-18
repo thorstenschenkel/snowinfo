@@ -1,11 +1,11 @@
-# Frau Holle - Frau Holle
-Frau Holle ist ein Amazon Alexa Skill, der dir Infos zu den Schneehoehen eines Skigebiets liefert.
+# Schneeinfo
+Schneeinfo ist ein Amazon Alexa Skill, der dir Infos zu den Schneehoehen eines Skigebiets liefert.
 
 ## Sample Phrases
 ```
-Alexa frage Frau Holle wie viel Schnee in Ischgl liegt
-Alexa frage Frau Holle wie hoch ist der Schnee im Kaunertal
-Alexa frage Frau Holle nach den Schneemengen auf dem Stubaier Gletscher
+Alexa frage Schneeinfo wie viel Schnee in Ischgl liegt
+Alexa frage Schneeinfoe wie hoch ist der Schnee im Kaunertal
+Alexa frage Schneeinfo nach den Schneemengen auf dem Stubaier Gletscher
 ```
 
 ## Notes
