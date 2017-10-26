@@ -18,7 +18,7 @@ const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
 const HELP_MESSAGE = 'Du kannst mir einen Ort oder ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 const LAUNCH_MESSAGE = 'Servus, für welchen Ort solle ich dir die Schneehöhen liefern?';
 const REPROMPT_MESSAGE = 'Hallo, du musst mir einen Ort oder ein Schigebiet nennen!';
-const STOP_MESSAGE = 'Auf Wiederschauen!';
+const STOP_MESSAGE = 'Auf Wiederschaun!';
 
 //=========================================================================================================================================
 // BERGFEX
@@ -43,13 +43,11 @@ const parsers = [skiinfoStrgParser, bergfexStrgParser];
 const DB_PWD = process.env.DB_PWD;
 const DB_URI = 'mongodb://snowinfo:' + DB_PWD + '@cluster0-shard-00-00-bavvq.mongodb.net:27017,cluster0-shard-00-01-bavvq.mongodb.net:27017,cluster0-shard-00-02-bavvq.mongodb.net:27017/snowinfo?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 
-const dbHelper = new DbHelper(parsers,DB_URI);
+const dbHelper = new DbHelper(parsers, DB_URI);
 
 //=========================================================================================================================================
 // 
 //=========================================================================================================================================
-
-let myHandler;
 
 const handlers = {
     // ?
@@ -58,35 +56,13 @@ const handlers = {
         this.response.speak(LAUNCH_MESSAGE).listen(REPROMPT_MESSAGE);
         this.emit(':responseReady');
     },
+    'SchneeCityIntent': function () {
+        console.log(' -- t7 -- DBG -- SchneeCityIntent ', this.event);
+        handleSnowIntent(this,this.event.request.intent);
+    },
     'SchneeInfoIntent': function () {
-        myHandler = this;
-        let intent = this.event.request.intent;
         console.log(' -- t7 -- DBG -- SchneeInfoIntent ', this.event);
-        let city;
-        if (intent && intent.slots && intent.slots.city) {
-            city = this.event.request.intent.slots.city.value;
-        }
-        console.log(' -- t7 -- DBG -- city : ' + city);
-        if (!city) {
-            // console.log(' -- t7 -- DBG -- no city : ' + city);
-            this.response.speak(ERROR_NO_CITY);
-            this.emit(':responseReady');
-        } else {
-            if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
-                // console.log(' -- t7 -- DBG -- unkown city : ' + city);
-                this.response.speak(ERROR_UNKNOW_CITY);
-                this.emit(':responseReady');
-            } else {
-                dbHelper.loadFromDB(city, (dbSnowData) => {
-                    console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
-                    if (dbSnowData) {
-                        hanldeSchneeInfo(this, city, dbSnowData);
-                    } else {
-                        getSnowDataAndTell(this, city);
-                    }
-                });
-            }
-        }
+        handleSnowIntent(this,this.event.request.intent);
     },
     'AMAZON.HelpIntent': function () {
         this.response.speak(LAUNCH_MESSAGE).listen(REPROMPT_MESSAGE);
@@ -112,6 +88,36 @@ exports.handler = function (event, context) {
     console.log(' -- t7 -- DBG -- execute DEV');
     alexa.execute();
 };
+
+function handleSnowIntent(intentHandler, intent) {
+
+    let city;
+    if (intent && intent.slots && intent.slots.city) {
+        city = intent.slots.city.value;
+    }
+    console.log(' -- t7 -- DBG -- city : ' + city);
+    if (!city) {
+        // console.log(' -- t7 -- DBG -- no city : ' + city);
+        intentHandler.response.speak(ERROR_NO_CITY);
+        intentHandler.emit(':responseReady');
+    } else {
+        if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
+            // console.log(' -- t7 -- DBG -- unkown city : ' + city);
+            intentHandler.response.speak(ERROR_UNKNOW_CITY);
+            intentHandler.emit(':responseReady');
+        } else {
+            dbHelper.loadFromDB(city, (dbSnowData) => {
+                console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
+                if (dbSnowData) {
+                    hanldeSchneeInfo(intentHandler, city, dbSnowData);
+                } else {
+                    getSnowDataAndTell(intentHandler, city);
+                }
+            });
+        }
+    }
+
+}
 
 function getMatchingContainer(snowdata) {
 
@@ -141,8 +147,8 @@ function emit(intentHandler, city, snowdata) {
 
 function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
-    if ( snowdata.dbResult === true ) {
-        emit(intentHandler, city, snowdata);        
+    if (snowdata.dbResult === true) {
+        emit(intentHandler, city, snowdata);
     } else {
         dbHelper.storeAllInDB(() => {
             dbHelper.close();

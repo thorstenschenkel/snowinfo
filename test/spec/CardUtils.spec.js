@@ -45,6 +45,7 @@ describe('test of CardUtils', function () {
         cardutils = new CardUtils('', snowdata);
 
         let content = cardutils.getCardContent();
+        console.log(content);
         let lowerIndex = content.indexOf('Schneehöhe Tal: 12 cm');
         expect(lowerIndex).toBe(0);
         let upperIndex = content.indexOf('Schneehöhe Berg: 125 cm');

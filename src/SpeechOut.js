@@ -112,22 +112,21 @@ class SpeechOut {
         }
 
         let dateStrg = date.toISOString().substring(0, 10);
-        let today = new Date();
-        let todayStrg = today.toISOString().substring(0, 10);
+        const today = new Date();
+        const todayStrg = today.toISOString().substring(0, 10);
         if (dateStrg === todayStrg) {
             return 'heute';
         }
 
-        let yesterday = new Date();
+        const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
-        let yesterdayStrg = yesterday.toISOString().substring(0, 10);
+        const yesterdayStrg = yesterday.toISOString().substring(0, 10);
         if (dateStrg === yesterdayStrg) {
             return 'gestern';
         }
 
-        let retStrg = '<say-as interpret-as="date" format="ymd">';
-        retStrg += date.toISOString().substring(0, 10);
-        retStrg += '</say-as>';
+        dateStrg = date.toISOString().substring(0, 10);
+        const retStrg = `<say-as interpret-as="date" format="ymd">${dateStrg}</say-as>`;
 
         return retStrg;
 
