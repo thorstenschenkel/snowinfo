@@ -15,6 +15,7 @@ const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schnee
 
 const ERROR_NO_CITY = 'Es wurde kein Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
+const ERROR_TEMP = 'Leider kann ich für diesen Ort derzeit keine Informationen liefern!';
 const HELP_MESSAGE = 'Du kannst mir einen Ort oder ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 const LAUNCH_MESSAGE = 'Servus, für welchen Ort solle ich dir die Schneehöhen liefern?';
 const REPROMPT_MESSAGE = 'Hallo, du musst mir einen Ort oder ein Schigebiet nennen!';
@@ -34,7 +35,8 @@ const bergfexStrgParser = new BergfexStrgParser(bergfexContainer);
 const skiinfoContainer = new SkiinfoContainer();
 const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
 
-const parsers = [skiinfoStrgParser, bergfexStrgParser];
+const PARSER_GET_TIMEOUT = 6000; // 6 sec
+const parsers = [bergfexStrgParser, skiinfoStrgParser ];
 
 //=========================================================================================================================================
 // DB
@@ -58,11 +60,11 @@ const handlers = {
     },
     'SchneeCityIntent': function () {
         console.log(' -- t7 -- DBG -- SchneeCityIntent ', this.event);
-        handleSnowIntent(this,this.event.request.intent);
+        handleSnowIntent(this, this.event.request.intent);
     },
     'SchneeInfoIntent': function () {
         console.log(' -- t7 -- DBG -- SchneeInfoIntent ', this.event);
-        handleSnowIntent(this,this.event.request.intent);
+        handleSnowIntent(this, this.event.request.intent);
     },
     'AMAZON.HelpIntent': function () {
         this.response.speak(LAUNCH_MESSAGE).listen(REPROMPT_MESSAGE);
@@ -147,6 +149,12 @@ function emit(intentHandler, city, snowdata) {
 
 function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
+    if (!snowdata) {
+        intentHandler.response.speak(ERROR_TEMP);
+        intentHandler.emit(':responseReady');
+        return;
+    }
+
     if (snowdata.dbResult === true) {
         emit(intentHandler, city, snowdata);
     } else {
@@ -162,7 +170,7 @@ function getSnowDataAndTell(intentHandler, city) {
 
     const parser0 = parsers[0];
     parser0.clear();
-    parser0.getHtmlPage(city, (html0) => {
+    const request0 = parser0.getHtmlPage(city, (html0) => {
         // console.log(' -- t7 -- DBG -- html: ', html);
         let snowdata0;
         if (html0) {
@@ -174,7 +182,7 @@ function getSnowDataAndTell(intentHandler, city) {
         } else {
             const parser1 = parsers[1];
             parser1.clear();
-            parser1.getHtmlPage(city, (html1) => {
+            const request1 = parser1.getHtmlPage(city, (html1) => {
                 let snowdata1;
                 if (html1) {
                     snowdata1 = parser1.parseHtml(html1, city);
@@ -187,7 +195,19 @@ function getSnowDataAndTell(intentHandler, city) {
                     hanldeSchneeInfo(intentHandler, city, snowdata1);
                 }
             });
+            if (request1) {
+                request1.setTimeout(PARSER_GET_TIMEOUT, function () {
+                    console.err(' -- t7 -- ERR -- timeout of parser1');
+                    request1.abort();
+                });
+            }
         }
     });
+    if (request0) {
+        request0.setTimeout(PARSER_GET_TIMEOUT, function () {
+            console.err(' -- t7 -- ERR -- timeout of parser0');
+            request0.abort();
+        });
+    }
 
 }

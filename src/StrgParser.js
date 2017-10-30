@@ -86,6 +86,8 @@ class StrgParser {
 
     getHtmlPage(city, callback) {
 
+        console.log(' -- t7 -- DBG -- getHtmlPage', this.constructor.name);
+        
         if (!this.webDataContainer.getResort(city)) {
             // console.log(' -- t7 -- DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
             callback();
@@ -106,8 +108,8 @@ class StrgParser {
         }
 
         const protocol = this.webDataContainer.getProtocol();
-        if ( protocol === 'https' ) {
-            console.log(' -- t7 -- DBG -- https');
+            if ( protocol === 'https' ) {
+            // console.log(' -- t7 -- DBG -- https');
             return https.get({
                 host: host,
                 path: path
@@ -119,7 +121,7 @@ class StrgParser {
                 callback();
             });
         } else {
-            console.log(' -- t7 -- DBG -- http');
+            // console.log(' -- t7 -- DBG -- http');
             return http.get({
                 host: host,
                 path: path

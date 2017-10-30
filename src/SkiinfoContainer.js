@@ -559,11 +559,12 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Zillertal Arena',
             speechstart: 'In'
         });
+        // Lech Zürs am Arlberg
         this.pushObject({
             city: 'Zürs',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             search: ['Lech', 'Zürs','Arlberg'],
-            searchStrg: 'Zürs',
+            searchStrg: 'Lech Zürs am Arlberg',
             speechstart: 'In'
         });
 
