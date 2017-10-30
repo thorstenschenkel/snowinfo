@@ -8,12 +8,15 @@ Hier die Liste der Orte:
 
 Alpbach
 Alpendorf
+Altenmarkt
 Arosa
 Bad Kleinkirchheim
 Bergeralm
 Corviglia
 Dachstein Gletscher
 Damüls
+Elferbahnen
+Fageralm
 Falera
 Fendels
 Fieberbrunn
@@ -21,6 +24,7 @@ Fiss
 Flachau
 Fliess
 Flims
+Forstau
 Fügen
 Galtür
 Gerlitzen
@@ -37,6 +41,7 @@ Hochkrimml
 Hochoetz
 Hochwurzen
 Hochzeiger
+Hochzillertal
 Ifen
 Igls
 Ischgl
@@ -60,16 +65,21 @@ Landeck
 Lech am Arlberg
 Lenzerheide
 Leogang
+Matrei
 Mayrhofen
 Mellau
 Mölltaler Gletscher
 Nassfeld
 Nauders
+Neustift
+Niederthai
 Obergurgl
 Obertauern
 Pitztaler Gletscher
 Planai
 Postalm
+Radstadt
+Raurisertal
 Reiteralm
 Saas-Fee
 Sankt Anton am Arlberg
@@ -82,9 +92,11 @@ Schlick
 Schmitten
 Schmittenhöhe
 Serfaus
+Sillian
 Silvretta Montafon
 Sölden
 Söll
+Spieljoch
 Steinach am Brenner
 Stubaier Gletscher
 Turracher Höhe
@@ -97,6 +109,7 @@ Zauchensee
 Zell am See
 Zermatt
 Zinal
+Zillertal Arena
 Zürs 
 
 Alle Angaben ohne Gewähr.

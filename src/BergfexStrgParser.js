@@ -30,6 +30,7 @@ class BergfexStrgParser extends StrgParser {
                         snowdata.skiresort = strg.trim();
                     } else {
                         snowdata.skiresort = '';
+                        console.warn(' -- t7 -- warn -- no skiresort: ', htmlString);
                     }
                     break;
                 case 1: // tal

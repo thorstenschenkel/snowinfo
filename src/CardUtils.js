@@ -16,22 +16,22 @@ class CardUtils {
      */
     addCardRenderer(intentHandler) {
 
-        let cardTitle = this.getCardTitle();
-        let cardContent = this.getCardContent();
+        let cardTitle = this._getCardTitle();
+        let cardContent = this._getCardContent();
         if (cardTitle && cardContent) {
             intentHandler.response.cardRenderer(cardTitle, cardContent);
         }
 
     }
 
-    getCardTitle() {
+    _getCardTitle() {
         if (!this.city) {
             return;
         }
         return 'Schneehöhen ' + this.city.toUpperCase();
     }
 
-    getCardContent() {
+    _getCardContent() {
 
         let content;
         if (!this.snowdata) {

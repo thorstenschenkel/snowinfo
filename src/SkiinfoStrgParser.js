@@ -40,6 +40,7 @@ class SkiinfoStrgParser extends StrgParser {
                             snowdata.skiresort = skiresort.trim();
                         } else {
                             snowdata.skiresort = '';
+                            console.warn(' -- t7 -- warn -- no skiresort: ', htmlString);
                         }
                         // region
                         // let regionStrg = substrings0[1];

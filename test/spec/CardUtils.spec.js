@@ -18,26 +18,26 @@ describe('test of CardUtils', function () {
 
     });
 
-    it('test the method getCardTitle', function () {
+    it('test the method _getCardTitle', function () {
 
         const cardutils = new CardUtils('Ischgl', {});
 
-        expect(cardutils.getCardTitle()).toBe('Schneehöhen ISCHGL');
+        expect(cardutils._getCardTitle()).toBe('Schneehöhen ISCHGL');
 
     });
 
-    it('test the method getCardContent', function () {
+    it('test the method _getCardContent', function () {
 
         let snowdata;
         let cardutils = new CardUtils('Ischgl', snowdata);
 
-        expect(cardutils.getCardContent()).toBe('Für den Ort können keine Informationen geliefert werden!');
+        expect(cardutils._getCardContent()).toBe('Für den Ort können keine Informationen geliefert werden!');
 
         snowdata = new Snowdata();
         snowdata.reportDate = new Date(86400000);
         cardutils = new CardUtils('Ischgl', snowdata);
 
-        expect(cardutils.getCardContent()).toBe('Für den Ort können keine akutellen Informationen geliefert werden!');
+        expect(cardutils._getCardContent()).toBe('Für den Ort können keine akutellen Informationen geliefert werden!');
 
         snowdata.reportDate = new Date();
         snowdata.lowerSnowDepth = 12;
@@ -59,7 +59,7 @@ describe('test of CardUtils', function () {
         snowdata.status = 'open';
         cardutils = new CardUtils('', snowdata);
 
-        content = cardutils.getCardContent();
+        content = cardutils._getCardContent();
         expect(content.indexOf('Status Skigebiet: GEÖFFNET') > 0).toBe(true);
 
         snowdata.reportDate = new Date();
@@ -68,7 +68,7 @@ describe('test of CardUtils', function () {
         snowdata.status = 'closed';
         cardutils = new CardUtils('', snowdata);
 
-        content = cardutils.getCardContent();
+        content = cardutils._getCardContent();
         expect(content.indexOf('Status Skigebiet: GESCHLOSSEN') > 0).toBe(true);
 
         snowdata.reportDate = new Date();
@@ -78,7 +78,7 @@ describe('test of CardUtils', function () {
         snowdata.skiliftTotal = 10;
         cardutils = new CardUtils('', snowdata);
 
-        content = cardutils.getCardContent();
+        content = cardutils._getCardContent();
         expect(content.indexOf('Lifte/Bahnen: 3 von 10 offen') > 0).toBe(true);
 
 
@@ -89,7 +89,7 @@ describe('test of CardUtils', function () {
         snowdata.skiliftTotal = 10;
         cardutils = new CardUtils('', snowdata);
 
-        content = cardutils.getCardContent();
+        content = cardutils._getCardContent();
         expect(content.indexOf('Lifte/Bahnen') === -1).toBe(true);
         
     });

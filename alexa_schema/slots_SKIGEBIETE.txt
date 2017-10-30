@@ -1,6 +1,7 @@
 Alpbach
 Alpbachtal
 Alpendorf
+Altenmarkt
 Arosa
 Bad Kleinkirchheim
 Bergeralm
@@ -9,6 +10,8 @@ Bichlbach
 Corviglia
 Dachstein Gletscher
 Damüls
+Elferbahnen
+Fageralm
 Falera
 Fellhorn
 Fendels
@@ -17,6 +20,7 @@ Fiss
 Flachau
 Fliess
 Flims
+Forstau
 Fügen
 Galtür
 Gerlitzen
@@ -36,6 +40,7 @@ Hochkrimml
 Hochoetz
 Hochwurzen
 Hochzeiger
+Hochzillertal
 Ifen
 Igls
 Ischgl
@@ -64,18 +69,24 @@ Lech
 Lech am Arlberg
 Lenzerheide
 Leogang
+Matrei
 Mayrhofen
 Mellau
 Montafon
 Mölltaler Gletscher
 Nassfeld
 Nauders
+Neustift
+Niederthai
 Obergurgl
 Obertauern
 Pitztal
 Pitztaler Gletscher
 Planai
 Postalm
+Radstadt
+Rauris
+Raurisertal
 Reiteralm
 Saas-Fee
 Samnaun
@@ -92,10 +103,12 @@ Schmitten
 Schmittenhöhe
 Schröcken
 Serfaus
+Sillian
 Silvretta
 Silvretta Montafon
 Sölden
 Söll
+Spieljoch
 Steinach
 Steinach am Brenner
 Stubaier Gletscher
