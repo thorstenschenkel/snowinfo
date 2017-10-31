@@ -2,6 +2,10 @@ const WebDataContainer = require('./WebDataContainer');
 
 class SkiinfoContainer extends WebDataContainer {
 
+    getProtocol() {
+        return 'https';
+    }
+
     constructor() {
 
         super('skiinfo');

@@ -225,8 +225,8 @@ class StrgParser {
         var tabStrings = this.getTablesHtmlContent(htmlString);
         for (let tabStrg of tabStrings) {
             if (!tabStrg) continue;
-            if (this.isSnowDepthTable(tabStrg)) {
                 // console.log(' -- t7 -- DBG -- tabStrg: ' + tabStrg);
+                if (this.isSnowDepthTable(tabStrg)) {
                 var trStrings = this.getRowHtmlContent(tabStrg);
                 for (let trString of trStrings) {
                     if (!trString) continue;

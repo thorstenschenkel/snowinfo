@@ -7,12 +7,7 @@ class SkiinfoStrgParser extends StrgParser {
         super(container);
     }
     
-    getProtocol() {
-        return 'https';
-    }
-
     isSnowDepthTable(tabStrg) {
-        console.log(' -- t7 - DBG -- tabStrg: ' + tabStrg);
         return tabStrg.indexOf('skigebiet') != -1 && tabStrg.indexOf('schneehöhe') != -1;
     }
 
