@@ -28,9 +28,11 @@ Forstau
 Fügen
 Galtür
 Gerlitzen
+Golm im Montafon
 Grimentz
 Grindelwald
 Grünau im Almtal
+Hauser Kaibling
 Heiligenblut
 Heuberg
 Hintertuxer Gletscher
@@ -65,16 +67,20 @@ Landeck
 Lech am Arlberg
 Lenzerheide
 Leogang
+Mallnitz
 Matrei
 Mayrhofen
 Mellau
 Mölltaler Gletscher
+Murau
 Nassfeld
 Nauders
 Neustift
+Niederalpl
 Niederthai
 Obergurgl
 Obertauern
+Petzen
 Pitztaler Gletscher
 Planai
 Postalm
@@ -85,8 +91,10 @@ Saas-Fee
 Sankt Anton am Arlberg
 Sankt Johann in Tirol
 Sankt Moritz
+Sankt Urban
 Samnaun
 Scheffau
+Schetteregg
 Schladming
 Schlick
 Schmitten
@@ -94,16 +102,21 @@ Schmittenhöhe
 Serfaus
 Sillian
 Silvretta Montafon
+Simonhöhe
 Sölden
 Söll
 Spieljoch
 Steinach am Brenner
+Steinplatte
+Stoderzinken
 Stubaier Gletscher
 Turracher Höhe
 Vent
 Wagrain
+Waidring
 Walmendingerhorn
 Wengen
+Winklmoosalm
 Zams
 Zauchensee
 Zell am See

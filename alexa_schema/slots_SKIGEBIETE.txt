@@ -2,6 +2,7 @@ Alpbach
 Alpbachtal
 Alpendorf
 Altenmarkt
+Ankogel
 Arosa
 Bad Kleinkirchheim
 Bergeralm
@@ -25,10 +26,13 @@ Fügen
 Galtür
 Gerlitzen
 Gerlos
+Golm
+Golm im Montafon
 Grimentz
 Grindelwald
 Grünau
 Grünau im Almtal
+Hauser Kaibling
 Heiligenblut
 Heuberg
 Hintertux
@@ -69,17 +73,21 @@ Lech
 Lech am Arlberg
 Lenzerheide
 Leogang
+Mallnitz
 Matrei
 Mayrhofen
 Mellau
 Montafon
 Mölltaler Gletscher
+Murau
 Nassfeld
 Nauders
 Neustift
+Niederalpl
 Niederthai
 Obergurgl
 Obertauern
+Petzen
 Pitztal
 Pitztaler Gletscher
 Planai
@@ -95,7 +103,9 @@ Sankt Anton am Arlberg
 Sankt Johann
 Sankt Johann in Tirol
 Sankt Moritz
+Sankt Urban
 Scheffau
+Schetteregg
 Schladming
 Schlick
 Schlick 2000
@@ -106,11 +116,14 @@ Serfaus
 Sillian
 Silvretta
 Silvretta Montafon
+Simonhöhe
 Sölden
 Söll
 Spieljoch
 Steinach
 Steinach am Brenner
+Steinplatte
+Stoderzinken
 Stubaier Gletscher
 Stubaital
 Stuben
@@ -120,10 +133,12 @@ Tauplitzalm
 Turracher Höhe
 Vent
 Wagrain
+Waidring
 Walchsee
 Walmendingerhorn
 Warth
 Wengen
+Winklmoosalm
 Zahmer Kaiser
 Zams
 Zauchensee
