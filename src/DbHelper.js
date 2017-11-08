@@ -88,10 +88,11 @@ class DbHelper {
         const col = db.collection(DB_COLLECTION);
 
         let findStrg;
-        for (let i = 0; i < this.parsers.length; i++) {
-            let searchStrg = this.parsers[i].webDataContainer.getSearchStrg(city);
+        const parsers = this.parsers;
+        for (let i = 0; i < parsers.length; i++) {
+            let searchStrg = parsers[i].webDataContainer.getSearchStrg(city);
             if (searchStrg) {
-                findStrg = this.parsers[i].reduceSearchStrg(searchStrg);
+                findStrg = parsers[i].reduceSearchStrg(searchStrg);
                 break;
             }
         }
@@ -114,7 +115,10 @@ class DbHelper {
                     let lastUpdate = results[i].lastUpdate;
                     if ((now - lastUpdate) < ONE_HOUR) {
                         if (retSnowdata) {
-                            console.warn(' -- t7 -- WRN -- more then one item find in DB for city: ' + city);
+                            console.log(' -- t7 -- DBG -- more then one item find in DB for city: ' + city);                            
+                            if ( parsers.length > 0 && retSnowdata.resource == parsers[0].getResource() ) {
+                                continue;
+                            }
                         }
                         retSnowdata = new Snowdata(results[i]);
                         retSnowdata.dbResult = true;

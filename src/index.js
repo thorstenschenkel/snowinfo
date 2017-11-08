@@ -35,8 +35,7 @@ const bergfexStrgParser = new BergfexStrgParser(bergfexContainer);
 const skiinfoContainer = new SkiinfoContainer();
 const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
 
-const PARSER_GET_TIMEOUT = 6000; // 6 sec
-const parsers = [bergfexStrgParser, skiinfoStrgParser ];
+const parsers = [bergfexStrgParser, skiinfoStrgParser];
 
 //=========================================================================================================================================
 // DB
@@ -97,6 +96,7 @@ function handleSnowIntent(intentHandler, intent) {
     if (intent && intent.slots && intent.slots.city) {
         city = intent.slots.city.value;
     }
+    console.log(' -- t7 -- DBG -- intent : ' + intent);
     console.log(' -- t7 -- DBG -- city : ' + city);
     if (!city) {
         // console.log(' -- t7 -- DBG -- no city : ' + city);
@@ -110,11 +110,7 @@ function handleSnowIntent(intentHandler, intent) {
         } else {
             dbHelper.loadFromDB(city, (dbSnowData) => {
                 console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
-                if (dbSnowData) {
-                    hanldeSchneeInfo(intentHandler, city, dbSnowData);
-                } else {
-                    getSnowDataAndTell(intentHandler, city);
-                }
+                getSnowDataAndTell(intentHandler, city, dbSnowData);
             });
         }
     }
@@ -166,48 +162,33 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
 
 }
 
-function getSnowDataAndTell(intentHandler, city) {
+function getSnowDataAndTell(intentHandler, city, snowdata) {
 
-    const parser0 = parsers[0];
-    parser0.clear();
-    const request0 = parser0.getHtmlPage(city, (html0) => {
-        // console.log(' -- t7 -- DBG -- html: ', html);
-        let snowdata0;
-        if (html0) {
-            snowdata0 = parser0.parseHtml(html0, city);
-        }
-        if (snowdata0 && !snowdata0.isOutdated()) {
-            console.log(' -- t7 -- DBG -- snowdata and tell: ', snowdata0);
-            hanldeSchneeInfo(intentHandler, city, snowdata0);
-        } else {
-            const parser1 = parsers[1];
-            parser1.clear();
-            const request1 = parser1.getHtmlPage(city, (html1) => {
-                let snowdata1;
-                if (html1) {
-                    snowdata1 = parser1.parseHtml(html1, city);
+    if (snowdata) {
+        hanldeSchneeInfo(intentHandler, city, snowdata);
+        return;
+    }
+
+    let promises = [];
+    for (let parser of parsers) {
+        parser.clear();
+        const promise = parser.getHtmlPagePromise(city);
+        promises.push(promise);
+    }
+    Promise.all(promises).then(htmlPages => {
+        let resultSnowdata;
+        for (let i = 0; i < htmlPages.length; i++) {
+            let htmlPage = htmlPages[i];
+            if (htmlPage) {
+                const snowdata = parsers[i].parseHtml(htmlPage, city);
+                if (snowdata) {
+                    if (!resultSnowdata || resultSnowdata.isOutdated()) {
+                        resultSnowdata = snowdata;
+                    }
                 }
-                if (!snowdata1 && snowdata0) {
-                    console.log(' -- t7 -- DBG -- snowdata and tell: ', snowdata1);
-                    hanldeSchneeInfo(intentHandler, city, snowdata0);
-                } else {
-                    console.log(' -- t7 -- DBG -- snowdata and tell: ', snowdata1);
-                    hanldeSchneeInfo(intentHandler, city, snowdata1);
-                }
-            });
-            if (request1) {
-                request1.setTimeout(PARSER_GET_TIMEOUT, function () {
-                    console.err(' -- t7 -- ERR -- timeout of parser1');
-                    request1.abort();
-                });
             }
         }
+        hanldeSchneeInfo(intentHandler, city, resultSnowdata);
     });
-    if (request0) {
-        request0.setTimeout(PARSER_GET_TIMEOUT, function () {
-            console.err(' -- t7 -- ERR -- timeout of parser0');
-            request0.abort();
-        });
-    }
 
 }
