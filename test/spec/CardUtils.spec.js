@@ -13,8 +13,8 @@ describe('test of CardUtils', function () {
         expect(cardutils.city).toBe('Ischgl');
 
         expect(cardutils.addCardRenderer).toBeDefined();
-        expect(cardutils.getCardTitle).toBeDefined();
-        expect(cardutils.getCardContent).toBeDefined();
+        expect(cardutils._getCardTitle).toBeDefined();
+        expect(cardutils._getCardContent).toBeDefined();
 
     });
 
@@ -44,7 +44,7 @@ describe('test of CardUtils', function () {
         snowdata.upperSnowDepth = 125;
         cardutils = new CardUtils('', snowdata);
 
-        let content = cardutils.getCardContent();
+        let content = cardutils._getCardContent();
         console.log(content);
         let lowerIndex = content.indexOf('Schneehöhe Tal: 12 cm');
         expect(lowerIndex).toBe(0);

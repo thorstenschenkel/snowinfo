@@ -12,7 +12,6 @@ describe('test of WebDataContainer', function () {
         expect(schneeContainer.getResort).toBeDefined();
         expect(schneeContainer.getHost).toBeDefined();
         expect(schneeContainer.getPath).toBeDefined();
-        expect(schneeContainer.getSearch).toBeDefined();
         expect(schneeContainer.getSearchStrg).toBeDefined();
         expect(schneeContainer.getSpeechstart).toBeDefined();
         expect(schneeContainer.getSpeechskiresort).toBeDefined();
@@ -28,7 +27,6 @@ describe('test of WebDataContainer', function () {
             city: 'Fendels',
             host: 'www.schnnee.com',
             path: '/tirol/schneewerte/',
-            search: ['Fendels', 'Ried', 'Prutz'],
             searchStrg: 'Fendels - Ried - Prutz',
             speechstart: 'In'
         });
@@ -36,7 +34,6 @@ describe('test of WebDataContainer', function () {
         expect(schneeContainer.getResort('Fendels')).toBeDefined();
         expect(schneeContainer.getHost('Fendels')).toBe('www.schnnee.com');
         expect(schneeContainer.getPath('Fendels')).toBe('/tirol/schneewerte/');
-        expect(schneeContainer.getSearch('Fendels').toString()).toBe('Fendels,Ried,Prutz');
         expect(schneeContainer.getSearchStrg('Fendels')).toBe('Fendels - Ried - Prutz');
         expect(schneeContainer.getSpeechstart('Fendels')).toBe('In');
         expect(schneeContainer.getSpeechskiresort('Fendels')).not.toBeDefined();

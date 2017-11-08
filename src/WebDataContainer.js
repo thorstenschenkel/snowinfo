@@ -1,10 +1,9 @@
 class WebData {
 
-    constructor(city, host, path, search, searchStrg, speechstart, speechskiresort) {
+    constructor(city, host, path, searchStrg, speechstart, speechskiresort) {
         this.city = city;
         this.host = host;
         this.path = path;
-        this.search = search;
         this.searchStrg = searchStrg;
         this.speechstart = speechstart;
         this.speechskiresort = speechskiresort;
@@ -20,8 +19,8 @@ class WebDataContainer {
     }
 
 
-    push(city, host, path, search, searchStrg, speechstart, speechskiresort) {
-        let webData = new WebData(city, host, path, search, searchStrg, speechstart, speechskiresort);
+    push(city, host, path, searchStrg, speechstart, speechskiresort) {
+        let webData = new WebData(city, host, path,searchStrg, speechstart, speechskiresort);
         this.webDatas.push(webData);
     }
 
@@ -29,7 +28,6 @@ class WebDataContainer {
         this.push(dataObejct.city,
             dataObejct.host,
             dataObejct.path,
-            dataObejct.search,
             dataObejct.searchStrg,
             dataObejct.speechstart,
             dataObejct.speechskiresort);
@@ -63,15 +61,6 @@ class WebDataContainer {
         let resort = this.getResort(city);
         if (resort) {
             return resort.path;
-        }
-        return;
-    }
-
-    getSearch(city) {
-        if (!city) return;
-        let resort = this.getResort(city);
-        if (resort) {
-            return resort.search;
         }
         return;
     }
