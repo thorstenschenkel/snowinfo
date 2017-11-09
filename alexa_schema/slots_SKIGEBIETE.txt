@@ -8,10 +8,14 @@ Bad Kleinkirchheim
 Bergeralm
 Berwang
 Bichlbach
+Brand
+Brandnertal
+Bürserberg
 Corviglia
 Dachstein Gletscher
 Damüls
 Elferbahnen
+Ellmau
 Fageralm
 Falera
 Fellhorn
@@ -24,17 +28,20 @@ Flims
 Forstau
 Fügen
 Galtür
+Gargellen
 Gerlitzen
 Gerlos
 Golm
 Golm im Montafon
 Grimentz
 Grindelwald
+Großeck
 Grünau
 Grünau im Almtal
 Hauser Kaibling
 Heiligenblut
 Heuberg
+Hinterglemm
 Hintertux
 Hintertuxer Gletscher
 Hochficht
@@ -48,6 +55,7 @@ Hochzillertal
 Ifen
 Igls
 Ischgl
+Itter
 Jerzens
 Jungholz
 Kanzelwand
@@ -58,6 +66,7 @@ Kaprun
 Kasberg
 Kaunertal
 Kaunertaler Gletscher
+Kelchsau
 Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
@@ -101,6 +110,7 @@ Samnaun
 Sankt Anton
 Sankt Anton am Arlberg
 Sankt Johann
+Sankt Johann im Pongau
 Sankt Johann in Tirol
 Sankt Moritz
 Sankt Urban
@@ -119,6 +129,7 @@ Silvretta Montafon
 Simonhöhe
 Sölden
 Söll
+Speiereck
 Spieljoch
 Steinach
 Steinach am Brenner
@@ -138,6 +149,7 @@ Walchsee
 Walmendingerhorn
 Warth
 Wengen
+Westendorf
 Winklmoosalm
 Zahmer Kaiser
 Zams
