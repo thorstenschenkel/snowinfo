@@ -1,6 +1,8 @@
 const ERROR_NO_INFO = 'Für den Ort {city} kann ich keine Informationen liefern!';
 const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine aktuellen Informationen liefern!';
 
+// https://developer.amazon.com/de/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html#break
+
 class SpeechOut {
 
     constructor(city, snowdata, webDataContainer) {

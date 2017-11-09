@@ -1,17 +1,19 @@
 const http = require('http');
 const https = require('https');
 
-function _body(response,callback) {
+const PARSER_GET_TIMEOUT = 6000; // 6 sec
+
+function _bodyPromise(response, resolve) {
     let body = '';
     response.on('data', function (d) {
         body += d;
     });
     response.on('end', function () {
-        if ( body.length === 0 ) {
+        if (body.length === 0) {
             console.warn(' -- t7 - WRN -- body of HTML page if empty');
         }
         // console.log(' -- t7 -- DBG -- body: ' + body);
-        callback(body);
+        resolve(body);
     });
 }
 
@@ -84,55 +86,51 @@ class StrgParser {
         }
     }
 
-    getHtmlPage(city, callback) {
+    getHtmlPagePromise(city) {
 
-        console.log(' -- t7 -- DBG -- getHtmlPage', this.constructor.name);
-        
-        if (!this.webDataContainer.getResort(city)) {
-            // console.log(' -- t7 -- DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
-            callback();
-            return;
-        }
+        const container = this.webDataContainer;
 
-        const host = this.webDataContainer.getHost(city);
-        if (!host) {
-            console.error(' -- t7 - ERR -- Can not get HTML page, no host');
-            callback();
-            return;
-        }
-        const path = this.webDataContainer.getPath(city);
-        if (!path) {
-            console.error(' -- t7 - ERR -- Can not get HTML page, no path');
-            callback();
-            return;
-        }
+        return new Promise((resolve, reject) => {
 
-        const protocol = this.webDataContainer.getProtocol();
-            if ( protocol === 'https' ) {
-            // console.log(' -- t7 -- DBG -- https');
-            return https.get({
+            if (!container.getResort(city)) {
+                // console.log(' -- t7 -- DBG -- no resort for "' + city + '" in "' + this.webDataContainer.resource + '"');
+                reject(new Error('no resort'));
+                return;
+            }
+
+            const host = container.getHost(city);
+            if (!host) {
+                console.error(' -- t7 - ERR -- Can not get HTML page, no host');
+                reject(new Error('no host'));
+                return;
+            }
+            const path = container.getPath(city);
+            if (!path) {
+                console.error(' -- t7 - ERR -- Can not get HTML page, no path');
+                reject(new Error('no path'));
+                return;
+            }
+
+            const lib = container.getProtocol() === 'https' ? https : http;
+            const request = lib.get({
                 host: host,
                 path: path
             }, function (response) {
                 // console.log(' -- t7 -- DBG -- https-response: ', response);
-                _body(response,callback);
+                _bodyPromise(response, resolve);
             }).on('error', function (e) {
-                console.warn(' -- t7 -- WRN -- Can not get HTML page over https: ' + e.message);
-                callback();
+                console.warn(' -- t7 -- WRN -- Can not get HTML page over http/https: ' + e.message);
+                reject(new Error('Failed to load page'));
             });
-        } else {
-            // console.log(' -- t7 -- DBG -- http');
-            return http.get({
-                host: host,
-                path: path
-            }, function (response) {
-                // console.log(' -- t7 -- DBG -- http-response: ', response);
-                _body(response,callback);
-            }).on('error', function (e) {
-                console.warn(' -- t7 -- WRN -- Can not get HTML page over http: ' + e.message);
-                callback();
-            });
-        }
+            if (request) {
+                request.setTimeout(PARSER_GET_TIMEOUT, function () {
+                    console.err(' -- t7 -- ERR -- timeout of parser');
+                    request.abort();
+                    reject(new Error('Timeout'));
+                });
+            }
+        
+        });
 
     }
 
@@ -192,9 +190,9 @@ class StrgParser {
     }
 
     reduceSearchStrg(searchString) {
-        if ( searchString ) {
+        if (searchString) {
             let search = searchString.toLowerCase();
-            return search.replace(/[^0-9a-z]/gi, '');        
+            return search.replace(/[^0-9a-z]/gi, '');
         }
     }
 
@@ -210,7 +208,7 @@ class StrgParser {
 
     }
 
-    addDbFindAndRemoveStrgs( snowdata, city ) {
+    addDbFindAndRemoveStrgs(snowdata, city) {
         snowdata.findStrg = this.reduceSearchStrg(snowdata.skiresort);
         snowdata.removeStrg = this.webDataContainer.getHost(city) + this.webDataContainer.getPath(city);
     }
@@ -225,11 +223,11 @@ class StrgParser {
         var tabStrings = this.getTablesHtmlContent(htmlString);
         for (let tabStrg of tabStrings) {
             if (!tabStrg) continue;
-                // console.log(' -- t7 -- DBG -- tabStrg: ' + tabStrg);
-                if (this.isSnowDepthTable(tabStrg)) {
+            // console.log(' -- t7 -- DBG -- tabStrg: ' + tabStrg);
+            if (this.isSnowDepthTable(tabStrg)) {
                 var trStrings = this.getRowHtmlContent(tabStrg);
                 for (let trString of trStrings) {
-                    if (!trString) continue;
+                    if (!trString || trString.indexOf('<th') != -1) continue;
                     // console.log(' -- t7 -- DBG -- trString: ' + trString);
                     let snowdata = this.getSnowDataFromHtml(trString);
                     if (!snowdata) continue;
@@ -243,8 +241,8 @@ class StrgParser {
                         retData = snowdata;
                         console.log(' -- t7 -- DBG -- retData: ', retData);
                     }
-                    this.addDbFindAndRemoveStrgs(snowdata,city);
-                    if ( snowdata && snowdata.findStrg ) {
+                    this.addDbFindAndRemoveStrgs(snowdata, city);
+                    if (snowdata && snowdata.findStrg) {
                         this.snowdataArray.push(snowdata);
                     }
                 }

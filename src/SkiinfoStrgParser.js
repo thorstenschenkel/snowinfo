@@ -12,10 +12,16 @@ class SkiinfoStrgParser extends StrgParser {
     }
 
     getSnowDataFromHtml(htmlString) {
+
+        if (htmlString.indexOf('tal') != -1 && htmlString.indexOf('berg') != -1 && htmlString.indexOf('total') != -1 ) {
+            // sub header
+            return;
+        }
         if (htmlString.indexOf('<div class="lsos">') != -1) {
             // table legend
             return;
         }
+
         let snowdata = new Snowdata();
         snowdata.resource = this.getResource();
         snowdata.lastUpdate = Date.now();
@@ -82,6 +88,7 @@ class SkiinfoStrgParser extends StrgParser {
             i++;
         }
         return snowdata;
+        
     }
 
     getSkiinfoDate(htmlString) {
