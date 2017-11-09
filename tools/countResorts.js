@@ -8,14 +8,14 @@ function count() {
 
     let container = new BergfexContainer();
     for (let data of container.webDatas) {
-        countMap.set(data.search.toString(), data);
+        countMap.set(data.searchStrg, data);
     }
 
     let bergfexCount = countMap.size;
 
     container = new SkiinfoContainer();
     for (let data of container.webDatas) {
-        countMap.set(data.search.toString(), data);
+        countMap.set(data.searchStrg, data);
     }
 
     console.log('Bergfex: ' + bergfexCount);
