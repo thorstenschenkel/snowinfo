@@ -1,3 +1,4 @@
+SchneeCityIntent {city}
 SchneeInfoIntent nach den Schneehöhen auf dem {city}
 SchneeInfoIntent nach den Schneehöhen auf der {city}
 SchneeInfoIntent nach den Schneehöhen im {city}
