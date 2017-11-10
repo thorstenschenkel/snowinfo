@@ -116,14 +116,14 @@ class SkiinfoContainer extends WebDataContainer {
             speechstart: 'In'
         });
         // Galtür - Silvretta
-        this.Gargellen({
+        this.pushObject({
             city: 'Galtür',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Galtür - Silvretta',
             speechstart: 'In'
         });
         // Gargellen
-        this.Gargellen({
+        this.pushObject({
             city: 'Gargellen',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Gargellen',

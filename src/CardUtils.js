@@ -42,10 +42,10 @@ class CardUtils {
             } else {
 
                 // Schneehöhen
-                if ( this.snowdata.lowerSnowDepth >= 0 ) {
+                if (this.snowdata.lowerSnowDepth >= 0) {
                     content = `Schneehöhe Tal: ${this.snowdata.lowerSnowDepth} cm\n`;
                 }
-                if ( this.snowdata.upperSnowDepth >= 0 ) {
+                if (this.snowdata.upperSnowDepth >= 0) {
                     content += `Schneehöhe Berg: ${this.snowdata.upperSnowDepth} cm\n`;
                 }
 
@@ -65,9 +65,9 @@ class CardUtils {
 
                 // Lifte
                 if (this.snowdata.skiliftOpen >= 0 &&
-                    this.snowdata.skiliftTotal >= this.snowdata.skiliftOpen ) {
+                    this.snowdata.skiliftTotal >= this.snowdata.skiliftOpen) {
                     // Lifte/Bahnen: 11 von 20 offen
-                    content += `Lifte/Bahnen: ${this.snowdata.skiliftOpen } von ${this.snowdata.skiliftTotal} offen\n`;
+                    content += `Lifte/Bahnen: ${this.snowdata.skiliftOpen} von ${this.snowdata.skiliftTotal} offen\n`;
                 }
 
                 // Update
@@ -82,7 +82,16 @@ class CardUtils {
                     let dateStrg = wd + ', ' + dd + '.' + mm + '.' + yyyy;
                     content += `Letztes Update: ${dateStrg}`;
                 }
-                
+
+                switch (this.snowdata.resource) {
+                    case 'bergfex':
+                        content += '\n (b)';
+                        break;
+                    case 'skiinfo':
+                        content += '\n (s)';
+                        break;
+                }
+
             }
         }
 

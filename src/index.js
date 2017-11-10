@@ -19,7 +19,8 @@ const ERROR_TEMP = 'Leider kann ich für diesen Ort derzeit keine Informationen 
 const HELP_MESSAGE = 'Du kannst mir einen Ort oder ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 const LAUNCH_MESSAGE = 'Servus, für welchen Ort solle ich dir die Schneehöhen liefern?';
 const REPROMPT_MESSAGE = 'Hallo, du musst mir einen Ort oder ein Schigebiet nennen!';
-const STOP_MESSAGE = 'Auf Wiederschaun!';
+const MORE_INFOS = 'Nächster Ort oder sage Stopp.';
+const STOP_MESSAGE = 'Auf Wiederschauen!';
 
 //=========================================================================================================================================
 // BERGFEX
@@ -59,14 +60,14 @@ const handlers = {
     },
     'SchneeCityIntent': function () {
         console.log(' -- t7 -- DBG -- SchneeCityIntent ', this.event);
-        handleSnowIntent(this, this.event.request.intent);
+        handleSnowIntent(this, this.event.request.intent, true);
     },
     'SchneeInfoIntent': function () {
         console.log(' -- t7 -- DBG -- SchneeInfoIntent ', this.event);
-        handleSnowIntent(this, this.event.request.intent);
+        handleSnowIntent(this, this.event.request.intent, false);
     },
     'AMAZON.HelpIntent': function () {
-        this.response.speak(LAUNCH_MESSAGE).listen(REPROMPT_MESSAGE);
+        this.response.speak(HELP_MESSAGE).listen(REPROMPT_MESSAGE);
         this.emit(':responseReady');
     },
     'AMAZON.CancelIntent': function () {
@@ -90,7 +91,7 @@ exports.handler = function (event, context) {
     alexa.execute();
 };
 
-function handleSnowIntent(intentHandler, intent) {
+function handleSnowIntent(intentHandler, intent, ask) {
 
     let city;
     if (intent && intent.slots && intent.slots.city) {
@@ -100,17 +101,23 @@ function handleSnowIntent(intentHandler, intent) {
     console.log(' -- t7 -- DBG -- city : ' + city);
     if (!city) {
         // console.log(' -- t7 -- DBG -- no city : ' + city);
-        intentHandler.response.speak(ERROR_NO_CITY);
+        let rb = intentHandler.response.speak(ERROR_NO_CITY);
+        if ( ask ) {
+            rb.listen(MORE_INFOS);
+        }
         intentHandler.emit(':responseReady');
     } else {
         if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
             // console.log(' -- t7 -- DBG -- unkown city : ' + city);
-            intentHandler.response.speak(ERROR_UNKNOW_CITY);
+            let rb = intentHandler.response.speak(ERROR_UNKNOW_CITY);            
+            if ( ask ) {
+                rb.listen(MORE_INFOS);
+            }    
             intentHandler.emit(':responseReady');
         } else {
             dbHelper.loadFromDB(city, (dbSnowData) => {
                 console.log(' -- t7 -- DBG -- dbSnowData : ', dbSnowData);
-                getSnowDataAndTell(intentHandler, city, dbSnowData);
+                getSnowDataAndTell(intentHandler, city, dbSnowData, ask);
             });
         }
     }
@@ -143,7 +150,7 @@ function emit(intentHandler, city, snowdata) {
 
 }
 
-function hanldeSchneeInfo(intentHandler, city, snowdata) {
+function hanldeSchneeInfo(intentHandler, city, snowdata, ask) {
 
     if (!snowdata) {
         intentHandler.response.speak(ERROR_TEMP);
@@ -152,20 +159,20 @@ function hanldeSchneeInfo(intentHandler, city, snowdata) {
     }
 
     if (snowdata.dbResult === true) {
-        emit(intentHandler, city, snowdata);
+        emit(intentHandler, city, snowdata, ask);
     } else {
         dbHelper.storeAllInDB(() => {
             dbHelper.close();
-            emit(intentHandler, city, snowdata);
+            emit(intentHandler, city, snowdata, ask);
         });
     }
 
 }
 
-function getSnowDataAndTell(intentHandler, city, snowdata) {
+function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
 
     if (snowdata) {
-        hanldeSchneeInfo(intentHandler, city, snowdata);
+        hanldeSchneeInfo(intentHandler, city, snowdata, ask);
         return;
     }
 
@@ -188,7 +195,7 @@ function getSnowDataAndTell(intentHandler, city, snowdata) {
                 }
             }
         }
-        hanldeSchneeInfo(intentHandler, city, resultSnowdata);
+        hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
     });
 
 }
