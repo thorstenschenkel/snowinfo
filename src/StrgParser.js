@@ -124,7 +124,7 @@ class StrgParser {
             });
             if (request) {
                 request.setTimeout(PARSER_GET_TIMEOUT, function () {
-                    console.err(' -- t7 -- ERR -- timeout of parser');
+                    console.error(' -- t7 -- ERR -- timeout of parser');
                     request.abort();
                     reject(new Error('Timeout'));
                 });

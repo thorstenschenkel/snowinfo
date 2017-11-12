@@ -74,7 +74,7 @@ class DbHelper {
             MongoClient.connect(scope.dbUri, function (err, db) {
                 scope.cache.db = db;
                 if (err != null) {
-                    console.err(' -- t7 -- DBG -- Can not connect to DB : ', err);
+                    console.error(' -- t7 -- ERR -- Can not connect to DB : ', err);
                     callback();
                 } else {
                     scope._insertAllInDB(scope.cache.db, snowdataArray, callback);
@@ -138,7 +138,7 @@ class DbHelper {
             MongoClient.connect(scope.dbUri, function (err, db) {
                 scope.cache.db = db;
                 if (err != null) {
-                    console.err(' -- t7 -- ERR -- Can not connect to DB : ', err);
+                    console.error(' -- t7 -- ERR -- Can not connect to DB : ', err);
                     callback();
                 } else {
                     scope._findInDb(city, scope.cache.db, callback);

@@ -10,8 +10,8 @@ const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
 const DbHelper = require('./DbHelper');
 
-// const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
-const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
+const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
+// const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
 
 const ERROR_NO_CITY = 'Es wurde kein Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
@@ -101,18 +101,18 @@ function handleSnowIntent(intentHandler, intent, ask) {
     console.log(' -- t7 -- DBG -- city : ' + city);
     if (!city) {
         // console.log(' -- t7 -- DBG -- no city : ' + city);
-        let rb = intentHandler.response.speak(ERROR_NO_CITY);
-        if ( ask ) {
+        const rb = intentHandler.response.speak(ERROR_NO_CITY);
+        if (ask) {
             rb.listen(MORE_INFOS);
         }
         intentHandler.emit(':responseReady');
     } else {
         if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
             // console.log(' -- t7 -- DBG -- unkown city : ' + city);
-            let rb = intentHandler.response.speak(ERROR_UNKNOW_CITY);            
-            if ( ask ) {
+            const rb = intentHandler.response.speak(ERROR_UNKNOW_CITY);
+            if (ask) {
                 rb.listen(MORE_INFOS);
-            }    
+            }
             intentHandler.emit(':responseReady');
         } else {
             dbHelper.loadFromDB(city, (dbSnowData) => {
@@ -136,12 +136,12 @@ function getMatchingContainer(snowdata) {
 
 }
 
-function emit(intentHandler, city, snowdata) {
+function emit(intentHandler, city, snowdata, ask) {
 
     let container = getMatchingContainer(snowdata);
 
     let speechOut = new SpeechOut(city, snowdata, container);
-    speechOut.addSpeak(intentHandler);
+    speechOut.addSpeak(intentHandler, ask);
 
     let cardUtils = new CardUtils(city, snowdata);
     cardUtils.addCardRenderer(intentHandler);
@@ -153,7 +153,10 @@ function emit(intentHandler, city, snowdata) {
 function hanldeSchneeInfo(intentHandler, city, snowdata, ask) {
 
     if (!snowdata) {
-        intentHandler.response.speak(ERROR_TEMP);
+        const rb = intentHandler.response.speak(ERROR_TEMP);
+        if (ask) {
+            rb.listen(MORE_INFOS);
+        }
         intentHandler.emit(':responseReady');
         return;
     }
@@ -182,20 +185,32 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
         const promise = parser.getHtmlPagePromise(city);
         promises.push(promise);
     }
-    Promise.all(promises).then(htmlPages => {
-        let resultSnowdata;
-        for (let i = 0; i < htmlPages.length; i++) {
-            let htmlPage = htmlPages[i];
-            if (htmlPage) {
-                const snowdata = parsers[i].parseHtml(htmlPage, city);
-                if (snowdata) {
-                    if (!resultSnowdata || resultSnowdata.isOutdated()) {
-                        resultSnowdata = snowdata;
+    try {
+        Promise.all(promises)
+            .then(htmlPages => {
+                let resultSnowdata;
+                for (let i = 0; i < htmlPages.length; i++) {
+                    let htmlPage = htmlPages[i];
+                    if (htmlPage) {
+                        const snowdata = parsers[i].parseHtml(htmlPage, city);
+                        if (snowdata) {
+                            if (!resultSnowdata || resultSnowdata.isOutdated()) {
+                                resultSnowdata = snowdata;
+                            }
+                        }
                     }
                 }
-            }
-        }
-        hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
-    });
+                hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
+            }).catch(error => {
+                console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
+                const rb = intentHandler.response.speak(ERROR_TEMP);
+                if (ask) {
+                    rb.listen(MORE_INFOS);
+                }
+                intentHandler.emit(':responseReady');
+            });
+    } catch (error) {
+        console.error(' -- t7 -- ERR -- Promise error (try-catch): ', error);
+    }
 
 }
