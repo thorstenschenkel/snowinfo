@@ -28,7 +28,7 @@ class SkiinfoStrgParser extends StrgParser {
         snowdata.lowerSnowDepth = 0;
         snowdata.upperSnowDepth = 0;
         let tdStrings = this.getPartContent(htmlString, '<td', '</td>');
-        console.log(' -- t7 - DBG -- tdStrings: ' + tdStrings);
+        // console.log(' -- t7 - DBG -- tdStrings: ' + tdStrings);
         let i = 0;
         for (let tdStrg of tdStrings) {
             let strg = tdStrg.trim();

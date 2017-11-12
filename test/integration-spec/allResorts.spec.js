@@ -25,30 +25,32 @@ describe('test of all ski resorts', function () {
             city = city.trim();
 
             let promises = [];
-            for ( let parser of parsers ) {
+            for (let parser of parsers) {
                 parser.clear();
                 promises.push(parser.getHtmlPagePromise(city));
             }
-            Promise.all(promises).then(htmlPages => {
-                let dataCity;
-                for (let i = 0; i < htmlPages.length; i++) {
-                    const htmlPage = htmlPages[i];
-                    if (htmlPage) {
-                        const snowdata = parsers[i].parseHtml(htmlPage, city);
-                        if (!dataCity && snowdata) {
-                            dataCity = snowdata.city;
-                        }
-                        if (dataCity) {
-                            dataCity = dataCity.toLowerCase();
+            Promise.all(promises)
+                .then(htmlPages => {
+                    let dataCity;
+                    for (let i = 0; i < htmlPages.length; i++) {
+                        const htmlPage = htmlPages[i];
+                        if (htmlPage) {
+                            const snowdata = parsers[i].parseHtml(htmlPage, city);
+                            if (!dataCity && snowdata) {
+                                dataCity = snowdata.city;
+                            }
+                            if (dataCity) {
+                                dataCity = dataCity.toLowerCase();
+                            }
                         }
                     }
-                }
-                if (dataCity) {
-                    dataCity = dataCity.toLowerCase();
-                }
-                expect(dataCity).toBe(city);
-            });
-
+                    if (dataCity) {
+                        dataCity = dataCity.toLowerCase();
+                    }
+                    expect(dataCity).toBe(city);
+                }).catch(() => {
+                    console.warn(' -- t7 -- WARN -- no resort for: ', city);
+                });
         }
 
     });
