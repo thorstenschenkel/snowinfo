@@ -160,6 +160,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Galtür / Paznaun-Ischgl',
             speechstart: 'In'
         });
+        //  Going - SkiWelt
+        this.pushObject({
+            city: 'Going',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Going - SkiWelt',
+            speechstart: 'In'
+        });
         //  Golm im Montafon
         this.pushObject({
             city: 'Golm',
@@ -352,6 +359,12 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Kaunertaler Gletscher / Kaunertal',
             speechstart: 'Auf dem'
+        });
+        this.pushObject({
+            city: 'Kirchberg',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Kitzbühel - Kirchberg',
+            speechstart: 'In'
         });
         this.pushObject({
             city: 'Kitzbühel',
@@ -630,6 +643,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Schmitten - Zell am See',
             speechstart: 'In'
         });
+        // Stuhleck - Semmering
+        this.pushObject({
+            city: 'Semmering',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            searchStrg: 'Stuhleck - Semmering',
+            speechstart: 'In'
+        });        
         // Sillian
         this.pushObject({
             city: 'Sillian',
@@ -709,6 +729,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Stubaier Gletscher / Stubaital',
             speechstart: 'Auf dem'
         });
+        // Stuhleck - Semmering
+        this.pushObject({
+            city: 'Stuhleck',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            searchStrg: 'Stuhleck - Semmering',
+            speechstart: 'In'
+        });
         // Tauplitz / Bad Mitterndorf - Schneebären
         this.pushObject({
             city: 'Tauplitz',
@@ -754,6 +781,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
             searchStrg: 'Walmendingerhorn - Ifen - Heuberg',
             speechstart: 'Im'
+        });
+        // Weinebene
+        this.pushObject({
+            city: 'Weinebene',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            searchStrg: 'Weinebene',
+            speechstart: 'In'
         });
         // Jungfrau Ski Region Grindelwald - Wengen
         this.pushObject({
