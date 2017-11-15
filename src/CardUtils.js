@@ -24,6 +24,10 @@ class CardUtils {
 
     }
 
+    _getVersion()  {
+        return require('./config.json').version;
+    }    
+
     _getCardTitle() {
         if (!this.city) {
             return;
@@ -85,10 +89,10 @@ class CardUtils {
 
                 switch (this.snowdata.resource) {
                     case 'bergfex':
-                        content += '\n (b)';
+                        content += '\n(Version: ' + this._getVersion() + '-bf)';
                         break;
                     case 'skiinfo':
-                        content += '\n (s)';
+                        content += '\n(Version: ' + this._getVersion() + '-si)';
                         break;
                 }
 

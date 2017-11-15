@@ -10,8 +10,8 @@ const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
 const DbHelper = require('./DbHelper');
 
-const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
-// const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
+// const APP_ID = 'amzn1.ask.skill.b742793c-261f-4f56-a983-ba3c41b3f4c5'; // Schneeinfo
+const APP_ID = 'amzn1.ask.skill.9cc69071-8944-465e-81be-afa8bab71d2f'; // Schneeinfo DEV
 
 const ERROR_NO_CITY = 'Es wurde kein Ort oder ein unbekannter Ort angegeben!';
 const ERROR_UNKNOW_CITY = 'Den Ort kenne ich nicht!';
@@ -21,6 +21,10 @@ const LAUNCH_MESSAGE = 'Servus, für welchen Ort solle ich dir die Schneehöhen 
 const REPROMPT_MESSAGE = 'Hallo, du musst mir einen Ort oder ein Schigebiet nennen!';
 const MORE_INFOS = 'Nächster Ort oder sage Stopp.';
 const STOP_MESSAGE = 'Auf Wiederschauen!';
+
+function getVersion()  {
+    return require('./config.json').version;
+}
 
 //=========================================================================================================================================
 // BERGFEX
@@ -87,7 +91,7 @@ exports.handler = function (event, context) {
     const alexa = Alexa.handler(event, context);
     alexa.appId = APP_ID;
     alexa.registerHandlers(handlers);
-    console.log(' -- t7 -- DBG -- execute DEV');
+    console.log(' -- t7 -- INFO -- version: ' + getVersion());
     alexa.execute();
 };
 
@@ -97,7 +101,6 @@ function handleSnowIntent(intentHandler, intent, ask) {
     if (intent && intent.slots && intent.slots.city) {
         city = intent.slots.city.value;
     }
-    console.log(' -- t7 -- DBG -- intent : ' + intent);
     console.log(' -- t7 -- DBG -- city : ' + city);
     if (!city) {
         // console.log(' -- t7 -- DBG -- no city : ' + city);
@@ -150,14 +153,18 @@ function emit(intentHandler, city, snowdata, ask) {
 
 }
 
+function emitTempError(intentHandler, ask) {
+    const rb = intentHandler.response.speak(ERROR_TEMP);
+    if (ask) {
+        rb.listen(MORE_INFOS);
+    }
+    intentHandler.emit(':responseReady');
+}
+
 function hanldeSchneeInfo(intentHandler, city, snowdata, ask) {
 
     if (!snowdata) {
-        const rb = intentHandler.response.speak(ERROR_TEMP);
-        if (ask) {
-            rb.listen(MORE_INFOS);
-        }
-        intentHandler.emit(':responseReady');
+        emitTempError(intentHandler, ask);
         return;
     }
 
@@ -185,32 +192,69 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
         const promise = parser.getHtmlPagePromise(city);
         promises.push(promise);
     }
+    let parserIndex = 0;
+    let resultSnowdata;
     try {
-        Promise.all(promises)
-            .then(htmlPages => {
-                let resultSnowdata;
-                for (let i = 0; i < htmlPages.length; i++) {
-                    let htmlPage = htmlPages[i];
-                    if (htmlPage) {
-                        const snowdata = parsers[i].parseHtml(htmlPage, city);
-                        if (snowdata) {
-                            if (!resultSnowdata || resultSnowdata.isOutdated()) {
-                                resultSnowdata = snowdata;
-                            }
-                        }
-                    }
-                }
-                hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
-            }).catch(error => {
+        promises[parserIndex]
+            .then(htmlPage => {
+                resultSnowdata = parsers[parserIndex].parseHtml(htmlPage, city);
+            })
+            .catch((error) => {
                 console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
-                const rb = intentHandler.response.speak(ERROR_TEMP);
-                if (ask) {
-                    rb.listen(MORE_INFOS);
+            })
+            .then(() => {
+                parserIndex++;
+                if ( (!resultSnowdata || resultSnowdata.isOutdated()) && parserIndex < parsers.length ) {
+                    promises[parserIndex]
+                        .then(htmlPage => {
+                            resultSnowdata = parsers[parserIndex].parseHtml(htmlPage, city);
+                            hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
+                        }).catch((error) => {
+                            console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
+                            hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
+                        });
+                } else {
+                    hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
                 }
-                intentHandler.emit(':responseReady');
             });
     } catch (error) {
         console.error(' -- t7 -- ERR -- Promise error (try-catch): ', error);
+        emitTempError(intentHandler, ask);
     }
+
+
+    // let promises = [];
+    // for (let parser of parsers) {
+    //     parser.clear();
+    //     const promise = parser.getHtmlPagePromise(city);
+    //     promises.push(promise);
+    // }
+    // try {
+    //     Promise.all(promises)
+    //         .then(htmlPages => {
+    //             let resultSnowdata;
+    //             for (let i = 0; i < htmlPages.length; i++) {
+    //                 let htmlPage = htmlPages[i];
+    //                 if (htmlPage) {
+    //                     const snowdata = parsers[i].parseHtml(htmlPage, city);
+    //                     if (snowdata) {
+    //                         if (!resultSnowdata || resultSnowdata.isOutdated()) {
+    //                             resultSnowdata = snowdata;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
+    //         }).catch(error => {
+    //             console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
+    //             const rb = intentHandler.response.speak(ERROR_TEMP);
+    //             if (ask) {
+    //                 rb.listen(MORE_INFOS);
+    //             }
+    //             intentHandler.emit(':responseReady');
+    //         });
+    // } catch (error) {
+    //     console.error(' -- t7 -- ERR -- Promise error (try-catch): ', error);
+    // }
 
 }

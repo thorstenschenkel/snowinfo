@@ -26,7 +26,7 @@ class DbHelper {
                 query.$or.push(removeStrgObj);
             }
         }
-        console.log(' -- t7 -- DBG -- removed snowdatas from DB query: ', query);
+        // console.log(' -- t7 -- DBG -- removed snowdatas from DB query: ', query);
 
         let insertBatch = col.initializeUnorderedBulkOp();
         for (let j = 0; j < snowdataArray.length; j++) {
@@ -35,15 +35,16 @@ class DbHelper {
 
         col.deleteMany(query, function (err01, result01) {
             if (err01 != null) {
-                console.error(' -- t7 -- DBG -- Can not remove snowdatas from DB : ', err01);
+                console.error(' -- t7 -- ERR -- Can not remove snowdatas from DB : ', err01);
                 callback();
             } else {
-                console.log(' -- t7 -- DBG -- removed snowdatas from DB : ', result01);
+                // console.log(' -- t7 -- DBG -- removed snowdatas from DB : ', result01);
                 insertBatch.execute(function (err02, result02) {
                     if (err02 != null) {
-                        console.error(' -- t7 -- DBG -- Can not insert all snowdatas into DB : ', err02);
+                        console.error(' -- t7 -- ERR -- Can not insert all snowdatas into DB : ', err02);
                     } else {
-                        console.log(' -- t7 -- DBG -- inserted all snowdatas into DB : ', result02);
+                        console.log(' -- t7 -- DBG -- inserted all snowdatas into DB.');
+                        // console.log(' -- t7 -- DBG -- inserted all snowdatas into DB : ', result02);
                     }
                     callback();
                 });
