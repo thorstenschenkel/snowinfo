@@ -17,6 +17,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'St. Johann im Pongau - Alpendorf',
             speechstart: 'In'
         });
+        // Ankogel
+        this.pushObject({
+            city: 'Ankogel',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Ankogel',
+            speechstart: 'In'
+        });
         // Bad Kleinkirchheim
         this.pushObject({
             city: 'Bad Kleinkirchheim',
@@ -85,6 +92,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Ellmau',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Ellmau - SkiWelt',
+            speechstart: 'In'
+        });
+        // Fendels
+        this.pushObject({
+            city: 'Fendels',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Fendels',
             speechstart: 'In'
         });
         // Skicircus Saalbach Hinterglemm Leogang Fieberbrunn
@@ -355,6 +369,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Leogang',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Skicircus Saalbach Hinterglemm Leogang Fieberbrunn',
+            speechstart: 'In'
+        });
+        // Mallnitz
+        this.pushObject({
+            city: 'Mallnitz',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Ankogel',
             speechstart: 'In'
         });
         // Mayrhofen
@@ -678,7 +699,6 @@ Almenwelt Lofer
 Alpenarena Hochhäderich
 Alpl
 Andelsbuch Niedere
-Ankogel
 Annaberg
 Axamer - Lizum
 Bad Gastein - Graukogel
@@ -701,7 +721,6 @@ Fageralm Forstau
 Falkert
 Fanningberg
 Faschina Fontanella
-Fendels
 Feuerkogel
 Filzmoos Neuberg
 Flattnitz

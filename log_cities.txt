@@ -27,4 +27,5 @@ warth
 stubaier gletscher
 hintertuxer gletscher
 lech
+zinal -> ERR
 
