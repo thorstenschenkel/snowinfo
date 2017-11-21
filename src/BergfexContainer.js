@@ -37,6 +37,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Radstadt - Altenmarkt - Ski amade',
             speechstart: 'In'
         });
+        // Crans Montana - Aminona
+        this.pushObject({
+            city: 'Aminona',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Crans Montana - Aminona',
+            speechstart: 'In'
+        });
         // Ankogel - Mallnitz
         this.pushObject({
             city: 'Ankogel',
@@ -65,11 +72,25 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Tauplitz / Bad Mitterndorf - Schneebären',
             speechstart: 'In'
         });
+        // Brixen im Thale - SkiWelt
+        this.pushObject({
+            city: 'Brixen im Thale',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Brixen im Thale - SkiWelt',
+            speechstart: 'In'
+        });
         // St. Moritz - Corviglia
         this.pushObject({
             city: 'Corviglia',
             host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
             searchStrg: 'St. Moritz - Corviglia',
+            speechstart: 'In'
+        });
+        // Crans Montana - Aminona
+        this.pushObject({
+            city: 'Crans Montana',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Crans Montana - Aminona',
             speechstart: 'In'
         });
         // Dachstein Gletscher
@@ -79,12 +100,26 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Dachstein Gletscher Schladming Ramsau - Ski amade',
             speechstart: 'Auf dem'
         });
+        // Davos Klosters Parsenn
+        this.pushObject({
+            city: 'Davos',
+            host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
+            searchStrg: 'Davos Klosters Parsenn',
+            speechstart: 'In'
+        });
         // Elferbahnen Neustift / Stubaital
         this.pushObject({
             city: 'Elferbahnen',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Elferbahnen Neustift / Stubaital',
             speechstart: 'Im Skigebiet'
+        });
+        // Ellmau - SkiWelt
+        this.pushObject({
+            city: 'Ellmau',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Ellmau - SkiWelt',
+            speechstart: 'In'
         });
         // Fageralm / Forstau - Ski amade
         this.pushObject({
@@ -100,6 +135,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Flims Laax Falera',
             speechstart: 'In'
         });
+        // Feldberg Liftverbund
+        this.pushObject({
+            city: 'Feldberg',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Feldberg Liftverbund',
+            speechstart: 'Auf dem'
+        });       
         // Kleinwalsertal - Kanzelwand - Fellhorn
         this.pushObject({
             city: 'Fellhorn',
@@ -378,6 +420,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
             searchStrg: 'Kleinwalsertal - Kanzelwand - Fellhorn',
             speechstart: 'Im'
+        });
+        // Davos Klosters Parsenn
+        this.pushObject({
+            city: 'Klosters',
+            host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
+            searchStrg: 'Davos Klosters Parsenn',
+            speechstart: 'In'
         });
         // Koralpe
         this.pushObject({
@@ -815,6 +864,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Zinal',
             speechstart: 'In'
+        });
+        // Zugspitze
+        this.pushObject({
+            city: 'Zugspitze',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Zugspitze',
+            speechstart: 'Auf der'
         });
     }
 

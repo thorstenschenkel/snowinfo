@@ -2,6 +2,7 @@ Alpbach
 Alpbachtal
 Alpendorf
 Altenmarkt
+Aminona
 Ankogel
 Arosa
 Bad Kleinkirchheim
@@ -10,14 +11,18 @@ Berwang
 Bichlbach
 Brand
 Brandnertal
+Brixen im Thale
 Bürserberg
 Corviglia
+Crans Montana
 Dachstein Gletscher
 Damüls
+Davos
 Elferbahnen
 Ellmau
 Fageralm
 Falera
+Feldberg
 Fellhorn
 Fendels
 Fieberbrunn
@@ -71,6 +76,7 @@ Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
 Kleinwalsertal
+Klosters
 Koralpe
 Kreischberg
 Krimml
@@ -162,3 +168,4 @@ Zermatt
 Zillertal Arena
 Zinal
 Zürs
+Zugspitze
