@@ -330,6 +330,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Serfaus Fiss Ladis',
             speechstart: 'In'
         });
+        // Lake Louise !!! NUR SKIINFO
+        this.pushObject({
+            city: 'Lake Louise',
+            host: 'www.skiinfo.de', path: '/kanada/schneehoehen-schneebericht.html',
+            searchStrg: 'Lake Louise',
+            speechstart: 'In'
+        });
         // Lech Zürs am Arlberg
         this.pushObject({
             city: 'Lech',

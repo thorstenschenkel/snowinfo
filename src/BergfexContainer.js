@@ -440,6 +440,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Leogang - Saalbach Hinterglemm Fieberbrunn',
             speechstart: 'In'
         });
+        // Malbun !!! NUR BERGFEX
+        this.pushObject({
+            city: 'Malbun',
+            host: 'www.bergfex.ch', path: '/liechtenstein/schneewerte/',
+            searchStrg: 'Malbun',
+            speechstart: 'In'
+        });
         // Ankogel - Mallnitz
         this.pushObject({
             city: 'Mallnitz',
