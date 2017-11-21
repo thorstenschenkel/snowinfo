@@ -10,14 +10,19 @@ Alpbach
 Alpendorf
 Altenmarkt
 Arosa
+Bad Gastein
 Bad Kleinkirchheim
+Bad Mitterndorf
 Bergeralm
 Brand
 Brandnertal
 Bürserberg
+Brixen im Thale
 Corviglia
 Dachstein Gletscher
 Damüls
+Dienten
+Dorfgastein
 Elferbahnen
 Ellmau
 Fageralm
@@ -26,10 +31,12 @@ Fendels
 Fieberbrunn
 Fiss
 Flachau
+Flachauwinkl
 Fliess
 Flims
 Forstau
 Fügen
+Gaissau
 Galtür
 Gargellen
 Gerlitzen
@@ -42,6 +49,7 @@ Hauser Kaibling
 Heiligenblut
 Heuberg
 Hinterglemm
+Hintersee
 Hintertuxer Gletscher
 Hochficht
 Hochgurgl
@@ -79,11 +87,14 @@ Lenzerheide
 Leogang
 Malbun
 Mallnitz
+Maria Alm
 Matrei
+Mauterndorf
 Mayrhofen
 Mellau
 Mölltaler Gletscher
 Murau
+Mühlbach
 Nassfeld
 Nauders
 Neustift
@@ -103,6 +114,7 @@ Sankt Anton am Arlberg
 Sankt Johann im Pongau
 Sankt Johann in Tirol
 Sankt Moritz
+Sankt Michael
 Sankt Urban
 Samnaun
 Scheffau
@@ -111,6 +123,8 @@ Schladming
 Schlick
 Schmitten
 Schmittenhöhe
+See
+Semmering
 Serfaus
 Sillian
 Silvretta Montafon

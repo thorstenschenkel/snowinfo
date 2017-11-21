@@ -65,6 +65,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Bergeralm - Steinach am Brenner',
             speechstart: 'Auf der'
         });
+        // Bad Gastein - Ski amade
+        this.pushObject({
+            city: 'Bad Gastein',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Bad Gastein - Ski amade',
+            speechstart: 'In'
+        });
         // Tauplitz / Bad Mitterndorf - Schneebären
         this.pushObject({
             city: 'Bad Mitterndorf',
@@ -105,6 +112,20 @@ class BergfexContainer extends WebDataContainer {
             city: 'Davos',
             host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
             searchStrg: 'Davos Klosters Parsenn',
+            speechstart: 'In'
+        });
+        // Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade
+        this.pushObject({
+            city: 'Dienten',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade',
+            speechstart: 'In'
+        });
+        // Dorfgastein - Ski amade
+        this.pushObject({
+            city: 'Dorfgastein',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Dorfgastein - Ski amade',
             speechstart: 'In'
         });
         // Elferbahnen Neustift / Stubaital
@@ -163,10 +184,18 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Fieberbrunn - Saalbach Hinterglemm Leogang',
             speechstart: 'In'
         });
+        // Flachau - Snow Space Salzburg - Ski amade
         this.pushObject({
             city: 'Flachau',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
-            searchStrg: '', // TODO
+            searchStrg: 'Flachau - Snow Space Salzburg - Ski amade',
+            speechstart: 'In'
+        });
+        // Zauchensee - Flachauwinkl - Ski amade
+        this.pushObject({
+            city: 'Flachauwinkl',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Zauchensee - Flachauwinkl - Ski amade',
             speechstart: 'In'
         });
         this.pushObject({
@@ -196,10 +225,24 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Fügen - Spieljoch',
             speechstart: 'In'
         });
+        // Gaissau Hintersee
+        this.pushObject({
+            city: 'Gaissau',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Gaissau Hintersee',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Galtür',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Galtür / Paznaun-Ischgl',
+            speechstart: 'In'
+        });
+        //  Going - SkiWelt
+        this.pushObject({
+            city: 'Going',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Going - SkiWelt',
             speechstart: 'In'
         });
         //  Golm im Montafon
@@ -227,6 +270,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Grindelwald',
             host: 'www.bergfex.ch', path: '/berneroberland/schneewerte/',
             searchStrg: 'Jungfrau Ski Region Grindelwald - Wengen',
+            speechstart: 'In'
+        });
+        // Großeck - Speiereck - Mauterndorf
+        this.pushObject({
+            city: 'Großeck',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Großeck - Speiereck - Mauterndorf',
             speechstart: 'In'
         });
         // Kasberg - Grünau im Almtal
@@ -263,6 +313,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Walmendingerhorn - Ifen - Heuberg',
             speechstart: 'In'
         });
+        // Gaissau Hintersee
+        this.pushObject({
+            city: 'Hintersee',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Gaissau Hintersee',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Hintertux',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
@@ -280,6 +337,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Hochficht',
             host: 'www.bergfex.at', path: '/oberoesterreich/schneewerte/',
             searchStrg: 'Hochficht - Böhmerwald',
+            speechstart: 'In'
+        });
+        // Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade
+        this.pushObject({
+            city: 'Hochkönig',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade',
             speechstart: 'In'
         });
         // Hochkrimml
@@ -375,7 +439,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Kitzsteinhorn - Kaprun',
             speechstart: 'In'
-        });       
+        });
         // Kasberg - Grünau im Almtal
         this.pushObject({
             city: 'Kasberg',
@@ -394,6 +458,12 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Kaunertaler Gletscher / Kaunertal',
             speechstart: 'Auf dem'
+        });
+        this.pushObject({
+            city: 'Kirchberg',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Kitzbühel - Kirchberg',
+            speechstart: 'In'
         });
         this.pushObject({
             city: 'Kitzbühel',
@@ -490,10 +560,24 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Ankogel - Mallnitz',
             speechstart: 'In'
         });
+        // Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade
+        this.pushObject({
+            city: 'Maria Alm',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Matrei ',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Matrei  - GG Resorts Kals-Matrei',
+            speechstart: 'In'
+        });
+        // Großeck - Speiereck - Mauterndorf
+        this.pushObject({
+            city: 'Mauterndorf',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Großeck - Speiereck - Mauterndorf',
             speechstart: 'In'
         });
         // Mayrhofen - Zillertal
@@ -522,6 +606,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Murau',
             host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
             searchStrg: 'Kreischberg / Murau',
+            speechstart: 'In'
+        });
+        // Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade
+        this.pushObject({
+            city: 'Mühlbach',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade',
             speechstart: 'In'
         });
         this.pushObject({
@@ -638,6 +729,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'St. Johann in Tirol',
             speechstart: 'In'
         });
+        // Großeck - Speiereck - Mauterndorf
+        this.pushObject({
+            city: 'Sankt Michael',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Großeck - Speiereck - Mauterndorf',
+            speechstart: 'In'
+        });
         // St. Moritz - Corviglia
         this.pushObject({
             city: 'Sankt Moritz',
@@ -652,13 +750,20 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Simonhöhe - Sankt Urban',
             speechstart: 'In',
         });
+        // Scheffau - SkiWelt
+        this.pushObject({
+            city: 'Scheffau',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Scheffau - SkiWelt',
+            speechstart: 'In'
+        });
         // Schetteregg
         this.pushObject({
             city: 'Schetteregg',
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
             searchStrg: 'Schetteregg',
             speechstart: 'In'
-        });                
+        });
         // Planai / Schladming - Ski amade
         this.pushObject({
             city: 'Schladming',
@@ -684,6 +789,20 @@ class BergfexContainer extends WebDataContainer {
             city: 'Schmitten',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Schmitten - Zell am See',
+            speechstart: 'In'
+        });
+        // See / Paznaun-Ischgl
+        this.pushObject({
+            city: 'See',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'See / Paznaun-Ischgl',
+            speechstart: 'In'
+        });
+        // Stuhleck - Semmering
+        this.pushObject({
+            city: 'Semmering',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            searchStrg: 'Stuhleck - Semmering',
             speechstart: 'In'
         });
         // Sillian
@@ -718,6 +837,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Sölden',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Sölden',
+            speechstart: 'In'
+        });
+        // Großeck - Speiereck - Mauterndorf
+        this.pushObject({
+            city: 'Speiereck',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Großeck - Speiereck - Mauterndorf',
             speechstart: 'In'
         });
         // Fügen - Spieljoch
@@ -765,6 +891,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Stubaier Gletscher / Stubaital',
             speechstart: 'Auf dem'
         });
+        // Stuhleck - Semmering
+        this.pushObject({
+            city: 'Stuhleck',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            searchStrg: 'Stuhleck - Semmering',
+            speechstart: 'In'
+        });
         // Tauplitz / Bad Mitterndorf - Schneebären
         this.pushObject({
             city: 'Tauplitz',
@@ -811,11 +944,25 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Walmendingerhorn - Ifen - Heuberg',
             speechstart: 'Im'
         });
+        // Weinebene
+        this.pushObject({
+            city: 'Weinebene',
+            host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
+            searchStrg: 'Weinebene',
+            speechstart: 'In'
+        });
         // Jungfrau Ski Region Grindelwald - Wengen
         this.pushObject({
             city: 'Wengen',
             host: 'www.bergfex.ch', path: '/berneroberland/schneewerte/',
             searchStrg: 'Jungfrau Ski Region Grindelwald - Wengen',
+            speechstart: 'In'
+        });
+        // Westendorf - SkiWelt
+        this.pushObject({
+            city: 'Westendorf',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Westendorf - SkiWelt',
             speechstart: 'In'
         });
         // Waidring - Steinplatte
@@ -829,6 +976,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Zams',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Landeck - Zams - Fliess / Venetregion',
+            speechstart: 'In'
+        });
+        // Zauchensee - Flachauwinkl - Ski amade
+        this.pushObject({
+            city: 'Zauchensee',
+            host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
+            searchStrg: 'Zauchensee - Flachauwinkl - Ski amade',
             speechstart: 'In'
         });
         this.pushObject({

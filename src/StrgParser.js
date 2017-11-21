@@ -128,6 +128,7 @@ class StrgParser {
                     request.abort();
                     reject(new Error('Timeout'));
                 });
+                request.end();
             }
         
         });

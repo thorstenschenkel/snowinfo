@@ -5,7 +5,9 @@ Altenmarkt
 Aminona
 Ankogel
 Arosa
+Bad Gastein
 Bad Kleinkirchheim
+Bad Mitterndorf
 Bergeralm
 Berwang
 Bichlbach
@@ -18,6 +20,8 @@ Crans Montana
 Dachstein Gletscher
 Damüls
 Davos
+Dienten
+Dorfgastein
 Elferbahnen
 Ellmau
 Fageralm
@@ -28,14 +32,17 @@ Fendels
 Fieberbrunn
 Fiss
 Flachau
+Flachauwinkl
 Fliess
 Flims
 Forstau
 Fügen
+Gaissau
 Galtür
 Gargellen
 Gerlitzen
 Gerlos
+Going
 Golm
 Golm im Montafon
 Grimentz
@@ -47,6 +54,7 @@ Hauser Kaibling
 Heiligenblut
 Heuberg
 Hinterglemm
+Hintersee
 Hintertux
 Hintertuxer Gletscher
 Hochficht
@@ -72,6 +80,7 @@ Kasberg
 Kaunertal
 Kaunertaler Gletscher
 Kelchsau
+Kirchberg
 Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
@@ -91,12 +100,15 @@ Lenzerheide
 Leogang
 Malbun
 Mallnitz
+Maria Alm
 Matrei
+Mauterndorf
 Mayrhofen
 Mellau
 Montafon
 Mölltaler Gletscher
 Murau
+Mühlbach
 Nassfeld
 Nauders
 Neustift
@@ -120,6 +132,7 @@ Sankt Anton am Arlberg
 Sankt Johann
 Sankt Johann im Pongau
 Sankt Johann in Tirol
+Sankt Michael
 Sankt Moritz
 Sankt Urban
 Scheffau
@@ -130,6 +143,8 @@ Schlick 2000
 Schmitten
 Schmittenhöhe
 Schröcken
+See
+Semmering
 Serfaus
 Sillian
 Silvretta
@@ -147,6 +162,7 @@ Stubaier Gletscher
 Stubaital
 Stuben
 Stuben am Arlberg
+Stuhleck
 Tauplitz
 Tauplitzalm
 Turracher Höhe
@@ -156,6 +172,7 @@ Waidring
 Walchsee
 Walmendingerhorn
 Warth
+Weinebene
 Wengen
 Westendorf
 Winklmoosalm
