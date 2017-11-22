@@ -6,16 +6,24 @@ Derzeit können die Schneehöhen von über 100 Orten geliefet werden.
 
 Hier die Liste der Orte:
 
+Aletsch Arena
 Alpbach
 Alpendorf
+Alpthal
 Altenmarkt
+Andermatt
 Arosa
 Bad Gastein
 Bad Kleinkirchheim
 Bad Mitterndorf
+Belalp
 Bergeralm
+Bettmeralp
+Bichlbach
+Blatten
 Brand
 Brandnertal
+Brunni
 Bürserberg
 Brixen im Thale
 Corviglia
@@ -24,8 +32,10 @@ Damüls
 Davos
 Dienten
 Dorfgastein
+Einsiedeln
 Elferbahnen
 Ellmau
+Engelberg
 Fageralm
 Falera
 Fendels
@@ -41,6 +51,8 @@ Gaissau
 Galtür
 Gargellen
 Gerlitzen
+Gerlos
+Giswil
 Golm im Montafon
 Grimentz
 Grindelwald
@@ -52,6 +64,7 @@ Heuberg
 Hinterglemm
 Hintersee
 Hintertuxer Gletscher
+Hoch-Ybrig
 Hochficht
 Hochgurgl
 Hochkönig

@@ -10,6 +10,13 @@ class BergfexContainer extends WebDataContainer {
 
         super('bergfex');
 
+        // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
+        this.pushObject({
+            city: 'Aletsch Arena',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn',
+            speechstart: 'In der'
+        });
         // Alpbach - Ski Juwel Alpbachtal Wildschönau
         this.pushObject({
             city: 'Alpbach',
@@ -29,6 +36,14 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: '', // TODO
             speechstart: 'In'
+        });
+        // Mythenregion
+        this.pushObject({
+            city: 'Alpthal',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Mythenregion',
+            speechstart: 'In der',
+            speechskiresort: 'Mythenregion'
         });
         // Radstadt - Altenmarkt - Ski amade
         this.pushObject({
@@ -79,12 +94,34 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Tauplitz / Bad Mitterndorf - Schneebären',
             speechstart: 'In'
         });
+        // Belalp
+        this.pushObject({
+            city: 'Belalp',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Belalp',
+            speechstart: 'In'
+        });
+        // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
+        this.pushObject({
+            city: 'Bettmeralp',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn',
+            speechstart: 'Auf der'
+        });
         // Brixen im Thale - SkiWelt
         this.pushObject({
             city: 'Brixen im Thale',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Brixen im Thale - SkiWelt',
             speechstart: 'In'
+        });
+        // Mythenregion
+        this.pushObject({
+            city: 'Brunni',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Mythenregion',
+            speechstart: 'In der',
+            speechskiresort: 'Mythenregion'
         });
         // St. Moritz - Corviglia
         this.pushObject({
@@ -128,6 +165,14 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Dorfgastein - Ski amade',
             speechstart: 'In'
         });
+        // Mythenregion
+        this.pushObject({
+            city: 'Einsiedeln',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Mythenregion',
+            speechstart: 'In der',
+            speechskiresort: 'Mythenregion'
+        });
         // Elferbahnen Neustift / Stubaital
         this.pushObject({
             city: 'Elferbahnen',
@@ -140,6 +185,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Ellmau',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Ellmau - SkiWelt',
+            speechstart: 'In'
+        });
+        // Engelberg Titlis
+        this.pushObject({
+            city: 'Engelberg',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Engelberg Titlis',
             speechstart: 'In'
         });
         // Fageralm / Forstau - Ski amade
@@ -162,7 +214,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
             searchStrg: 'Feldberg Liftverbund',
             speechstart: 'Auf dem'
-        });       
+        });
         // Kleinwalsertal - Kanzelwand - Fellhorn
         this.pushObject({
             city: 'Fellhorn',
@@ -331,6 +383,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Hintertuxer Gletscher / Hintertux',
             speechstart: 'Auf dem'
+        });
+        // Hoch-Ybrig
+        this.pushObject({
+            city: 'Hoch-Ybrig',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Hoch-Ybrig',
+            speechstart: 'In'
         });
         // Hochficht - Böhmerwald
         this.pushObject({
@@ -519,6 +578,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Krimml / Hochkrimml – Zillertal Arena',
             speechstart: 'In'
         });
+        // La Tzoumaz - Mayens de Riddes
+        this.pushObject({
+            city: 'La Tzoumaz',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'La Tzoumaz - Mayens de Riddes',
+            speechstart: 'In'
+        });
         // Flims Laax Falera
         this.pushObject({
             city: 'Laax',
@@ -532,6 +598,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Landeck - Zams - Fliess / Venetregion ',
             speechstart: 'Auf dem'
         });
+        // Lauchernalp - Lötschental
+        this.pushObject({
+            city: 'Belalp',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Lauchernalp - Lötschental',
+            speechstart: 'In'
+        });        
         // Arosa Lenzerheide
         this.pushObject({
             city: 'Lenzerheide',
@@ -546,6 +619,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Leogang - Saalbach Hinterglemm Fieberbrunn',
             speechstart: 'In'
         });
+        // Lauchernalp - Lötschental
+        this.pushObject({
+            city: 'Lötschental',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Lauchernalp - Lötschental',
+            speechstart: 'In'
+        });        
         // Malbun !!! NUR BERGFEX
         this.pushObject({
             city: 'Malbun',
@@ -580,6 +660,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Großeck - Speiereck - Mauterndorf',
             speechstart: 'In'
         });
+        // La Tzoumaz - Mayens de Riddes
+        this.pushObject({
+            city: 'Mayens de Riddes',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'La Tzoumaz - Mayens de Riddes',
+            speechstart: 'In'
+        });
         // Mayrhofen - Zillertal
         this.pushObject({
             city: 'Mayrhofen ',
@@ -601,6 +688,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Mölltaler Gletscher',
             speechstart: 'Auf dem'
         });
+        // Mörlialp
+        this.pushObject({
+            city: 'Mörlialp',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Mörlialp',
+            speechstart: 'In'
+        });
         // Kreischberg / Murau
         this.pushObject({
             city: 'Murau',
@@ -615,10 +709,32 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade',
             speechstart: 'In'
         });
+        // Mythenregion
+        this.pushObject({
+            city: 'Mythen',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Mythenregion',
+            speechstart: 'In der',
+            speechskiresort: 'Mythenregion'
+        });
+        // Mythenregion
+        this.pushObject({
+            city: 'Mythenregion',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Mythenregion',
+            speechstart: 'In der'
+        });
         this.pushObject({
             city: 'Nassfeld',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
             searchStrg: 'Nassfeld',
+            speechstart: 'In'
+        });
+        // Nendaz / 4 Vallées
+        this.pushObject({
+            city: 'Nendaz',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Nendaz / 4 Vallées',
             speechstart: 'In'
         });
         // Elferbahnen Neustift / Stubaital
@@ -710,6 +826,20 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Saas-Fee',
             speechstart: 'In'
         });
+        // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
+        this.pushObject({
+            city: 'Riederalp',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn',
+            speechstart: 'Auf der'
+        });
+        // Rigi
+        this.pushObject({
+            city: 'Rigi',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Rigi',
+            speechstart: 'In'
+        });
         // Samnaun
         this.pushObject({
             city: 'Samnaun',
@@ -789,6 +919,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Schmitten',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Schmitten - Zell am See',
+            speechstart: 'In'
+        });
+        // Sedrun Oberalp
+        this.pushObject({
+            city: 'Sedrun',
+            host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
+            searchStrg: 'Sedrun Oberalp',
             speechstart: 'In'
         });
         // See / Paznaun-Ischgl
@@ -879,6 +1016,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Stoderzinken - Ski amade',
             speechstart: 'In'
         });
+        // Stoos
+        this.pushObject({
+            city: 'Stoos',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Stoos',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Stubaital',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
@@ -922,6 +1066,20 @@ class BergfexContainer extends WebDataContainer {
             city: 'Vent',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
             searchStrg: 'Vent',
+            speechstart: 'In'
+        });
+        // Verbier / 4 Vallées
+        this.pushObject({
+            city: 'Verbier',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Verbier / 4 Vallées',
+            speechstart: 'In'
+        });
+        // Veysonnaz / 4 Vallées
+        this.pushObject({
+            city: 'Veysonnaz',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Veysonnaz / 4 Vallées',
             speechstart: 'In'
         });
         // Waidring - Steinplatte

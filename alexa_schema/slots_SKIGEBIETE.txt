@@ -1,19 +1,26 @@
+Aletsch Arena
 Alpbach
 Alpbachtal
 Alpendorf
+Alpthal
 Altenmarkt
 Aminona
+Andermatt
 Ankogel
 Arosa
 Bad Gastein
 Bad Kleinkirchheim
 Bad Mitterndorf
+Belalp
 Bergeralm
 Berwang
+Bettmeralp
 Bichlbach
+Blatten
 Brand
 Brandnertal
 Brixen im Thale
+Brunni
 Bürserberg
 Corviglia
 Crans Montana
@@ -22,8 +29,10 @@ Damüls
 Davos
 Dienten
 Dorfgastein
+Einsiedeln
 Elferbahnen
 Ellmau
+Engelberg
 Fageralm
 Falera
 Feldberg
@@ -42,6 +51,7 @@ Galtür
 Gargellen
 Gerlitzen
 Gerlos
+Giswil
 Going
 Golm
 Golm im Montafon
@@ -57,6 +67,7 @@ Hinterglemm
 Hintersee
 Hintertux
 Hintertuxer Gletscher
+Hoch-Ybrig
 Hochficht
 Hochgurgl
 Hochkönig
@@ -90,27 +101,35 @@ Koralpe
 Kreischberg
 Krimml
 Kühtai
+La Tzoumaz
 Laax
 Ladis
 Lake Louise
 Landeck
+Lauchernalp
 Lech
 Lech am Arlberg
 Lenzerheide
 Leogang
+Lötschental
 Malbun
 Mallnitz
 Maria Alm
 Matrei
 Mauterndorf
+Mayens de Riddes
 Mayrhofen
 Mellau
 Montafon
 Mölltaler Gletscher
+Mörlialp
 Murau
 Mühlbach
+Mythen
+Mythenregion
 Nassfeld
 Nauders
+Nendaz
 Neustift
 Niederalpl
 Niederthai
@@ -125,6 +144,8 @@ Radstadt
 Rauris
 Raurisertal
 Reiteralm
+Riederalp
+Rigi
 Saas-Fee
 Samnaun
 Sankt Anton
@@ -143,6 +164,7 @@ Schlick 2000
 Schmitten
 Schmittenhöhe
 Schröcken
+Sedrun
 See
 Semmering
 Serfaus
@@ -158,6 +180,7 @@ Steinach
 Steinach am Brenner
 Steinplatte
 Stoderzinken
+Stoos
 Stubaier Gletscher
 Stubaital
 Stuben
@@ -165,8 +188,11 @@ Stuben am Arlberg
 Stuhleck
 Tauplitz
 Tauplitzalm
+Thyon
 Turracher Höhe
 Vent
+Verbier
+Veysonnaz
 Wagrain
 Waidring
 Walchsee
