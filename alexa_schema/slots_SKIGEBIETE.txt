@@ -3,12 +3,15 @@ Alpbach
 Alpbachtal
 Alpendorf
 Alpthal
+Altaussee
 Altenmarkt
 Aminona
 Andermatt
 Ankogel
 Arosa
+Axamer Lizum
 Bad Gastein
+Bad Hofgastein
 Bad Kleinkirchheim
 Bad Mitterndorf
 Belalp
@@ -22,6 +25,7 @@ Brandnertal
 Brixen im Thale
 Brunni
 Bürserberg
+Christlum
 Corviglia
 Crans Montana
 Dachstein Gletscher
@@ -46,6 +50,7 @@ Fliess
 Flims
 Forstau
 Fügen
+Gaberl
 Gaissau
 Galtür
 Gargellen
@@ -57,20 +62,27 @@ Golm
 Golm im Montafon
 Grimentz
 Grindelwald
+Großarl
+Großarl Tal
+Großarltal
 Großeck
 Grünau
 Grünau im Almtal
+Gschwandtkopf
 Hauser Kaibling
 Heiligenblut
 Heuberg
+Heutal
 Hinterglemm
 Hintersee
 Hintertux
 Hintertuxer Gletscher
 Hoch-Ybrig
 Hochficht
+Hochfügen
 Hochgurgl
 Hochkönig
+Hochkössen
 Hochkrimml
 Hochoetz
 Hochwurzen
@@ -88,6 +100,7 @@ Kappl
 Kaprun Kitzsteinhorn
 Kaprun
 Kasberg
+Katschberg
 Kaunertal
 Kaunertaler Gletscher
 Kelchsau
@@ -95,6 +108,7 @@ Kirchberg
 Kitzbühel
 Kitzsteinhorn Kaprun
 Kitzsteinhorn
+Kleinarl
 Kleinwalsertal
 Klosters
 Koralpe
@@ -105,12 +119,14 @@ La Tzoumaz
 Laax
 Ladis
 Lake Louise
+Lachtal
 Landeck
 Lauchernalp
 Lech
 Lech am Arlberg
 Lenzerheide
 Leogang
+Lofer
 Lötschental
 Malbun
 Mallnitz
@@ -139,13 +155,16 @@ Petzen
 Pitztal
 Pitztaler Gletscher
 Planai
+Planneralm
 Postalm
 Radstadt
 Rauris
 Raurisertal
 Reiteralm
 Riederalp
+Riesneralm
 Rigi
+Rosshütte
 Saas-Fee
 Samnaun
 Sankt Anton
@@ -153,6 +172,7 @@ Sankt Anton am Arlberg
 Sankt Johann
 Sankt Johann im Pongau
 Sankt Johann in Tirol
+Sankt Lambrecht
 Sankt Michael
 Sankt Moritz
 Sankt Urban
@@ -200,6 +220,7 @@ Walmendingerhorn
 Warth
 Weinebene
 Wengen
+Werfenweng
 Westendorf
 Winklmoosalm
 Zahmer Kaiser

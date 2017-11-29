@@ -2,7 +2,7 @@ Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansag
 
 Im Moment werden vorwiegend Schneehöhen von einigen österreichischen und schweizer Skigebieten geliefert.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
-Derzeit können die Schneehöhen von über 100 Orten geliefet werden.
+Derzeit können die Schneehöhen von über 150 Orten geliefet werden.
 
 Hier die Liste der Orte:
 
@@ -10,10 +10,13 @@ Aletsch Arena
 Alpbach
 Alpendorf
 Alpthal
+Altaussee
 Altenmarkt
 Andermatt
 Arosa
+Axamer Lizum
 Bad Gastein
+Bad Hofgastein
 Bad Kleinkirchheim
 Bad Mitterndorf
 Belalp
@@ -26,7 +29,9 @@ Brandnertal
 Brunni
 Bürserberg
 Brixen im Thale
+Christlum
 Corviglia
+Crans Montana
 Dachstein Gletscher
 Damüls
 Davos
@@ -47,6 +52,7 @@ Fliess
 Flims
 Forstau
 Fügen
+Gaberl
 Gaissau
 Galtür
 Gargellen
@@ -56,18 +62,23 @@ Giswil
 Golm im Montafon
 Grimentz
 Grindelwald
+Großarl
 Großeck
 Grünau im Almtal
+Gschwandtkopf
 Hauser Kaibling
 Heiligenblut
 Heuberg
+Heutal
 Hinterglemm
 Hintersee
 Hintertuxer Gletscher
 Hoch-Ybrig
 Hochficht
+Hochfügen
 Hochgurgl
 Hochkönig
+Hochkössen
 Hochkrimml
 Hochoetz
 Hochwurzen
@@ -83,10 +94,12 @@ Kanzelwand
 Kals
 Kappl
 Kasberg
+Katschberg
 Kaunertaler Gletscher
 Kelchsau
 Kitzbühel
 Kitzsteinhorn
+Kleinarl
 Kleinwalsertal
 Koralpe
 Kreischberg
@@ -95,10 +108,12 @@ Kühtai
 Laax
 Ladis
 Lake Louise
+Lachtal
 Landeck
 Lech am Arlberg
 Lenzerheide
 Leogang
+Lofer
 Malbun
 Mallnitz
 Maria Alm
@@ -119,14 +134,19 @@ Obertauern
 Petzen
 Pitztaler Gletscher
 Planai
+Planneralm
 Postalm
 Radstadt
 Raurisertal
 Reiteralm
+Riesneralm
+Rigi
+Rosshütte
 Saas-Fee
 Sankt Anton am Arlberg
 Sankt Johann im Pongau
 Sankt Johann in Tirol
+Sankt Lambrecht
 Sankt Moritz
 Sankt Michael
 Sankt Urban
