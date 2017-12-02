@@ -1,190 +1,43 @@
-Mit dem Skill Schneeinfo kannst Du Dir die Schneehöhen in einem Skigebiet ansagen lassen.
+Mit dem Skill Schneeinfo kannst du dir die Schneehöhen in einem Skigebiet ansagen lassen.
 
-Im Moment werden vorwiegend Schneehöhen von einigen österreichischen und schweizer Skigebieten geliefert.
+Im Moment werden vorwiegend Schneehöhen von österreichischen und schweizer Skigebieten geliefert.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
 Derzeit können die Schneehöhen von über 150 Orten geliefet werden.
 
-Hier die Liste der Orte:
+Beispiele für Österreich: 
+  Fiss
+  Hochgurgl
+  Ischgl
+  Kitzbühl
+  Ladis
+  Mayrhofen
+  Nassfeld
+  Obergurgl
+  Obertauern
+  Saalbach
+  Schladming
+  Serfaus
+  Silvretta Montafon
+  St. Anton
+  Sölden
 
-Aletsch Arena
-Alpbach
-Alpendorf
-Alpthal
-Altaussee
-Altenmarkt
-Andermatt
-Arosa
-Axamer Lizum
-Bad Gastein
-Bad Hofgastein
-Bad Kleinkirchheim
-Bad Mitterndorf
-Belalp
-Bergeralm
-Bettmeralp
-Bichlbach
-Blatten
-Brand
-Brandnertal
-Brunni
-Bürserberg
-Brixen im Thale
-Christlum
-Corviglia
-Crans Montana
-Dachstein Gletscher
-Damüls
-Davos
-Dienten
-Dorfgastein
-Einsiedeln
-Elferbahnen
-Ellmau
-Engelberg
-Fageralm
-Falera
-Fendels
-Fieberbrunn
-Fiss
-Flachau
-Flachauwinkl
-Fliess
-Flims
-Forstau
-Fügen
-Gaberl
-Gaissau
-Galtür
-Gargellen
-Gerlitzen
-Gerlos
-Giswil
-Golm im Montafon
-Grimentz
-Grindelwald
-Großarl
-Großeck
-Grünau im Almtal
-Gschwandtkopf
-Hauser Kaibling
-Heiligenblut
-Heuberg
-Heutal
-Hinterglemm
-Hintersee
-Hintertuxer Gletscher
-Hoch-Ybrig
-Hochficht
-Hochfügen
-Hochgurgl
-Hochkönig
-Hochkössen
-Hochkrimml
-Hochoetz
-Hochwurzen
-Hochzeiger
-Hochzillertal
-Ifen
-Igls
-Ischgl
-Itter
-Jerzens
-Jungholz
-Kanzelwand
-Kals
-Kappl
-Kasberg
-Katschberg
-Kaunertaler Gletscher
-Kelchsau
-Kitzbühel
-Kitzsteinhorn
-Kleinarl
-Kleinwalsertal
-Koralpe
-Kreischberg
-Krimml
-Kühtai
-Laax
-Ladis
-Lake Louise
-Lachtal
-Landeck
-Lech am Arlberg
-Lenzerheide
-Leogang
-Lofer
-Malbun
-Mallnitz
-Maria Alm
-Matrei
-Mauterndorf
-Mayrhofen
-Mellau
-Mölltaler Gletscher
-Murau
-Mühlbach
-Nassfeld
-Nauders
-Neustift
-Niederalpl
-Niederthai
-Obergurgl
-Obertauern
-Petzen
-Pitztaler Gletscher
-Planai
-Planneralm
-Postalm
-Radstadt
-Raurisertal
-Reiteralm
-Riesneralm
-Rigi
-Rosshütte
-Saas-Fee
-Sankt Anton am Arlberg
-Sankt Johann im Pongau
-Sankt Johann in Tirol
-Sankt Lambrecht
-Sankt Moritz
-Sankt Michael
-Sankt Urban
-Samnaun
-Scheffau
-Schetteregg
-Schladming
-Schlick
-Schmitten
-Schmittenhöhe
-See
-Semmering
-Serfaus
-Sillian
-Silvretta Montafon
-Simonhöhe
-Sölden
-Söll
-Speiereck
-Spieljoch
-Steinach am Brenner
-Steinplatte
-Stoderzinken
-Stubaier Gletscher
-Turracher Höhe
-Vent
-Wagrain
-Waidring
-Walmendingerhorn
-Wengen
-Westendorf
-Winklmoosalm
-Zams
-Zauchensee
-Zell am See
-Zermatt
-Zinal
-Zillertal Arena
-Zürs 
+Beispiele für die Schweiz: 
+  Davos
+  Grindelwald
+  Laax
+  Saas-Fee
+  Samnaun
+  Sankt Moritz
+  Wengen
+  Zermatt
+
+Die Liste der Orte und Skigebiete finde ihr hier: 
+
+  http://www.t7soft.de/html/alexa/schneeinfo/skigebiete.html 
+
+bzw.
+
+  https://goo.gl/Dp7sJJ
+
 
 Alle Angaben ohne Gewähr.
