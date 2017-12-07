@@ -10,6 +10,13 @@ class BergfexContainer extends WebDataContainer {
 
         super('bergfex');
 
+        // Alta Badia
+        this.pushObject({
+            city: 'Alta Badia',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Alta Badia',
+            speechstart: 'In'
+        });
         // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
         this.pushObject({
             city: 'Aletsch Arena',
@@ -112,6 +119,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Bad Mitterndorf',
             host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
             searchStrg: 'Tauplitz / Bad Mitterndorf - Schneebären',
+            speechstart: 'In'
+        });
+        // Beerfelden
+        this.pushObject({
+            city: 'Beerfelden',
+            host: 'www.bergfex.de', path: '/hessen/schneewerte/',
+            searchStrg: 'Beerfelden',
             speechstart: 'In'
         });
         // Belalp
@@ -317,7 +331,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
             searchStrg: 'Gaberl',
             speechstart: 'In'
-        });        
+        });
         // Gaissau Hintersee
         this.pushObject({
             city: 'Gaissau',
@@ -357,7 +371,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
             searchStrg: 'Grebenzen - St.Lambrecht',
             speechstart: 'In'
-        });        
+        });
         // Grimentz - Zinal
         this.pushObject({
             city: 'Grimentz',
@@ -391,6 +405,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Großeck',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Großeck - Speiereck - Mauterndorf',
+            speechstart: 'In'
+        });
+        // Gröden - Wolkenstein
+        this.pushObject({
+            city: 'Gröden',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Gröden - Wolkenstein',
             speechstart: 'In'
         });
         // Kasberg - Grünau im Almtal
@@ -605,7 +626,7 @@ class BergfexContainer extends WebDataContainer {
         });
         this.pushObject({
             city: 'Kaunertal',
-            host: 'www.bergfex.at', path: '/tirol/schneewerte/',    
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Kaunertaler Gletscher / Kaunertal',
             speechstart: 'Im'
         });
@@ -647,6 +668,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Kitzsteinhorn - Kaprun',
             speechstart: 'Auf dem'
         });
+        // Klausberg - Ahrntal
+        this.pushObject({
+            city: 'Klausberg',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Klausberg - Ahrntal',
+            speechstart: 'In'
+        });
         // Kleinwalsertal - Kanzelwand - Fellhorn
         this.pushObject({
             city: 'Kleinwalsertal',
@@ -681,6 +709,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Krimml / Hochkrimml – Zillertal Arena',
             speechstart: 'In'
+        });
+        // Kronplatz - Dolomiten
+        this.pushObject({
+            city: 'Kronplatz',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Kronplatz - Dolomiten',
+            speechstart: 'Auf dem'
         });
         // Kühtai
         this.pushObject({
@@ -757,7 +792,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Lauchernalp - Lötschental',
             speechstart: 'In'
-        });        
+        });
         // Malbun !!! NUR BERGFEX
         this.pushObject({
             city: 'Malbun',
@@ -799,6 +834,20 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'La Tzoumaz - Mayens de Riddes',
             speechstart: 'In'
         });
+        // St. Blasien - Menzenschwand
+        this.pushObject({
+            city: 'Menzenschwand',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'St. Blasien - Menzenschwand',
+            speechstart: 'In'
+        });
+        // Meran 2000
+        this.pushObject({
+            city: 'Meran',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Meran 2000',
+            speechstart: 'In'
+        });
         // Mayrhofen - Zillertal
         this.pushObject({
             city: 'Mayrhofen ',
@@ -825,6 +874,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Mörlialp',
             host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
             searchStrg: 'Mörlialp',
+            speechstart: 'In'
+        });
+        // Muggenbrunn
+        this.pushObject({
+            city: 'Muggenbrunn',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Muggenbrunn',
             speechstart: 'In'
         });
         // Kreischberg / Murau
@@ -965,11 +1021,11 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Raurisertal - Hochalmbahnen',
             speechstart: 'Im'
         });
-        // Seefeld / Rosshütte
+        // Zugspitze
         this.pushObject({
-            city: 'Rosshütte',
-            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
-            searchStrg: 'Seefeld / Rosshütte',
+            city: 'Reit im Winkl',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Reit im Winkl',
             speechstart: 'In'
         });
         // Reiteralm / Schladming - Ski amade
@@ -998,6 +1054,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Rigi',
             host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
             searchStrg: 'Rigi',
+            speechstart: 'In'
+        });
+        // Seefeld / Rosshütte
+        this.pushObject({
+            city: 'Rosshütte',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Seefeld / Rosshütte',
             speechstart: 'In'
         });
         // Saas-Fee
@@ -1046,7 +1109,7 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
             searchStrg: 'Grebenzen - St.Lambrecht',
             speechstart: 'In'
-        });        
+        });
         // Großeck - Speiereck - Mauterndorf
         this.pushObject({
             city: 'Sankt Michael',
@@ -1121,6 +1184,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'See',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'See / Paznaun-Ischgl',
+            speechstart: 'In'
+        });
+        // Seiser Alm
+        this.pushObject({
+            city: 'Seiser Alm',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Seiser Alm',
             speechstart: 'In'
         });
         // Stuhleck - Semmering
@@ -1244,6 +1314,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Tauplitz / Bad Mitterndorf - Schneebären',
             speechstart: 'In'
         });
+        // Todtnauberg
+        this.pushObject({
+            city: 'Todtnauberg',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Todtnauberg',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Turracher Höhe',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
@@ -1255,6 +1332,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Umhausen',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Umhausen - Niederthai',
+            speechstart: 'In'
+        });
+        // Usseln
+        this.pushObject({
+            city: 'Usseln',
+            host: 'www.bergfex.de', path: '/hessen/schneewerte/',
+            searchStrg: 'Usseln',
             speechstart: 'In'
         });
         this.pushObject({
@@ -1275,6 +1359,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Veysonnaz',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Veysonnaz / 4 Vallées',
+            speechstart: 'In'
+        });
+        // Vogelsberg
+        this.pushObject({
+            city: 'Vogelsberg',
+            host: 'www.bergfex.de', path: '/hessen/schneewerte/',
+            searchStrg: 'Vogelsberg',
             speechstart: 'In'
         });
         // Waidring - Steinplatte
@@ -1318,12 +1409,26 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Werfenweng',
             speechstart: 'In'
-        });        
+        });
         // Westendorf - SkiWelt
         this.pushObject({
             city: 'Westendorf',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Westendorf - SkiWelt',
+            speechstart: 'In'
+        });
+        // Willingen
+        this.pushObject({
+            city: 'Willingen',
+            host: 'www.bergfex.de', path: '/hessen/schneewerte/',
+            searchStrg: 'Willingen',
+            speechstart: 'In'
+        });
+        // Winklmoos Steinplatte / Reit im Winkl
+        this.pushObject({
+            city: 'Winklmoos',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Winklmoos Steinplatte / Reit im Winkl',
             speechstart: 'In'
         });
         // Waidring - Steinplatte
@@ -1332,6 +1437,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Waidring - Steinplatte',
             speechstart: 'Auf der'
+        });
+        // Gröden - Wolkenstein
+        this.pushObject({
+            city: 'Wolkenstein',
+            host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
+            searchStrg: 'Gröden - Wolkenstein',
+            speechstart: 'In'
         });
         this.pushObject({
             city: 'Zams',

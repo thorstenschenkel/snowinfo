@@ -31,6 +31,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Brunni - Alpthal - Einsiedeln - Mythen',
             speechstart: 'In'
         });
+        // Alta Badia
+        this.pushObject({
+            city: 'Alta Badia',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Alta Badia',
+            speechstart: 'In'
+        });                
         // Loser Bergbahnen Altaussee
         this.pushObject({
             city: 'Altaussee',
@@ -78,6 +85,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Bad Kleinkirchheim',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Bad Kleinkirchheim',
+            speechstart: 'In'
+        });
+        // Baiersbronn
+        this.pushObject({
+            city: 'Baiersbronn',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Baiersbronn',
             speechstart: 'In'
         });
         // Belalp - Blatten - Naters
@@ -176,6 +190,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Engelberg',
             host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
             searchStrg: 'Engelberg',
+            speechstart: 'In'
+        });
+        // Feldberg Wintersportzentrum
+        this.pushObject({
+            city: 'Feldberg',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Feldberg Wintersportzentrum',
             speechstart: 'In'
         });
         // Fendels
@@ -338,6 +359,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Giswil - Mörlialp',
             speechstart: 'In'
         });
+        // Val Gardena - Gröden
+        this.pushObject({
+            city: 'Gröden',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Val Gardena - Gröden',
+            speechstart: 'In'
+        });        
         // Seefeld - Gschwandtkopf
         this.pushObject({
             city: 'Gschwandtkopf',
@@ -491,12 +519,26 @@ class SkiinfoContainer extends WebDataContainer {
             speechstart: 'Im Skigebiet',
             speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
+        // Klausberg
+        this.pushObject({
+            city: 'Klausberg',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Klausberg',
+            speechstart: 'In'
+        });                
         // Kreischberg
         this.pushObject({
             city: 'Kreischberg',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Kreischberg',
             speechstart: 'Im Skigebiet'
+        });
+        // Plan de Corones / Kronplatz
+        this.pushObject({
+            city: 'Kronplatz',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Alpe di Siusi / Seiser Alm',
+            speechstart: 'Auf dem'
         });
         // Kühtai
         this.pushObject({
@@ -553,6 +595,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Lech Zürs am Arlberg',
             speechstart: 'In'
         });
+        // Livigno
+        this.pushObject({
+            city: 'Livigno',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Livigno',
+            speechstart: 'In'
+        });
         // Skicircus Saalbach Hinterglemm Leogang Fieberbrunn
         this.pushObject({
             city: 'Leogang',
@@ -602,6 +651,20 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Damüls - Mellau',
             speechstart: 'In'
         });
+        // Merano 2000 / Meran 2000
+        this.pushObject({
+            city: 'Meran',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Merano 2000 / Meran 2000',
+            speechstart: 'In'
+        });        
+        // Merano 2000 / Meran 2000
+        this.pushObject({
+            city: 'Merano',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Merano 2000 / Meran 2000',
+            speechstart: 'In'
+        });        
         // Mölltaler Gletscher
         this.pushObject({
             city: 'Mölltaler Gletscher',
@@ -614,6 +677,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Mörlialp',
             host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
             searchStrg: 'Giswil - Mörlialp',
+            speechstart: 'In'
+        });
+        // Muggenbrunn
+        this.pushObject({
+            city: 'Muggenbrunn',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Muggenbrunn',
             speechstart: 'In'
         });
         // Nassfeld Hermagor
@@ -630,6 +700,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Nauders',
             speechstart: 'In'
         });
+        // Oberstdorf - Nebelhorn
+        this.pushObject({
+            city: 'Nebelhorn',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberstdorf - Nebelhorn',
+            speechstart: 'Auf dem'
+        });
         // Nendaz
         this.pushObject({
             city: 'Nendaz',
@@ -637,6 +714,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Nendaz',
             speechstart: 'In'
         });
+        // Obereggen - Pampeago - Predazzo
+        this.pushObject({
+            city: 'Obereggen',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Obereggen - Pampeago - Predazzo',
+            speechstart: 'In'
+        });        
         // Obergurgl - Hochgurgl
         this.pushObject({
             city: 'Obergurgl',
@@ -644,11 +728,18 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Obergurgl - Hochgurgl',
             speechstart: 'In'
         });
-        // Obertauern
+        // St. Anton am Arlberg
         this.pushObject({
-            city: 'Obertauern',
+            city: 'Sankt Anton',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            searchStrg: 'Obertauern',
+            searchStrg: 'St. Anton am Arlberg',
+            speechstart: 'In'
+        });
+        // Oberstdorf - Nebelhorn
+        this.pushObject({
+            city: 'Oberstdorf',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberstdorf - Nebelhorn',
             speechstart: 'In'
         });
         // Schladming - Planai - Hochwurzen
@@ -686,12 +777,19 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Radstadt - Altenmarkt',
             speechstart: 'In'
         });
-        // Reiteralm
+        // Muggenbrunn
         this.pushObject({
-            city: 'Reiteralm',
-            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            searchStrg: 'Reiteralm',
-            speechstart: 'Auf der'
+            city: 'Muggenbrunn',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Muggenbrunn',
+            speechstart: 'In'
+        });
+        // Winklmoosalm - Reit im Winkl
+        this.pushObject({
+            city: 'Reit im Winkl',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Winklmoosalm - Reit im Winkl',
+            speechstart: 'In'
         });
         // Riesneralm
         this.pushObject({
@@ -816,6 +914,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Skiarena Andermatt-Sedrun',
             speechstart: 'In'
         });
+        // Alpe di Siusi / Seiser Alm
+        this.pushObject({
+            city: 'Seiser Alm',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Alpe di Siusi / Seiser Alm',
+            speechstart: 'In'
+        });
         // Sölden
         this.pushObject({
             city: 'Sölden',
@@ -830,6 +935,20 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Söll - SkiWelt',
             speechstart: 'In'
         });
+        // Oberstdorf - Söllereck - Höllwies
+        this.pushObject({
+            city: 'Söllereck',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberstdorf - Söllereck - Höllwies',
+            speechstart: 'In'
+        });
+        // Sulden / Solda
+        this.pushObject({
+            city: 'Solda',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Sulden / Solda',
+            speechstart: 'In'
+        });        
         // Großeck - Speiereck
         this.pushObject({
             city: 'Speiereck',
@@ -871,6 +990,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Stuben am Arlberg',
             speechstart: 'In'
         });
+        // Sulden / Solda
+        this.pushObject({
+            city: 'Sulden',
+            host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
+            searchStrg: 'Sulden / Solda',
+            speechstart: 'In'
+        });        
         // Tauplitz
         this.pushObject({
             city: 'Tauplitz',
@@ -890,6 +1016,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Thyon',
             host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
             searchStrg: 'Thyon',
+            speechstart: 'In'
+        });
+        // Todtnauberg
+        this.pushObject({
+            city: 'Todtnauberg',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Todtnauberg',
             speechstart: 'In'
         });
         // Turracher Höhe
@@ -955,6 +1088,20 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Werfenweng',
             speechstart: 'In'
         });
+        // Willingen
+        this.pushObject({
+            city: 'Willingen',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Willingen',
+            speechstart: 'In'
+        });
+        // Winklmoosalm - Reit im Winkl
+        this.pushObject({
+            city: 'Winklmoosalm',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Winklmoosalm - Reit im Winkl',
+            speechstart: 'In'
+        });
         // Zahmer Kaiser - Walchsee
         this.pushObject({
             city: 'Zahmer Kaiser',
@@ -1002,6 +1149,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Zinal',
             host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
             searchStrg: 'Grimentz-Zinal',
+            speechstart: 'In'
+        });
+        // Zugspitze
+        this.pushObject({
+            city: 'Zugspitze',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Zugspitze',
             speechstart: 'In'
         });
         // Lech Zürs am Arlberg

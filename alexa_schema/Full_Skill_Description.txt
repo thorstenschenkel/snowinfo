@@ -1,8 +1,9 @@
 Mit dem Skill Schneeinfo kannst du dir die Schneehöhen in einem Skigebiet ansagen lassen.
 
-Im Moment werden vorwiegend Schneehöhen von österreichischen und schweizer Skigebieten geliefert.
+Im Moment werden vorwiegend Schneehöhen von Skigebieten in Österreich und der Schweiz geliefert.
+Aber auch einige Skigebiet in Deutschland und Italien können abgefragt werden.
 Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
-Derzeit können die Schneehöhen von über 150 Orten geliefet werden.
+Derzeit können die Schneehöhen von über 175 Orten geliefert werden.
 
 Beispiele für Österreich: 
   Fiss
