@@ -1,0 +1,24 @@
+NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehlt BEWUST
+Ischgl | oo | oo | oo
+
+---------------------------------------------------------------
+Adelboden | -- | xx | xx
+Alberschwende | -- | xx | xx
+Annaberg | -- | xx | xx
+Arosa | xx | xx | xx
+Beckenried | -- | xx | xx
+Bettmeralp | xx | xx | xx
+Fiesch | xx | xx | xx
+Goldegg | -- | xx | xx
+Gstaad | -- | xx | xx
+Klewenalp | ?? | xx | xx
+Lenk | ?? | xx | xx
+Lenzerheide | xx | xx | xx
+Livigno | OO | xx | xx
+Melchsee | -- | xx | xx
+Montafon | xx | xx | xx
+Rauris | xx | xx | xx
+Rifflsee | OO | xx | xx
+Riederalp | xx | xx | xx
+Sörenberg | -- | xx | xx
+

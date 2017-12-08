@@ -298,6 +298,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Zauchensee - Flachauwinkl - Ski amade',
             speechstart: 'In'
         });
+        // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
+        this.pushObject({
+            city: 'Fiesch',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Fliess',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',

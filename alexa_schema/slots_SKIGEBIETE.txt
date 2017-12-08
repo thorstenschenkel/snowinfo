@@ -1,3 +1,5 @@
+Adelboden
+Alberschwende
 Alta Badia
 Aletsch Arena
 Alpbach
@@ -9,12 +11,14 @@ Altenmarkt
 Aminona
 Andermatt
 Ankogel
+Annaberg
 Arosa
 Axamer Lizum
 Bad Gastein
 Bad Hofgastein
 Bad Kleinkirchheim
 Bad Mitterndorf
+Beckenried
 Beerfelden
 Belalp
 Bergeralm
@@ -45,6 +49,7 @@ Feldberg
 Fellhorn
 Fendels
 Fieberbrunn
+Fiesch
 Fiss
 Flachau
 Flachauwinkl
@@ -60,6 +65,7 @@ Gerlitzen
 Gerlos
 Giswil
 Going
+Goldegg
 Golm
 Golm im Montafon
 Grimentz
@@ -72,6 +78,7 @@ Gröden
 Grünau
 Grünau im Almtal
 Gschwandtkopf
+Gstaad
 Hauser Kaibling
 Heiligenblut
 Heuberg
@@ -114,6 +121,7 @@ Kitzsteinhorn
 Klausberg
 Kleinarl
 Kleinwalsertal
+Klewenalp
 Klosters
 Koralpe
 Kreischberg
@@ -129,6 +137,7 @@ Landeck
 Lauchernalp
 Lech
 Lech am Arlberg
+Lenk
 Lenzerheide
 Leogang
 Livigno
@@ -141,6 +150,7 @@ Matrei
 Mauterndorf
 Mayens de Riddes
 Mayrhofen
+Melchsee
 Mellau
 Menzenschwand
 Meran
@@ -174,6 +184,7 @@ Reit im Winkl
 Reiteralm
 Riederalp
 Riesneralm
+Rifflsee
 Rigi
 Rosshütte
 Saas-Fee
@@ -207,6 +218,7 @@ Simonhöhe
 Solda
 Sölden
 Söll
+Sörenberg
 Speiereck
 Spieljoch
 Steinach
