@@ -30,6 +30,7 @@ Brand
 Brandnertal
 Brixen im Thale
 Brunni
+Buchensteinwand
 Bürserberg
 Christlum
 Corviglia
@@ -37,6 +38,7 @@ Crans Montana
 Dachstein Gletscher
 Damüls
 Davos
+Diedamskopf
 Dienten
 Dorfgastein
 Einsiedeln
@@ -45,16 +47,23 @@ Ellmau
 Engelberg
 Fageralm
 Falera
+Falkert
+Fanningberg
+Faschina
+Faschina Fontanella
 Feldberg
 Fellhorn
 Fendels
+Feuerkogel
 Fieberbrunn
 Fiesch
+Filzmoos
 Fiss
 Flachau
 Flachauwinkl
 Fliess
 Flims
+Fontanella
 Forstau
 Fügen
 Gaberl
@@ -85,12 +94,14 @@ Heuberg
 Heutal
 Hinterglemm
 Hintersee
+Hinterstoder
 Hintertux
 Hintertuxer Gletscher
 Hoch-Ybrig
 Hochficht
 Hochfügen
 Hochgurgl
+Hochkar
 Hochkönig
 Hochkössen
 Hochkrimml
@@ -171,12 +182,14 @@ Niederthai
 Obereggen
 Obergurgl
 Obertauern
+Obertilliach
 Petzen
 Pitztal
 Pitztaler Gletscher
 Planai
 Planneralm
 Postalm
+Präbichl
 Radstadt
 Rauris
 Raurisertal
@@ -188,6 +201,7 @@ Rifflsee
 Rigi
 Rosshütte
 Saas-Fee
+Salzstiegl
 Samnaun
 Sankt Anton
 Sankt Anton am Arlberg
@@ -219,6 +233,7 @@ Solda
 Sölden
 Söll
 Sörenberg
+Sonnenkopf
 Speiereck
 Spieljoch
 Steinach

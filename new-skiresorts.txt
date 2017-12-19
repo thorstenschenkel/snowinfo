@@ -8,17 +8,35 @@ Annaberg | -- | xx | xx
 Arosa | xx | xx | xx
 Beckenried | -- | xx | xx
 Bettmeralp | xx | xx | xx
+Buchensteinwand | -- | xx | xx
+Diedamskopf | ?? |xx | xx
+Falkert | ?? |xx | xx
+Fanningberg | ?? |xx | xx
+Faschina | ?? |xx | xx
+Faschina Fontanella | ?? |xx | xx
+Feuerkogel | ?? |xx | xx
 Fiesch | xx | xx | xx
+Filzmoos | ?? |xx | xx
+Fontanella | ?? |xx | xx
 Goldegg | -- | xx | xx
 Gstaad | -- | xx | xx
+Hinterstoder | ?? | xx | xx
+Hauser Kaibling | ?? | xx | xx
+Hochkar | ?? | xx | xx
 Klewenalp | ?? | xx | xx
+Koralpe | xx | xx | xx
 Lenk | ?? | xx | xx
 Lenzerheide | xx | xx | xx
 Livigno | OO | xx | xx
 Melchsee | -- | xx | xx
 Montafon | xx | xx | xx
+Obertilliach | -- | xx | xx
+Präbichl | -- | xx | xx
 Rauris | xx | xx | xx
 Rifflsee | OO | xx | xx
 Riederalp | xx | xx | xx
+Salzstiegl | -- | xx | xx
+Simonhöhe | xx | xx | xx
 Sörenberg | -- | xx | xx
+Sonnenkopf | -- | xx | xx
 
