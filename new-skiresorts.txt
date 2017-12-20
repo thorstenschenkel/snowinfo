@@ -5,10 +5,15 @@ Ischgl | oo | oo | oo
 Adelboden | -- | xx | xx
 Alberschwende | -- | xx | xx
 Annaberg | -- | xx | xx
+Andelsbuch | ?? | xx | xx
 Arosa | xx | xx | xx
 Beckenried | -- | xx | xx
 Bettmeralp | xx | xx | xx
+Biberwier | ?? | xx | xx
+Bödele | ?? | xx | xx
 Buchensteinwand | -- | xx | xx
+Brixen im Thale | ?? | xx | xx
+Christlum | ?? |xx | xx
 Diedamskopf | ?? |xx | xx
 Falkert | ?? |xx | xx
 Fanningberg | ?? |xx | xx
@@ -17,26 +22,48 @@ Faschina Fontanella | ?? |xx | xx
 Feuerkogel | ?? |xx | xx
 Fiesch | xx | xx | xx
 Filzmoos | ?? |xx | xx
+Fliess | ?? | xx | xx
 Fontanella | ?? |xx | xx
+Glungezer | ?? | xx | xx
 Goldegg | -- | xx | xx
 Gstaad | -- | xx | xx
 Hinterstoder | ?? | xx | xx
+Hittisau | ?? | xx | xx
 Hauser Kaibling | ?? | xx | xx
+Hochficht | ?? | xx | xx
 Hochkar | ?? | xx | xx
-Klewenalp | ?? | xx | xx
+Hochstein | ?? | xx | xx
+Jungholz | ?? | xx | xx
+Klippitztörl | ?? | xx | xx
 Koralpe | xx | xx | xx
+Kristberg | ?? | xx | xx
+Landeck | ?? | xx | xx
+Laterns | ?? | xx | xx
 Lenk | ?? | xx | xx
 Lenzerheide | xx | xx | xx
+Lermoos | ?? | xx | xx
+Lienz | ?? | xx | xx
 Livigno | OO | xx | xx
 Melchsee | -- | xx | xx
+Maurach | ?? | xx | xx
 Montafon | xx | xx | xx
 Obertilliach | -- | xx | xx
+Pertisau | ?? | xx | xx
+Petzen | ?? | xx | xx
 Präbichl | -- | xx | xx
 Rauris | xx | xx | xx
 Rifflsee | OO | xx | xx
 Riederalp | xx | xx | xx
 Salzstiegl | -- | xx | xx
+Sankt Jakob | ?? | xx | xx
+Schwarzenberg | ?? | xx | xx
+Silbertal | ?? | xx | xx
 Simonhöhe | xx | xx | xx
 Sörenberg | -- | xx | xx
 Sonnenkopf | -- | xx | xx
-
+Weinebene | ?? | xx | xx
+Wurzeralm | ?? | xx | xx
+Venet | ?? | xx | xx
+Vent | ?? | xx | xx
+Zams | ?? | xx | xx
+Zettersfeld | ?? | xx | xx

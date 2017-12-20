@@ -10,6 +10,7 @@ Altaussee
 Altenmarkt
 Aminona
 Andermatt
+Andelsbuch
 Ankogel
 Annaberg
 Arosa
@@ -24,8 +25,10 @@ Belalp
 Bergeralm
 Berwang
 Bettmeralp
+Biberwier
 Bichlbach
 Blatten
+Bödele
 Brand
 Brandnertal
 Brixen im Thale
@@ -73,6 +76,7 @@ Gargellen
 Gerlitzen
 Gerlos
 Giswil
+Glungezer
 Going
 Goldegg
 Golm
@@ -97,6 +101,7 @@ Hintersee
 Hinterstoder
 Hintertux
 Hintertuxer Gletscher
+Hittisau
 Hoch-Ybrig
 Hochficht
 Hochfügen
@@ -106,6 +111,7 @@ Hochkönig
 Hochkössen
 Hochkrimml
 Hochoetz
+Hochstein
 Hochwurzen
 Hochzeiger
 Hochzillertal
@@ -133,10 +139,12 @@ Klausberg
 Kleinarl
 Kleinwalsertal
 Klewenalp
+Klippitztörl
 Klosters
 Koralpe
 Kreischberg
 Krimml
+Kristberg
 Kronplatz
 Kühtai
 La Tzoumaz
@@ -145,12 +153,15 @@ Ladis
 Lake Louise
 Lachtal
 Landeck
+Laterns
 Lauchernalp
 Lech
 Lech am Arlberg
 Lenk
 Lenzerheide
 Leogang
+Lermoos
+Lienz
 Livigno
 Lofer
 Lötschental
@@ -158,6 +169,7 @@ Malbun
 Mallnitz
 Maria Alm
 Matrei
+Maurach
 Mauterndorf
 Mayens de Riddes
 Mayrhofen
@@ -183,6 +195,7 @@ Obereggen
 Obergurgl
 Obertauern
 Obertilliach
+Pertisau
 Petzen
 Pitztal
 Pitztaler Gletscher
@@ -205,6 +218,8 @@ Salzstiegl
 Samnaun
 Sankt Anton
 Sankt Anton am Arlberg
+Sankt Jakob
+Sankt Jakob im Defereggental
 Sankt Johann
 Sankt Johann im Pongau
 Sankt Johann in Tirol
@@ -220,11 +235,13 @@ Schlick 2000
 Schmitten
 Schmittenhöhe
 Schröcken
+Schwarzenberg
 Sedrun
 See
 Seiser Alm
 Semmering
 Serfaus
+Silbertal
 Sillian
 Silvretta
 Silvretta Montafon
@@ -253,10 +270,6 @@ Todtnauberg
 Thyon
 Turracher Höhe
 Usseln
-Vent
-Verbier
-Veysonnaz
-Vogelsberg
 Wagrain
 Waidring
 Walchsee
@@ -269,12 +282,19 @@ Westendorf
 Willingen
 Winklmoosalm
 Wolkenstein
+Wurzeralm
+Vent
+Venet
+Verbier
+Veysonnaz
+Vogelsberg
 Zahmer Kaiser
 Zams
 Zauchensee
 Zell am See
 Zell am Ziller
 Zermatt
+Zettersfeld
 Zillertal Arena
 Zinal
 Zürs
