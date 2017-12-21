@@ -17,6 +17,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Skiregion Adelboden-Lenk',
             speechstart: 'In'
         });
+        // Sirnitz Albeck Hochrindl
+        this.pushObject({
+            city: 'Albeck',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Sirnitz Albeck Hochrindl',
+            speechstart: 'In'
+        });
         // Alberschwende
         this.pushObject({
             city: 'Alberschwende',
@@ -141,6 +148,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Belalp',
             host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
             searchStrg: 'Belalp - Blatten - Naters',
+            speechstart: 'In'
+        });
+        // Bergeralm - Steinach am Brenner
+        this.pushObject({
+            city: 'Bergeralm',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Bergeralm - Steinach am Brenner',
             speechstart: 'In'
         });
         // Aletsch Arena
@@ -353,6 +367,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Filzmoos',
             speechstart: 'In'
         });
+        // Zillertal Gletscherwelt 3000 - Tux - Finkenberg
+        this.pushObject({
+            city: 'Finkenberg',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Zillertal Gletscherwelt 3000 - Tux - Finkenberg',
+            speechstart: 'In'
+        });
         // Serfaus Fiss Ladis
         this.pushObject({
             city: 'Fiss',
@@ -365,6 +386,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Flachau',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Flachau',
+            speechstart: 'In'
+        });
+        // Shuttleberg Flachauwinkl - Kleinarl        
+        this.pushObject({
+            city: 'Flachauwinkl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Shuttleberg Flachauwinkl - Kleinarl   ',
             speechstart: 'In'
         });
         // Landeck - Zams - Fliess - Venet
@@ -576,11 +604,25 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Alpenarena Hochhäderich',
             speechstart: 'In'
         });
+        // Hoch-Imst
+        this.pushObject({
+            city: 'Hoch-Imst',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Imst',
+            speechstart: 'In'
+        });        
         // Hoch-Ybrig
         this.pushObject({
             city: 'Hoch-Ybrig',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Hoch-Ybrig',
+            speechstart: 'In'
+        });
+        // Sirnitz Albeck Hochrindl
+        this.pushObject({
+            city: 'Hochrindl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Sirnitz Albeck Hochrindl',
             speechstart: 'In'
         });
         // Hochficht Böhmerwald
@@ -651,6 +693,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Ifen',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Walmendingerhorn - Ifen - Heuberg',
+            speechstart: 'In'
+        });
+        // Imst
+        this.pushObject({
+            city: 'Imst',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Imst',
             speechstart: 'In'
         });
         // Ischgl
@@ -737,6 +786,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Kelchsau - SkiWelt',
             speechstart: 'In'
         });
+        // Shuttleberg Flachauwinkl - Kleinarl        
+        this.pushObject({
+            city: 'Kleinarl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Shuttleberg Flachauwinkl - Kleinarl   ',
+            speechstart: 'In'
+        });        
         this.pushObject({
             city: 'Kitzbühel',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
@@ -1314,6 +1370,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Skiarena Andermatt-Sedrun',
             speechstart: 'In'
         });
+        // Skigebiet See
+        this.pushObject({
+            city: 'See',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Skigebiet See',
+            speechstart: 'In'
+        });
         // Alpe di Siusi / Seiser Alm
         this.pushObject({
             city: 'Seiser Alm',
@@ -1328,6 +1391,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Kristberg Silbertal',
             speechstart: 'In'
         });        
+        // Skizentrum Sillian
+        this.pushObject({
+            city: 'Sillian',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Skizentrum Sillian',
+            speechstart: 'In'
+        });
         // Silvretta Montafon
         this.pushObject({
             city: 'Silvretta Montafon',
@@ -1398,6 +1468,27 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Stoos',
             speechstart: 'In'
         });
+        // Sirnitz Albeck Hochrindl
+        this.pushObject({
+            city: 'Sirnitz',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Sirnitz Albeck Hochrindl',
+            speechstart: 'In'
+        });
+        // Bergeralm - Steinach
+        this.pushObject({
+            city: 'Steinach am Brenner',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Bergeralm - Steinach am Brenner',
+            speechstart: 'In'
+        });
+        // Bergeralm - Steinach am Brenner
+        this.pushObject({
+            city: 'Steinach am Brenner',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Bergeralm - Steinach am Brenner',
+            speechstart: 'In'
+        });
         // Stubaier Gletscher
         this.pushObject({
             city: 'Stubaital',
@@ -1466,6 +1557,13 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Turracher Höhe',
             speechstart: 'Auf der'
+        });
+        // Zillertal Gletscherwelt 3000 - Tux - Finkenberg
+        this.pushObject({
+            city: 'Tux',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Zillertal Gletscherwelt 3000 - Tux - Finkenberg',
+            speechstart: 'In'
         });
         // Verbier
         this.pushObject({
@@ -1650,17 +1748,16 @@ class SkiinfoContainer extends WebDataContainer {
 module.exports = SkiinfoContainer;
 
 /*
-Aichelberglifte Karlstift
+1/3 Aichelberglifte Karlstift
 0/8 Alpl
 0/3 Bad Gastein - Graukogel
 2/3 Bad Gastein - Sportgastein
-Bergeralm - Steinach am Brenner
 ?/2 Bodental
 Dachstein West
 Dreiländereck
-Eben
-Egg Schetteregg
-Ehrwalder Alm
+4/4 Eben
+5/6 Egg Schetteregg
+6/8 Ehrwalder Alm
 Elferlifte Neustift
 0/7 Fageralm Forstau
 3/4 Flattnitz
@@ -1669,7 +1766,7 @@ Freesports Arena Dachstein Krippenstein
 4/4 Füssener Jöchle - Grän
 Gaaler Lifte
 Gaissau Hintersee
-Galsterbergalm
+5/5 Galsterbergalm
 Gemeindealpe - Mitterbach
 Glasenberg - Maria Neustift
 Gletscherwelt Weißsee
@@ -1684,7 +1781,6 @@ Hochlitten Riefensberg
 Hochzillertal
 Hohentauern
 Hopfgarten im Brixental - SkiWelt
-Imst
 2/9 Innerkrems
 Innsbrucker Nordkettenbahnen
 -/2 Jauerling
@@ -1713,15 +1809,11 @@ Schilifte Kirchschlag
 Schladming Dachstein - Stoderzinken
 Schlepplifte Neuleutasch
 Serlesbahnen - Mieders
-Shuttleberg Flachauwinkl - Kleinarl
 Silvretta-Bielerhöhe
-Sirnitz Albeck Hochrindl
-Skiarena Lammeralm
-Skigebiet Hochmoos - Bergbahn Leutasch
-Skigebiet See
+0/3 Skiarena Lammeralm
+0/3 Skigebiet Hochmoos - Bergbahn Leutasch
 Ski Juwel Alpbachtal Wildschönau
 SkiWelt Wilder Kaiser - Brixental
-Skizentrum Sillian
 Sonnberglifte Wald am Schoberpass
 2/2 Steinberg am Rofan
 Steinplatte Waidring
@@ -1736,6 +1828,5 @@ Veitsch Brunnalm
 2/2 Wenigzell
 Wettersteinbahnen Ehrwald
 Wildkogel-Arena
-Zau[:ber:]g Semmering
-Zillertal Gletscherwelt 3000 - Tux - Finkenberg
+2/3 Zau[:ber:]g Semmering
 */

@@ -3,11 +3,13 @@ Ischgl | oo | oo | oo
 
 ---------------------------------------------------------------
 Adelboden | -- | xx | xx
+Albeck | ?? | xx | xx
 Alberschwende | -- | xx | xx
 Annaberg | -- | xx | xx
 Andelsbuch | ?? | xx | xx
 Arosa | xx | xx | xx
 Beckenried | -- | xx | xx
+Bergeralm | ?? | xx | xx
 Bettmeralp | xx | xx | xx
 Biberwier | ?? | xx | xx
 Bödele | ?? | xx | xx
@@ -22,6 +24,8 @@ Faschina Fontanella | ?? |xx | xx
 Feuerkogel | ?? |xx | xx
 Fiesch | xx | xx | xx
 Filzmoos | ?? |xx | xx
+Finkenberg | ?? |xx | xx
+Flachauwinkl | ?? | xx | xx
 Fliess | ?? | xx | xx
 Fontanella | ?? |xx | xx
 Glungezer | ?? | xx | xx
@@ -30,10 +34,14 @@ Gstaad | -- | xx | xx
 Hinterstoder | ?? | xx | xx
 Hittisau | ?? | xx | xx
 Hauser Kaibling | ?? | xx | xx
+Hoch-Imst | ?? | xx | xx
+Hochrindl | ?? | xx | xx
 Hochficht | ?? | xx | xx
 Hochkar | ?? | xx | xx
 Hochstein | ?? | xx | xx
+Imst | ?? | xx | xx
 Jungholz | ?? | xx | xx
+Kleinarl | ?? | xx | xx
 Klippitztörl | ?? | xx | xx
 Koralpe | xx | xx | xx
 Kristberg | ?? | xx | xx
@@ -57,10 +65,16 @@ Riederalp | xx | xx | xx
 Salzstiegl | -- | xx | xx
 Sankt Jakob | ?? | xx | xx
 Schwarzenberg | ?? | xx | xx
+See | ?? | xx | xx
 Silbertal | ?? | xx | xx
+Sillian | ?? | xx | xx
 Simonhöhe | xx | xx | xx
+Sirnitz | ?? | xx | xx
 Sörenberg | -- | xx | xx
 Sonnenkopf | -- | xx | xx
+Steinach | ?? | xx | xx
+Steinach am Brenner | ?? | xx | xx
+Tux | ?? | xx | xx
 Weinebene | ?? | xx | xx
 Wurzeralm | ?? | xx | xx
 Venet | ?? | xx | xx
