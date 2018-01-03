@@ -639,6 +639,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Hochfügen Zillertal',
             speechstart: 'In'
         });
+        // Obergurgl - Hochgurgl
+        this.pushObject({
+            city: 'Hochgurgl',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Obergurgl - Hochgurgl',
+            speechstart: 'In'
+        });
         // Hochkar
         this.pushObject({
             city: 'Hochkar',
@@ -1747,7 +1754,7 @@ class SkiinfoContainer extends WebDataContainer {
 
 module.exports = SkiinfoContainer;
 
-/*
+/* OESTERREICH
 1/3 Aichelberglifte Karlstift
 0/8 Alpl
 0/3 Bad Gastein - Graukogel

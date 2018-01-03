@@ -10,6 +10,7 @@ Andelsbuch | ?? | xx | xx
 Arosa | xx | xx | xx
 Beckenried | -- | xx | xx
 Bergeralm | ?? | xx | xx
+Berwang | xx | xx | xx
 Bettmeralp | xx | xx | xx
 Biberwier | ?? | xx | xx
 Bödele | ?? | xx | xx
@@ -24,22 +25,28 @@ Faschina Fontanella | ?? |xx | xx
 Feuerkogel | ?? |xx | xx
 Fiesch | xx | xx | xx
 Filzmoos | ?? |xx | xx
-Finkenberg | ?? |xx | xx
+Finkenberg | xx |xx | xx
 Flachauwinkl | ?? | xx | xx
 Fliess | ?? | xx | xx
 Fontanella | ?? |xx | xx
-Glungezer | ?? | xx | xx
+Gerlos | xx | xx | xx
+Gerlosstein | xx | OO | xx
+Glungezer | xx | xx | xx
 Goldegg | -- | xx | xx
 Gstaad | -- | xx | xx
+Hainzenberg | xx | OO | xx
+Hauser Kaibling | ?? | xx | xx
 Hinterstoder | ?? | xx | xx
 Hittisau | ?? | xx | xx
-Hauser Kaibling | ?? | xx | xx
-Hoch-Imst | ?? | xx | xx
+Hoch-Imst | xx | xx | xx
 Hochrindl | ?? | xx | xx
 Hochficht | ?? | xx | xx
 Hochkar | ?? | xx | xx
-Hochstein | ?? | xx | xx
-Imst | ?? | xx | xx
+Hochstein | xx | xx | xx
+Hopfgarten | xx | ?? | xx
+Hochgurgl | xx | xx | xx
+Imst | xx | xx | xx
+Itter | xx | xx | xx
 Jungholz | ?? | xx | xx
 Kleinarl | ?? | xx | xx
 Klippitztörl | ?? | xx | xx
@@ -49,13 +56,16 @@ Landeck | ?? | xx | xx
 Laterns | ?? | xx | xx
 Lenk | ?? | xx | xx
 Lenzerheide | xx | xx | xx
-Lermoos | ?? | xx | xx
-Lienz | ?? | xx | xx
+Lermoos | xx | xx | xx
+Lienz | xx | xx | xx
 Livigno | OO | xx | xx
 Melchsee | -- | xx | xx
 Maurach | ?? | xx | xx
 Montafon | xx | xx | xx
+Nauders | xx | xx | xx
+Obergurgl | xx | xx | xx
 Obertilliach | -- | xx | xx
+Oetz  | xx | OO | xx
 Pertisau | ?? | xx | xx
 Petzen | ?? | xx | xx
 Präbichl | -- | xx | xx
@@ -70,14 +80,19 @@ Silbertal | ?? | xx | xx
 Sillian | ?? | xx | xx
 Simonhöhe | xx | xx | xx
 Sirnitz | ?? | xx | xx
+Söll | xx | xx | xx
 Sörenberg | -- | xx | xx
 Sonnenkopf | -- | xx | xx
-Steinach | ?? | xx | xx
-Steinach am Brenner | ?? | xx | xx
-Tux | ?? | xx | xx
+Steinach | xx | xx | xx
+Steinach am Brenner | xx | xx | xx
+Tux | xx | xx | xx
+Vorderlanersbach | xx | OO | xx
+Walchsee | xx | xx | xx
 Weinebene | ?? | xx | xx
+Wildschönau | xx | ?? | xx
 Wurzeralm | ?? | xx | xx
 Venet | ?? | xx | xx
 Vent | ?? | xx | xx
+Zahmer Kaiser | xx | xx | xx
 Zams | ?? | xx | xx
-Zettersfeld | ?? | xx | xx
+Zettersfeld | xx | xx | xx
