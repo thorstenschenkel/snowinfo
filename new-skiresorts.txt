@@ -5,7 +5,7 @@ Ischgl | oo | oo | oo
 Adelboden | -- | xx | xx
 Albeck | ?? | xx | xx
 Alberschwende | -- | xx | xx
-Annaberg | -- | xx | xx
+Annaberg | xx | xx | xx
 Andelsbuch | ?? | xx | xx
 Arosa | xx | xx | xx
 Beckenried | -- | xx | xx
@@ -15,8 +15,12 @@ Bettmeralp | xx | xx | xx
 Biberwier | ?? | xx | xx
 Bödele | ?? | xx | xx
 Buchensteinwand | -- | xx | xx
+Brand | xx | xx | xx
+Brandnertal | xx | xx | xx
 Brixen im Thale | ?? | xx | xx
+Brandnertal | xx | xx | xx
 Christlum | ?? |xx | xx
+Damüls | xx | xx | xx
 Diedamskopf | ?? |xx | xx
 Falkert | ?? |xx | xx
 Fanningberg | ?? |xx | xx
@@ -24,11 +28,12 @@ Faschina | ?? |xx | xx
 Faschina Fontanella | ?? |xx | xx
 Feuerkogel | ?? |xx | xx
 Fiesch | xx | xx | xx
-Filzmoos | ?? |xx | xx
+Filzmoos | xx |xx | xx
 Finkenberg | xx |xx | xx
-Flachauwinkl | ?? | xx | xx
+Flachauwinkl | xx | xx | xx
 Fliess | ?? | xx | xx
 Fontanella | ?? |xx | xx
+Gargellen | xx | xx | xx
 Gerlos | xx | xx | xx
 Gerlosstein | xx | OO | xx
 Glungezer | xx | xx | xx
@@ -36,6 +41,7 @@ Goldegg | -- | xx | xx
 Gstaad | -- | xx | xx
 Hainzenberg | xx | OO | xx
 Hauser Kaibling | ?? | xx | xx
+Hinterglemm | xx | xx | xx
 Hinterstoder | ?? | xx | xx
 Hittisau | ?? | xx | xx
 Hoch-Imst | xx | xx | xx
@@ -51,17 +57,22 @@ Jungholz | ?? | xx | xx
 Kleinarl | ?? | xx | xx
 Klippitztörl | ?? | xx | xx
 Koralpe | xx | xx | xx
+Königsleiten | xx | ?? | xx
 Kristberg | ?? | xx | xx
 Landeck | ?? | xx | xx
 Laterns | ?? | xx | xx
+Lech | xx | xx | xx
 Lenk | ?? | xx | xx
 Lenzerheide | xx | xx | xx
 Lermoos | xx | xx | xx
 Lienz | xx | xx | xx
 Livigno | OO | xx | xx
+Lungötz | xx | ?? | xx
 Melchsee | -- | xx | xx
 Maurach | ?? | xx | xx
 Montafon | xx | xx | xx
+Muttereralm | xx | -- | xx
+Mutters | xx | -- | xx
 Nauders | xx | xx | xx
 Obergurgl | xx | xx | xx
 Obertilliach | -- | xx | xx
@@ -69,9 +80,12 @@ Oetz  | xx | OO | xx
 Pertisau | ?? | xx | xx
 Petzen | ?? | xx | xx
 Präbichl | -- | xx | xx
+Raggal | xx | -- | xx
 Rauris | xx | xx | xx
 Rifflsee | OO | xx | xx
 Riederalp | xx | xx | xx
+Rußbach | xx | -- | xx
+Saalbach | xx | xx | xx
 Salzstiegl | -- | xx | xx
 Sankt Jakob | ?? | xx | xx
 Schwarzenberg | ?? | xx | xx
@@ -85,9 +99,11 @@ Sörenberg | -- | xx | xx
 Sonnenkopf | -- | xx | xx
 Steinach | xx | xx | xx
 Steinach am Brenner | xx | xx | xx
+Stuben | xx | xx | xx
 Tux | xx | xx | xx
 Vorderlanersbach | xx | OO | xx
 Walchsee | xx | xx | xx
+Warth | xx | xx | xx
 Weinebene | ?? | xx | xx
 Wildschönau | xx | ?? | xx
 Wurzeralm | ?? | xx | xx
@@ -96,3 +112,4 @@ Vent | ?? | xx | xx
 Zahmer Kaiser | xx | xx | xx
 Zams | ?? | xx | xx
 Zettersfeld | xx | xx | xx
+Zürs | xx | xx | xx

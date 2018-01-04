@@ -151,6 +151,7 @@ Klewenalp
 Klippitztörl
 Klosters
 Koralpe
+Königsleiten
 Kreischberg
 Krimml
 Kristberg
@@ -174,6 +175,7 @@ Lienz
 Livigno
 Lofer
 Lötschental
+Lungötz
 Malbun
 Mallnitz
 Maria Alm
@@ -191,6 +193,8 @@ Mölltaler Gletscher
 Mörlialp
 Muggenbrunn
 Murau
+Muttereralm
+Mutters
 Mühlbach
 Mythen
 Mythenregion
@@ -214,6 +218,7 @@ Planneralm
 Postalm
 Präbichl
 Radstadt
+Raggal
 Rauris
 Raurisertal
 Reit im Winkl
@@ -223,6 +228,8 @@ Riesneralm
 Rifflsee
 Rigi
 Rosshütte
+Rußbach
+Saalbach
 Saas-Fee
 Salzstiegl
 Samnaun
