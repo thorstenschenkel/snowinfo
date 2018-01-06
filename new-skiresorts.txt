@@ -2,23 +2,22 @@ NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehl
 Ischgl | oo | oo | oo
 
 ---------------------------------------------------------------
-Adelboden | -- | xx | xx
-Albeck | ?? | xx | xx
-Alberschwende | -- | xx | xx
-Annaberg | xx | xx | xx
-Andelsbuch | ?? | xx | xx
-Arosa | xx | xx | xx
-Beckenried | -- | xx | xx
-Bergeralm | ?? | xx | xx
-Berwang | xx | xx | xx
-Bettmeralp | xx | xx | xx
-Biberwier | ?? | xx | xx
-Bödele | ?? | xx | xx
-Buchensteinwand | -- | xx | xx
-Brand | xx | xx | xx
-Brandnertal | xx | xx | xx
-Brixen im Thale | ?? | xx | xx
-Brandnertal | xx | xx | xx
+Adelboden | -- | oo | oo
+Albeck | ?? | oo | oo
+Alberschwende | -- | oo | oo
+Annaberg | oo | xx | oo
+Andelsbuch | ?? | oo | oo
+Arosa | xx | oo | oo
+Beckenried | -- | oo | oo
+Bergeralm | oo | xx | oo
+Berwang | oo | xx | oo
+Bettmeralp | oo | xx | oo
+Biberwier | ?? | oo | oo
+Bödele | ?? | oo | oo
+Buchensteinwand | -- | oo | oo
+Brand | xx | oo | oo
+Brandnertal | xx | oo | oo
+Brixen im Thale | oo | xx | oo
 Christlum | ?? |xx | xx
 Damüls | xx | xx | xx
 Diedamskopf | ?? |xx | xx

@@ -19,7 +19,6 @@ const ERROR_TEMP = 'Leider kann ich für diesen Ort derzeit keine Informationen 
 const HELP_MESSAGE = 'Du kannst mir einen Ort oder ein Schigebiet nennen und ich sage dir die Schneehöhen, sofern diese vorliegen. Beispiel: Alexa frage Schneeinfo wie viel Schnee liegt in Ischgl';
 const LAUNCH_MESSAGE = 'Servus, für welchen Ort solle ich dir die Schneehöhen liefern?';
 const REPROMPT_MESSAGE = 'Hallo, du musst mir einen Ort oder ein Schigebiet nennen!';
-const MORE_INFOS = 'Nächster Ort oder sage Stopp.';
 const STOP_MESSAGE = 'Auf Wiederschauen!';
 
 function getVersion()  {
@@ -104,17 +103,19 @@ function handleSnowIntent(intentHandler, intent, ask) {
     console.log(' -- t7 -- DBG -- city : ' + city);
     if (!city) {
         // console.log(' -- t7 -- DBG -- no city : ' + city);
-        const rb = intentHandler.response.speak(ERROR_NO_CITY);
+        let speechOut = SpeechOut.addBreakIfRequired(ERROR_NO_CITY, ask);
+        const rb = intentHandler.response.speak(speechOut);
         if (ask) {
-            rb.listen(MORE_INFOS);
+            rb.listen(SpeechOut.MORE_INFOS_LISTEN);
         }
         intentHandler.emit(':responseReady');
     } else {
         if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
             // console.log(' -- t7 -- DBG -- unkown city : ' + city);
-            const rb = intentHandler.response.speak(ERROR_UNKNOW_CITY);
+            let speechOut = SpeechOut.addBreakIfRequired(ERROR_UNKNOW_CITY, ask, true);
+            const rb = intentHandler.response.speak(speechOut);
             if (ask) {
-                rb.listen(MORE_INFOS);
+                rb.listen(SpeechOut.MORE_INFOS_LISTEN);
             }
             intentHandler.emit(':responseReady');
         } else {
@@ -154,9 +155,10 @@ function emit(intentHandler, city, snowdata, ask) {
 }
 
 function emitTempError(intentHandler, ask) {
-    const rb = intentHandler.response.speak(ERROR_TEMP);
+    let speechOut = SpeechOut.addBreakIfRequired(ERROR_TEMP, ask, true);
+    const rb = intentHandler.response.speak(speechOut);
     if (ask) {
-        rb.listen(MORE_INFOS);
+        rb.listen(SpeechOut.MORE_INFOS_LISTEN);
     }
     intentHandler.emit(':responseReady');
 }
@@ -249,7 +251,7 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
     //             console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
     //             const rb = intentHandler.response.speak(ERROR_TEMP);
     //             if (ask) {
-    //                 rb.listen(MORE_INFOS);
+    //                 rb.listen(SpeechOut.MORE_INFOS_LISTEN);
     //             }
     //             intentHandler.emit(':responseReady');
     //         });

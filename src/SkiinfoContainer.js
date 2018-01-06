@@ -196,7 +196,7 @@ class SkiinfoContainer extends WebDataContainer {
         this.pushObject({
             city: 'Bödele',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            searchStrg: 'Bödele',
+            searchStrg: 'Schwarzenberg - Bödele',
             speechstart: 'In'
         });
         // Brandnertal

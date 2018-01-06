@@ -1,4 +1,4 @@
 {
-    "version": "1.0.2.1",
+    "version": "1.1.0.0",
     "version_comment" : "x.y.z.a => x : new features; y : optimization/refactoring; z : bug-fixes; a : new resorts"
 }

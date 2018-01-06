@@ -1,6 +1,9 @@
 const ERROR_NO_INFO = 'Für den Ort {city} kann ich keine Informationen liefern!';
 const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine aktuellen Informationen liefern!';
-const MORE_INFOS = 'Nächster Ort oder sage Stopp.';
+const MORE_INFOS_LISTEN = 'Nächster Ort oder sage Stopp.';
+const MORE_INFOS = 'Nenne mir einen weiteren Ort oder sage Stopp.';
+const MORE_INFOS_AFTER_ERROR = 'Nenne mir einen anderen Ort oder sage Stopp.';
+const BREAK_X_STRONG = `<break time="1000ms"/>`; // 1 sec
 
 // https://developer.amazon.com/de/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html#break
 
@@ -15,11 +18,30 @@ class SpeechOut {
     addSpeak(intentHandler, ask) {
 
         let speechOut = this._getSpeechOut();
+        speechOut = SpeechOut.addBreakIfRequired(speechOut, ask);
         let rb = intentHandler.response.speak(speechOut);
         if ( ask ) {
-            rb.listen(MORE_INFOS);
+            rb.listen(MORE_INFOS_LISTEN);
         }
 
+    }
+
+    static addBreakIfRequired(speechOut, ask, error) {
+        if ( ask ) {
+            return SpeechOut._addBreak(speechOut,error);
+        } else {
+            return speechOut;
+        }
+    }
+
+    static _addBreak(speechOut,error) {
+        speechOut += BREAK_X_STRONG;
+        if ( error ) {
+            speechOut += MORE_INFOS_AFTER_ERROR;
+        } else {
+            speechOut += MORE_INFOS;            
+        }
+        return speechOut;
     }
 
     _getSpeechOut() {
