@@ -921,7 +921,7 @@ class BergfexContainer extends WebDataContainer {
             city: 'Landeck',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Landeck - Zams - Fliess / Venetregion',
-            speechstart: 'Auf dem'
+            speechstart: 'In'
         });
         // Lauchernalp - Lötschental
         this.pushObject({
@@ -963,7 +963,7 @@ class BergfexContainer extends WebDataContainer {
             city: 'Lermoos',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Lermoos - Grubigsteinbahnen',
-            speechstart: 'Auf dem'
+            speechstart: 'In'
         });
         // Lienzer Bergbahnen - Zettersfeld/Hochstein
         this.pushObject({

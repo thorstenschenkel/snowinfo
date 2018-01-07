@@ -320,7 +320,7 @@ class SkiinfoContainer extends WebDataContainer {
         });
         // Faschina - Fontanella
         this.pushObject({
-            city: 'Faschina - Fontanella',
+            city: 'Faschina Fontanella',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Faschina - Fontanella',
             speechstart: 'In'
