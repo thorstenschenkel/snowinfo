@@ -14,12 +14,16 @@ Andermatt
 Andelsbuch
 Ankogel
 Annaberg
+Annenheim
+Arnoldstein
 Arosa
 Axamer Lizum
 Bad Gastein
 Bad Hofgastein
 Bad Kleinkirchheim
 Bad Mitterndorf
+Balderschwang
+Bayrischzell
 Beckenried
 Beerfelden
 Belalp
@@ -30,6 +34,7 @@ Biberwier
 Bichlbach
 Blatten
 Bödele
+Bramberg
 Brand
 Brandnertal
 Brixen im Thale
@@ -45,6 +50,7 @@ Davos
 Diedamskopf
 Dienten
 Dorfgastein
+Dreiländereck
 Einsiedeln
 Elferbahnen
 Ellmau
@@ -78,10 +84,12 @@ Gargellen
 Gerlitzen
 Gerlos
 Gerlosstein
+Garmisch
 Giswil
 Glungezer
-Going
+Goldeck
 Goldegg
+Going
 Golm
 Golm im Montafon
 Grimentz
@@ -126,6 +134,7 @@ Hopfgarten
 Ifen
 Igls
 Imst
+Innerkrems
 Ischgl
 Itter
 Jerzens
@@ -168,6 +177,7 @@ Lauchernalp
 Lech
 Lech am Arlberg
 Lenk
+Lenggries
 Lenzerheide
 Leogang
 Lermoos
@@ -201,6 +211,7 @@ Mythenregion
 Nassfeld
 Nauders
 Nendaz
+Neukirchen
 Neustift
 Niederalpl
 Niederthai
@@ -219,6 +230,8 @@ Postalm
 Präbichl
 Radstadt
 Raggal
+Ramsau
+Ramsau am Dachstein
 Rauris
 Raurisertal
 Reit im Winkl
@@ -243,6 +256,7 @@ Sankt Johann in Tirol
 Sankt Lambrecht
 Sankt Michael
 Sankt Moritz
+Sankt Oswald
 Sankt Urban
 Scheffau
 Schetteregg
@@ -271,6 +285,7 @@ Sörenberg
 Sonnenkopf
 Speiereck
 Spieljoch
+Steibis
 Steinach
 Steinach am Brenner
 Steinplatte
@@ -282,6 +297,7 @@ Stuben
 Stuben am Arlberg
 Stuhleck
 Sulden
+Sudelfeld
 Tauplitz
 Tauplitzalm
 Todtnauberg
@@ -294,10 +310,12 @@ Waidring
 Walchsee
 Walmendingerhorn
 Warth
+Wegscheid
 Weinebene
 Wengen
 Werfenweng
 Westendorf
+Wildkogel
 Wildschönau
 Willingen
 Winklmoosalm

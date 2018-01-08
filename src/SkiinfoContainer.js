@@ -129,11 +129,25 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Bad Kleinkirchheim',
             speechstart: 'In'
         });
+        // Balderschwang
+        this.pushObject({
+            city: 'Balderschwang',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Balderschwang',
+            speechstart: 'In'
+        });
         // Baiersbronn
         this.pushObject({
             city: 'Baiersbronn',
             host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
             searchStrg: 'Baiersbronn',
+            speechstart: 'In'
+        });
+        // Bayrischzell
+        this.pushObject({
+            city: 'Sudelfeld',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Sudelfeld',
             speechstart: 'In'
         });
         // Beckenried - Klewenalp
@@ -274,7 +288,7 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Diedamskopf',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Diedamskopf',
-            speechstart: 'In'
+            speechstart: 'Auf dem'
         });
         // Brunni - Alpthal - Einsiedeln - Mythen
         this.pushObject({
@@ -1191,6 +1205,20 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Radstadt - Altenmarkt',
             speechstart: 'In'
         });
+        // Ramsau am Dachstein
+        this.pushObject({
+            city: 'Ramsau',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Ramsau am Dachstein',
+            speechstart: 'In'
+        });
+        // Ramsau am Dachstein
+        this.pushObject({
+            city: 'Ramsau am Dachstein',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Ramsau am Dachstein',
+            speechstart: 'In'
+        });
         // Rauris
         this.pushObject({
             city: 'Rauris',
@@ -1482,10 +1510,17 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Sirnitz Albeck Hochrindl',
             speechstart: 'In'
         });
-        // Bergeralm - Steinach
+        // 
         this.pushObject({
             city: 'Steinach am Brenner',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Bergeralm - Steinach am Brenner',
+            speechstart: 'In'
+        });
+        // Skiarena Steibis - Imbergbahn - Oberstaufen
+        this.pushObject({
+            city: 'Steibis',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
             searchStrg: 'Bergeralm - Steinach am Brenner',
             speechstart: 'In'
         });
@@ -1529,7 +1564,14 @@ class SkiinfoContainer extends WebDataContainer {
             host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
             searchStrg: 'Sulden / Solda',
             speechstart: 'In'
-        });        
+        });
+        // Sudelfeld
+        this.pushObject({
+            city: 'Sudelfeld',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Sudelfeld',
+            speechstart: 'In'
+        });
         // Tauplitz
         this.pushObject({
             city: 'Tauplitz',
@@ -1808,7 +1850,6 @@ Maiskogel - Kaprun
 0/8 Patscherkofel
 4/4 Planneralm
 4/4 Postalm
-Ramsau am Dachstein
 4/9 Rangger Köpfl
 Reutte Hahnenkamm
 4/4 Schattwald - Zöblen

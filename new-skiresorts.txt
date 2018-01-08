@@ -6,21 +6,29 @@ Adelboden | -- | oo | oo
 Albeck | ?? | oo | oo
 Alberschwende | -- | oo | oo
 Annaberg | oo | xx | oo
-Andelsbuch | ?? | oo | oo
+Annenheim | xx | xx | xx
+Andelsbuch | xx | oo | xx
+Arnoldstein |xx | -- | xx
 Arosa | xx | oo | oo
+Bad Kleinkirchheim | xx | xx | xx
+Balderschwang | xx | xx | xx
+Bayrischzell | xx | xx | xx
 Beckenried | -- | oo | oo
 Bergeralm | oo | xx | oo
 Berwang | oo | xx | oo
 Bettmeralp | oo | xx | oo
 Biberwier | ?? | oo | oo
-Bödele | ?? | oo | oo
+Bödele | xx | oo | xx
 Buchensteinwand | -- | oo | oo
+Bramberg | xx | ?? | xx
 Brand | xx | oo | oo
 Brandnertal | xx | oo | oo
+Brauneck | xx | ?? | oo
 Brixen im Thale | oo | xx | oo
 Christlum | ?? | xx | xx
 Damüls | xx | xx | xx
-Diedamskopf | ?? |xx | xx
+Diedamskopf | xx | xx | xx
+Dreiländereck | xx | -- | xx
 Falkert | ?? | xx | xx
 Fanningberg | ?? | oo | oo
 Faschina | oo | xx | oo
@@ -33,9 +41,12 @@ Flachauwinkl | oo | xx | oo
 Fliess | oo | xx | oo
 Fontanella | oo | xx | oo
 Gargellen | oo | xx | oo
+Garmisch | xx | ?? | xx
+Gerlitzen | xx | xx | xx
 Gerlos | oo | xx | oo
 Gerlosstein | oo | OO | oo
 Glungezer | oo | xx | oo
+Goldeck | xx | -- | xx
 Goldegg | -- | oo | oo
 Gstaad | -- | oo | oo
 Hainzenberg | oo | OO | oo
@@ -51,16 +62,18 @@ Hochstein | oo | xx | oo
 Hopfgarten | oo | ?? | oo
 Hochgurgl | oo | xx | oo
 Imst | oo | xx | oo
+Innerkrems | xx | ?? | xx
 Itter | oo | xx | oo
 Jungholz | oo | xx | oo
 Kleinarl | oo | xx | oo
-Klippitztörl | ?? | oo | oo
+Klippitztörl | xx | oo | xx
 Koralpe | xx | oo | oo
 Königsleiten | oo | ?? | oo
 Kristberg | ?? | oo | oo
 ? Landeck | ?? | xx | xx (auf dem...)
 Laterns | oo | xx | oo
 Lech | oo | xx | oo
+Lenggries | xx | ?? | oo
 Lenk | ?? | oo | oo
 Lenzerheide | xx | oo | oo
 ? Lermoos | oo | xx | oo (auf dem...) 
@@ -73,6 +86,7 @@ Montafon | oo | -- | oo
 Muttereralm | oo | -- | oo
 Mutters | oo | -- | oo
 Nauders | oo | xx | oo
+Neukirchen | xx | ?? | xx
 Obergurgl | oo | xx | oo
 Obertilliach | -- | oo | oo
 Oetz  | oo | OO | oo
@@ -80,6 +94,8 @@ Pertisau | ?? | oo | oo
 Petzen | oo | xx | oo
 Präbichl | oo | xx | oo
 Raggal | oo | -- | oo
+Ramsau | xx | xx | xx
+Ramsau am Dachstein | xx | xx | xx
 Rauris | oo | xx | oo
 Rifflsee | OO | oo | oo
 Riederalp | oo | xx | oo
@@ -87,7 +103,8 @@ Rußbach | oo | -- | oo
 Saalbach | oo | xx | oo
 Salzstiegl | -- | oo | oo
 Sankt Jakob | ?? | oo | oo
-? Schwarzenberg | ?? | xx | xx (...derzeiten keine...)
+Sankt Oswald | xx | -- | xx
+? Schwarzenberg | xx | xx | xx (...derzeiten keine...)
 See | oo | xx | oo
 Silbertal | ?? | oo | oo
 Sillian | oo | xx | oo
@@ -95,15 +112,19 @@ Simonhöhe | oo | xx | oo
 Sirnitz | oo | xx | oo
 Söll | oo | xx | oo
 Sörenberg | -- | oo | oo
-Sonnenkopf | -- | oo | oo
+Sonnenkopf | xx | oo | oo
+Steibis | xx | xx | xx
 Steinach | oo | xx | oo
 Steinach am Brenner | oo | xx | oo
 Stuben | oo | xx | oo
+Sudelfeld | xx | xx | xx
 Tux | oo | xx | oo
 Vorderlanersbach | oo | OO | oo
 Walchsee | oo | xx | oo
 Warth | oo | xx | oo
+Wegscheid | xx | ?? | oo
 Weinebene | oo | xx | oo
+Wildkogel | xx | ?? | xx
 Wildschönau | oo | ?? | oo
 Wurzeralm | ?? | oo | oo
 Venet | ?? | oo | oo
