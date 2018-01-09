@@ -423,6 +423,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Landeck - Zams - Fliess - Venet',
             speechstart: 'In'
         });
+        // Flumserberg - Heidiland
+        this.pushObject({
+            city: 'Flumserberg',
+            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
+            searchStrg: 'Flumserberg - Heidiland',
+            speechstart: 'In'
+        });
         // Faschina - Fontanella
         this.pushObject({
             city: 'Fontanella',
@@ -922,7 +929,7 @@ class SkiinfoContainer extends WebDataContainer {
         this.pushObject({
             city: 'Kronplatz',
             host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
-            searchStrg: 'Alpe di Siusi / Seiser Alm',
+            searchStrg: 'Plan de Corones / Kronplatz',
             speechstart: 'Auf dem'
         });
         // Kühtai
@@ -1128,6 +1135,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Muggenbrunn',
             speechstart: 'In'
         });
+        // Obersaxen Mundaun Lumnezia
+        this.pushObject({
+            city: 'Mundaun',
+            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
+            searchStrg: 'Obersaxen Mundaun Lumnezia',
+            speechstart: 'In'
+        });
         // Brunni - Alpthal - Einsiedeln - Mythen
         this.pushObject({
             city: 'Mythen',
@@ -1205,6 +1219,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Grasgehren',
             speechstart: 'In'
         });        
+        // Obersaxen Mundaun Lumnezia
+        this.pushObject({
+            city: 'Obersaxen',
+            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
+            searchStrg: 'Obersaxen Mundaun Lumnezia',
+            speechstart: 'In'
+        });
         // Obertilliach
         this.pushObject({
             city: 'Obertilliach',
@@ -1487,7 +1508,7 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Seiser Alm',
             host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
             searchStrg: 'Alpe di Siusi / Seiser Alm',
-            speechstart: 'In'
+            speechstart: 'Auf der'
         });
         // Serfaus Fiss Ladis
         this.pushObject({
@@ -1689,6 +1710,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Todtnauberg',
             host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
             searchStrg: 'Todtnauberg',
+            speechstart: 'In'
+        });
+        // Toggenburg
+        this.pushObject({
+            city: 'Toggenburg',
+            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
+            searchStrg: 'Toggenburg',
             speechstart: 'In'
         });
         // Turracher Höhe

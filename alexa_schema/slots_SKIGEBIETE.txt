@@ -75,6 +75,7 @@ Flachau
 Flachauwinkl
 Fliess
 Flims
+Flumserberg
 Fontanella
 Forstau
 Fügen
@@ -207,6 +208,7 @@ Montafon
 Mölltaler Gletscher
 Mörlialp
 Muggenbrunn
+Mundaun
 Murau
 Muttereralm
 Mutters
@@ -226,6 +228,7 @@ Obereggen
 Obergurgl
 Oberjoch
 Obermaiselstein
+Obersaxen
 Oberstdorf
 Obertauern
 Obertilliach
@@ -279,6 +282,7 @@ Schmitten
 Schmittenhöhe
 Schröcken
 Schwarzenberg
+Scuol
 Sedrun
 See
 Seiser Alm
@@ -315,6 +319,7 @@ Tauplitz
 Tauplitzalm
 Tegernsee
 Todtnauberg
+Toggenburg
 Thyon
 Turracher Höhe
 Tux

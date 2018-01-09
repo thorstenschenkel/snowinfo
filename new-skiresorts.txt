@@ -40,6 +40,7 @@ Filzmoos | oo |xx | oo
 Finkenberg | oo |xx | oo
 Flachauwinkl | oo | xx | oo
 Fliess | oo | xx | oo
+Flumserberg | xx | xx | xx
 Fontanella | oo | xx | oo
 Gargellen | oo | xx | oo
 Garmisch | xx | ?? | xx
@@ -88,6 +89,7 @@ Lungötz | oo | ?? | oo
 Melchsee | -- | oo | oo
 Maurach | ?? | oo | oo
 Montafon | oo | -- | oo
+Mundaun | xx | xx | xx
 Muttereralm | oo | -- | oo
 Mutters | oo | -- | oo
 Nauders | oo | xx | oo
@@ -97,6 +99,7 @@ Neukirchen | xx | ?? | xx
 Obergurgl | oo | xx | oo
 Oberjoch | xx | xx | xx
 Obermaiselstein | xx | xx | xx
+Obersaxen | xx | xx | xx
 Oberstdorf | xx | xx | xx
 Obertilliach | -- | oo | oo
 Oetz  | oo | OO | oo
@@ -117,6 +120,7 @@ Sankt Englmar | xx | xx | xx
 Sankt Jakob | ?? | oo | oo
 Sankt Oswald | xx | -- | xx
 ? Schwarzenberg | xx | xx | xx (...derzeiten keine...)
+Scuol | xx | xx | xx
 See | oo | xx | oo
 Silbertal | ?? | oo | oo
 Sillian | oo | xx | oo
@@ -132,6 +136,7 @@ Steinach am Brenner | oo | xx | oo
 Stuben | oo | xx | oo
 Sudelfeld | xx | xx | xx
 Tegernsee | xx | xx | xx
+Toggenburg | xx | xx | xx
 Tux | oo | xx | oo
 Vorderlanersbach | oo | OO | oo
 Walchsee | oo | xx | oo

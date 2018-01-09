@@ -431,6 +431,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Zauchensee - Flachauwinkl - Ski amade',
             speechstart: 'In'
         });
+        // Flumserberg
+        this.pushObject({
+            city: 'Flumserberg',
+            host: 'www.bergfex.ch', path: '/ostschweiz/schneewerte/',
+            searchStrg: 'Flumserberg',
+            speechstart: 'In'
+        });
         // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
         this.pushObject({
             city: 'Fiesch',
@@ -1243,6 +1250,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Muggenbrunn',
             speechstart: 'In'
         });
+        // Obersaxen Mundaun
+        this.pushObject({
+            city: 'Mundaun',
+            host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
+            searchStrg: 'Obersaxen Mundaun',
+            speechstart: 'In'
+        });
         // Kreischberg / Murau
         this.pushObject({
             city: 'Murau',
@@ -1369,6 +1383,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Grasgehren Lifte / Obermaiselstein',
             speechstart: 'In'
         });                
+        // Obersaxen Mundaun
+        this.pushObject({
+            city: 'Obersaxen',
+            host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
+            searchStrg: 'Obersaxen Mundaun',
+            speechstart: 'In'
+        });
         // Nebelhorn / Oberstdorf
         this.pushObject({
             city: 'Oberstdorf',
@@ -1679,6 +1700,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Bödele - Schwarzenberg',
             speechstart: 'In'
         });
+        // Scuol Motta Naluns
+        this.pushObject({
+            city: 'Scuol',
+            host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
+            searchStrg: 'Scuol Motta Naluns',
+            speechstart: 'In'
+        });
         // Sedrun Oberalp
         this.pushObject({
             city: 'Sedrun',
@@ -1884,6 +1912,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Todtnauberg',
             speechstart: 'In'
         });
+        // Toggenburg
+        this.pushObject({
+            city: 'Toggenburg',
+            host: 'www.bergfex.ch', path: '/ostschweiz/schneewerte',
+            searchStrg: 'Toggenburg',
+            speechstart: 'In'
+        });        
         this.pushObject({
             city: 'Turracher Höhe',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
@@ -2356,4 +2391,21 @@ Wildmoos-Lift - Oberau / Berchtesgadener Land
 Zugspitze
 Zwiesel - Skilift Glasberg
 Zwiesel - Skilift Rabenstein
+*/
+
+/* ITALIEN - TOP 20
+Tarvisio / Monte Lussari
+Sulden am Ortler (SI)
+Schöneben - Reschenpass
+Stilfser Joch - Ortlergebiet
+Arabba
+Drei Zinnen Dolomiten
+? Gröden - St. Christina
+Canazei - Belvedere / Val di Fassa
+Ratschings Jaufen    ///    RACINES - GIOVO
+Klausberg - Ahrntal
+Gitschberg Jochtal    ///     Gitschberg/Maranza - Jochtal/Valles
+? Mottolino Fun Mountain/ Livigno
+Haideralm - Reschenpass
+! Madonna di Campiglio / Dolomiti di Brenta
 */
