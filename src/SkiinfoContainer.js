@@ -115,6 +115,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Axamer - Lizum',
             speechstart: 'In'
         });
+        // Oberjoch
+        this.pushObject({
+            city: 'Bad Hindelang',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberjoch',
+            speechstart: 'In'
+        });
         // Bad Hofgastein - Bad Gastein - Skischaukel Schlossalm-Angertal-Stubnerkogel
         this.pushObject({
             city: 'Bad Hofgastein',
@@ -451,6 +458,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Gargellen',
             speechstart: 'In'
         });
+        // Geisskopf
+        this.pushObject({
+            city: 'Geisskopf',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Geisskopf',
+            speechstart: 'In'
+        });        
         // Gerlitzen
         this.pushObject({
             city: 'Gerlitzen',
@@ -477,6 +491,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Glungezer',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Glungezer',
+            speechstart: 'In'
+        });
+        // Grasgehren
+        this.pushObject({
+            city: 'Grasgehren',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Grasgehren',
             speechstart: 'In'
         });
         // Kasberg - Grünau
@@ -521,6 +542,20 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Grimentz-Zinal',
             speechstart: 'In'
         });
+        // Großer Arber
+        this.pushObject({
+            city: 'Großer Arber',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Großer Arber',
+            speechstart: 'In'
+        });
+        // Großer Arber
+        this.pushObject({
+            city: 'Grosser Arber',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Großer Arber',
+            speechstart: 'In'
+        });
         // Dorfgastein - Großarltal
         this.pushObject({
             city: 'Großarl',
@@ -563,6 +598,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Gstaad',
             speechstart: 'In'
         });
+        // Ofterschwang - Gunzesried
+        this.pushObject({
+            city: 'Gunzesried',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Ofterschwang - Gunzesried',
+            speechstart: 'In'
+        });        
         // Hauser Kaibling - Schladming
         this.pushObject({
             city: 'Hauser Kaibling',
@@ -1121,6 +1163,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Nendaz',
             speechstart: 'In'
         });
+        // Alpspitz Nesselwang
+        this.pushObject({
+            city: 'Nesselwang',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Alpspitz Nesselwang',
+            speechstart: 'In'
+        });
         // Obereggen - Pampeago - Predazzo
         this.pushObject({
             city: 'Obereggen',
@@ -1142,11 +1191,32 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Oberstdorf - Nebelhorn',
             speechstart: 'In'
         });
+        // Oberjoch
+        this.pushObject({
+            city: 'Oberjoch',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberjoch',
+            speechstart: 'In'
+        });
+        // Grasgehren
+        this.pushObject({
+            city: 'Obermaiselstein',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Grasgehren',
+            speechstart: 'In'
+        });        
         // Obertilliach
         this.pushObject({
             city: 'Obertilliach',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Obertilliach',
+            speechstart: 'In'
+        });
+        // Ofterschwang - Gunzesried
+        this.pushObject({
+            city: 'Ofterschwang',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Ofterschwang - Gunzesried',
             speechstart: 'In'
         });
         // Achensee - Pertisau
@@ -1282,7 +1352,14 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Skicircus Saalbach Hinterglemm Leogang Fieberbrunn',
             speechstart: 'In'
         });
-        // Salzstiegl        
+        // Saas Fee
+        this.pushObject({
+            city: 'Saas Fee',
+            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
+            searchStrg: 'Saas Fee',
+            speechstart: 'In'
+        });
+        // Salzstiegl
         this.pushObject({
             city: 'Salzstiegl',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
@@ -1300,6 +1377,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Sankt Anton am Arlberg',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'St. Anton am Arlberg',
+            speechstart: 'In'
+        });
+        // Sankt Englmar
+        this.pushObject({
+            city: 'Sankt Englmar',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Sankt Englmar',
             speechstart: 'In'
         });
         // St. Jakob im Defereggental
@@ -1351,13 +1435,6 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Bödele',
             speechstart: 'In'
         });        
-        // Serfaus Fiss Ladis
-        this.pushObject({
-            city: 'Serfaus',
-            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            searchStrg: 'Serfaus Fiss Ladis',
-            speechstart: 'In'
-        });
         // Stubaital - Schlick 2000
         this.pushObject({
             city: 'Schlick',
@@ -1391,13 +1468,6 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Warth - Schröcken',
             speechstart: 'In'
         });
-        // Saas Fee
-        this.pushObject({
-            city: 'Saas Fee',
-            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
-            searchStrg: 'Saas Fee',
-            speechstart: 'In'
-        });
         // Skiarena Andermatt-Sedrun
         this.pushObject({
             city: 'Sedrun',
@@ -1417,6 +1487,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Seiser Alm',
             host: 'www.skiinfo.de', path: '/italien/schneehoehen-schneebericht.html',
             searchStrg: 'Alpe di Siusi / Seiser Alm',
+            speechstart: 'In'
+        });
+        // Serfaus Fiss Ladis
+        this.pushObject({
+            city: 'Serfaus',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Serfaus Fiss Ladis',
             speechstart: 'In'
         });
         // Kristberg Silbertal
@@ -1496,6 +1573,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Großeck - Speiereck',
             speechstart: 'In'
         });
+        // Spitzingsee - Tegernsee
+        this.pushObject({
+            city: 'Spitzingsee',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Spitzingsee - Tegernsee',
+            speechstart: 'In'
+        });        
         // Stoos
         this.pushObject({
             city: 'Stoos',
@@ -1586,6 +1670,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Tauplitzalm',
             speechstart: 'Auf der'
         });
+        // Spitzingsee - Tegernsee
+        this.pushObject({
+            city: 'Tegernsee',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Spitzingsee - Tegernsee',
+            speechstart: 'In'
+        });        
         // Thyon
         this.pushObject({
             city: 'Thyon',

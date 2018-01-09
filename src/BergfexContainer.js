@@ -128,6 +128,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Bad Gastein - Ski amade',
             speechstart: 'In'
         });
+        // Oberjoch Bad Hindelang
+        this.pushObject({
+            city: 'Bad Hindelang',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Oberjoch Bad Hindelang',
+            speechstart: 'In'
+        });        
         // Bad Hofgastein - Ski amade
         this.pushObject({
             city: 'Bad Hofgastein',
@@ -499,6 +506,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Garmisch-Classic',
             speechstart: 'In'
         });
+        // Geisskopf
+        this.pushObject({
+            city: 'Geisskopf',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Geisskopf',
+            speechstart: 'In'
+        });
         // Gerlitzen Alpe
         this.pushObject({
             city: 'Gerlitzen',
@@ -554,6 +568,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Golm im Montafon',
             speechstart: 'In'
         });
+        // Grasgehren Lifte / Obermaiselstein
+        this.pushObject({
+            city: 'Grasgehren',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Grasgehren Lifte / Obermaiselstein',
+            speechstart: 'In'
+        });        
         // Grebenzen - St.Lambrecht
         this.pushObject({
             city: 'Grebenzen',
@@ -573,6 +594,20 @@ class BergfexContainer extends WebDataContainer {
             city: 'Grindelwald',
             host: 'www.bergfex.ch', path: '/berneroberland/schneewerte/',
             searchStrg: 'Jungfrau Ski Region Grindelwald - Wengen',
+            speechstart: 'In'
+        });
+        // Grosser Arber
+        this.pushObject({
+            city: 'Großer Arber',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Grosser Arber',
+            speechstart: 'In'
+        });
+        // Grosser Arber
+        this.pushObject({
+            city: 'Grosser Arber',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Grosser Arber',
             speechstart: 'In'
         });
         // Großarl Tal - Ski amade
@@ -621,6 +656,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Gschwandtkopf',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Seefeld / Gschwandtkopf',
+            speechstart: 'In'
+        });
+        // Ofterschwang
+        this.pushObject({
+            city: 'Gunzesried',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Ofterschwang',
             speechstart: 'In'
         });
         // Gerlosstein / Hainzenberg - Zillertal Arena
@@ -1257,11 +1299,25 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Nauders',
             speechstart: 'In'
         });        
+        // Nebelhorn / Oberstdorf
+        this.pushObject({
+            city: 'Nebelhorn',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Nebelhorn / Oberstdorf',
+            speechstart: 'In'
+        });
         // Nendaz / 4 Vallées
         this.pushObject({
             city: 'Nendaz',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Nendaz / 4 Vallées',
+            speechstart: 'In'
+        });
+        // Alpspitz / Edelsberg - Nesselwang
+        this.pushObject({
+            city: 'Nesselwang',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Alpspitz / Edelsberg - Nesselwang',
             speechstart: 'In'
         });
         // Wildkogel-Arena - Neukirchen Bramberg
@@ -1299,6 +1355,27 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Obergurgl - Hochgurgl',
             speechstart: 'In'
         });
+        // Oberjoch Bad Hindelang
+        this.pushObject({
+            city: 'Oberjoch',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Oberjoch Bad Hindelang',
+            speechstart: 'In'
+        });
+        // Grasgehren Lifte / Obermaiselstein
+        this.pushObject({
+            city: 'Obermaiselstein',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Grasgehren Lifte / Obermaiselstein',
+            speechstart: 'In'
+        });                
+        // Nebelhorn / Oberstdorf
+        this.pushObject({
+            city: 'Oberstdorf',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Nebelhorn / Oberstdorf',
+            speechstart: 'In'
+        });
         // Obertauern
         this.pushObject({
             city: 'Obertauern',
@@ -1311,6 +1388,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Oetz',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Oetz - Hochötz',
+            speechstart: 'In'
+        });
+        // Ofterschwang
+        this.pushObject({
+            city: 'Ofterschwang',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Ofterschwang',
             speechstart: 'In'
         });
         // Petzen - Feistritz ob Bleiburg
@@ -1484,6 +1568,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Sankt Anton am Arlberg',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'St. Anton am Arlberg',
+            speechstart: 'In'
+        });
+        // Sankt Englmar
+        this.pushObject({
+            city: 'Sankt Englmar',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Sankt Englmar',
             speechstart: 'In'
         });
         this.pushObject({
@@ -1685,6 +1776,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Fügen - Spieljoch',
             speechstart: 'In'
         });
+        // Spitzingsee - Tegernsee
+        this.pushObject({
+            city: 'Spitzingsee',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Spitzingsee - Tegernsee',
+            speechstart: 'In'
+        });
         // Imbergbahn & Ski-Arena Steibis
         this.pushObject({
             city: 'Steibis',
@@ -1770,6 +1868,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Tauplitz',
             host: 'www.bergfex.at', path: '/steiermark/schneewerte/',
             searchStrg: 'Tauplitz / Bad Mitterndorf - Schneebären',
+            speechstart: 'In'
+        });
+        // Spitzingsee - Tegernsee
+        this.pushObject({
+            city: 'Tegernsee',
+            host: 'www.bergfex.de', path: '/bayern/schneewerte/',
+            searchStrg: 'Spitzingsee - Tegernsee',
             speechstart: 'In'
         });
         // Todtnauberg
@@ -2182,8 +2287,6 @@ Seefeld / Rosshütte
 /* DEUTSCHLAND - bayern
 Adelharz - Breitenstein Lifte
 AktivArena am Kolben / Oberammergau
-Alpspitz / Edelsberg - Nesselwang
-16/16 Benzeck Skilifte / Reit im Winkl
 Bleaml Alm - Neubau / Fichtelberg
 Blomberg - Bad Tölz
 Bodenmais - Silberberg
@@ -2193,13 +2296,9 @@ Buronlifte Wertach
 Dreisessel Frauenberg / Neureichenau
 Eck
 Ellegg - Skilifte / Faistenoy
-13/13 Fellhorn - Kanzelwand
 Freyung - Geyersberg
-Geisskopf
 Götschen - Bischofswiesen / Berchtesgaden
 Grafenau
-Grasgehren Lifte / Obermaiselstein
-Grosser Arber
 Grünten
 Haidmühle - Bischofsreut - Frauenberg
 Hauzenberg - Geiersberg
@@ -2223,20 +2322,15 @@ Luggi-Leitner-Lifte Scheidegg
 Mittag Skicenter
 Mittenwald - Kranzberg
 Mitterdorf
-Nebelhorn / Oberstdorf
 Oberaudorf Hocheck
-Oberjoch Bad Hindelang
 Ochsenkopf
 Oedberglifte - Gmund am Tegernsee
-Ofterschwang
 Ötzlifte Kochel - Rabenkopf
 Panoramalifte Hopfen
 Reiserhang
-14/16 Reit im Winkl
 Riedbergerhorn - Grasgehren
 Riedlberg
 Rossfeld / Berchtesgadener Land
-Sankt Englmar
 Schleching - Ettenhausen
 Schwäbeleholz / Sonthofen
 Schwangau - Tegelberg
@@ -2251,7 +2345,6 @@ Skizentrum Pfronten - Steinach
 Söllereck - Höllwies / Oberstdorf
 Sonnenwald
 Spieserlifte - Sonnenhanglift / Unterjoch
-10/10 Spitzingsee - Tegernsee
 St. Oswald - Riedlhütte
 Steckenberglifte - Schartenlifte / Unterammergau
 Thalerhöhe Skilifte
@@ -2260,7 +2353,6 @@ Voithenberg Gibacht
 Wallberg Tegernseer Tal
 Wendelstein - Brannenburg
 Wildmoos-Lift - Oberau / Berchtesgadener Land
-13/13 Winklmoos Steinplatte / Reit im Winkl
 Zugspitze
 Zwiesel - Skilift Glasberg
 Zwiesel - Skilift Rabenstein

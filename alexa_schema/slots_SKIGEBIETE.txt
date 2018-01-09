@@ -19,6 +19,7 @@ Arnoldstein
 Arosa
 Axamer Lizum
 Bad Gastein
+Bad Hindelang
 Bad Hofgastein
 Bad Kleinkirchheim
 Bad Mitterndorf
@@ -85,6 +86,7 @@ Gerlitzen
 Gerlos
 Gerlosstein
 Garmisch
+Geisskopf
 Giswil
 Glungezer
 Goldeck
@@ -94,6 +96,8 @@ Golm
 Golm im Montafon
 Grimentz
 Grindelwald
+Großer Arber
+Grosser Arber
 Großarl
 Großarl Tal
 Großarltal
@@ -103,6 +107,7 @@ Grünau
 Grünau im Almtal
 Gschwandtkopf
 Gstaad
+Gunzesried
 Hainzenberg
 Hauser Kaibling
 Heiligenblut
@@ -210,16 +215,22 @@ Mythen
 Mythenregion
 Nassfeld
 Nauders
+Nebelhorn
 Nendaz
+Nesselwang
 Neukirchen
 Neustift
 Niederalpl
 Niederthai
 Obereggen
 Obergurgl
+Oberjoch
+Obermaiselstein
+Oberstdorf
 Obertauern
 Obertilliach
 Oetz
+Ofterschwang
 Pertisau
 Petzen
 Pitztal
@@ -248,6 +259,7 @@ Salzstiegl
 Samnaun
 Sankt Anton
 Sankt Anton am Arlberg
+Sankt Englmar
 Sankt Jakob
 Sankt Jakob im Defereggental
 Sankt Johann
@@ -285,6 +297,7 @@ Sörenberg
 Sonnenkopf
 Speiereck
 Spieljoch
+Spitzingsee
 Steibis
 Steinach
 Steinach am Brenner
@@ -300,6 +313,7 @@ Sulden
 Sudelfeld
 Tauplitz
 Tauplitzalm
+Tegernsee
 Todtnauberg
 Thyon
 Turracher Höhe
