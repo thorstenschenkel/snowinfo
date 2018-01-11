@@ -171,11 +171,25 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Belalp - Blatten - Naters',
             speechstart: 'In'
         });
+        // Schwarzwaldregion Belchen - Münstertal
+        this.pushObject({
+            city: 'Belchen',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Schwarzwaldregion Belchen - Münstertal',
+            speechstart: 'In'
+        });
         // Bergeralm - Steinach am Brenner
         this.pushObject({
             city: 'Bergeralm',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Bergeralm - Steinach am Brenner',
+            speechstart: 'In'
+        });
+        // Bernau im Schwarzwald
+        this.pushObject({
+            city: 'Bernau',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Bernau im Schwarzwald',
             speechstart: 'In'
         });
         // Aletsch Arena
@@ -365,6 +379,13 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Fendels',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Fendels',
+            speechstart: 'In'
+        });
+        // Oberwiesenthal - Fichtelberg
+        this.pushObject({
+            city: 'Fichtelberg',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberwiesenthal - Fichtelberg',
             speechstart: 'In'
         });
         // Skicircus Saalbach Hinterglemm Leogang Fieberbrunn
@@ -904,6 +925,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Klippitztörl',
             speechstart: 'In'
         });
+        // Freudenstadt Kniebis
+        this.pushObject({
+            city: 'Kniebis',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Freudenstadt Kniebis',
+            speechstart: 'In'
+        });
         // Koralpe
         this.pushObject({
             city: 'Koralpe',
@@ -1078,19 +1106,11 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Mayrhofen',
             speechstart: 'In'
         });
-        // Silvretta Montafon
+        // Mehliskopf
         this.pushObject({
-            city: 'Montafon',
-            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
-            searchStrg: 'Silvretta Montafon',
-            speechstart: 'In',
-            speechskiresort: 'Silvretta Montafon'
-        });
-        // Brunni - Alpthal - Einsiedeln - Mythen
-        this.pushObject({
-            city: 'Mythen',
-            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
-            searchStrg: 'Brunni - Alpthal - Einsiedeln - Mythen',
+            city: 'Mehliskopf',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Mehliskopf',
             speechstart: 'In'
         });
         // Melchsee - Frutt
@@ -1114,6 +1134,14 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Merano 2000 / Meran 2000',
             speechstart: 'In'
         });        
+        // Silvretta Montafon
+        this.pushObject({
+            city: 'Montafon',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Silvretta Montafon',
+            speechstart: 'In',
+            speechskiresort: 'Silvretta Montafon'
+        });
         // Mölltaler Gletscher
         this.pushObject({
             city: 'Mölltaler Gletscher',
@@ -1233,6 +1261,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Obertilliach',
             speechstart: 'In'
         });
+        // Oberwiesenthal - Fichtelberg
+        this.pushObject({
+            city: 'Oberwiesenthal',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Oberwiesenthal - Fichtelberg',
+            speechstart: 'In'
+        });
         // Ofterschwang - Gunzesried
         this.pushObject({
             city: 'Ofterschwang',
@@ -1322,13 +1357,6 @@ class SkiinfoContainer extends WebDataContainer {
             city: 'Rifflsee',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Rifflsee - Pitztal',
-            speechstart: 'In'
-        });
-        // Muggenbrunn
-        this.pushObject({
-            city: 'Muggenbrunn',
-            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
-            searchStrg: 'Muggenbrunn',
             speechstart: 'In'
         });
         // Winklmoosalm - Reit im Winkl
@@ -1733,6 +1761,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Zillertal Gletscherwelt 3000 - Tux - Finkenberg',
             speechstart: 'In'
         });
+        // Skizirkus Unterstmatt - Hochkopf
+        this.pushObject({
+            city: 'Unterstmatt',
+            host: 'www.skiinfo.de', path: '/deutschland/schneehoehen-schneebericht.html',
+            searchStrg: 'Skizirkus Unterstmatt - Hochkopf',
+            speechstart: 'In'
+        });        
         // Verbier
         this.pushObject({
             city: 'Verbier',

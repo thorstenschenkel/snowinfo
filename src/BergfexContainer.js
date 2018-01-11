@@ -80,6 +80,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Andelsbuch Bergbahnen',
             speechstart: 'In'
         });
+        // Andermatt - Gemsstock - Nätschen
+        this.pushObject({
+            city: 'Andermatt',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Andermatt - Gemsstock - Nätschen',
+            speechstart: 'In'
+        });
         // Ankogel - Mallnitz
         this.pushObject({
             city: 'Ankogel',
@@ -156,6 +163,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Tauplitz / Bad Mitterndorf - Schneebären',
             speechstart: 'In'
         });
+        // Baiersbronn
+        this.pushObject({
+            city: 'Baiersbronn',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Baiersbronn',
+            speechstart: 'In'
+        });
         // Balderschwang
         this.pushObject({
             city: 'Balderschwang',
@@ -203,6 +217,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Berwang',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Berwang'
+        });
+        // Belchen
+        this.pushObject({
+            city: 'Belchen',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Belchen',
+            speechstart: 'In'
         });
         // Bödele - Schwarzenberg
         this.pushObject({
@@ -436,6 +457,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Flumserberg',
             host: 'www.bergfex.ch', path: '/ostschweiz/schneewerte/',
             searchStrg: 'Flumserberg',
+            speechstart: 'In'
+        });
+        // Fichtelberg - Oberwiesenthal
+        this.pushObject({
+            city: 'Fichtelberg',
+            host: 'www.bergfex.de', path: '/sachsen/schneewerte/',
+            searchStrg: 'Oberwiesenthal',
             speechstart: 'In'
         });
         // Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn
@@ -691,6 +719,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Heiligenblut',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
             searchStrg: 'Heiligenblut - Grossglockner',
+            speechstart: 'In'
+        });
+        // Herrischried
+        this.pushObject({
+            city: 'Herrischried',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Herrischried',
             speechstart: 'In'
         });
         // Walmendingerhorn - Ifen - Heuberg
@@ -994,6 +1029,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Kleinwalsertal - Kanzelwand - Fellhorn',
             speechstart: 'Im'
         });
+        // Klewenalp - Stockhütte
+        this.pushObject({
+            city: 'Klewenalp',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Klewenalp - Stockhütte',
+            speechstart: 'In'
+        });
         // Klippitztörl
         this.pushObject({
             city: 'Klippitztörl',
@@ -1006,6 +1048,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Klosters',
             host: 'www.bergfex.ch', path: '/graubuenden/schneewerte/',
             searchStrg: 'Davos Klosters Parsenn',
+            speechstart: 'In'
+        });
+        // Kniebis Freudenstadt
+        this.pushObject({
+            city: 'Kniebis',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Kniebis Freudenstadt',
             speechstart: 'In'
         });
         // Koralpe
@@ -1201,6 +1250,27 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'La Tzoumaz - Mayens de Riddes',
             speechstart: 'In'
         });
+        // Mayrhofen - Zillertal
+        this.pushObject({
+            city: 'Mayrhofen ',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Mayrhofen - Zillertal',
+            speechstart: 'In'
+        });
+        // Mehliskopf
+        this.pushObject({
+            city: 'Mehliskopf',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Mehliskopf',
+            speechstart: 'In'
+        });
+        // Melchsee - Frutt
+        this.pushObject({
+            city: 'Melchsee',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Melchsee - Frutt',
+            speechstart: 'In'
+        });
         // St. Blasien - Menzenschwand
         this.pushObject({
             city: 'Menzenschwand',
@@ -1213,13 +1283,6 @@ class BergfexContainer extends WebDataContainer {
             city: 'Meran',
             host: 'www.bergfex.it', path: '/suedtirol/schneewerte/',
             searchStrg: 'Meran 2000',
-            speechstart: 'In'
-        });
-        // Mayrhofen - Zillertal
-        this.pushObject({
-            city: 'Mayrhofen ',
-            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
-            searchStrg: 'Mayrhofen - Zillertal',
             speechstart: 'In'
         });
         // Silvretta Montafon
@@ -1404,6 +1467,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Obertauern',
             speechstart: 'In'
         });
+        // Fichtelberg - Oberwiesenthal
+        this.pushObject({
+            city: 'Oberwiesenthal',
+            host: 'www.bergfex.de', path: '/sachsen/schneewerte/',
+            searchStrg: 'Oberwiesenthal',
+            speechstart: 'In'
+        });
         // Oetz - Hochötz
         this.pushObject({
             city: 'Oetz',
@@ -1506,6 +1576,13 @@ class BergfexContainer extends WebDataContainer {
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Raurisertal - Hochalmbahnen',
             speechstart: 'Im'
+        });
+        // Realp
+        this.pushObject({
+            city: 'Realp',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Realp',
+            speechstart: 'In'
         });
         // Zugspitze
         this.pushObject({
@@ -1790,6 +1867,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Söll - SkiWelt',
             speechstart: 'In'
         });
+        // Sörenberg
+        this.pushObject({
+            city: 'Sörenberg',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Sörenberg',
+            speechstart: 'In'
+        });
         // Großeck - Speiereck - Mauterndorf
         this.pushObject({
             city: 'Speiereck',
@@ -1835,6 +1919,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Steinach am Brenner',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Bergeralm - Steinach am Brenner',
+            speechstart: 'In'
+        });
+        // Klewenalp - Stockhütte
+        this.pushObject({
+            city: 'Stockhütte',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Klewenalp - Stockhütte',
             speechstart: 'In'
         });
         // Stoderzinken - Ski amade
@@ -2393,6 +2484,14 @@ Zwiesel - Skilift Glasberg
 Zwiesel - Skilift Rabenstein
 */
 
+/* DEUTSCHLAND baden-wuerttemberg - TOP 20
+1/1 Seibelseckle
+0/4 Mehliskopf
+Schauinslandbahn
+Haldenköpfle / Schauinsland
+0/2 Schneeberglifte Waldau
+*/
+
 /* ITALIEN - TOP 20
 Tarvisio / Monte Lussari
 Sulden am Ortler (SI)
@@ -2408,4 +2507,27 @@ Gitschberg Jochtal    ///     Gitschberg/Maranza - Jochtal/Valles
 ? Mottolino Fun Mountain/ Livigno
 Haideralm - Reschenpass
 ! Madonna di Campiglio / Dolomiti di Brenta
+*/
+
+/* FRANKREICH - TOP 20 
+Chamonix Mont-Blanc
+Val Thorens / Les 3 Vallées
+Tignes - Val d’Isère
+Avoriaz 1800 / Portes du Soleil
+La Plagne / Paradiski
+Châtel / Portes du Soleil
+Les 2 Alpes
+La Bresse Haute-Vosges
+Méribel / Les 3 Vallées
+Les Menuires / Les 3 Vallées
+Les Arcs - Bourg Saint Maurice / Paradiski
+Val d'Isère - Tignes
+Morzine / Portes du Soleil
+Alpe d'Huez
+Gérardmer
+Montgenèvre - La Voie Lactee / Via Lattea
+Pralognan la Vanoise
+Champagny en Vanoise / Paradiski
+Serre Chevalier Vallée
+Val Cenis
 */

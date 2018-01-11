@@ -8,14 +8,18 @@ Alberschwende | -- | oo | oo
 Annaberg | oo | xx | oo
 Annenheim | xx | xx | xx
 Andelsbuch | xx | oo | xx
+Andermatt | xx | xx | xx
 Arnoldstein |xx | -- | xx
 Arosa | xx | oo | oo
 Bad Hindelang | xx | xx | xx
 Bad Kleinkirchheim | xx | xx | xx
+Baiersbronn | xx | xx | xx
 Balderschwang | xx | xx | xx
 Bayrischzell | xx | xx | xx
 Beckenried | -- | oo | oo
+Belchen | xx | xx | xx
 Bergeralm | oo | xx | oo
+Bernau | -- | xx | xx
 Berwang | oo | xx | oo
 Bettmeralp | oo | xx | oo
 Biberwier | ?? | oo | oo
@@ -35,6 +39,7 @@ Fanningberg | ?? | oo | oo
 Faschina | oo | xx | oo
 ? Faschina Fontanella | ?? |xx | xx
 Feuerkogel | ?? | oo | oo
+Fichtelberg | xx | xx | xx
 Fiesch | oo | xx | oo
 Filzmoos | oo |xx | oo
 Finkenberg | oo |xx | oo
@@ -57,6 +62,7 @@ Gstaad | -- | oo | oo
 Gunzesried | xx | xx | xx
 Hainzenberg | oo | OO | oo
 Hauser Kaibling | ?? | oo | oo
+Herrischried | xx | -- | xx
 Hinterglemm | oo | xx | oo
 Hinterstoder | ?? | oo | oo
 Hittisau | ?? | oo | oo
@@ -72,7 +78,9 @@ Innerkrems | xx | ?? | xx
 Itter | oo | xx | oo
 Jungholz | oo | xx | oo
 Kleinarl | oo | xx | oo
+Klewenalp | xx | xx | xx
 Klippitztörl | xx | oo | xx
+Kniebis | xx | xx | xx
 Koralpe | xx | oo | oo
 Königsleiten | oo | ?? | oo
 Kristberg | ?? | oo | oo
@@ -86,7 +94,8 @@ Lenzerheide | xx | oo | oo
 Lienz | oo | xx | oo
 Livigno | OO | oo | oo
 Lungötz | oo | ?? | oo
-Melchsee | -- | oo | oo
+Mehliskopf | xx | xx | xx
+Melchsee | xx | oo | oo
 Maurach | ?? | oo | oo
 Montafon | oo | -- | oo
 Mundaun | xx | xx | xx
@@ -101,7 +110,7 @@ Oberjoch | xx | xx | xx
 Obermaiselstein | xx | xx | xx
 Obersaxen | xx | xx | xx
 Oberstdorf | xx | xx | xx
-Obertilliach | -- | oo | oo
+Oberwiesenthal | xx | xx | xx
 Oetz  | oo | OO | oo
 Ofterschwang | xx | xx | xx
 Pertisau | ?? | oo | oo
@@ -111,6 +120,7 @@ Raggal | oo | -- | oo
 Ramsau | xx | xx | xx
 Ramsau am Dachstein | xx | xx | xx
 Rauris | oo | xx | oo
+Realp | xx | -- | xx
 Rifflsee | OO | oo | oo
 Riederalp | oo | xx | oo
 Rußbach | oo | -- | oo
@@ -127,17 +137,19 @@ Sillian | oo | xx | oo
 Simonhöhe | oo | xx | oo
 Sirnitz | oo | xx | oo
 Söll | oo | xx | oo
-Sörenberg | -- | oo | oo
+Sörenberg | xx | oo | oo
 Sonnenkopf | xx | oo | oo
 Spitzingsee | xx | xx | xx
 Steibis | xx | xx | xx
 Steinach | oo | xx | oo
 Steinach am Brenner | oo | xx | oo
+Stockhütte | xx | xx | xx
 Stuben | oo | xx | oo
 Sudelfeld | xx | xx | xx
 Tegernsee | xx | xx | xx
 Toggenburg | xx | xx | xx
 Tux | oo | xx | oo
+Unterstmatt | -- | xx | xx
 Vorderlanersbach | oo | OO | oo
 Walchsee | oo | xx | oo
 Warth | oo | xx | oo

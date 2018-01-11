@@ -23,12 +23,15 @@ Bad Hindelang
 Bad Hofgastein
 Bad Kleinkirchheim
 Bad Mitterndorf
+Baiersbronn
 Balderschwang
 Bayrischzell
 Beckenried
 Beerfelden
 Belalp
+Belchen
 Bergeralm
+Bernau
 Berwang
 Bettmeralp
 Biberwier
@@ -66,6 +69,7 @@ Feldberg
 Fellhorn
 Fendels
 Feuerkogel
+Fichtelberg
 Fieberbrunn
 Fiesch
 Filzmoos
@@ -112,6 +116,7 @@ Gunzesried
 Hainzenberg
 Hauser Kaibling
 Heiligenblut
+Herrischried
 Heuberg
 Heutal
 Hinterglemm
@@ -165,6 +170,7 @@ Kleinwalsertal
 Klewenalp
 Klippitztörl
 Klosters
+Kniebis
 Koralpe
 Königsleiten
 Kreischberg
@@ -200,6 +206,7 @@ Maurach
 Mauterndorf
 Mayens de Riddes
 Mayrhofen
+Mehliskopf
 Melchsee
 Mellau
 Menzenschwand
@@ -232,6 +239,7 @@ Obersaxen
 Oberstdorf
 Obertauern
 Obertilliach
+Oberwiesenthal
 Oetz
 Ofterschwang
 Pertisau
@@ -248,6 +256,7 @@ Ramsau
 Ramsau am Dachstein
 Rauris
 Raurisertal
+Realp
 Reit im Winkl
 Reiteralm
 Riederalp
@@ -306,6 +315,7 @@ Steibis
 Steinach
 Steinach am Brenner
 Steinplatte
+Stockhütte
 Stoderzinken
 Stoos
 Stubaier Gletscher
@@ -323,6 +333,7 @@ Toggenburg
 Thyon
 Turracher Höhe
 Tux
+Unterstmatt
 Usseln
 Wagrain
 Waidring
