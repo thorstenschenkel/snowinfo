@@ -690,11 +690,25 @@ class SkiinfoContainer extends WebDataContainer {
         });
         // Hoch-Imst
         this.pushObject({
+            city: 'Hoch Imst',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Imst',
+            speechstart: 'In'
+        });        
+        // Hoch-Imst
+        this.pushObject({
             city: 'Hoch-Imst',
             host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
             searchStrg: 'Imst',
             speechstart: 'In'
         });        
+        // Hoch-Ybrig
+        this.pushObject({
+            city: 'Hoch Ybrig',
+            host: 'www.skiinfo.de', path: '/oesterreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Hoch-Ybrig',
+            speechstart: 'In'
+        });
         // Hoch-Ybrig
         this.pushObject({
             city: 'Hoch-Ybrig',
@@ -1404,6 +1418,13 @@ class SkiinfoContainer extends WebDataContainer {
         // Saas Fee
         this.pushObject({
             city: 'Saas Fee',
+            host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
+            searchStrg: 'Saas Fee',
+            speechstart: 'In'
+        });
+        // Saas Fee
+        this.pushObject({
+            city: 'Saas-Fee',
             host: 'www.skiinfo.de', path: '/schweiz/schneehoehen-schneebericht.html',
             searchStrg: 'Saas Fee',
             speechstart: 'In'

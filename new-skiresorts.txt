@@ -2,165 +2,48 @@ NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehl
 Ischgl | oo | oo | oo
 
 ---------------------------------------------------------------
-Adelboden | -- | oo | oo
-Albeck | ?? | oo | oo
-Alberschwende | -- | oo | oo
-Annaberg | oo | xx | oo
-Annenheim | xx | xx | xx
-Andelsbuch | xx | oo | xx
-Andermatt | xx | xx | xx
-Arnoldstein |xx | -- | xx
-Arosa | xx | oo | oo
-Bad Hindelang | xx | xx | xx
-Bad Kleinkirchheim | xx | xx | xx
-Baiersbronn | xx | xx | xx
-Balderschwang | xx | xx | xx
-Bayrischzell | xx | xx | xx
-Beckenried | -- | oo | oo
-Belchen | xx | xx | xx
-Bergeralm | oo | xx | oo
-Bernau | -- | xx | xx
-Berwang | oo | xx | oo
-Bettmeralp | oo | xx | oo
-Biberwier | ?? | oo | oo
-Bödele | xx | oo | xx
-Buchensteinwand | -- | oo | oo
-Bramberg | xx | ?? | xx
-Brand | xx | oo | oo
-Brandnertal | xx | oo | oo
-Brauneck | xx | ?? | oo
-Brixen im Thale | oo | xx | oo
-Christlum | ?? | xx | xx
-Damüls | xx | xx | xx
-Diedamskopf | xx | xx | xx
-Dreiländereck | xx | -- | xx
-Falkert | ?? | xx | xx
-Fanningberg | ?? | oo | oo
-Faschina | oo | xx | oo
-? Faschina Fontanella | ?? |xx | xx
-Feuerkogel | ?? | oo | oo
-Fichtelberg | xx | xx | xx
-Fiesch | oo | xx | oo
-Filzmoos | oo |xx | oo
-Finkenberg | oo |xx | oo
-Flachauwinkl | oo | xx | oo
-Fliess | oo | xx | oo
-Flumserberg | xx | xx | xx
-Fontanella | oo | xx | oo
-Gargellen | oo | xx | oo
-Garmisch | xx | ?? | xx
-Geisskopf | xx | xx | xx
-Gerlitzen | xx | xx | xx
-Gerlos | oo | xx | oo
-Gerlosstein | oo | OO | oo
-Glungezer | oo | xx | oo
-Goldeck | xx | -- | xx
+-> Adelboden | -- | oo | oo
+=> Arnoldstein | oo | -- | oo
+-> Beckenried | -- | oo | oo
+-> Bernau | -- | oo | oo
+-> Biberwier | ?? | oo | oo
+-> Buchensteinwand | -- | oo | oo
+=> Brauneck | xx | ?? | oo
+=> Dreiländereck | oo | -- | oo
+-> Falkert | ?? | oo | oo
+-> Feuerkogel | ?? | oo | oo
+=> Gerlosstein | oo | OO | oo
+=> Goldeck | oo | -- | oo
 Goldegg | -- | oo | oo
-Grasgehren | xx | xx | xx
-Grosser Arber | xx | xx | xx
-Gstaad | -- | oo | oo
-Gunzesried | xx | xx | xx
-Hainzenberg | oo | OO | oo
-Hauser Kaibling | ?? | oo | oo
-Herrischried | xx | -- | xx
-Hinterglemm | oo | xx | oo
-Hinterstoder | ?? | oo | oo
-Hittisau | ?? | oo | oo
-? Hoch-Imst | xx | xx | xx
-Hochrindl | ?? | oo | oo
-Hochficht | ?? | oo | oo
-Hochkar | ?? | oo | oo
-Hochstein | oo | xx | oo
-Hopfgarten | oo | ?? | oo
-Hochgurgl | oo | xx | oo
-Imst | oo | xx | oo
-Innerkrems | xx | ?? | xx
-Itter | oo | xx | oo
-Jungholz | oo | xx | oo
-Kleinarl | oo | xx | oo
-Klewenalp | xx | xx | xx
-Klippitztörl | xx | oo | xx
-Kniebis | xx | xx | xx
-Koralpe | xx | oo | oo
-Königsleiten | oo | ?? | oo
-Kristberg | ?? | oo | oo
-? Landeck | ?? | xx | xx (auf dem...)
-Laterns | oo | xx | oo
-Lech | oo | xx | oo
-Lenggries | xx | ?? | oo
-Lenk | ?? | oo | oo
-Lenzerheide | xx | oo | oo
-? Lermoos | oo | xx | oo (auf dem...) 
-Lienz | oo | xx | oo
-Livigno | OO | oo | oo
-Lungötz | oo | ?? | oo
-Mehliskopf | xx | xx | xx
-Melchsee | xx | oo | oo
-Maurach | ?? | oo | oo
-Montafon | oo | -- | oo
-Mundaun | xx | xx | xx
-Muttereralm | oo | -- | oo
-Mutters | oo | -- | oo
-Nauders | oo | xx | oo
-Nebelhorn | xx | xx | xx
-Nesselwang | xx | xx | xx
-Neukirchen | xx | ?? | xx
-Obergurgl | oo | xx | oo
-Oberjoch | xx | xx | xx
-Obermaiselstein | xx | xx | xx
-Obersaxen | xx | xx | xx
-Oberstdorf | xx | xx | xx
-Oberwiesenthal | xx | xx | xx
-Oetz  | oo | OO | oo
-Ofterschwang | xx | xx | xx
-Pertisau | ?? | oo | oo
-Petzen | oo | xx | oo
-Präbichl | oo | xx | oo
-Raggal | oo | -- | oo
-Ramsau | xx | xx | xx
-Ramsau am Dachstein | xx | xx | xx
-Rauris | oo | xx | oo
-Realp | xx | -- | xx
-Rifflsee | OO | oo | oo
-Riederalp | oo | xx | oo
-Rußbach | oo | -- | oo
-Saalbach | oo | xx | oo
-Salzstiegl | -- | oo | oo
-Sankt Englmar | xx | xx | xx
-Sankt Jakob | ?? | oo | oo
-Sankt Oswald | xx | -- | xx
-? Schwarzenberg | xx | xx | xx (...derzeiten keine...)
-Scuol | xx | xx | xx
-See | oo | xx | oo
-Silbertal | ?? | oo | oo
-Sillian | oo | xx | oo
-Simonhöhe | oo | xx | oo
-Sirnitz | oo | xx | oo
-Söll | oo | xx | oo
-Sörenberg | xx | oo | oo
-Sonnenkopf | xx | oo | oo
-Spitzingsee | xx | xx | xx
-Steibis | xx | xx | xx
-Steinach | oo | xx | oo
-Steinach am Brenner | oo | xx | oo
-Stockhütte | xx | xx | xx
-Stuben | oo | xx | oo
-Sudelfeld | xx | xx | xx
-Tegernsee | xx | xx | xx
-Toggenburg | xx | xx | xx
-Tux | oo | xx | oo
-Unterstmatt | -- | xx | xx
-Vorderlanersbach | oo | OO | oo
-Walchsee | oo | xx | oo
-Warth | oo | xx | oo
-Wegscheid | xx | ?? | oo
-Weinebene | oo | xx | oo
-Wildkogel | xx | ?? | xx
-Wildschönau | oo | ?? | oo
-Wurzeralm | ?? | oo | oo
-Venet | ?? | oo | oo
-Vent | oo | xx | oo
-Zahmer Kaiser | oo | xx | oo
-Zams | oo | xx | oo
-Zettersfeld | oo | xx | oo
-Zürs | oo | xx | oo
+-> Gstaad | -- | oo | oo
+=> Hainzenberg | oo | OO | oo
+=> Herrischried | oo | -- | oo
+-> Hinterstoder | ?? | oo | oo
+-> Hittisau | ?? | oo | oo
+-> Hochficht | ?? | oo | oo
+-> Hochkar | ?? | oo | oo
+=> Hopfgarten | oo | ?? | oo
+=> Königsleiten | oo | ?? | oo
+-> Kristberg | ?? | oo | oo
+=> Lenggries | oo | ?? | oo
+-> Lenk | ?? | oo | oo
+=> Lungötz | oo | ?? | oo
+-> Maurach | ?? | oo | oo
+=> Montafon | oo | -- | oo
+=> Muttereralm | oo | -- | oo
+? Mutters | oo | -- | oo (...auf der ...)
+-> Pertisau | ?? | oo | oo
+=> Raggal | oo | -- | oo
+=> Realp | oo | -- | o
+=> Rußbach | oo | -- | oo
+-> Salzstiegl | -- | oo | oo
+-> Sankt Jakob | ?? | oo | oo
+=> Sankt Oswald | oo | -- | oo
+-> Silbertal | ?? | oo | oo
+-> Sonnenkopf | ?? | oo | oo
+-> Unterstmatt | -- | oo | oo
+=> Wegscheid | oo | ?? | oo
+=> Wildkogel | oo | ?? | oo
+=> Wildschönau | oo | ?? | oo
+-> Wurzeralm | ?? | oo | oo
+-> Venet | ?? | oo | oo

@@ -770,6 +770,13 @@ class BergfexContainer extends WebDataContainer {
         });
         // Hoch-Ybrig
         this.pushObject({
+            city: 'Hoch Ybrig',
+            host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
+            searchStrg: 'Hoch-Ybrig',
+            speechstart: 'In'
+        });
+        // Hoch-Ybrig
+        this.pushObject({
             city: 'Hoch-Ybrig',
             host: 'www.bergfex.ch', path: '/luzern-vierwaldstaettersee/schneewerte/',
             searchStrg: 'Hoch-Ybrig',
@@ -856,6 +863,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Hochzillertal',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Hochzillertal'
+        });
+        // Imster Bergbahnen
+        this.pushObject({
+            city: 'Hoch Imst',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Imster Bergbahnen',
+            speechstart: 'In'
         });
         // Imster Bergbahnen
         this.pushObject({
@@ -1339,7 +1353,7 @@ class BergfexContainer extends WebDataContainer {
             city: 'Mutters',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Muttereralm',
-            speechstart: 'Auf der'
+            speechstart: 'In'
         });        
         // Hochkönig / Maria Alm - Dienten - Mühlbach - Ski amade
         this.pushObject({
@@ -1638,6 +1652,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Saalbach',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Saalbach Hinterglemm Leogang Fieberbrunn',
+            speechstart: 'In'
+        });
+        // Saas-Fee
+        this.pushObject({
+            city: 'Saas Fee',
+            host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
+            searchStrg: 'Saas-Fee',
             speechstart: 'In'
         });
         // Saas-Fee
