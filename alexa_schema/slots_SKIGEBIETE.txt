@@ -116,6 +116,7 @@ Gschwandtkopf
 Gstaad
 Gunzesried
 Hainzenberg
+Hasliberg
 Hauser Kaibling
 Heiligenblut
 Herrischried
@@ -195,6 +196,7 @@ Lenggries
 Lenzerheide
 Leogang
 Lermoos
+Les Arcs
 Lienz
 Livigno
 Lofer
@@ -209,6 +211,7 @@ Mauterndorf
 Mayens de Riddes
 Mayrhofen
 Mehliskopf
+Meiringen
 Melchsee
 Mellau
 Menzenschwand
@@ -222,6 +225,7 @@ Murau
 Muttereralm
 Mutters
 Mühlbach
+Mürren
 Mythen
 Mythenregion
 Nassfeld
@@ -286,6 +290,7 @@ Sankt Oswald
 Sankt Urban
 Scheffau
 Schetteregg
+Schilthorn
 Schladming
 Schlick
 Schlick 2000

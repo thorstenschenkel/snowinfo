@@ -1071,6 +1071,13 @@ class SkiinfoContainer extends WebDataContainer {
             searchStrg: 'Lermoos Grubigstein',
             speechstart: 'In'
         });
+        // Les Arcs Bourg St Maurice
+        this.pushObject({
+            city: 'Les Arcs',
+            host: 'www.skiinfo.de', path: '/frankreich/schneehoehen-schneebericht.html',
+            searchStrg: 'Les Arcs Bourg St Maurice',
+            speechstart: 'In'
+        });
         // Lienzer Bergbahnen - Zettersfeld - Hochstein
         this.pushObject({
             city: 'Lienz',

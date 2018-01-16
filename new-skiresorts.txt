@@ -2,48 +2,52 @@ NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehl
 Ischgl | oo | oo | oo
 
 ---------------------------------------------------------------
--> Adelboden | -- | oo | oo
+Adelboden | xx | oo | oo
 => Arnoldstein | oo | -- | oo
--> Beckenried | -- | oo | oo
--> Bernau | -- | oo | oo
--> Biberwier | ?? | oo | oo
--> Buchensteinwand | -- | oo | oo
+Bernau | xx | oo | oo
+Biberwier | xx | oo | oo
+Buchensteinwand | -- | oo | oo
 => Brauneck | xx | ?? | oo
 => Dreiländereck | oo | -- | oo
--> Falkert | ?? | oo | oo
--> Feuerkogel | ?? | oo | oo
+Falkert | ?? | oo | oo
+Feuerkogel | ?? | oo | oo
 => Gerlosstein | oo | OO | oo
 => Goldeck | oo | -- | oo
 Goldegg | -- | oo | oo
--> Gstaad | -- | oo | oo
+Gstaad | xx | oo | oo
 => Hainzenberg | oo | OO | oo
+=> Hasliberg | xx | -- | xx
 => Herrischried | oo | -- | oo
--> Hinterstoder | ?? | oo | oo
--> Hittisau | ?? | oo | oo
--> Hochficht | ?? | oo | oo
--> Hochkar | ?? | oo | oo
+Hinterstoder | xx | oo | oo
+Hittisau | xx | oo | oo
+Hochficht | xx | oo | oo
+Hochkar | ?? | oo | oo
 => Hopfgarten | oo | ?? | oo
 => Königsleiten | oo | ?? | oo
--> Kristberg | ?? | oo | oo
+Kristberg | xx | oo | oo
 => Lenggries | oo | ?? | oo
--> Lenk | ?? | oo | oo
+Lenk | xx | oo | oo
+Les Arcs | xx | xx | xx
 => Lungötz | oo | ?? | oo
--> Maurach | ?? | oo | oo
+Maurach | xx | oo | oo
+=> Meiringen | xx | -- | xx
 => Montafon | oo | -- | oo
 => Muttereralm | oo | -- | oo
 ? Mutters | oo | -- | oo (...auf der ...)
--> Pertisau | ?? | oo | oo
+=> Mürren | xx | ?? | xx
+Pertisau | xx | oo | oo
 => Raggal | oo | -- | oo
 => Realp | oo | -- | o
 => Rußbach | oo | -- | oo
--> Salzstiegl | -- | oo | oo
+Salzstiegl | xx | oo | oo
 -> Sankt Jakob | ?? | oo | oo
 => Sankt Oswald | oo | -- | oo
--> Silbertal | ?? | oo | oo
--> Sonnenkopf | ?? | oo | oo
+=> Schilthorn | xx | ?? | xx
+Silbertal | xx | oo | oo
+Sonnenkopf | xx | oo | oo
 -> Unterstmatt | -- | oo | oo
 => Wegscheid | oo | ?? | oo
 => Wildkogel | oo | ?? | oo
 => Wildschönau | oo | ?? | oo
--> Wurzeralm | ?? | oo | oo
+Wurzeralm | xx | oo | oo
 -> Venet | ?? | oo | oo
