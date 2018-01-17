@@ -9,8 +9,8 @@ Biberwier | xx | oo | oo
 Buchensteinwand | -- | oo | oo
 => Brauneck | xx | ?? | oo
 => Dreiländereck | oo | -- | oo
-Falkert | ?? | oo | oo
-Feuerkogel | ?? | oo | oo
+Falkert | xx | oo | oo
+Feuerkogel | xx | oo | oo
 => Gerlosstein | oo | OO | oo
 => Goldeck | oo | -- | oo
 Goldegg | -- | oo | oo
@@ -21,7 +21,7 @@ Gstaad | xx | oo | oo
 Hinterstoder | xx | oo | oo
 Hittisau | xx | oo | oo
 Hochficht | xx | oo | oo
-Hochkar | ?? | oo | oo
+Hochkar | xx | oo | oo
 => Hopfgarten | oo | ?? | oo
 => Königsleiten | oo | ?? | oo
 Kristberg | xx | oo | oo
@@ -40,14 +40,13 @@ Pertisau | xx | oo | oo
 => Realp | oo | -- | o
 => Rußbach | oo | -- | oo
 Salzstiegl | xx | oo | oo
--> Sankt Jakob | ?? | oo | oo
+Sankt Jakob | xx | oo | oo
 => Sankt Oswald | oo | -- | oo
 => Schilthorn | xx | ?? | xx
 Silbertal | xx | oo | oo
 Sonnenkopf | xx | oo | oo
--> Unterstmatt | -- | oo | oo
 => Wegscheid | oo | ?? | oo
 => Wildkogel | oo | ?? | oo
 => Wildschönau | oo | ?? | oo
 Wurzeralm | xx | oo | oo
--> Venet | ?? | oo | oo
+Venet | xx | oo | oo

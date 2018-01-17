@@ -1830,6 +1830,20 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Sankt Englmar',
             speechstart: 'In'
         });
+        // St. Jakob im Defereggental / Brunnalm
+        this.pushObject({
+            city: 'Sankt Jakob',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'St. Jakob im Defereggental / Brunnalm',
+            speechstart: 'In'
+        });
+        // St. Jakob im Defereggental / Brunnalm
+        this.pushObject({
+            city: 'Sankt Jakob im Defereggental',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'St. Jakob im Defereggental / Brunnalm',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Sankt Johann',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
@@ -2198,11 +2212,24 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Umhausen - Niederthai',
             speechstart: 'In'
         });
+        // Unterstmatt
+        this.pushObject({
+            city: 'Unterstmatt',
+            host: 'www.bergfex.de', path: '/baden-wuerttemberg/schneewerte/',
+            searchStrg: 'Unterstmatt - Hochkopf',
+            speechstart: 'In'
+        });
         // Usseln
         this.pushObject({
             city: 'Usseln',
             host: 'www.bergfex.de', path: '/hessen/schneewerte/',
             searchStrg: 'Usseln',
+            speechstart: 'In'
+        });
+        this.pushObject({
+            city: 'Venet',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Landeck - Zams - Fliess / Venetregion',
             speechstart: 'In'
         });
         this.pushObject({
