@@ -111,7 +111,7 @@ function handleSnowIntent(intentHandler, intent, ask) {
         intentHandler.emit(':responseReady');
     } else {
         if (!(bergfexContainer.getResort(city)) && !(skiinfoContainer.getResort(city))) {
-            // console.log(' -- t7 -- DBG -- unkown city : ' + city);
+            console.log(' -- t7 -- REP -- unkown city : ' + city);
             let speechOut = SpeechOut.addBreakIfRequired(ERROR_UNKNOW_CITY, ask, true);
             const rb = intentHandler.response.speak(speechOut);
             if (ask) {

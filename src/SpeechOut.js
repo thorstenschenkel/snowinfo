@@ -49,6 +49,7 @@ class SpeechOut {
         let speechOutput;
         if (!this.snowdata) {
 
+            console.log(' -- t7 -- DBG -- no infos for city : ' + this.city);
             speechOutput = ERROR_NO_INFO.replace('{city}', this.city);
 
         } else {
