@@ -46,6 +46,7 @@ Brixen im Thale
 Brunni
 Buchensteinwand
 Bürserberg
+Chamonix
 Christlum
 Corviglia
 Crans Montana
@@ -181,6 +182,7 @@ Krimml
 Kristberg
 Kronplatz
 Kühtai
+La Plagne
 La Tzoumaz
 Laax
 Ladis
@@ -196,6 +198,7 @@ Lenggries
 Lenzerheide
 Leogang
 Lermoos
+Les 3 Vallées
 Les Arcs
 Lienz
 Livigno
@@ -216,6 +219,7 @@ Melchsee
 Mellau
 Menzenschwand
 Meran
+Mont-Blanc
 Montafon
 Mölltaler Gletscher
 Mörlialp
@@ -335,6 +339,7 @@ Sudelfeld
 Tauplitz
 Tauplitzalm
 Tegernsee
+Tignes
 Todtnauberg
 Toggenburg
 Thyon
@@ -358,6 +363,7 @@ Willingen
 Winklmoosalm
 Wolkenstein
 Wurzeralm
+Val Thorens
 Vent
 Venet
 Verbier

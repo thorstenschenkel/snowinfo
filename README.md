@@ -9,4 +9,4 @@ Alexa frage Schneeinfo nach den Schneemengen auf dem Stubaier Gletscher
 ```
 
 ## Notes
-Derzeit werden etwas mehr als 100 Skigebiete unterstützt. 
+Derzeit werden etwas mehr als 250 Skigebiete unterstützt. 

@@ -311,6 +311,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Brandnertal',
             speechstart: 'In'
         });
+        // Chamonix Mont-Blanc
+        this.pushObject({
+            city: 'Chamonix',
+            host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
+            searchStrg: 'Chamonix Mont-Blanc',
+            speechstart: 'In'
+        });        
         // St. Moritz - Corviglia
         this.pushObject({
             city: 'Corviglia',
@@ -379,7 +386,7 @@ class BergfexContainer extends WebDataContainer {
             city: 'Dreiländereck',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
             searchStrg: 'Dreiländereck - Arnoldstein',
-            speechstart: 'In'
+            speechstart: 'Im'
         });
         // Mythenregion
         this.pushObject({
@@ -1198,6 +1205,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Kühtai',
             speechstart: 'Kühtai'
         });
+        // La Plagne / Paradiski
+        this.pushObject({
+            city: 'La Plagne',
+            host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
+            searchStrg: 'La Plagne / Paradiski',
+            speechstart: 'In'
+        });
         // La Tzoumaz - Mayens de Riddes
         this.pushObject({
             city: 'La Tzoumaz',
@@ -1286,6 +1300,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Lermoos',
             host: 'www.bergfex.at', path: '/tirol/schneewerte/',
             searchStrg: 'Lermoos - Grubigsteinbahnen',
+            speechstart: 'In'
+        });
+        // Val Thorens / Les 3 Vallées
+        this.pushObject({
+            city: 'Les 3 Vallées',
+            host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
+            searchStrg: 'Val Thorens / Les 3 Vallées',
             speechstart: 'In'
         });
         // Les Arcs - Bourg Saint Maurice / Paradiski
@@ -1412,6 +1433,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Meran 2000',
             speechstart: 'In'
         });
+        // Chamonix Mont-Blanc
+        this.pushObject({
+            city: 'Mont-Blanc',
+            host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
+            searchStrg: 'Chamonix Mont-Blanc',
+            speechstart: 'In'
+        });        
         // Silvretta Montafon
         this.pushObject({
             city: 'Montafon',
@@ -2179,6 +2207,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Spitzingsee - Tegernsee',
             speechstart: 'In'
         });
+        // Tignes - Val d’Isère
+        this.pushObject({
+            city: 'Tignes',
+            host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
+            searchStrg: 'Tignes - Val d’Isère',
+            speechstart: 'In'
+        });
         // Todtnauberg
         this.pushObject({
             city: 'Todtnauberg',
@@ -2224,6 +2259,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Usseln',
             host: 'www.bergfex.de', path: '/hessen/schneewerte/',
             searchStrg: 'Usseln',
+            speechstart: 'In'
+        });
+        // Val Thorens / Les 3 Vallées
+        this.pushObject({
+            city: 'Val Thorens',
+            host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
+            searchStrg: 'Val Thorens / Les 3 Vallées',
             speechstart: 'In'
         });
         this.pushObject({
@@ -2705,11 +2747,7 @@ Haideralm - Reschenpass
 */
 
 /* FRANKREICH - TOP 20 
-Chamonix Mont-Blanc
-Val Thorens / Les 3 Vallées
-Tignes - Val d’Isère
 Avoriaz 1800 / Portes du Soleil
-La Plagne / Paradiski
 Châtel / Portes du Soleil
 Les 2 Alpes
 La Bresse Haute-Vosges
