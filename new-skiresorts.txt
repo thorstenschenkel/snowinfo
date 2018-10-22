@@ -1,59 +1,16 @@
 NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehlt BEWUST
 Ischgl | oo | oo | oo
 
----------------------------------------------------------------
-Adelboden | xx | oo | oo
-Alpbach | oo | xx | oo
-Alpbachtal | oo | xx | oo
-Arnoldstein | oo | OO | oo
-Bernau | xx | oo | oo
-Biberwier | xx | oo | oo
-Buchensteinwand | -- | oo | oo
-Brauneck | xx | xx | oo
-Chamonix | xx | xx | xx
-Dreiländereck | oo | xx | oo
-Falkert | xx | oo | oo
-Feuerkogel | xx | oo | oo
-Gerlosstein | oo | OO | oo
-Goldeck | oo | xx | oo
-Goldegg | -- | oo | oo
 Gstaad | xx | oo | oo
-Hainzenberg | oo | OO | oo
-Hasliberg | xx | xx | xx
-Herrischried | oo | OO | oo
-Hinterstoder | xx | oo | oo
-Hittisau | xx | oo | oo
-Hochficht | xx | oo | oo
-Hochkar | xx | oo | oo
-Hopfgarten | oo | xx | oo
-Königsleiten | oo | OO | oo
-Kristberg | xx | oo | oo
-Lenggries | oo | OO | oo
-La Plagne | xx | xx | xx
-Lenk | xx | oo | oo
-Les 3 Vallées | xx | xx | xx
-Les Arcs | xx | xx | xx
-Lungötz | oo | OO | oo
-Maurach | xx | oo | oo
-Meiringen | xx | xx | xx
-Mont-Blanc | xx | xx | xx
-Montafon | oo | xx | oo
-Muttereralm | oo | xx | oo
-? Mutters | oo | -- | oo (...auf der ...)
-Mürren | xx | xx | xx
-Pertisau | xx | oo | oo
-Raggal | oo | OO | oo
-Realp | oo | OO | o
-Rußbach | oo | OO | oo
-Salzstiegl | xx | oo | oo
-Sankt Jakob | xx | oo | oo
-Sankt Oswald | oo | OO | oo
-Schilthorn | xx | xx | xx
-Silbertal | xx | oo | oo
-Sonnenkopf | xx | oo | oo
-Tignes | xx | xx | xx
-Wegscheid | oo | xx | oo
-Wildkogel | oo | xx | oo
-Wildschönau | oo | xx | oo
-Wurzeralm | xx | oo | oo
-Venet | xx | oo | oo
+
+---------------------------------------------------------------
+! Chamonix | xx | xx | xx
+! Goldegg | -- | oo | oo
+! La Plagne | xx | xx | xx
+! Les 3 Vallées | xx | xx | xx
+! Les Arcs | xx | xx | xx
+! Meiringen | xx | xx | xx
+! Mont-Blanc | xx | xx | xx
+! Mürren | xx | xx | xx
+! Schilthorn | xx | xx | xx
+! Tignes | xx | xx | xx
