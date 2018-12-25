@@ -27,7 +27,7 @@ describe('test of all ski resorts', function () {
             let promises = [];
             for (let parser of parsers) {
                 parser.clear();
-                promises.push(parser.getHtmlPagePromise(city));
+                promises.push(parser.getResourcePromise(city));
             }
             Promise.all(promises)
                 .then(htmlPages => {

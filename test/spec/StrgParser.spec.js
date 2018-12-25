@@ -11,7 +11,7 @@ describe('test of StrgParser', function () {
         expect(parser.getPartContent).toBeDefined();
         expect(parser.removeTag).toBeDefined();
         expect(parser.getPureText).toBeDefined();
-        expect(parser.getHtmlPagePromise).toBeDefined();
+        expect(parser.getResourcePromise).toBeDefined();
         expect(parser.getOnlyInt).toBeDefined();
         expect(parser.getDate).toBeDefined();
         expect(parser.searchCompareStrg).toBeDefined();

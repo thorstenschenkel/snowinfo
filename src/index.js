@@ -191,7 +191,7 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
     let promises = [];
     for (let parser of parsers) {
         parser.clear();
-        const promise = parser.getHtmlPagePromise(city);
+        const promise = parser.getResourcePromise(city);
         promises.push(promise);
     }
     let parserIndex = 0;
