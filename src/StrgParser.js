@@ -119,31 +119,7 @@ class StrgParser extends AbstractParser {
             return false;
     }
 
-    reduceSearchStrg(searchString) {
-        if (searchString) {
-            let search = searchString.toLowerCase();
-            return search.replace(/[^0-9a-z]/gi, '');
-        }
-    }
-
-    searchCompareStrg(searchString, snowdata) {
-
-        if (!searchString || !snowdata || !snowdata.skiresort) {
-            return false;
-        }
-        let resort = this.reduceSearchStrg(snowdata.skiresort);
-        let search = this.reduceSearchStrg(searchString);
-
-        return resort === search;
-
-    }
-
-    addDbFindAndRemoveStrgs(snowdata, city) {
-        snowdata.findStrg = this.reduceSearchStrg(snowdata.skiresort);
-        snowdata.removeStrg = this.webDataContainer.getHost(city) + this.webDataContainer.getPath(city);
-    }
-
-    parseHtml(htmlString, city) {
+    parse(htmlString, city) {
         if (!htmlString) {
             return;
         }
@@ -189,10 +165,6 @@ class StrgParser extends AbstractParser {
     // abstract
     getSnowDataFromHtml(trString) { // jshint ignore:line
         return;
-    }
-
-    getResource() {
-        return this.webDataContainer.resource;
     }
 
 }

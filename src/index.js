@@ -3,9 +3,9 @@
 const Alexa = require('alexa-sdk');
 
 const BergfexContainer = require('./BergfexContainer');
-const SkiinfoContainer = require('./SkiinfoContainer');
+const SkiinfoJsonContainer = require('./SkiinfoJsonContainer');
 const BergfexStrgParser = require('./BergfexStrgParser');
-const SkiinfoStrgParser = require('./SkiinfoStrgParser');
+const SkiinfoJsonParser = require('./SkiinfoJsonParser');
 const CardUtils = require('./CardUtils');
 const SpeechOut = require('./SpeechOut');
 const DbHelper = require('./DbHelper');
@@ -30,16 +30,18 @@ function getVersion()  {
 //=========================================================================================================================================
 
 const bergfexContainer = new BergfexContainer();
-const bergfexStrgParser = new BergfexStrgParser(bergfexContainer);
+const bergfexParser = new BergfexStrgParser(bergfexContainer);
 
 //=========================================================================================================================================
 // SKIINFO
 //=========================================================================================================================================
 
-const skiinfoContainer = new SkiinfoContainer();
-const skiinfoStrgParser = new SkiinfoStrgParser(skiinfoContainer);
+// const skiinfoContainer = new SkiinfoContainer();
+// const skiinfoParser = new SkiinfoStrgParser(skiinfoContainer);
+const skiinfoContainer = new SkiinfoJsonContainer();
+const skiinfoParser = new SkiinfoJsonParser(skiinfoContainer);
 
-const parsers = [bergfexStrgParser, skiinfoStrgParser];
+const parsers = [bergfexParser, skiinfoParser];
 
 //=========================================================================================================================================
 // DB
@@ -198,8 +200,8 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
     let resultSnowdata;
     try {
         promises[parserIndex]
-            .then(htmlPage => {
-                resultSnowdata = parsers[parserIndex].parseHtml(htmlPage, city);
+            .then(resource => {
+                resultSnowdata = parsers[parserIndex].parse(resource, city);
             })
             .catch((error) => {
                 console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
@@ -208,8 +210,8 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
                 parserIndex++;
                 if ( (!resultSnowdata || resultSnowdata.isOutdated()) && parserIndex < parsers.length ) {
                     promises[parserIndex]
-                        .then(htmlPage => {
-                            resultSnowdata = parsers[parserIndex].parseHtml(htmlPage, city);
+                        .then(resource => {
+                            resultSnowdata = parsers[parserIndex].parse(resource, city);
                             hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
                         }).catch((error) => {
                             console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
@@ -223,40 +225,5 @@ function getSnowDataAndTell(intentHandler, city, snowdata, ask) {
         console.error(' -- t7 -- ERR -- Promise error (try-catch): ', error);
         emitTempError(intentHandler, ask);
     }
-
-
-    // let promises = [];
-    // for (let parser of parsers) {
-    //     parser.clear();
-    //     const promise = parser.getHtmlPagePromise(city);
-    //     promises.push(promise);
-    // }
-    // try {
-    //     Promise.all(promises)
-    //         .then(htmlPages => {
-    //             let resultSnowdata;
-    //             for (let i = 0; i < htmlPages.length; i++) {
-    //                 let htmlPage = htmlPages[i];
-    //                 if (htmlPage) {
-    //                     const snowdata = parsers[i].parseHtml(htmlPage, city);
-    //                     if (snowdata) {
-    //                         if (!resultSnowdata || resultSnowdata.isOutdated()) {
-    //                             resultSnowdata = snowdata;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //             hanldeSchneeInfo(intentHandler, city, resultSnowdata, ask);
-    //         }).catch(error => {
-    //             console.error(' -- t7 -- ERR -- Promise error (all.then-catch): ', error);
-    //             const rb = intentHandler.response.speak(ERROR_TEMP);
-    //             if (ask) {
-    //                 rb.listen(SpeechOut.MORE_INFOS_LISTEN);
-    //             }
-    //             intentHandler.emit(':responseReady');
-    //         });
-    // } catch (error) {
-    //     console.error(' -- t7 -- ERR -- Promise error (try-catch): ', error);
-    // }
-
+    
 }

@@ -77,6 +77,35 @@ class AbstractParser {
 
     }
 
+    reduceSearchStrg(searchString) {
+        if (searchString) {
+            let search = searchString.toLowerCase();
+            return search.replace(/[^0-9a-z]/gi, '');
+        }
+    }
+
+    searchCompareStrg(searchString, snowdata) {
+
+        if (!searchString || !snowdata || !snowdata.skiresort) {
+            return false;
+        }
+        let resort = this.reduceSearchStrg(snowdata.skiresort);
+        let search = this.reduceSearchStrg(searchString);
+
+        return resort === search;
+
+    }
+
+    getResource() {
+        return this.webDataContainer.resource;
+    }
+    
+    addDbFindAndRemoveStrgs(snowdata, city) {
+        snowdata.findStrg = this.reduceSearchStrg(snowdata.skiresort);
+        snowdata.removeStrg = this.webDataContainer.getHost(city) + this.webDataContainer.getPath(city);
+    }
+
+
 }
 
 module.exports = AbstractParser;

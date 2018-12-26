@@ -15,7 +15,7 @@ describe('test of StrgParser', function () {
         expect(parser.getOnlyInt).toBeDefined();
         expect(parser.getDate).toBeDefined();
         expect(parser.searchCompareStrg).toBeDefined();
-        expect(parser.parseHtml).toBeDefined();
+        expect(parser.parse).toBeDefined();
         expect(parser.isSnowDepthTable).toBeDefined();
         expect(parser.getSnowDataFromHtml).toBeDefined();
         expect(parser.reduceSearchStrg).toBeDefined();
