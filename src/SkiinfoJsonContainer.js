@@ -1,6 +1,21 @@
 const WebDataContainer = require('./WebDataContainer');
 
-const AT_PATH = 'https://skiapp.onthesnow.com/app/widgets/resortlist?region=de&regionids=242&language=de&pagetype=skireport';
+const AT_REGIONID= 242;
+const USA_REGIONID =  429;
+const CAN_REGIONID = 430;
+const IT_REGIONID = 233;
+const DE_REGIONID = 214;
+const CH_REGIONID = 184;
+const FR_REGIONID = 240;
+
+const PRE_PATH = '/app/widgets/resortlist?region=de&language=de&pagetype=skireport&regionids=';
+const AT_PATH = PRE_PATH + AT_REGIONID;
+const USA_PATH = PRE_PATH + USA_REGIONID;
+const CAN_PATH = PRE_PATH + CAN_REGIONID;
+const IT_PATH = PRE_PATH + IT_REGIONID;
+const DE_PATH = PRE_PATH + DE_REGIONID;
+const CH_PATH = PRE_PATH + CH_REGIONID;
+const FR_PATH = PRE_PATH + FR_REGIONID;
 
 class SkiinfoJsonContainer extends WebDataContainer {
 
@@ -1424,6 +1439,350 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Zürs',
             host: 'skiapp.onthesnow.com', path: AT_PATH,
             searchStrg: 'Lech Zürs am Arlberg',
+            speechstart: 'In'
+        });
+        // Lake Louise !!! NUR SKIINFO
+        this.pushObject({
+            city: 'Lake Louise',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Lake Louise',
+            speechstart: 'In'
+        });
+
+        // Alta Badia
+        this.pushObject({
+            city: 'Alta Badia',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Alta Badia',
+            speechstart: 'In'
+        });
+        // Val Gardena - Gröden
+        this.pushObject({
+            city: 'Gröden',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Val Gardena - Gröden',
+            speechstart: 'In'
+        });
+        // Klausberg
+        this.pushObject({
+            city: 'Klausberg',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Klausberg',
+            speechstart: 'In'
+        });
+        // Plan de Corones / Kronplatz
+        this.pushObject({
+            city: 'Kronplatz',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Plan de Corones / Kronplatz',
+            speechstart: 'Auf dem'
+        });
+        // Livigno
+        this.pushObject({
+            city: 'Livigno',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Livigno',
+            speechstart: 'In'
+        });
+        // Merano 2000 / Meran 2000
+        this.pushObject({
+            city: 'Meran',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Merano 2000 / Meran 2000',
+            speechstart: 'In'
+        });
+        // Merano 2000 / Meran 2000
+        this.pushObject({
+            city: 'Merano',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Merano 2000 / Meran 2000',
+            speechstart: 'In'
+        });
+        // Obereggen - Pampeago - Predazzo
+        this.pushObject({
+            city: 'Obereggen',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Obereggen - Pampeago - Predazzo',
+            speechstart: 'In'
+        });
+         // Alpe di Siusi / Seiser Alm
+         this.pushObject({
+            city: 'Seiser Alm',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Alpe di Siusi / Seiser Alm',
+            speechstart: 'Auf der'
+        });
+        // Sulden / Solda
+        this.pushObject({
+            city: 'Solda',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Sulden / Solda',
+            speechstart: 'In'
+        });
+        // Sulden / Solda
+        this.pushObject({
+            city: 'Sulden',
+            host: 'skiapp.onthesnow.com', path: IT_PATH,
+            searchStrg: 'Sulden / Solda',
+            speechstart: 'In'
+        });
+        // Oberjoch
+        this.pushObject({
+            city: 'Bad Hindelang',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberjoch',
+            speechstart: 'In'
+        });
+        // Balderschwang
+        this.pushObject({
+            city: 'Balderschwang',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Balderschwang',
+            speechstart: 'In'
+        });
+        // Baiersbronn
+        this.pushObject({
+            city: 'Baiersbronn',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Baiersbronn',
+            speechstart: 'In'
+        });
+        // Bayrischzell
+        this.pushObject({
+            city: 'Sudelfeld',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Sudelfeld',
+            speechstart: 'In'
+        });
+        // Schwarzwaldregion Belchen - Münstertal
+        this.pushObject({
+            city: 'Belchen',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Schwarzwaldregion Belchen - Münstertal',
+            speechstart: 'In'
+        });
+        // Bernau im Schwarzwald
+        this.pushObject({
+            city: 'Bernau',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Bernau im Schwarzwald',
+            speechstart: 'In'
+        });
+        // Skiregion Brauneck - Wegscheid
+        this.pushObject({
+            city: 'Brauneck',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Skiregion Brauneck - Wegscheid',
+            speechstart: 'In'
+        });
+        // Feldberg Wintersportzentrum
+        this.pushObject({
+            city: 'Feldberg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Feldberg Wintersportzentrum',
+            speechstart: 'In'
+        });
+        // Oberwiesenthal - Fichtelberg
+        this.pushObject({
+            city: 'Fichtelberg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberwiesenthal - Fichtelberg',
+            speechstart: 'In'
+        });
+        // Geisskopf
+        this.pushObject({
+            city: 'Geisskopf',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Geisskopf',
+            speechstart: 'In'
+        });
+        // Grasgehren
+        this.pushObject({
+            city: 'Grasgehren',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Grasgehren',
+            speechstart: 'In'
+        });
+        // Großer Arber
+        this.pushObject({
+            city: 'Großer Arber',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Großer Arber',
+            speechstart: 'In'
+        });
+        // Großer Arber
+        this.pushObject({
+            city: 'Grosser Arber',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Großer Arber',
+            speechstart: 'In'
+        });
+        // Ofterschwang - Gunzesried
+        this.pushObject({
+            city: 'Gunzesried',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Ofterschwang - Gunzesried',
+            speechstart: 'In'
+        });
+        // Freudenstadt Kniebis
+        this.pushObject({
+            city: 'Kniebis',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Freudenstadt Kniebis',
+            speechstart: 'In'
+        });
+        // Mehliskopf
+        this.pushObject({
+            city: 'Mehliskopf',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Mehliskopf',
+            speechstart: 'In'
+        });
+        // Muggenbrunn
+        this.pushObject({
+            city: 'Muggenbrunn',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Muggenbrunn',
+            speechstart: 'In'
+        });
+        // Oberstdorf - Nebelhorn
+        this.pushObject({
+            city: 'Nebelhorn',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberstdorf - Nebelhorn',
+            speechstart: 'Auf dem'
+        });
+        // Alpspitz Nesselwang
+        this.pushObject({
+            city: 'Nesselwang',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Alpspitz Nesselwang',
+            speechstart: 'In'
+        });
+        // Oberstdorf - Nebelhorn
+        this.pushObject({
+            city: 'Oberstdorf',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberstdorf - Nebelhorn',
+            speechstart: 'In'
+        });
+        // Oberjoch
+        this.pushObject({
+            city: 'Oberjoch',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberjoch',
+            speechstart: 'In'
+        });
+        // Grasgehren
+        this.pushObject({
+            city: 'Obermaiselstein',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Grasgehren',
+            speechstart: 'In'
+        });
+        // Oberwiesenthal - Fichtelberg
+        this.pushObject({
+            city: 'Oberwiesenthal',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberwiesenthal - Fichtelberg',
+            speechstart: 'In'
+        });
+        // Ofterschwang - Gunzesried
+        this.pushObject({
+            city: 'Ofterschwang',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Ofterschwang - Gunzesried',
+            speechstart: 'In'
+        });
+        // Winklmoosalm - Reit im Winkl
+        this.pushObject({
+            city: 'Reit im Winkl',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Winklmoosalm - Reit im Winkl',
+            speechstart: 'In'
+        });
+        // Sankt Englmar
+        this.pushObject({
+            city: 'Sankt Englmar',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Sankt Englmar',
+            speechstart: 'In'
+        });
+        // Oberstdorf - Söllereck - Höllwies
+        this.pushObject({
+            city: 'Söllereck',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Oberstdorf - Söllereck - Höllwies',
+            speechstart: 'In'
+        });
+        // Spitzingsee - Tegernsee
+        this.pushObject({
+            city: 'Spitzingsee',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Spitzingsee - Tegernsee',
+            speechstart: 'In'
+        });
+        // Skiarena Steibis - Imbergbahn - Oberstaufen
+        this.pushObject({
+            city: 'Steibis',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Bergeralm - Steinach am Brenner',
+            speechstart: 'In'
+        });
+        // Sudelfeld
+        this.pushObject({
+            city: 'Sudelfeld',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Sudelfeld',
+            speechstart: 'In'
+        });
+        // Spitzingsee - Tegernsee
+        this.pushObject({
+            city: 'Tegernsee',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Spitzingsee - Tegernsee',
+            speechstart: 'In'
+        });
+        // Todtnauberg
+        this.pushObject({
+            city: 'Todtnauberg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Todtnauberg',
+            speechstart: 'In'
+        });
+        // Skizirkus Unterstmatt - Hochkopf
+        this.pushObject({
+            city: 'Unterstmatt',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Skizirkus Unterstmatt - Hochkopf',
+            speechstart: 'In'
+        });
+        // Skiregion Brauneck - Wegscheid
+        this.pushObject({
+            city: 'Wegscheid',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Skiregion Brauneck - Wegscheid',
+            speechstart: 'In'
+        });
+        // Willingen
+        this.pushObject({
+            city: 'Willingen',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Willingen',
+            speechstart: 'In'
+        });
+        // Winklmoosalm - Reit im Winkl
+        this.pushObject({
+            city: 'Winklmoosalm',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Winklmoosalm - Reit im Winkl',
+            speechstart: 'In'
+        });
+        // Zugspitze
+        this.pushObject({
+            city: 'Zugspitze',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Zugspitze',
             speechstart: 'In'
         });
 
