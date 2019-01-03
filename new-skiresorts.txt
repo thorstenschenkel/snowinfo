@@ -2,6 +2,43 @@ NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehl
 Ischgl | oo | oo | oo
 
 Gstaad | xx | oo | oo
+Alpine Meadows | OO | -- | --
+Alta | OO | -- | --
+Arapahoe Basin | OO | -- | --
+Aspen | OO | -- | --
+Beaver Creek | OO | -- | --
+Big Sky Resort | OO | -- | --
+Big Sky | OO | -- | --
+Breckenridge | OO | -- | --
+Copper Mountain Resort | OO | -- | --
+Copper Mountain | OO | -- | --
+Crested Butte | OO | -- | --
+Deer Valley | OO | -- | --
+Heavenly | OO | -- | --
+Jackson Hole | OO | -- | --
+Keystone | OO | -- | --
+Killington | OO | -- | --
+Lake Placid | OO | -- | --
+Mammoth Mountain | OO | -- | --
+Mount Bachelor | OO | -- | --
+Mount Baker | OO | -- | --
+Mount Rose | OO | -- | --
+Park City | OO | -- | --
+Powder Mountain | OO | -- | --
+Snowbird | OO | -- | --
+Snowmass | OO | -- | --
+Squaw Valley | OO | -- | --
+Steamboat | OO | -- | --
+Stowe | OO | -- | --
+Sugarloaf | OO | -- | --
+Taos | OO | -- | --
+Telluride | OO | -- | --
+Vail | OO | -- | --
+Whiteface | OO | -- | --
+Winter Park Resort | OO | -- | --
+Winter Park | OO | -- | --
+Wolf Creek | OO | -- | --
+
 
 ---------------------------------------------------------------
 ! Chamonix | xx | xx | xx

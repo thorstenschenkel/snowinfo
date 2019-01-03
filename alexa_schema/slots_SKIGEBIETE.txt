@@ -1,383 +1,419 @@
-Adelboden
-Albeck
-Alberschwende
-Alta Badia
-Aletsch Arena
-Alpbach
-Alpbachtal
-Alpendorf
-Alpthal
-Altaussee
-Altenmarkt
-Aminona
-Andermatt
-Andelsbuch
-Ankogel
-Annaberg
-Annenheim
-Arnoldstein
-Arosa
-Axamer Lizum
-Bad Gastein
-Bad Hindelang
-Bad Hofgastein
-Bad Kleinkirchheim
-Bad Mitterndorf
-Baiersbronn
-Balderschwang
-Bayrischzell
-Beckenried
-Beerfelden
-Belalp
-Belchen
-Bergeralm
-Bernau
-Berwang
-Bettmeralp
-Biberwier
-Bichlbach
-Blatten
-Bödele
-Bramberg
-Brand
-Brandnertal
-Brauneck
-Brixen im Thale
-Brunni
-Buchensteinwand
-Bürserberg
-Chamonix
-Christlum
-Corviglia
-Crans Montana
-Dachstein Gletscher
-Damüls
-Davos
-Diedamskopf
-Dienten
-Dorfgastein
-Dreiländereck
-Einsiedeln
-Elferbahnen
-Ellmau
-Engelberg
-Fageralm
-Falera
-Falkert
-Fanningberg
-Faschina
-Faschina Fontanella
-Feldberg
-Fellhorn
-Fendels
-Feuerkogel
-Fichtelberg
-Fieberbrunn
-Fiesch
-Filzmoos
-Finkenberg
-Fiss
-Flachau
-Flachauwinkl
-Fliess
-Flims
-Flumserberg
-Fontanella
-Forstau
-Fügen
-Gaberl
-Gaissau
-Galtür
-Gargellen
-Gerlitzen
-Gerlos
-Gerlosstein
-Garmisch
-Geisskopf
-Giswil
-Glungezer
-Goldeck
-Goldegg
-Going
-Golm
-Golm im Montafon
-Grasgehren
-Grimentz
-Grindelwald
-Großer Arber
-Grosser Arber
-Großarl
-Großarl Tal
-Großarltal
-Großeck
-Gröden
-Grünau
-Grünau im Almtal
-Gschwandtkopf
-Gstaad
-Gunzesried
-Hainzenberg
-Hasliberg
-Hauser Kaibling
-Heiligenblut
-Herrischried
-Heuberg
-Heutal
-Hinterglemm
-Hintersee
-Hinterstoder
-Hintertux
-Hintertuxer Gletscher
-Hittisau
-Hoch-Imst
-Hoch-Ybrig
-Hochrindl
-Hochficht
-Hochfügen
-Hochgurgl
-Hochkar
-Hochkönig
-Hochkössen
-Hochkrimml
-Hochoetz
-Hochötz
-Hochstein
-Hochwurzen
-Hochzeiger
-Hochzillertal
-Hopfgarten
-Ifen
-Igls
-Imst
-Innerkrems
-Ischgl
-Itter
-Jerzens
-Jungholz
-Kanzelwand
-Kals
-Kappl
-Kaprun Kitzsteinhorn
-Kaprun
-Kasberg
-Katschberg
-Kaunertal
-Kaunertaler Gletscher
-Kelchsau
-Kirchberg
-Kitzbühel
-Kitzsteinhorn Kaprun
-Kitzsteinhorn
-Klausberg
-Kleinarl
-Kleinwalsertal
-Klewenalp
-Klippitztörl
-Klosters
-Kniebis
-Koralpe
-Königsleiten
-Kreischberg
-Krimml
-Kristberg
-Kronplatz
-Kühtai
-La Plagne
-La Tzoumaz
-Laax
-Ladis
-Lake Louise
-Lachtal
-Landeck
-Laterns
-Lauchernalp
-Lech
-Lech am Arlberg
-Lenk
-Lenggries
-Lenzerheide
-Leogang
-Lermoos
-Les 3 Vallées
-Les Arcs
-Lienz
-Livigno
-Lofer
-Lötschental
-Lungötz
-Malbun
-Mallnitz
-Maria Alm
-Matrei
-Maurach
-Mauterndorf
-Mayens de Riddes
-Mayrhofen
-Mehliskopf
-Meiringen
-Melchsee
-Mellau
-Menzenschwand
-Meran
-Mont-Blanc
-Montafon
-Mölltaler Gletscher
-Mörlialp
-Muggenbrunn
-Mundaun
-Murau
-Muttereralm
-Mutters
-Mühlbach
-Mürren
-Mythen
-Mythenregion
-Nassfeld
-Nauders
-Nebelhorn
-Nendaz
-Nesselwang
-Neukirchen
-Neustift
-Niederalpl
-Niederthai
-Obereggen
-Obergurgl
-Oberjoch
-Obermaiselstein
-Obersaxen
-Oberstdorf
-Obertauern
-Obertilliach
-Oberwiesenthal
-Oetz
-Ofterschwang
-Pertisau
-Petzen
-Pitztal
-Pitztaler Gletscher
-Planai
-Planneralm
-Postalm
-Präbichl
-Radstadt
-Raggal
-Ramsau
-Ramsau am Dachstein
-Rauris
-Raurisertal
-Realp
-Reit im Winkl
-Reiteralm
-Riederalp
-Riesneralm
-Rifflsee
-Rigi
-Rosshütte
-Rußbach
-Saalbach
-Saas-Fee
-Salzstiegl
-Samnaun
-Sankt Anton
-Sankt Anton am Arlberg
-Sankt Englmar
-Sankt Jakob
-Sankt Jakob im Defereggental
-Sankt Johann
-Sankt Johann im Pongau
-Sankt Johann in Tirol
-Sankt Lambrecht
-Sankt Michael
-Sankt Moritz
-Sankt Oswald
-Sankt Urban
-Scheffau
-Schetteregg
-Schilthorn
-Schladming
-Schlick
-Schlick 2000
-Schmitten
-Schmittenhöhe
-Schröcken
-Schwarzenberg
-Scuol
-Sedrun
-See
-Seiser Alm
-Semmering
-Serfaus
-Silbertal
-Sillian
-Silvretta
-Silvretta Montafon
-Simonhöhe
-Sirnitz
-Solda
-Sölden
-Söll
-Sörenberg
-Sonnenkopf
-Speiereck
-Spieljoch
-Spitzingsee
-Steibis
-Steinach
-Steinach am Brenner
-Steinplatte
-Stockhütte
-Stoderzinken
-Stoos
-Stubaier Gletscher
-Stubaital
-Stuben
-Stuben am Arlberg
-Stuhleck
-Sulden
-Sudelfeld
-Tauplitz
-Tauplitzalm
-Tegernsee
-Tignes
-Todtnauberg
-Toggenburg
-Thyon
-Turracher Höhe
-Tux
-Unterstmatt
-Usseln
-Wagrain
-Waidring
-Walchsee
-Walmendingerhorn
-Warth
-Wegscheid
-Weinebene
-Wengen
-Werfenweng
-Westendorf
-Wildkogel
-Wildschönau
-Willingen
-Winklmoosalm
-Wolkenstein
-Wurzeralm
-Val Thorens
-Vent
-Venet
-Verbier
-Veysonnaz
-Vogelsberg
-Vorderlanersbach
-Zahmer Kaiser
-Zams
-Zauchensee
-Zell am See
-Zell am Ziller
-Zermatt
-Zettersfeld
-Zillertal Arena
-Zinal
-Zürs
+Adelboden,
+Albeck,
+Alberschwende,
+Alta Badia,
+Aletsch Arena,
+Alpbach,
+Alpbachtal,
+Alpendorf,
+Alpine Meadows,
+Alpthal,
+Alta,
+Altaussee,
+Altenmarkt,
+Aminona,
+Andermatt,
+Andelsbuch,
+Ankogel,
+Annaberg,
+Annenheim,
+Arapahoe Basin,
+Arnoldstein,
+Arosa,
+Aspen,
+Axamer Lizum,
+Bad Gastein,
+Bad Hindelang,
+Bad Hofgastein,
+Bad Kleinkirchheim,
+Bad Mitterndorf,
+Baiersbronn,
+Balderschwang,
+Bayrischzell,
+Beaver Creek,
+Beckenried,
+Beerfelden,
+Belalp,
+Belchen,
+Bergeralm,
+Bernau,
+Berwang,
+Bettmeralp,
+Biberwier,
+Bichlbach,
+Big Sky,
+Big Sky Resort,
+Blatten,
+Bödele,
+Bramberg,
+Brand,
+Brandnertal,
+Brauneck,
+Breckenridge,
+Brixen im Thale,
+Brunni,
+Buchensteinwand,
+Bürserberg,
+Chamonix,
+Christlum,
+Copper Mountain,
+Copper Mountain Resort,
+Corviglia,
+Crans Montana,
+Crested Butte,
+Dachstein Gletscher,
+Damüls,
+Davos,
+Deer Valley,
+Diedamskopf,
+Dienten,
+Dorfgastein,
+Dreiländereck,
+Einsiedeln,
+Elferbahnen,
+Ellmau,
+Engelberg,
+Fageralm,
+Falera,
+Falkert,
+Fanningberg,
+Faschina,
+Faschina Fontanella,
+Feldberg,
+Fellhorn,
+Fendels,
+Feuerkogel,
+Fichtelberg,
+Fieberbrunn,
+Fiesch,
+Filzmoos,
+Finkenberg,
+Fiss,
+Flachau,
+Flachauwinkl,
+Fliess,
+Flims,
+Flumserberg,
+Fontanella,
+Forstau,
+Fügen,
+Gaberl,
+Gaissau,
+Galtür,
+Gargellen,
+Gerlitzen,
+Gerlos,
+Gerlosstein,
+Garmisch,
+Geisskopf,
+Giswil,
+Glungezer,
+Goldeck,
+Goldegg,
+Going,
+Golm,
+Golm im Montafon,
+Grasgehren,
+Grimentz,
+Grindelwald,
+Großer Arber,
+Grosser Arber,
+Großarl,
+Großarl Tal,
+Großarltal,
+Großeck,
+Gröden,
+Grünau,
+Grünau im Almtal,
+Gschwandtkopf,
+Gstaad,
+Gunzesried,
+Hainzenberg,
+Hasliberg,
+Hauser Kaibling,
+Heavenly,
+Heiligenblut,
+Herrischried,
+Heuberg,
+Heutal,
+Hinterglemm,
+Hintersee,
+Hinterstoder,
+Hintertux,
+Hintertuxer Gletscher,
+Hittisau,
+Hoch-Imst,
+Hoch-Ybrig,
+Hochrindl,
+Hochficht,
+Hochfügen,
+Hochgurgl,
+Hochkar,
+Hochkönig,
+Hochkössen,
+Hochkrimml,
+Hochoetz,
+Hochötz,
+Hochstein,
+Hochwurzen,
+Hochzeiger,
+Hochzillertal,
+Hopfgarten,
+Ifen,
+Igls,
+Imst,
+Innerkrems,
+Ischgl,
+Itter,
+Jackson Hole,
+Jerzens,
+Jungholz,
+Kanzelwand,
+Kals,
+Kappl,
+Kaprun Kitzsteinhorn,
+Kaprun,
+Kasberg,
+Katschberg,
+Kaunertal,
+Kaunertaler Gletscher,
+Kelchsau,
+Keystone,
+Killington,
+Kirchberg,
+Kitzbühel,
+Kitzsteinhorn Kaprun,
+Kitzsteinhorn,
+Klausberg,
+Kleinarl,
+Kleinwalsertal,
+Klewenalp,
+Klippitztörl,
+Klosters,
+Kniebis,
+Koralpe,
+Königsleiten,
+Kreischberg,
+Krimml,
+Kristberg,
+Kronplatz,
+Kühtai,
+La Plagne,
+La Tzoumaz,
+Laax,
+Ladis,
+Lake Louise,
+Lake Placid,
+Lachtal,
+Landeck,
+Laterns,
+Lauchernalp,
+Lech,
+Lech am Arlberg,
+Lenk,
+Lenggries,
+Lenzerheide,
+Leogang,
+Lermoos,
+Les 3 Vallées,
+Les Arcs,
+Lienz,
+Livigno,
+Lofer,
+Lötschental,
+Lungötz,
+Malbun,
+Mallnitz,
+Mammoth Mountain,
+Maria Alm,
+Matrei,
+Maurach,
+Mauterndorf,
+Mayens de Riddes,
+Mayrhofen,
+Mehliskopf,
+Meiringen,
+Melchsee,
+Mellau,
+Menzenschwand,
+Meran,
+Mont-Blanc,
+Montafon,
+Mount Bachelor,
+Mount Baker,
+Mount Rose,
+Mölltaler Gletscher,
+Mörlialp,
+Muggenbrunn,
+Mundaun,
+Murau,
+Muttereralm,
+Mutters,
+Mühlbach,
+Mürren,
+Mythen,
+Mythenregion,
+Nassfeld,
+Nauders,
+Nebelhorn,
+Nendaz,
+Nesselwang,
+Neukirchen,
+Neustift,
+Niederalpl,
+Niederthai,
+Obereggen,
+Obergurgl,
+Oberjoch,
+Obermaiselstein,
+Obersaxen,
+Oberstdorf,
+Obertauern,
+Obertilliach,
+Oberwiesenthal,
+Oetz,
+Ofterschwang,
+Park City,
+Pertisau,
+Petzen,
+Pitztal,
+Pitztaler Gletscher,
+Planai,
+Planneralm,
+Postalm,
+Powder Mountain,
+Präbichl,
+Radstadt,
+Raggal,
+Ramsau,
+Ramsau am Dachstein,
+Rauris,
+Raurisertal,
+Realp,
+Reit im Winkl,
+Reiteralm,
+Riederalp,
+Riesneralm,
+Rifflsee,
+Rigi,
+Rosshütte,
+Rußbach,
+Saalbach,
+Saas-Fee,
+Salzstiegl,
+Samnaun,
+Sankt Anton,
+Sankt Anton am Arlberg,
+Sankt Englmar,
+Sankt Jakob,
+Sankt Jakob im Defereggental,
+Sankt Johann,
+Sankt Johann im Pongau,
+Sankt Johann in Tirol,
+Sankt Lambrecht,
+Sankt Michael,
+Sankt Moritz,
+Sankt Oswald,
+Sankt Urban,
+Scheffau,
+Schetteregg,
+Schilthorn,
+Schladming,
+Schlick,
+Schlick 2000,
+Schmitten,
+Schmittenhöhe,
+Schröcken,
+Schwarzenberg,
+Scuol,
+Sedrun,
+See,
+Seiser Alm,
+Semmering,
+Serfaus,
+Silbertal,
+Sillian,
+Silvretta,
+Silvretta Montafon,
+Simonhöhe,
+Sirnitz,
+Solda,
+Sölden,
+Söll,
+Sörenberg,
+Sonnenkopf,
+Snowbird,
+Snowmass,
+Speiereck,
+Spieljoch,
+Spitzingsee,
+Squaw Valley,
+Steamboat,
+Steibis,
+Steinach,
+Steinach am Brenner,
+Steinplatte,
+Stockhütte,
+Stoderzinken,
+Stoos,
+Stowe,
+Stubaier Gletscher,
+Stubaital,
+Stuben,
+Stuben am Arlberg,
+Stuhleck,
+Sulden,
+Sudelfeld,
+Sugarloaf,
+Tauplitz,
+Tauplitzalm,
+Taos,
+Tegernsee,
+Telluride,
+Tignes,
+Todtnauberg,
+Toggenburg,
+Thyon,
+Turracher Höhe,
+Tux,
+Unterstmatt,
+Usseln,
+Wagrain,
+Waidring,
+Walchsee,
+Walmendingerhorn,
+Warth,
+Wegscheid,
+Weinebene,
+Wengen,
+Werfenweng,
+Westendorf,
+Whiteface,
+Wildkogel,
+Wildschönau,
+Willingen,
+Winklmoosalm,
+Winter Park,
+Winter Park Resort,
+Wolf Creek,
+Wolkenstein,
+Wurzeralm,
+Vail,
+Val Thorens,
+Vent,
+Venet,
+Verbier,
+Veysonnaz,
+Vogelsberg,
+Vorderlanersbach,
+Zahmer Kaiser,
+Zams,
+Zauchensee,
+Zell am See,
+Zell am Ziller,
+Zermatt,
+Zettersfeld,
+Zillertal Arena,
+Zinal,
+Zürs,
 Zugspitze
