@@ -11,8 +11,8 @@ class SkiinfoJsonParser extends AbstractParser {
         let snowdata = new Snowdata();
         snowdata.resource = this.getResource();
         snowdata.lastUpdate = Date.now();
-        snowdata.lowerSnowDepth = row.snowcone.base_depth_cm;
-        snowdata.upperSnowDepth = row.snowcone.top_depth_cm;
+        snowdata.lowerSnowDepth = Math.round(row.snowcone.base_depth_cm);
+        snowdata.upperSnowDepth = Math.round(row.snowcone.top_depth_cm);
         snowdata.skiliftOpen = row.snowcone.lifts_open;
         snowdata.skiliftTotal = row.resortProfile.num_lifts;
         snowdata.skiresort = row.resort_name;

@@ -74,6 +74,15 @@ class WebDataContainer {
         return;
     }
 
+    getLang(city) {
+        if (!city) return;
+        let resort = this.getResort(city);
+        if (resort) {
+            return resort.lang;
+        }
+        return;
+    }
+
     getSpeechstart(city) {
         if (!city) return;
         let resort = this.getResort(city);

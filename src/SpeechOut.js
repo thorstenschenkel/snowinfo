@@ -20,26 +20,26 @@ class SpeechOut {
         let speechOut = this._getSpeechOut();
         speechOut = SpeechOut.addBreakIfRequired(speechOut, ask);
         let rb = intentHandler.response.speak(speechOut);
-        if ( ask ) {
+        if (ask) {
             rb.listen(MORE_INFOS_LISTEN);
         }
 
     }
 
     static addBreakIfRequired(speechOut, ask, error) {
-        if ( ask ) {
-            return SpeechOut._addBreak(speechOut,error);
+        if (ask) {
+            return SpeechOut._addBreak(speechOut, error);
         } else {
             return speechOut;
         }
     }
 
-    static _addBreak(speechOut,error) {
+    static _addBreak(speechOut, error) {
         speechOut += BREAK_X_STRONG;
-        if ( error ) {
+        if (error) {
             speechOut += MORE_INFOS_AFTER_ERROR;
         } else {
-            speechOut += MORE_INFOS;            
+            speechOut += MORE_INFOS;
         }
         return speechOut;
     }
@@ -78,6 +78,12 @@ class SpeechOut {
             speechOutput = 'In ';
         }
 
+        let lang = this._getLang();
+        if ( !lang ) {
+            lang = 'de-DE';
+        }
+        speechOutput += `<lang xml:lang="${lang}">`;
+
         let speechskiresort = this._getSpeechskiresort();
         if (speechskiresort) {
             speechOutput += speechskiresort;
@@ -85,19 +91,27 @@ class SpeechOut {
             speechOutput += this.city;
         }
 
+        speechOutput += '</lang>';
+
         return speechOutput;
 
     }
 
     _getSpeechstart() {
-        if ( this.webDataContainer ) {
+        if (this.webDataContainer) {
             return this.webDataContainer.getSpeechstart(this.city);
         }
     }
 
     _getSpeechskiresort() {
-        if ( this.webDataContainer ) {
+        if (this.webDataContainer) {
             return this.webDataContainer.getSpeechskiresort(this.city);
+        }
+    }
+
+    _getLang() {
+        if (this.webDataContainer) {
+            return this.webDataContainer.getLang(this.city);
         }
     }
 
@@ -105,7 +119,9 @@ class SpeechOut {
 
         this.snowdata.lowerSnowDepth = !this.snowdata.lowerSnowDepth ? 0 : this.snowdata.lowerSnowDepth;
         this.snowdata.upperSnowDepth = !this.snowdata.upperSnowDepth ? 0 : this.snowdata.upperSnowDepth;
-        
+        this.snowdata.lowerSnowDepth = Math.round(this.snowdata.lowerSnowDepth);
+        this.snowdata.upperSnowDepth = Math.round(this.snowdata.upperSnowDepth);
+
         if (this.snowdata.lowerSnowDepth === 0 && this.snowdata.upperSnowDepth === 0) {
             speechOutput += ' liegt kein Schnee.';
         } else {

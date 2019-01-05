@@ -101,19 +101,19 @@ describe('test of SpeechOut', function () {
 
         let strg = '';
         strg = speechOut._addStartAndCity(strg);
-        expect(strg).toBe('In Ischgl');
+        expect(strg).toBe('In <lang xml:lang="de-DE">Ischgl</lang>');
 
         container.push('Ischgl', '', '', '', 'In dem Skigebiet von', '');
         strg = '';
         strg = speechOut._addStartAndCity(strg);
-        expect(strg).toBe('In dem Skigebiet von Ischgl');
+        expect(strg).toBe('In dem Skigebiet von <lang xml:lang="de-DE">Ischgl</lang>');
 
         container = new WebDataContainer('testRes');
         speechOut = new SpeechOut('Ischgl', snowdata, container);
         container.push('Ischgl', '', '', '', 'In dem Skigebiet', 'Silvretta');
         strg = '';
         strg = speechOut._addStartAndCity(strg);
-        expect(strg).toBe('In dem Skigebiet Silvretta');
+        expect(strg).toBe('In dem Skigebiet <lang xml:lang="de-DE">Silvretta</lang>');
 
     });
 
@@ -142,7 +142,7 @@ describe('test of SpeechOut', function () {
         container.push('Ischgl', '', '', '', 'In');
         speechOut = new SpeechOut('Ischgl', snowdata, container);
         strg = speechOut._getSpeechOut();
-        expect(strg).toBe('In Ischgl liegen 10 Zentimeter Schnee im Tal und 55 Zentimeter auf dem Berg. Die Informationen stammen von heute.');
+        expect(strg).toBe('In <lang xml:lang="de-DE">Ischgl</lang> liegen 10 Zentimeter Schnee im Tal und 55 Zentimeter auf dem Berg. Die Informationen stammen von heute.');
 
     });
 

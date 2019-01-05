@@ -47,9 +47,11 @@ class CardUtils {
 
                 // Schneehöhen
                 if (this.snowdata.lowerSnowDepth >= 0) {
+                    this.snowdata.lowerSnowDepth = Math.round(this.snowdata.lowerSnowDepth);            
                     content = `Schneehöhe Tal: ${this.snowdata.lowerSnowDepth} cm\n`;
                 }
                 if (this.snowdata.upperSnowDepth >= 0) {
+                    this.snowdata.upperSnowDepth = Math.round(this.snowdata.upperSnowDepth);
                     content += `Schneehöhe Berg: ${this.snowdata.upperSnowDepth} cm\n`;
                 }
 

@@ -2,10 +2,10 @@ NAME | BERGFEX | SKIINFO | SLOTS     --: fehlt;  xx: neu;  oo: geteste; OO: fehl
 Ischgl | oo | oo | oo
 
 Gstaad | xx | oo | oo
-Alpine Meadows | OO | -- | xx
-Alta | OO | -- | xx
-Arapahoe Basin | OO | -- | xx
-Aspen | OO | -- | xx
+Alpine Meadows | OO | -- | ox
+Alta | OO | -- | ox
+Arapahoe Basin | OO | -- | ox
+Aspen | OO | -- | ox
 Beaver Creek | OO | -- | xx
 Big Sky Resort | OO | -- | xx
 Big Sky | OO | -- | xx
