@@ -39,6 +39,44 @@ Winter Park Resort | OO | -- | xx
 Winter Park | OO | -- | xx
 Wolf Creek | OO | -- | xx
 
+Apex Mountain | OO | -- | xx
+Apex Resort | OO | -- | xx
+Big White | OO | -- | xx
+Blue Mountain | OO | -- | xx
+Bromont | OO | -- | xx
+Castle Mountain | OO | -- | xx
+Cypress Mountain | OO | -- | xx
+Grouse Mountain | OO | -- | xx
+Hudson Bay Mountain | OO | -- | xx
+Kicking Horse | OO | -- | xx
+Kimberley | OO | -- | xx
+Manning Park | OO | -- | xx
+Marmot Basin | OO | -- | xx
+Mont Cascades | OO | -- | xx
+Mont Orford | OO | -- | xx
+Mont Sainte Anne | OO | -- | xx
+Mont Ste-Marie | OO | -- | xx
+Mont Sutton | OO | -- | xx
+Mont-Sainte-Anne | OO | -- | xx
+Mount Baldy | OO | -- | xx
+Mount Norquay | OO | -- | xx
+Mount Tremblant | OO | -- | xx
+Mount Washington | OO | -- | xx
+Nakiska | OO | -- | xx
+Panorama Mountain | OO | -- | xx
+Panorama | OO | -- | xx
+Red Mountain | OO | -- | xx
+Red Resort | OO | -- | xx
+Revelstoke Mountain | OO | -- | xx
+Revelstoke | OO | -- | xx
+Stoneham | OO | -- | xx
+Sun Peaks | OO | -- | xx
+Sunshine Village | OO | -- | xx
+Tremblant | OO | -- | xx
+Whistler Blackcomb | OO | -- | xx
+Whitewater Ski Resort | OO | -- | xx
+
+
 
 ---------------------------------------------------------------
 ! Chamonix | xx | xx | xx
