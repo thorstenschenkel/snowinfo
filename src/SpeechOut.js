@@ -1,8 +1,8 @@
 const ERROR_NO_INFO = 'Für den Ort {city} kann ich keine Informationen liefern!';
 const ERROR_OUTDATED = 'Für den Ort {city} kann ich keine aktuellen Informationen liefern!';
 const MORE_INFOS_LISTEN = 'Nächster Ort oder sage Stopp.';
-const MORE_INFOS = 'Nenne mir einen weiteren Ort oder sage Stopp.';
-const MORE_INFOS_AFTER_ERROR = 'Nenne mir einen anderen Ort oder sage Stopp.';
+const MORE_INFOS = 'Nenne einen weiteren Ort oder sage Stopp.';
+const MORE_INFOS_AFTER_ERROR = 'Nenne einen anderen Ort oder sage Stopp.';
 const BREAK_X_STRONG = `<break time="1000ms"/>`; // 1 sec
 
 // https://developer.amazon.com/de/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html#break
