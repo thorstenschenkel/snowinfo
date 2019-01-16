@@ -642,13 +642,14 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Going - SkiWelt',
             speechstart: 'In'
         });
-        //  Golm im Montafon
+        // Golm im Montafon
         this.pushObject({
             city: 'Golm',
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
             searchStrg: 'Golm im Montafon',
             speechstart: 'In'
         });
+        // Golm im Montafon
         this.pushObject({
             city: 'Golm im Montafon',
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
@@ -1935,6 +1936,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Scheffau - SkiWelt',
             speechstart: 'In'
         });
+        // Luggi-Leitner-Lifte Scheidegg
+        this.pushObject({
+            city: 'Scheidegg',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Luggi-Leitner-Lifte Scheidegg',
+            speechstart: 'In'
+        });
         // Schetteregg
         this.pushObject({
             city: 'Schetteregg',
@@ -1974,6 +1982,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Schmitten',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Schmitten - Zell am See',
+            speechstart: 'In'
+        });
+        // Gargellen / Montafon
+        this.pushObject({
+            city: 'Schruns',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Gargellen / Montafon',
             speechstart: 'In'
         });
         // Warth - Schröcken am Arlberg
@@ -2238,6 +2253,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Toggenburg',
             speechstart: 'In'
         });        
+        // Golm im Montafon
+        this.pushObject({
+            city: 'Tschagguns',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Golm im Montafon',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Turracher Höhe',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
@@ -2278,6 +2300,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Val Thorens / Les 3 Vallées',
             speechstart: 'In',
             lang: 'fr-FR'
+        });
+        // Golm im Montafon
+        this.pushObject({
+            city: 'Vandans',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Golm im Montafon',
+            speechstart: 'In'
         });
         this.pushObject({
             city: 'Venet',

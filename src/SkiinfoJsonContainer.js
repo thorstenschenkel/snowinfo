@@ -615,6 +615,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Hochoetz',
             speechstart: 'In'
         });
+        // Hochmoos - Bergbahn Leutasch 
+        this.pushObject({
+            city: 'Hochmoos',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Hochmoos - Bergbahn Leutasch',
+            speechstart: 'In'
+        });
         // Lienzer Bergbahnen - Zettersfeld - Hochstein
         this.pushObject({
             city: 'Hochstein',
@@ -769,11 +776,6 @@ class SkiinfoJsonContainer extends WebDataContainer {
             speechstart: 'Im Skigebiet',
             speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
-
-
-
-
-
         // Klippitztörl
         this.pushObject({
             city: 'Klippitztörl',
@@ -862,6 +864,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Lermoos',
             host: 'skiapp.onthesnow.com', path: AT_PATH,
             searchStrg: 'Lermoos Grubigstein',
+            speechstart: 'In'
+        });
+        // Hochmoos - Bergbahn Leutasch 
+        this.pushObject({
+            city: 'Leutasch',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Hochmoos - Bergbahn Leutasch',
             speechstart: 'In'
         });
         // Lienzer Bergbahnen - Zettersfeld - Hochstein
@@ -1142,6 +1151,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Zell am See - Schmittenhöhe',
             speechstart: 'In'
         });
+        // Silvretta Montafon
+        this.pushObject({
+            city: 'Schruns',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Silvretta Montafon',
+            speechstart: 'In'
+        });
         // Warth - Schröcken
         this.pushObject({
             city: 'Schröcken',
@@ -1288,6 +1304,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Tauplitzalm',
             speechstart: 'Auf der'
         });
+        // Golm
+        this.pushObject({
+            city: 'Tschagguns',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Golm',
+            speechstart: 'In'
+        });
         // Turracher Höhe
         this.pushObject({
             city: 'Turracher Höhe',
@@ -1370,6 +1393,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Wurzeralm',
             host: 'skiapp.onthesnow.com', path: AT_PATH,
             searchStrg: 'Wurzeralm',
+            speechstart: 'In'
+        });
+        // Golm
+        this.pushObject({
+            city: 'Vandans',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Golm',
             speechstart: 'In'
         });
         // Landeck - Zams - Fliess - Venet
@@ -1568,6 +1598,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Skiregion Brauneck - Wegscheid',
             speechstart: 'In'
         });
+        // Braunlage Wurmberg
+        this.pushObject({
+            city: 'Braunlage',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Braunlage Wurmberg',
+            speechstart: 'In'
+        });
         // Feldberg Wintersportzentrum
         this.pushObject({
             city: 'Feldberg',
@@ -1701,6 +1738,20 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Sankt Englmar',
             speechstart: 'In'
         });
+        // Scheidegg - Möggers
+        this.pushObject({
+            city: 'Scheidegg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Scheidegg - Möggers',
+            speechstart: 'In'
+        });
+        // Braunlage Wurmberg
+        this.pushObject({
+            city: 'Schierke',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Braunlage Wurmberg',
+            speechstart: 'In'
+        });
         // Oberstdorf - Söllereck - Höllwies
         this.pushObject({
             city: 'Söllereck',
@@ -1769,6 +1820,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Winklmoosalm',
             host: 'skiapp.onthesnow.com', path: DE_PATH,
             searchStrg: 'Winklmoosalm - Reit im Winkl',
+            speechstart: 'In'
+        });
+        // Braunlage Wurmberg
+        this.pushObject({
+            city: 'Wurmberg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Braunlage Wurmberg',
             speechstart: 'In'
         });
         // Zugspitze
