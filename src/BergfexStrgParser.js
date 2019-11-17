@@ -18,6 +18,10 @@ class BergfexStrgParser extends StrgParser {
         snowdata.lowerSnowDepth = 0;
         snowdata.upperSnowDepth = 0;
         let tdStrings = this.getPartContent(htmlString, '<td', '</td>');
+        let log = htmlString.indexOf('galt') > 0;
+        // if (log) {
+        //     console.log(' -- t7 -- htmlString: ' + htmlString);
+        // }
         let i = 0;
         for (let tdStrg of tdStrings) {
             let strg = tdStrg.trim();
@@ -41,21 +45,24 @@ class BergfexStrgParser extends StrgParser {
                     break;
                 case 3: // neu
                     break;
-                case 4: // lifte
-                    var liftStrgs = strg.split('/');
-                    if (liftStrgs && liftStrgs.length > 0) {
-                        snowdata.skiliftOpen = this.getOnlyInt(liftStrgs[0]);
-                        snowdata.skiliftTotal = this.getOnlyInt(liftStrgs[1]);
-                    }
-                    break;
-                case 5: // status
-                    if (tdStrg.indexOf('/images/icons/lifte-pisten/status0.png') > 0) {
+                case 4: // status + lifte
+                    // status
+                    if (tdStrg.indexOf('icon-status0') > 0) {
                         snowdata.status = 'closed';
-                    } else if (tdStrg.indexOf('/images/icons/lifte-pisten/status1.png') > 0) {
+                    } else if (tdStrg.indexOf('icon-status1') > 0) {
                         snowdata.status = 'open';
                     }
+                    // lifte
+                    const statusLifteStrgs = tdStrg.split('</div>');
+                    if (statusLifteStrgs && statusLifteStrgs.length > 1) {
+                        const liftStrgs = statusLifteStrgs[1].split('/');
+                        if (liftStrgs && liftStrgs.length > 0) {
+                            snowdata.skiliftOpen = this.getOnlyInt(liftStrgs[0]);
+                            snowdata.skiliftTotal = this.getOnlyInt(liftStrgs[1]);
+                        }
+                    }
                     break;
-                case 6: // datum
+                case 5: // datum
                     snowdata.reportDate = this.getDate(strg);
                     break;
             }
