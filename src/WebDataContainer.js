@@ -1,26 +1,27 @@
 class WebData {
 
-    constructor(city, host, path, searchStrg, speechstart, speechskiresort) {
+    constructor(city, host, path, searchStrg, speechstart, speechskiresort, lang) {
         this.city = city;
         this.host = host;
         this.path = path;
         this.searchStrg = searchStrg;
         this.speechstart = speechstart;
         this.speechskiresort = speechskiresort;
+        this.lang = lang;
     }
 
 }
 
 class WebDataContainer {
 
-    constructor( resource ) {
+    constructor(resource) {
         this.resource = resource;
         this.webDatas = [];
     }
 
 
-    push(city, host, path, searchStrg, speechstart, speechskiresort) {
-        let webData = new WebData(city, host, path,searchStrg, speechstart, speechskiresort);
+    push(city, host, path, searchStrg, speechstart, speechskiresort, lang) {
+        let webData = new WebData(city, host, path, searchStrg, speechstart, speechskiresort, lang);
         this.webDatas.push(webData);
     }
 
@@ -30,12 +31,13 @@ class WebDataContainer {
             dataObejct.path,
             dataObejct.searchStrg,
             dataObejct.speechstart,
-            dataObejct.speechskiresort);
+            dataObejct.speechskiresort,
+            dataObejct.lang);
     }
 
     getProtocol() {
         return;
-    }   
+    }
 
     getResort(city) {
         if (!city) return;
@@ -70,6 +72,15 @@ class WebDataContainer {
         let resort = this.getResort(city);
         if (resort) {
             return resort.searchStrg;
+        }
+        return;
+    }
+
+    getLang(city) {
+        if (!city) return;
+        let resort = this.getResort(city);
+        if (resort) {
+            return resort.lang;
         }
         return;
     }

@@ -316,7 +316,8 @@ class BergfexContainer extends WebDataContainer {
             city: 'Chamonix',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'Chamonix Mont-Blanc',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });        
         // St. Moritz - Corviglia
         this.pushObject({
@@ -330,7 +331,8 @@ class BergfexContainer extends WebDataContainer {
             city: 'Crans Montana',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Crans Montana - Aminona',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Christlum Achenkirch - Achensee
         this.pushObject({
@@ -640,13 +642,14 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Going - SkiWelt',
             speechstart: 'In'
         });
-        //  Golm im Montafon
+        // Golm im Montafon
         this.pushObject({
             city: 'Golm',
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
             searchStrg: 'Golm im Montafon',
             speechstart: 'In'
         });
+        // Golm im Montafon
         this.pushObject({
             city: 'Golm im Montafon',
             host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
@@ -1210,14 +1213,16 @@ class BergfexContainer extends WebDataContainer {
             city: 'La Plagne',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'La Plagne / Paradiski',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // La Tzoumaz - Mayens de Riddes
         this.pushObject({
             city: 'La Tzoumaz',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'La Tzoumaz - Mayens de Riddes',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Flims Laax Falera
         this.pushObject({
@@ -1307,14 +1312,16 @@ class BergfexContainer extends WebDataContainer {
             city: 'Les 3 Vallées',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'Val Thorens / Les 3 Vallées',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Les Arcs - Bourg Saint Maurice / Paradiski
         this.pushObject({
             city: 'Les Arcs',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'Les Arcs - Bourg Saint Maurice / Paradiski',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Lienzer Bergbahnen - Zettersfeld/Hochstein
         this.pushObject({
@@ -1389,7 +1396,8 @@ class BergfexContainer extends WebDataContainer {
             city: 'Mayens de Riddes',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'La Tzoumaz - Mayens de Riddes',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Mayrhofen - Zillertal
         this.pushObject({
@@ -1438,7 +1446,8 @@ class BergfexContainer extends WebDataContainer {
             city: 'Mont-Blanc',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'Chamonix Mont-Blanc',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });        
         // Silvretta Montafon
         this.pushObject({
@@ -1550,7 +1559,8 @@ class BergfexContainer extends WebDataContainer {
             city: 'Nendaz',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Nendaz / 4 Vallées',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Alpspitz / Edelsberg - Nesselwang
         this.pushObject({
@@ -1926,6 +1936,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Scheffau - SkiWelt',
             speechstart: 'In'
         });
+        // Luggi-Leitner-Lifte Scheidegg
+        this.pushObject({
+            city: 'Scheidegg',
+            host: 'www.bergfex.at', path: '/tirol/schneewerte/',
+            searchStrg: 'Luggi-Leitner-Lifte Scheidegg',
+            speechstart: 'In'
+        });
         // Schetteregg
         this.pushObject({
             city: 'Schetteregg',
@@ -1965,6 +1982,13 @@ class BergfexContainer extends WebDataContainer {
             city: 'Schmitten',
             host: 'www.bergfex.at', path: '/salzburg/schneewerte/',
             searchStrg: 'Schmitten - Zell am See',
+            speechstart: 'In'
+        });
+        // Gargellen / Montafon
+        this.pushObject({
+            city: 'Schruns',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Gargellen / Montafon',
             speechstart: 'In'
         });
         // Warth - Schröcken am Arlberg
@@ -2212,7 +2236,8 @@ class BergfexContainer extends WebDataContainer {
             city: 'Tignes',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'Tignes - Val d’Isère',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Todtnauberg
         this.pushObject({
@@ -2228,6 +2253,13 @@ class BergfexContainer extends WebDataContainer {
             searchStrg: 'Toggenburg',
             speechstart: 'In'
         });        
+        // Golm im Montafon
+        this.pushObject({
+            city: 'Tschagguns',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Golm im Montafon',
+            speechstart: 'In'
+        });
         this.pushObject({
             city: 'Turracher Höhe',
             host: 'www.bergfex.at', path: '/kaernten/schneewerte/',
@@ -2266,6 +2298,14 @@ class BergfexContainer extends WebDataContainer {
             city: 'Val Thorens',
             host: 'www.bergfex.at', path: '/auvergne-rhone-alpes/schneewerte/',
             searchStrg: 'Val Thorens / Les 3 Vallées',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Golm im Montafon
+        this.pushObject({
+            city: 'Vandans',
+            host: 'www.bergfex.at', path: '/vorarlberg/schneewerte/',
+            searchStrg: 'Golm im Montafon',
             speechstart: 'In'
         });
         this.pushObject({
@@ -2285,14 +2325,16 @@ class BergfexContainer extends WebDataContainer {
             city: 'Verbier',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Verbier / 4 Vallées',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Veysonnaz / 4 Vallées
         this.pushObject({
             city: 'Veysonnaz',
             host: 'www.bergfex.ch', path: '/wallis/schneewerte/',
             searchStrg: 'Veysonnaz / 4 Vallées',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Vogelsberg
         this.pushObject({

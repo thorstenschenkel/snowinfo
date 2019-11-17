@@ -1,9 +1,8 @@
 Mit dem Skill Schneeinfo kannst du dir die Schneehöhen in einem Skigebiet ansagen lassen.
 
 Im Moment werden vorwiegend Schneehöhen von Skigebieten in Österreich und der Schweiz geliefert.
-Aber auch einige Skigebiet in Deutschland und Italien können abgefragt werden.
-Im Laufe des kommenden Winters (2017/18) werden weitere Skigebiete hinzukommen.
-Derzeit können die Schneehöhen von über 250 Orten geliefert werden.
+Aber auch einige Skigebiet in Deutschland, Italien, Kanada und USA können abgefragt werden.
+Derzeit können die Schneehöhen von über 300 Orten geliefert werden.
 
 Beispiele für Österreich: 
   Fiss
@@ -53,6 +52,36 @@ Beispiele für Italien:
   Meran
   Seiser Alm
   Wolkenstein
+
+Beispiele für Kanada:
+  Big White
+  Castle Mountain
+  Fernie
+  Kimberley
+  Lake Louise
+  Nakiska
+  Panorama Mountain
+  Red Resort
+  Sun Peaks
+  Sunshine Village
+  Tremblant
+  Whistler
+
+Beispiele für USA:
+  Aspen
+  Beaver Creek
+  Big Sky Resort
+  Breckenridge
+  Keystone
+  Mammoth Mountain
+  Mount Bachelor
+  Park City
+  Powder Mountain
+  Squaw Valley
+  Steamboat
+  Vail
+  Winter Park
+
 
 Die komplette Liste der Orte und Skigebiete finde ihr hier: 
 

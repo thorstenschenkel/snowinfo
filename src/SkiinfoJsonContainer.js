@@ -615,6 +615,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Hochoetz',
             speechstart: 'In'
         });
+        // Hochmoos - Bergbahn Leutasch 
+        this.pushObject({
+            city: 'Hochmoos',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Hochmoos - Bergbahn Leutasch',
+            speechstart: 'In'
+        });
         // Lienzer Bergbahnen - Zettersfeld - Hochstein
         this.pushObject({
             city: 'Hochstein',
@@ -769,11 +776,6 @@ class SkiinfoJsonContainer extends WebDataContainer {
             speechstart: 'Im Skigebiet',
             speechskiresort: 'Kitzsteinhorn - Kaprun'
         });
-
-
-
-
-
         // Klippitztörl
         this.pushObject({
             city: 'Klippitztörl',
@@ -862,6 +864,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Lermoos',
             host: 'skiapp.onthesnow.com', path: AT_PATH,
             searchStrg: 'Lermoos Grubigstein',
+            speechstart: 'In'
+        });
+        // Hochmoos - Bergbahn Leutasch 
+        this.pushObject({
+            city: 'Leutasch',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Hochmoos - Bergbahn Leutasch',
             speechstart: 'In'
         });
         // Lienzer Bergbahnen - Zettersfeld - Hochstein
@@ -1142,6 +1151,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Zell am See - Schmittenhöhe',
             speechstart: 'In'
         });
+        // Silvretta Montafon
+        this.pushObject({
+            city: 'Schruns',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Silvretta Montafon',
+            speechstart: 'In'
+        });
         // Warth - Schröcken
         this.pushObject({
             city: 'Schröcken',
@@ -1288,6 +1304,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Tauplitzalm',
             speechstart: 'Auf der'
         });
+        // Golm
+        this.pushObject({
+            city: 'Tschagguns',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Golm',
+            speechstart: 'In'
+        });
         // Turracher Höhe
         this.pushObject({
             city: 'Turracher Höhe',
@@ -1372,6 +1395,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Wurzeralm',
             speechstart: 'In'
         });
+        // Golm
+        this.pushObject({
+            city: 'Vandans',
+            host: 'skiapp.onthesnow.com', path: AT_PATH,
+            searchStrg: 'Golm',
+            speechstart: 'In'
+        });
         // Landeck - Zams - Fliess - Venet
         this.pushObject({
             city: 'Venet',
@@ -1442,14 +1472,6 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Lech Zürs am Arlberg',
             speechstart: 'In'
         });
-        // Lake Louise !!! NUR SKIINFO
-        this.pushObject({
-            city: 'Lake Louise',
-            host: 'skiapp.onthesnow.com', path: CAN_PATH,
-            searchStrg: 'Lake Louise',
-            speechstart: 'In'
-        });
-
         // Alta Badia
         this.pushObject({
             city: 'Alta Badia',
@@ -1574,6 +1596,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Brauneck',
             host: 'skiapp.onthesnow.com', path: DE_PATH,
             searchStrg: 'Skiregion Brauneck - Wegscheid',
+            speechstart: 'In'
+        });
+        // Braunlage Wurmberg
+        this.pushObject({
+            city: 'Braunlage',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Braunlage Wurmberg',
             speechstart: 'In'
         });
         // Feldberg Wintersportzentrum
@@ -1709,6 +1738,20 @@ class SkiinfoJsonContainer extends WebDataContainer {
             searchStrg: 'Sankt Englmar',
             speechstart: 'In'
         });
+        // Scheidegg - Möggers
+        this.pushObject({
+            city: 'Scheidegg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Scheidegg - Möggers',
+            speechstart: 'In'
+        });
+        // Braunlage Wurmberg
+        this.pushObject({
+            city: 'Schierke',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Braunlage Wurmberg',
+            speechstart: 'In'
+        });
         // Oberstdorf - Söllereck - Höllwies
         this.pushObject({
             city: 'Söllereck',
@@ -1777,6 +1820,13 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Winklmoosalm',
             host: 'skiapp.onthesnow.com', path: DE_PATH,
             searchStrg: 'Winklmoosalm - Reit im Winkl',
+            speechstart: 'In'
+        });
+        // Braunlage Wurmberg
+        this.pushObject({
+            city: 'Wurmberg',
+            host: 'skiapp.onthesnow.com', path: DE_PATH,
+            searchStrg: 'Braunlage Wurmberg',
             speechstart: 'In'
         });
         // Zugspitze
@@ -1931,7 +1981,8 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'La Tzoumaz',
             host: 'skiapp.onthesnow.com', path: CH_PATH,
             searchStrg: 'La Tzoumaz - Savoleyres',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Lötschental Lauchernalp
         this.pushObject({
@@ -2099,14 +2150,16 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Verbier',
             host: 'skiapp.onthesnow.com', path: CH_PATH,
             searchStrg: 'Verbier',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Veysonnaz
         this.pushObject({
             city: 'Veysonnaz',
             host: 'skiapp.onthesnow.com', path: CH_PATH,
             searchStrg: 'Veysonnaz',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Zermatt
         this.pushObject({
@@ -2127,189 +2180,221 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Chamonix',
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'Chamonix Mont-Blanc',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // La Plagne
         this.pushObject({
             city: 'La Plagne',
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'La Plagne',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Les Arcs Bourg St Maurice
         this.pushObject({
             city: 'Les Arcs',
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'Les Arcs Bourg St Maurice',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Chamonix Mont-Blanc
         this.pushObject({
             city: 'Mont-Blanc',
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'Chamonix Mont-Blanc',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Tignes
         this.pushObject({
             city: 'Tignes',
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'Tignes',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'fr-FR'
         });
         // Val Thorens
         this.pushObject({
             city: 'Val Thorens',
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'Val Thorens',
+<<<<<<< HEAD
             speechstart: 'In'
         });
+=======
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });        
+>>>>>>> 7365b336ed42a9cf6b46236b845a39ba6ba248f4
         // Squaw Valley - Alpine Meadows
         this.pushObject({
             city: 'Alpine Meadows',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Squaw Valley - Alpine Meadows',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Alta Ski Area
         this.pushObject({
             city: 'Alta',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Alta Ski Area',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Arapahoe Basin Ski Area
         this.pushObject({
             city: 'Arapahoe Basin',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Arapahoe Basin Ski Area',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Aspen / Snowmass
         this.pushObject({
             city: 'Aspen',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Aspen / Snowmass',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Beaver Creek
         this.pushObject({
             city: 'Beaver Creek',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Beaver Creek',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Big Sky Resort
         this.pushObject({
             city: 'Big Sky',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Big Sky Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Big Sky Resort
         this.pushObject({
             city: 'Big Sky Resort',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Big Sky Resort',
-            speechstart: 'Im'
+            speechstart: 'Im',
+            lang: 'en-US'
         });
         // Breckenridge
         this.pushObject({
             city: 'Breckenridge',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Breckenridge',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Copper Mountain
         this.pushObject({
             city: 'Copper Mountain',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Copper Mountain Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Copper Mountain Resort
         this.pushObject({
             city: 'Copper Mountain Resort',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Copper Mountain Resort',
-            speechstart: 'Im'
+            speechstart: 'Im',
+            lang: 'en-US'
         });
         // Crested Butte Mountain Resort
         this.pushObject({
             city: 'Crested Butte',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Crested Butte Mountain Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Deer Valley Resort
         this.pushObject({
             city: 'Deer Valley',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Deer Valley Resort',
-            speechstart: 'Im'
+            speechstart: 'Im',
+            lang: 'en-US'
         });
         // Heavenly
         this.pushObject({
             city: 'Heavenly',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Heavenly Mountain Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Jackson Hole
         this.pushObject({
             city: 'Jackson Hole',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Jackson Hole',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Keystone
         this.pushObject({
             city: 'Keystone',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Keystone',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Killington Resort
         this.pushObject({
             city: 'Killington',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Killington Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Whiteface Mountain Resort
         this.pushObject({
             city: 'Lake Placid',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Whiteface Mountain Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Mammoth Mountain
         this.pushObject({
             city: 'Mammoth Mountain',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Mammoth Mountain Ski Area',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Mt. Bachelor
         this.pushObject({
             city: 'Mount Bachelor',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Mt. Bachelor',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Mt. Baker
         this.pushObject({
             city: 'Mount Baker',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Mt. Baker',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Mt. Rose - Ski Tahoe
         this.pushObject({
             city: 'Mount Rose',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Mt. Rose - Ski Tahoe',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Park City
         this.pushObject({
@@ -2323,100 +2408,426 @@ class SkiinfoJsonContainer extends WebDataContainer {
             city: 'Powder Mountain',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Powder Mountain',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Snowbird
         this.pushObject({
             city: 'Snowbird',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Snowbird',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Aspen / Snowmass
         this.pushObject({
             city: 'Snowmass',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Aspen / Snowmass',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Squaw Valley - Alpine Meadows
         this.pushObject({
             city: 'Squaw Valley',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Squaw Valley - Alpine Meadows',
-            speechstart: 'Im'
+            speechstart: 'Im',
+            lang: 'en-US'
         });
         // Steamboat
         this.pushObject({
             city: 'Steamboat',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Steamboat',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Stowe
         this.pushObject({
             city: 'Stowe',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Stowe Mountain Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Sugarloaf
         this.pushObject({
             city: 'Sugarloaf',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Sugarloaf',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Taos Ski Valley
         this.pushObject({
             city: 'Taos',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Taos Ski Valley',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Telluride
         this.pushObject({
             city: 'Telluride',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Telluride',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Vail
         this.pushObject({
             city: 'Vail',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Vail',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Whiteface Mountain Resort
         this.pushObject({
             city: 'Whiteface',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Whiteface Mountain Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Winter Park Resort
         this.pushObject({
             city: 'Winter Park',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Winter Park Resort',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
         // Winter Park Resort
         this.pushObject({
             city: 'Winter Park Resort',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Winter Park Resort',
-            speechstart: 'Im'
+            speechstart: 'Im',
+            lang: 'en-US'
         });
         // Wolf Creek Ski Area
         this.pushObject({
             city: 'Wolf Creek',
             host: 'skiapp.onthesnow.com', path: USA_PATH,
             searchStrg: 'Wolf Creek Ski Area',
-            speechstart: 'In'
+            speechstart: 'In',
+            lang: 'en-US'
         });
+        // Apex Mountain
+        this.pushObject({
+            city: 'Apex Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Apex Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Apex Mountain
+        this.pushObject({
+            city: 'Apex Resort',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Apex Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Big White
+        this.pushObject({
+            city: 'Big White',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Big White',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Blue Mountain
+        this.pushObject({
+            city: 'Blue Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Blue Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Bromont, montagne d’expériences
+        this.pushObject({
+            city: 'Bromont',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Bromont, montagne d’expériences',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Castle Mountain
+        this.pushObject({
+            city: 'Castle Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Castle Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Cypress Mountain
+        this.pushObject({
+            city: 'Cypress Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Cypress Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Fernie
+        this.pushObject({
+            city: 'Fernie',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Fernie',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Hudson Bay Mountain
+        this.pushObject({
+            city: 'Hudson Bay Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Hudson Bay Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Grouse Mountain
+        this.pushObject({
+            city: 'Grouse Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Grouse Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Kicking Horse
+        this.pushObject({
+            city: 'Kicking Horse',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Kicking Horse',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Kimberley
+        this.pushObject({
+            city: 'Kimberley',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Kimberley',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Lake Louise
+        this.pushObject({
+            city: 'Lake Louise',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Lake Louise',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Manning Park Resort
+        this.pushObject({
+            city: 'Manning Park',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Manning Park Resort',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Marmot Basin
+        this.pushObject({
+            city: 'Marmot Basin',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Marmot Basin',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Mont Cascades
+        this.pushObject({
+            city: 'Mont Cascades',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mont Cascades',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Mont Orford
+        this.pushObject({
+            city: 'Mont Orford',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mont Orford',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Mont Sainte Anne
+        this.pushObject({
+            city: 'Mont Sainte Anne',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mont Sainte Anne',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Mont Sainte Anne
+        this.pushObject({
+            city: 'Mont-Sainte-Anne',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mont Sainte Anne',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Mont Ste-Marie
+        this.pushObject({
+            city: 'Mont Ste-Marie',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mont Ste-Marie',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Mont Sutton
+        this.pushObject({
+            city: 'Mont Sutton',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mont Sutton',
+            speechstart: 'In',
+            lang: 'fr-FR'
+        });
+        // Mt Baldy
+        this.pushObject({
+            city: 'Mount Baldy',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mt Baldy',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Mt. Norquay
+        this.pushObject({
+            city: 'Mount Norquay',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mt. Norquay',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Mt Washington Alpine Resort
+        this.pushObject({
+            city: 'Mount Washington',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Mt Washington Alpine Resort',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Nakiska Ski Area
+        this.pushObject({
+            city: 'Nakiska',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Nakiska Ski Area',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Tremblant
+        this.pushObject({
+            city: 'Mount Tremblant',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Tremblant',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Panorama Mountain
+        this.pushObject({
+            city: 'Panorama',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Panorama Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Panorama Mountain
+        this.pushObject({
+            city: 'Panorama Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Panorama Mountain',
+            speechstart: 'In',
+            lang: 'en-US'
 
+        });
+        // Red Resort
+        this.pushObject({
+            city: 'Red Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Red Resort',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Red Resort
+        this.pushObject({
+            city: 'Red Resort',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Red Resort',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Revelstoke Mountain Resort
+        this.pushObject({
+            city: 'Revelstoke',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Revelstoke Mountain Resort',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Revelstoke Mountain Resort
+        this.pushObject({
+            city: 'Revelstoke Mountain',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Revelstoke Mountain Resort',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Stoneham
+        this.pushObject({
+            city: 'Stoneham',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Stoneham',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Sun Peaks
+        this.pushObject({
+            city: 'Sun Peaks',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Sun Peaks',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Sunshine Village
+        this.pushObject({
+            city: 'Sunshine Village',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Sunshine Village',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Tremblant
+        this.pushObject({
+            city: 'Tremblant',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Tremblant',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Whistler Blackcomb
+        this.pushObject({
+            city: 'Whistler',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Whistler Blackcomb',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Whistler Blackcomb
+        this.pushObject({
+            city: 'Whistler Blackcomb',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Whistler Blackcomb',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
+        // Whitewater Ski Resort
+        this.pushObject({
+            city: 'Whitewater Ski Resort',
+            host: 'skiapp.onthesnow.com', path: CAN_PATH,
+            searchStrg: 'Whitewater',
+            speechstart: 'In',
+            lang: 'en-US'
+        });
     }
 
 }
