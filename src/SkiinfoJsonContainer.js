@@ -379,7 +379,7 @@ class SkiinfoJsonContainer extends WebDataContainer {
         this.pushObject({
             city: 'Galtür',
             host: 'skiapp.onthesnow.com', path: AT_PATH,
-            searchStrg: 'Galtür - Silvretta',
+            searchStrg: 'Galtür',
             speechstart: 'In'
         });
         // Gargellen
@@ -2163,7 +2163,7 @@ class SkiinfoJsonContainer extends WebDataContainer {
             host: 'skiapp.onthesnow.com', path: FR_PATH,
             searchStrg: 'Val Thorens',
             speechstart: 'In'
-        });        
+        });
         // Squaw Valley - Alpine Meadows
         this.pushObject({
             city: 'Alpine Meadows',
