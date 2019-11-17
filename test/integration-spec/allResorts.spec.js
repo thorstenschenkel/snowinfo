@@ -1,9 +1,9 @@
 
 const fs = require('fs');
 const BergfexContainer = require('../../src/BergfexContainer');
-const SkiinfoContainer = require('../../src/SkiinfoContainer');
+const SkiinfoJsonContainer = require('../../src/SkiinfoJsonContainer');
 const BergfexStrgParser = require('../../src/BergfexStrgParser');
-const SkiinfoStrgParser = require('../../src/SkiinfoStrgParser');
+const SkiinfoJsonParser = require('../../src/SkiinfoJsonParser');
 
 
 
@@ -14,10 +14,11 @@ describe('test of all ski resorts', function () {
         let parsers = [];
         const bergfexContainer = new BergfexContainer();
         parsers.push(new BergfexStrgParser(bergfexContainer));
-        const skiinfoContainer = new SkiinfoContainer();
-        parsers.push(new SkiinfoStrgParser(skiinfoContainer));
+        const skiinfoContainer = new SkiinfoJsonContainer();
+        parsers.push(new SkiinfoJsonParser(skiinfoContainer));
 
-        var cityArray = fs.readFileSync('../alexa_schema/slots_SKIGEBIETE.txt').toString().split('\r\n');
+        let cityArray = fs.readFileSync('../alexa_schema/slots_SKIGEBIETE.txt').toString().split('\r\n');
+        // cityArray = ['Galtür']
 
         for (let i in cityArray) {
 
@@ -35,7 +36,7 @@ describe('test of all ski resorts', function () {
                     for (let i = 0; i < htmlPages.length; i++) {
                         const htmlPage = htmlPages[i];
                         if (htmlPage) {
-                            const snowdata = parsers[i].parseHtml(htmlPage, city);
+                            const snowdata = parsers[i].parse(htmlPage, city);
                             if (!dataCity && snowdata) {
                                 dataCity = snowdata.city;
                             }
@@ -52,6 +53,11 @@ describe('test of all ski resorts', function () {
                     console.warn(' -- t7 -- WARN -- no resort for: ', city);
                 });
         }
+
+        setTimeout(function () {
+            console.log('...waited')
+        }, 1000)
+
 
     });
 
